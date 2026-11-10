@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Available mapping type: 
+	1 Remove Usage
+	2 Convert Usage
+	3 Convert or Remove Usage depending on metaclass (default : Convert)
+	4 ConvertUsage and Element type
+	5.Convert Usage depending on metaclass.
+	mapping type 1 required attribute: source
+	mapping type 2 required attributes: source, target
+		inner element (optional): tag [to specify tag values to be removed]
+	mapping type 3 required attributes: source, target
+		inner element: metaClass [to specify action according to metaClass type]
+	mapping type 4 required attributes: source, target, sourceMetaClass, targetMetaClass
+	mapping type 5 required attributes: source, target
+		inner element (optional): custom [to specify action according to metaClass type]
+		required attribute for inner elements (optional):
+		- sourceMetaClass : to specify which BaseType need to be changed to targetMetaClass.
+		- targetMetaClass : to specify targetMetaClass.
+		- suffix : to specify the suffix of baseType's id. 
+		
+		Example. see rule of SysML1.1:probability.
+	
+-->
+<ProfileMap targetProfile="file:/./profiles/SysML%20Profile.mdzip">
+	<Rules>
+		<Rule mappingType="1" source="SysML_Activity:AccepeEvent"/>
+		<Rule mappingType="1" source="SysML_Activity:Action"/>
+		<Rule mappingType="1" source="SysML_Activity:Activity"/>
+		<Rule mappingType="2" source="SysML_Activity:allocateActivityPartition" target="Allocations:AllocateActivityPartition"/>
+		<Rule mappingType="1" source="SysML_Activity:CallBehaviorAction"/>
+		<Rule mappingType="2" source="SysML_Activity:continuous" target="Activities:Continuous"/>
+		<Rule mappingType="1" source="SysML_Activity:Control_Flow"/>
+		<Rule mappingType="3" source="SysML_Activity:controlOperator" target="Activities:ControlOperator">
+			<metaClass name="Activity" action="convert"/>
+			<metaClass name="Operation" action="convert"/>
+			<metaClass name="Action" action="remove"/>
+		</Rule>
+		<Rule mappingType="1" source="SysML_Activity:Datastore"/>
+		<Rule mappingType="1" source="SysML_Activity:Decision"/>
+		<Rule mappingType="1" source="SysML_Activity:Dependency"/>
+		<Rule mappingType="2" source="SysML_Activity:discrete" target="Activities:Discrete"/>
+		<Rule mappingType="1" source="SysML_Activity:Exception"/>
+		<Rule mappingType="1" source="SysML_Activity:Final"/>
+		<Rule mappingType="1" source="SysML_Activity:Flow_Final"/>
+		<Rule mappingType="1" source="SysML_Activity:Fork/Join"/>
+		<Rule mappingType="1" source="SysML_Activity:Initial"/>
+		<Rule mappingType="1" source="SysML_Activity:Interrupt_Flow"/>
+		<Rule mappingType="1" source="SysML_Activity:Merge"/>
+		<Rule mappingType="2" source="SysML_Activity:noBuffer" target="Activities:NoBuffer"/>
+		<Rule mappingType="1" source="SysML_Activity:objectFlow"/>
+		<Rule mappingType="1" source="SysML_Activity:optional"/>
+		<Rule mappingType="2" source="SysML_Activity:overwrite" target="Activities:Overwrite"/>
+		<Rule mappingType="1" source="SysML_Activity:Part"/>
+		<Rule mappingType="3" source="SysML_Activity:probability" target="Activities:Probability">
+			<metaClass name="ObjectFlow" action="convert"/>
+			<metaClass name="ControlFlow" action="convert"/>
+			<metaClass name="ActivityParameter" action="remove"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML_Activity:rate" target="Activities:Rate"/>
+		<Rule mappingType="1" source="SysML_Activity:Region"/>
+		<Rule mappingType="1" source="SysML_Activity:SendSignal"/>
+		<Rule mappingType="1" source="SysML_Activity:Structured_Activity"/>
+		<Rule mappingType="1" source="SysML_Activity:Synch"/>
+		<Rule mappingType="1" source="SysML_Activity:TimeEvent"/>
+		<Rule mappingType="4" source="SysML_Allocations:allocate" target="Allocations:Allocate" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="1" source="SysML_Allocations:allocated"/>
+		<Rule mappingType="1" source="SysML_Block_Definition:Actor"/>
+		<Rule mappingType="1" source="SysML_Block_Definition:Association"/>
+		<Rule mappingType="2" source="SysML_Block_Definition:block" target="Blocks:Block"/>
+		<Rule mappingType="1" source="SysML_Block_Definition:dataType"/>
+		<Rule mappingType="1" source="SysML_Block_Definition:Dependency"/>
+		<Rule mappingType="4" source="SysML_Block_Definition:dimension" target="Blocks:Dimension" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="1" source="SysML_Block_Definition:enumeration"/>
+		<Rule mappingType="1" source="SysML_Block_Definition:Generalize"/>
+		<Rule mappingType="1" source="SysML_Block_Definition:Nesting"/>
+		<Rule mappingType="1" source="SysML_Block_Definition:PartAssociation"/>
+		<Rule mappingType="1" source="SysML_Block_Definition:ReferenceAssociation"/>
+		<Rule mappingType="1" source="SysML_Block_Definition:SharedAssociation"/>
+		<Rule mappingType="4" source="SysML_Block_Definition:unit" target="Blocks:Unit" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="4" source="SysML_Block_Definition:valueType" target="Blocks:ValueType" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="1" source="SysML_Block_Internal:ActorPart"/>
+		<Rule mappingType="1" source="SysML_Block_Internal:BlockProperty"/>
+		<Rule mappingType="1" source="SysML_Block_Internal:Connector"/>
+		<Rule mappingType="1" source="SysML_Block_Internal:Dependency"/>
+		<Rule mappingType="1" source="SysML_Block_Internal:InternalProperty"/>
+		<Rule mappingType="2" source="SysML_Flows:flowPort" target="Ports_Flows:FlowPort"/>
+		<Rule mappingType="2" source="SysML_Flows:flowProperty" target="Ports_Flows:FlowProperty"/>
+		<Rule mappingType="2" source="SysML_Flows:flowSpecification" target="Ports_Flows:FlowSpecification"/>
+		<Rule mappingType="1" source="SysML_Flows:itemFlow"/>
+		<Rule mappingType="1" source="SysML_Flows:Port"/>
+		<Rule mappingType="1" source="SysML_Model_Elements:Constraint"/>
+		<Rule mappingType="1" source="SysML_Model_Elements:Dependency"/>
+		<Rule mappingType="1" source="SysML_Model_Elements:model"/>
+		<Rule mappingType="1" source="SysML_Model_Elements:Nesting"/>
+		<Rule mappingType="1" source="SysML_Model_Elements:Note"/>
+		<Rule mappingType="1" source="SysML_Model_Elements:Package"/>
+		<Rule mappingType="1" source="SysML_Model_Elements:PackageImport"/>
+		<Rule mappingType="2" source="SysML_Model_Elements:problem" target="ModelElements:Problem"/>
+		<Rule mappingType="2" source="SysML_Model_Elements:rationale" target="ModelElements:Rationale"/>
+		<Rule mappingType="1" source="SysML_Model_Elements:Realization"/>
+		<Rule mappingType="4" source="SysML_Model_Elements:refine" target="UML_Standard_Profile:refine" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML_Parametric:constraintBlock" target="ConstraintBlocks:ConstraintBlock"/>
+		<Rule mappingType="2" source="SysML_Parametric:constraintProperty" target="ConstraintBlocks:ConstraintProperty"/>
+		<Rule mappingType="1" source="SysML_Parametric:internalProperty"/>
+		<Rule mappingType="1" source="SysML_Parametric:moe"/>
+		<Rule mappingType="2" source="SysML_Parametric:objectiveFunction" target="Non_Normative_Extensions:objectiveFunction"/>
+		<Rule mappingType="4" source="SysML_Requirements:copy" target="Requirements:Copy" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML_Requirements:derive" target="Requirements:DeriveReqt" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="1" source="SysML_Requirements:designRequirement"/>
+		<Rule mappingType="4" source="SysML_Requirements:extendedRequirement" target="Non_Normative_Extensions:extendedRequirement" sourceMetaClass="Requirement" targetMetaClass="Class"/>
+		<Rule mappingType="4" source="SysML_Requirements:functionalRequirement" target="Non_Normative_Extensions:functionalRequirement" sourceMetaClass="Requirement" targetMetaClass="Class"/>
+		<Rule mappingType="4" source="SysML_Requirements:interfaceRequirement" target="Non_Normative_Extensions:interfaceRequirement" sourceMetaClass="Requirement" targetMetaClass="Class"/>
+		<Rule mappingType="4" source="SysML_Requirements:performanceRequirement" target="Non_Normative_Extensions:performanceRequirement" sourceMetaClass="Requirement" targetMetaClass="Class"/>
+		<Rule mappingType="4" source="SysML_Requirements:physicalRequirement" target="Non_Normative_Extensions:physicalRequirement" sourceMetaClass="Requirement" targetMetaClass="Class"/>
+		<Rule mappingType="4" source="SysML_Requirements:refine" target="UML_Standard_Profile:refine" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML_Requirements:requirement" target="Requirements:Requirement" sourceMetaClass="Requirement" targetMetaClass="Class"/>
+		<Rule mappingType="4" source="SysML_Requirements:satisfy" target="Requirements:Satisfy" sourceMetaClass="Realisation" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML_Requirements:testCase" target="Requirements:TestCase" sourceMetaClass="Requirement" targetMetaClass="Class">
+			<tag name="Verdict" action="remove"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML_Requirements:trace" target="UML_Standard_Profile:trace" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML_Requirements:verify" target="Requirements:Verify" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="1" source="SysML_Use_Case:Actor"/>
+		<Rule mappingType="1" source="SysML_Use_Case:Associate"/>
+		<Rule mappingType="1" source="SysML_Use_Case:Boundary"/>
+		<Rule mappingType="1" source="SysML_Use_Case:Dependency"/>
+		<Rule mappingType="1" source="SysML_Use_Case:Extend"/>
+		<Rule mappingType="1" source="SysML_Use_Case:Generalize"/>
+		<Rule mappingType="1" source="SysML_Use_Case:Include"/>
+		<Rule mappingType="1" source="SysML_Use_Case:Realize"/>
+		<Rule mappingType="1" source="SysML_Use_Case:Use_Case"/>
+		<Rule mappingType="2" source="SysML_Views:conform" target="ModelElements:Conform"/>
+		<Rule mappingType="2" source="SysML_Views:view" target="ModelElements:View">
+			<tag name="concerns" action="remove"/>
+			<tag name="languages" action="remove"/>
+			<tag name="methods" action="remove"/>
+			<tag name="purpose" action="remove"/>
+			<tag name="stakeholders" action="remove"/>
+		</Rule>
+	</Rules>
+	<Rules>
+		<!-- ..............Activity Diagram................ -->
+		<!-- Unknown -->
+		<Rule mappingType="1" source="SysML1.1:ActivityEdge"/>
+		<Rule mappingType="1" source="SysML1.1:dataType"/>
+		<Rule mappingType="1" source="SysML1.1:ObjectNode"/>
+		<Rule mappingType="1" source="SysML1.1:property"/>
+		<Rule mappingType="1" source="SysML1.1:ElementImport"/>
+		
+		<!-- Activity -->
+		<Rule mappingType="2" source="SysML1.1:effbd" target="sysml:effbd"/>
+		<Rule mappingType="2" source="SysML1.1:streaming" target="sysml:streaming"/>
+		<Rule mappingType="2" source="SysML1.1:nonStreaming" target="sysml:nonStreaming"/>
+		<Rule mappingType="2" source="SysML1.1:testCase" target="sysml:TestCase">
+			<tag name="Verdict" action="remove"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.1:controlOperator" target="sysml:ControlOperator"/>
+		
+		<!-- ActivityEdge -->
+		<Rule mappingType="2" source="SysML1.1:continuous" target="sysml:Continuous"/>
+		<Rule mappingType="2" source="SysML1.1:discrete" target="sysml:Discrete"/>
+		<Rule mappingType="5" source="SysML1.1:probability" target="sysml:Probability">
+			<custom sourceMetaClass="ActivityParameter" targetMetaClass="Parameter" suffix="_Parameter"/>
+		</Rule>
+		<!--
+		<Rule mappingType="5" source="SysML1.1:continuous" target="sysml:Continuous">
+			<metaClass name="ControlFlow" action="convert"/>
+			<metaClass name="ObjectFlow" action="convert"/>
+			<metaClass name="ObjectNode" action="convert"/>
+			<metaClass name="Parameter" action="convert"/>
+			<metaClass name="ActivityParameter" action="convert"/>
+		</Rule>
+		<Rule mappingType="5" source="SysML1.1:discrete" target="sysml:Discrete">
+			<metaClass name="ControlFlow" action="convert"/>
+			<metaClass name="ObjectFlow" action="convert"/>
+			<metaClass name="ObjectNode" action="convert"/>
+			<metaClass name="Parameter" action="convert"/>
+			<metaClass name="ActivityParameter" action="convert"/>
+		</Rule>
+		<Rule mappingType="5" source="SysML1.1:probability" target="sysml:Probability">
+			<metaClass name="ControlFlow" action="convert"/>
+			<metaClass name="ObjectFlow" action="convert"/>
+			<metaClass name="ObjectNode" action="convert"/>
+			<metaClass name="Parameter" action="convert"/>
+			<metaClass name="ActivityParameter" action="convert"/>
+		</Rule>
+		-->
+		<Rule mappingType="4" source="SysML1.1:rate" target="sysml:Rate" sourceMetaClass="Element" targetMetaClass="ActivityEdge"/>
+		
+		<!-- ActivityPartition -->
+		<Rule mappingType="2" source="SysML1.1:allocateActivityPartition" target="sysml:AllocateActivityPartition"/>
+		
+		<!-- Class -->
+		<Rule mappingType="2" source="SysML1.1:block" target="sysml:Block"/>
+		<Rule mappingType="2" source="SysML1.1:constraintBlock" target="sysml:ConstraintBlock"/>
+		<Rule mappingType="2" source="SysML1.1:designConstraint" target="sysml:designConstraint"/>
+		<Rule mappingType="2" source="SysML1.1:extendedRequirement" target="sysml:extendedRequirement"/>
+		<Rule mappingType="2" source="SysML1.1:functionalRequirement" target="sysml:functionalRequirement"/>
+		<Rule mappingType="2" source="SysML1.1:interfaceRequirement" target="sysml:interfaceRequirement"/>
+		<Rule mappingType="2" source="SysML1.1:performanceRequirement" target="sysml:performanceRequirement"/>
+		<Rule mappingType="2" source="SysML1.1:physicalRequirement" target="sysml:physicalRequirement"/>
+		<Rule mappingType="2" source="SysML1.1:requirement" target="sysml:Requirement">
+			<tag name="id" action="remove"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.1:valueType" target="sysml:ValueType"  sourceMetaClass="Class" targetMetaClass="DataType">
+			<tag name="unit" action="remove"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.1:viewpoint" target="sysml:Viewpoint"/>
+		
+		<!-- Comment -->
+		<Rule mappingType="2" source="SysML1.1:rationale" target="sysml:Rationale"/>
+		<Rule mappingType="2" source="SysML1.1:problem" target="sysml:Problem"/>
+		
+		<!-- Dependency -->
+		<Rule mappingType="2" source="SysML1.1:conform" target="sysml:Conform"/>
+		<Rule mappingType="4" source="SysML1.1:copy" target="sysml:Copy" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML1.1:allocate" target="sysml:Allocate" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML1.1:satisfy" target="sysml:Satisfy" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML1.1:verify" target="sysml:Verify" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML1.1:deriveReqt" target="sysml:DeriveReqt" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML1.1:refine" target="StandardProfileL2:refine" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML1.1:trace" target="StandardProfileL2:trace" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		
+		<!-- InformationFlow -->
+		<Rule mappingType="2" source="SysML1.1:itemFlow" target="sysml:ItemFlow"/>
+		
+		<!-- InstanceSpecification -->
+		<Rule mappingType="2" source="SysML1.1:unit" target="sysml:Unit">
+			<tag name="dimension" action="remove"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.1:dimension" target="sysml:QuantityKind"/>
+		
+		<!-- Interface -->
+		<Rule mappingType="2" source="SysML1.1:flowSpecification" target="sysml:FlowSpecification"/>
+		
+		<!-- NamedElement -->
+		<Rule mappingType="2" source="SysML1.1:allocated" target="sysml:Allocated"/>
+		<Rule mappingType="2" source="SysML1.1:RequirementRelated" target="sysml:RequirementRelated"/>
+		
+		<!-- ObjectNode -->
+		<Rule mappingType="3" source="SysML1.1:noBuffer" target="sysml:NoBuffer">
+			<metaClass name="ObjectNode" action="convert"/>
+			<metaClass name="InstanceSpecification" action="remove"/>
+		</Rule>
+		<Rule mappingType="3" source="SysML1.1:overwrite" target="sysml:Overwrite">
+			<metaClass name="ObjectNode" action="convert"/>
+			<metaClass name="InstanceSpecification" action="remove"/>
+		</Rule>
+		
+		<!-- Package -->
+		<Rule mappingType="2" source="SysML1.1:model" target="sysml:model"/>
+		<Rule mappingType="2" source="SysML1.1:view" target="sysml:View"/>
+		
+		<!-- Parameter -->
+		<Rule mappingType="4" source="SysML1.1:optional" target="sysml:Optional" sourceMetaClass="ActivityParameter" targetMetaClass="Parameter">
+			<custom suffix="_Parameter"/>
+		</Rule>
+		
+		<!-- Port -->
+		<Rule mappingType="2" source="SysML1.1:flowPort" target="sysml:FlowPort">
+			<tag name="unit" action="isConjugated"/>
+		</Rule>
+		
+		<!-- Property -->
+		<Rule mappingType="4" source="SysML1.1:connectorProperty" target="sysml:ConnectorProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.1:constraintProperty" target="sysml:ConstraintProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.1:distributedProperty" target="sysml:DistributedProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.1:flowProperty" target="sysml:FlowProperty" sourceMetaClass="Element" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.1:moe" target="sysml:moe" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.1:objectiveFunction" target="sysml:objectiveFunction" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.1:participantProperty" target="sysml:ParticipantProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+	</Rules>
+	<!-- 
+		Rules for mampping SysML 1.2 
+	-->
+	<Rules>
+		<Rule mappingType="1" source="SysML1.2:ActivityEdge"/>
+		<Rule mappingType="4" source="SysML1.2:allocate" target="sysml:Allocate" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML1.2:allocateActivityPartition" target="sysml:AllocateActivityPartition"/>
+		<!-- rule for allocated -->
+		<Rule mappingType="2" source="SysML1.2:block" target="sysml:Block"/>
+		<Rule mappingType="2" source="SysML1.2:conform" target="sysml:Conform"/>
+		<Rule mappingType="4" source="SysML1.2:connectorProperty" target="sysml:ConnectorProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.2:constraintBlock" target="sysml:ConstraintBlock">
+			<tag name="isEncapsulated" action="remove"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.2:constraintProperty" target="sysml:ConstraintProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<!-- rule for continuous -->
+		<Rule mappingType="2" source="SysML1.2:controlOperator" target="sysml:ControlOperator"/>
+		<Rule mappingType="4" source="SysML1.2:copy" target="sysml:Copy" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML1.2:deriveReqt" target="sysml:DeriveReqt" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML1.2:designConstraint" target="sysml:designConstraint"/>
+		<!-- rule for discrete -->
+		<Rule mappingType="4" source="SysML1.2:distributedProperty" target="sysml:DistributedProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.2:effbd" target="sysml:effbd"/>
+		<Rule mappingType="1" source="SysML1.2:ElementImport"/>
+		<Rule mappingType="2" source="SysML1.2:extendedRequirement" target="sysml:extendedRequirement"/>
+		<Rule mappingType="2" source="SysML1.2:flowPort" target="sysml:FlowPort"/>
+		<Rule mappingType="4" source="SysML1.2:flowProperty" target="sysml:FlowProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.2:flowSpecification" target="sysml:FlowSpecification"/>
+		<Rule mappingType="2" source="SysML1.2:functionalRequirement" target="sysml:functionalRequirement"/>
+		<Rule mappingType="2" source="SysML1.2:interfaceRequirement" target="sysml:interfaceRequirement"/>
+		<Rule mappingType="2" source="SysML1.2:itemFlow" target="sysml:ItemFlow"/>
+		<Rule mappingType="1" source="SysML1.2:model"/>
+		<Rule mappingType="4" source="SysML1.2:moe" target="sysml:moe" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="3" source="SysML1.2:noBuffer" target="sysml:NoBuffer">
+			<metaClass name="ObjectNode" action="convert"/>
+			<metaClass name="InstanceSpecification" action="remove"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.2:nonStreaming" target="sysml:nonStreaming"/>
+		<Rule mappingType="4" source="SysML1.2:objectiveFunction" target="sysml:objectiveFunction" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="1" source="SysML1.2:ObjectNode"/>
+		<Rule mappingType="4" source="SysML1.2:optional" target="sysml:Optional" sourceMetaClass="Element" targetMetaClass="Parameter"/>
+		<Rule mappingType="3" source="SysML1.2:overwrite" target="sysml:Overwrite">
+			<metaClass name="ObjectNode" action="convert"/>
+			<metaClass name="InstanceSpecification" action="remove"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.2:participantProperty" target="sysml:ParticipantProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.2:performanceRequirement" target="sysml:performanceRequirement"/>
+		<Rule mappingType="2" source="SysML1.2:physicalRequirement" target="sysml:physicalRequirement"/>
+		<!-- rule for Probability -->
+		<Rule mappingType="2" source="SysML1.2:problem" target="sysml:Problem"/>
+		<Rule mappingType="1" source="SysML1.2:property"/>
+		<Rule mappingType="2" source="SysML1.2:quantityKind" target="sysml:QuantityKind"/>
+		<!-- rule for Rate -->
+		<Rule mappingType="2" source="SysML1.2:rationale" target="sysml:Rationale"/>
+		<Rule mappingType="4" source="SysML1.2:refine" target="StandardProfileL2:Refine" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML1.2:requirement" target="sysml:Requirement"/>
+		<Rule mappingType="2" source="SysML1.2:RequirementRelated" target="sysml:RequirementRelated"/>
+		<Rule mappingType="4" source="SysML1.2:satisfy" target="sysml:Satisfy" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML1.2:streaming" target="sysml:streaming"/>
+		<Rule mappingType="2" source="SysML1.2:testCase" target="sysml:TestCase">
+			<tag name="Verdict" action="remove"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.2:trace" target="StandardProfileL2:trace" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML1.2:unit" target="sysml:Unit"/>
+		<Rule mappingType="4" source="SysML1.2:valueType" target="sysml:ValueType" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="4" source="SysML1.2:verify" target="sysml:Verify" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML1.2:view" target="sysml:View"/>
+		<Rule mappingType="2" source="SysML1.2:viewpoint" target="sysml:Viewpoint"/>
+	</Rules>
+	<!-- 
+		Rules for mampping SysML 1.3 
+	-->
+	<Rules>
+		<Rule mappingType="1" source="SysML1.3:ActivityEdge"/>
+		<Rule mappingType="2" source="SysML1.3:allocate" target="sysml:Allocate"/>
+		<Rule mappingType="2" source="SysML1.3:allocateActivityPartition" target="sysml:AllocateActivityPartition"/>
+		<!-- rule for allocated -->
+		<Rule mappingType="2" source="SysML1.3:BindingConnector" target="sysml:BindingConnector"/>
+		<Rule mappingType="2" source="SysML1.3:block" target="sysml:Block"/>
+		<Rule mappingType="2" source="SysML1.3:conform" target="sysml:Conform"/>
+		<Rule mappingType="4" source="SysML1.3:connectorProperty" target="sysml:ConnectorProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.3:constraintBlock" target="sysml:ConstraintBlock">
+			<tag name="isEncapsulated" action="remove"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.3:constraintProperty" target="sysml:ConstraintProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<!-- rule for continuous -->
+		<Rule mappingType="2" source="SysML1.3:controlOperator" target="sysml:ControlOperator"/>
+		<Rule mappingType="4" source="SysML1.3:copy" target="sysml:Copy" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="4" source="SysML1.3:deriveReqt" target="sysml:DeriveReqt" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML1.3:designConstraint" target="sysml:designConstraint"/>
+		<!-- rule for discrete -->
+		<Rule mappingType="4" source="SysML1.3:distributedProperty" target="sysml:DistributedProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.3:effbd" target="sysml:effbd"/>
+		<Rule mappingType="1" source="SysML1.3:ElementImport"/>
+		<Rule mappingType="2" source="SysML1.3:extendedRequirement" target="sysml:extendedRequirement"/>
+		<Rule mappingType="2" source="SysML1.3:FlowPort" target="sysml:FlowPort"/>
+		<Rule mappingType="4" source="SysML1.3:FlowProperty" target="sysml:FlowProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.3:flowSpecification" target="sysml:FlowSpecification"/>
+		<Rule mappingType="2" source="SysML1.3:FullPort" target="sysml:FullPort"/>
+		<Rule mappingType="2" source="SysML1.3:functionalRequirement" target="sysml:functionalRequirement"/>
+		<Rule mappingType="2" source="SysML1.3:InterfaceBlock" target="sysml:InterfaceBlock"/>
+		<Rule mappingType="2" source="SysML1.3:interfaceRequirement" target="sysml:interfaceRequirement"/>
+		<Rule mappingType="2" source="SysML1.3:itemFlow" target="sysml:ItemFlow"/>
+		<Rule mappingType="1" source="SysML1.3:model"/>
+		<Rule mappingType="4" source="SysML1.3:moe" target="sysml:moe" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="3" source="SysML1.3:noBuffer" target="sysml:NoBuffer">
+			<metaClass name="ObjectNode" action="convert"/>
+			<metaClass name="InstanceSpecification" action="remove"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.3:nonStreaming" target="sysml:nonStreaming"/>
+		<Rule mappingType="4" source="SysML1.3:objectiveFunction" target="sysml:objectiveFunction" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="1" source="SysML1.3:ObjectNode"/>
+		<Rule mappingType="4" source="SysML1.3:optional" target="sysml:Optional" sourceMetaClass="Element" targetMetaClass="Parameter"/>
+		<Rule mappingType="3" source="SysML1.3:overwrite" target="sysml:Overwrite">
+			<metaClass name="ObjectNode" action="convert"/>
+			<metaClass name="InstanceSpecification" action="remove"/>
+		</Rule>
+		<Rule mappingType="4" source="SysML1.3:participantProperty" target="sysml:ParticipantProperty" sourceMetaClass="Class" targetMetaClass="Property">
+			<custom suffix="property"/>
+		</Rule>
+		<Rule mappingType="2" source="SysML1.3:performanceRequirement" target="sysml:performanceRequirement"/>
+		<Rule mappingType="2" source="SysML1.3:physicalRequirement" target="sysml:physicalRequirement"/>
+		<!-- rule for probability -->
+		<Rule mappingType="2" source="SysML1.3:problem" target="sysml:Problem"/>
+		<Rule mappingType="2" source="SysML1.3:ProxyPort" target="sysml:ProxyPort"/>
+		<Rule mappingType="2" source="SysML1.3:quantityKind" target="sysml:QuantityKind"/>
+		<!-- rule for rate -->
+		<Rule mappingType="2" source="SysML1.3:rationale" target="sysml:Rationale"/>
+		<Rule mappingType="4" source="SysML1.3:refine" target="StandardProfileL2:Refine" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML1.3:requirement" target="sysml:Requirement"/>
+		<Rule mappingType="4" source="SysML1.3:RequirementRelated" target="sysml:RequirementRelated" sourceMetaClass="Element" targetMetaClass="NamedElement"/>
+		<Rule mappingType="4" source="SysML1.3:satisfy" target="sysml:Satisfy" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML1.3:streaming" target="sysml:streaming"/>
+		<Rule mappingType="2" source="SysML1.3:testCase" target="sysml:TestCase"/>
+		<Rule mappingType="4" source="SysML1.3:trace" target="StandardProfileL2:trace" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML1.3:unit" target="sysml:Unit"/>
+		<Rule mappingType="2" source="SysML1.3:ValueType" target="sysml:ValueType"/>
+		<Rule mappingType="4" source="SysML1.3:verify" target="sysml:Verify" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="SysML1.3:view" target="sysml:View"/>
+		<Rule mappingType="2" source="SysML1.3:viewpoint" target="sysml:Viewpoint"/>
+	</Rules>
+	<!-- 
+		Rules for mapping UPDM 2.0
+	-->
+	<Rules>
+		<Rule mappingType="2" source="UPDM2:ActivityPartOfCapability" target="UPDM_Profile:ActivityPartOfCapability"/>
+		<Rule mappingType="2" source="UPDM2:ActivityPartOfProject" target="UPDM_Profile:ActivityPartOfProject"/>
+		<Rule mappingType="2" source="UPDM2:ActivityPerformedByPerformer" target="UPDM_Profile:ActivityPerformedByPerformer"/>
+		<Rule mappingType="2" source="UPDM2:ActualLocation" target="UPDM_Profile:ActualLocation"/>
+		<Rule mappingType="2" source="UPDM2:ActualOrganization" target="UPDM_Profile:ActualOrganization"/>
+		<Rule mappingType="2" source="UPDM2:ActualOrganizationRelationship" target="UPDM_Profile:ActualOrganizationRelationship"/>
+		<Rule mappingType="2" source="UPDM2:ActualPerson" target="UPDM_Profile:ActualPerson"/>
+		<Rule mappingType="2" source="UPDM2:ActualPost" target="UPDM_Profile:ActualPost"/>
+		<Rule mappingType="2" source="UPDM2:ActualProject" target="UPDM_Profile:ActualProject"/>
+		<Rule mappingType="2" source="UPDM2:ActualProjectMilestone" target="UPDM_Profile:ActualProjectMilestone"/>
+		<Rule mappingType="2" source="UPDM2:ActualPropertySet" target="UPDM_Profile:ActualPropertySet"/>
+		<Rule mappingType="2" source="UPDM2:Alias" target="UPDM_Profile:Alias"/>
+		<Rule mappingType="2" source="UPDM2:ArbitraryConnector" target="UPDM_Profile:ArbitraryConnector"/>
+		<Rule mappingType="2" source="UPDM2:ArchitecturalDescription" target="UPDM_Profile:ArchitecturalDescription"/>
+		<Rule mappingType="2" source="UPDM2:ArchitecturalReference" target="UPDM_Profile:ArchitecturalReference"/>
+		<Rule mappingType="2" source="UPDM2:ArchitectureMetadata" target="UPDM_Profile:ArchitectureMetadata"/>
+		<Rule mappingType="2" source="UPDM2:AssociationOfInformation" target="UPDM_Profile:AssociationOfInformation"/>
+		<Rule mappingType="2" source="UPDM2:AsynchronousMessage" target="UPDM_Profile:AsynchronousMessage"/>
+		<Rule mappingType="2" source="UPDM2:Capability" target="UPDM_Profile:Capability"/>
+		<Rule mappingType="2" source="UPDM2:CapabilityConfiguration" target="UPDM_Profile:CapabilityConfiguration"/>
+		<Rule mappingType="2" source="UPDM2:CapabilityOfPerformer" target="UPDM_Profile:CapabilityOfPerformer"/>
+		<Rule mappingType="2" source="UPDM2:CapabilityProperty" target="UPDM_Profile:CapabilityProperty"/>
+		<Rule mappingType="4" source="UPDM2:Climate" target="UPDM_Profile:Climate" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="2" source="UPDM2:Command" target="UPDM_Profile:Command"/>
+		<Rule mappingType="2" source="UPDM2:Competence" target="UPDM_Profile:Competence"/>
+		<Rule mappingType="2" source="UPDM2:ConceptRole" target="UPDM_Profile:ConceptRole"/>
+		<Rule mappingType="4" source="UPDM2:Condition" target="UPDM_Profile:Condition" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="2" source="UPDM2:ConditionProperty" target="UPDM_Profile:ConditionProperty"/>
+		<Rule mappingType="2" source="UPDM2:Control" target="UPDM_Profile:Control"/>
+		<Rule mappingType="2" source="UPDM2:Definition" target="UPDM_Profile:Definition"/>
+		<Rule mappingType="2" source="UPDM2:DeployedMilestone" target="UPDM_Profile:DeployedMilestone"/>
+		<Rule mappingType="2" source="UPDM2:DesiredEffect" target="UPDM_Profile:DesiredEffect"/>
+		<Rule mappingType="2" source="UPDM2:Details" target="UPDM_Profile:Details"/>
+		<Rule mappingType="2" source="UPDM2:EnduringTask" target="UPDM_Profile:EnduringTask"/>
+		<Rule mappingType="2" source="UPDM2:Energy" target="UPDM_Profile:Energy"/>
+		<Rule mappingType="2" source="UPDM2:EnterpriseGoal" target="UPDM_Profile:EnterpriseGoal"/>
+		<Rule mappingType="2" source="UPDM2:EnterprisePhase" target="UPDM_Profile:EnterprisePhase"/>
+		<Rule mappingType="2" source="UPDM2:EnterpriseVision" target="UPDM_Profile:EnterpriseVision"/>
+		<Rule mappingType="2" source="UPDM2:EntityAttribute" target="UPDM_Profile:EntityAttribute"/>
+		<Rule mappingType="2" source="UPDM2:EntityItem" target="UPDM_Profile:EntityItem"/>
+		<Rule mappingType="2" source="UPDM2:EntityRelationship" target="UPDM_Profile:EntityRelationship"/>
+		<Rule mappingType="4" source="UPDM2:Environment" target="UPDM_Profile:Environment" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="2" source="UPDM2:EnvironmentProperty" target="UPDM_Profile:EnvironmentProperty"/>
+		<Rule mappingType="2" source="UPDM2:ExchangeElement" target="UPDM_Profile:ExchangeElement"/>
+		<Rule mappingType="2" source="UPDM2:Exhibits" target="UPDM_Profile:Exhibits"/>
+		<Rule mappingType="2" source="UPDM2:ExternalIndividual" target="UPDM_Profile:ExternalIndividual"/>
+		<Rule mappingType="2" source="UPDM2:ExternalTuple" target="UPDM_Profile:ExternalTuple"/>
+		<Rule mappingType="2" source="UPDM2:ExternalTupleType" target="UPDM_Profile:ExternalTupleType"/>
+		<Rule mappingType="2" source="UPDM2:ExternalType" target="UPDM_Profile:ExternalType"/>
+		<Rule mappingType="2" source="UPDM2:FieldedCapability" target="UPDM_Profile:FieldedCapability"/>
+		<Rule mappingType="2" source="UPDM2:FillsPost" target="UPDM_Profile:FillsPost"/>
+		<Rule mappingType="2" source="UPDM2:Forecast" target="UPDM_Profile:Forecast"/>
+		<Rule mappingType="2" source="UPDM2:Function" target="UPDM_Profile:Function"/>
+		<Rule mappingType="2" source="UPDM2:FunctionAction" target="UPDM_Profile:FunctionAction"/>
+		<Rule mappingType="2" source="UPDM2:FunctionalStandard" target="UPDM_Profile:FunctionalStandard"/>
+		<Rule mappingType="4" source="UPDM2:FunctionEdge" target="UPDM_Profile:FunctionEdge" sourceMetaClass="ControlFlow" targetMetaClass="ActivityEdge"/>
+		<Rule mappingType="2" source="UPDM2:GeoPoliticalExtent" target="UPDM_Profile:GeoPoliticalExtent"/>
+		<Rule mappingType="4" source="UPDM2:GeoPoliticalExtentType" target="UPDM_Profile:GeoPoliticalExtentType" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="2" source="UPDM2:HighLevelOperationalConcept" target="UPDM_Profile:HighLevelOperationalConcept"/>
+		<Rule mappingType="4" source="UPDM2:Implements" target="UPDM_Profile:Implements" sourceMetaClass="Dependency" targetMetaClass="Abstraction"/>
+		<Rule mappingType="2" source="UPDM2:IncrementMilestone" target="UPDM_Profile:IncrementMilestone"/>
+		<Rule mappingType="2" source="UPDM2:IndividualPersonRole" target="UPDM_Profile:IndividualPersonRole"/>
+		<Rule mappingType="2" source="UPDM2:Information" target="UPDM_Profile:Information"/>
+		<Rule mappingType="2" source="UPDM2:IsCapableOfPerforming" target="UPDM_Profile:IsCapableOfPerforming"/>
+		<Rule mappingType="2" source="UPDM2:KnownResource" target="UPDM_Profile:KnownResource"/>
+		<Rule mappingType="4" source="UPDM2:LightCondition" target="UPDM_Profile:LightCondition" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="2" source="UPDM2:Location" target="UPDM_Profile:Location"/>
+		<Rule mappingType="4" source="UPDM2:LocationType" target="UPDM_Profile:LocationType" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="2" source="UPDM2:LogicalArchitecture" target="UPDM_Profile:LogicalArchitecture"/>
+		<Rule mappingType="2" source="UPDM2:LogicalDataModel" target="UPDM_Profile:LogicalDataModel"/>
+		<Rule mappingType="2" source="UPDM2:MapsToCapability" target="UPDM_Profile:MapsToCapability"/>
+		<Rule mappingType="2" source="UPDM2:Materiel" target="UPDM_Profile:Materiel"/>
+		<Rule mappingType="2" source="UPDM2:Measure" target="UPDM_Profile:Measure"/>
+		<Rule mappingType="2" source="UPDM2:Measurement" target="UPDM_Profile:Measurement"/>
+		<Rule mappingType="4" source="UPDM2:MeasurementSet" target="UPDM_Profile:MeasurementSet" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="4" source="UPDM2:MeasureType" target="UPDM_Profile:MeasureType" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="2" source="UPDM2:Metadata" target="UPDM_Profile:Metadata"/>
+		<Rule mappingType="2" source="UPDM2:MilestoneSequence" target="UPDM_Profile:MilestoneSequence"/>
+		<Rule mappingType="2" source="UPDM2:Mission" target="UPDM_Profile:Mission"/>
+		<Rule mappingType="2" source="UPDM2:Needline" target="UPDM_Profile:Needline"/>
+		<Rule mappingType="2" source="UPDM2:Node" target="UPDM_Profile:Node"/>
+		<Rule mappingType="2" source="UPDM2:NodeOperation" target="UPDM_Profile:NodeOperation"/>
+		<Rule mappingType="2" source="UPDM2:NodePort" target="UPDM_Profile:NodePort"/>
+		<Rule mappingType="2" source="UPDM2:NodeRole" target="UPDM_Profile:NodeRole"/>
+		<Rule mappingType="2" source="UPDM2:NoLongerUsedMilestone" target="UPDM_Profile:NoLongerUsedMilestone"/>
+		<Rule mappingType="2" source="UPDM2:OperationalActivity" target="UPDM_Profile:OperationalActivity"/>
+		<Rule mappingType="2" source="UPDM2:OperationalActivityAction" target="UPDM_Profile:OperationalActivityAction"/>
+		<Rule mappingType="4" source="UPDM2:OperationalActivityEdge" target="UPDM_Profile:OperationalActivityEdge" sourceMetaClass="ControlFlow" targetMetaClass="ActivityEdge"/>
+		<Rule mappingType="2" source="UPDM2:OperationalEventTrace" target="UPDM_Profile:OperationalEventTrace"/>
+		<Rule mappingType="2" source="UPDM2:OperationalExchange" target="UPDM_Profile:OperationalExchange"/>
+		<Rule mappingType="2" source="UPDM2:OperationalMessage" target="UPDM_Profile:OperationalMessage"/>
+		<Rule mappingType="4" source="UPDM2:OperationalParameter" target="UPDM_Profile:OperationalParameter" sourceMetaClass="ActivityParameter" targetMetaClass="Parameter"/>
+		<Rule mappingType="2" source="UPDM2:OperationalState" target="UPDM_Profile:OperationalState"/>
+		<Rule mappingType="2" source="UPDM2:OperationalStateDescription" target="UPDM_Profile:OperationalStateDescription"/>
+		<Rule mappingType="2" source="UPDM2:Organization" target="UPDM_Profile:Organization"/>
+		<Rule mappingType="2" source="UPDM2:OrganizationalProjectRelationship" target="UPDM_Profile:OrganizationalProjectRelationship"/>
+		<Rule mappingType="2" source="UPDM2:OrganizationType" target="UPDM_Profile:OrganizationType"/>
+		<Rule mappingType="2" source="UPDM2:OutOfServiceMilestone" target="UPDM_Profile:OutOfServiceMilestone"/>
+		<Rule mappingType="2" source="UPDM2:Overlap" target="UPDM_Profile:Overlap"/>
+		<Rule mappingType="2" source="UPDM2:OwnsProcess" target="UPDM_Profile:OwnsProcess"/>
+		<Rule mappingType="2" source="UPDM2:Performer" target="UPDM_Profile:Performer"/>
+		<Rule mappingType="2" source="UPDM2:Person" target="UPDM_Profile:Person"/>
+		<Rule mappingType="2" source="UPDM2:PersonType" target="UPDM_Profile:PersonType"/>
+		<Rule mappingType="2" source="UPDM2:PhysicalArchitecture" target="UPDM_Profile:PhysicalArchitecture"/>
+		<Rule mappingType="2" source="UPDM2:PhysicalDataModel" target="UPDM_Profile:PhysicalDataModel"/>
+		<Rule mappingType="2" source="UPDM2:Post" target="UPDM_Profile:Post"/>
+		<Rule mappingType="2" source="UPDM2:ProblemDomain" target="UPDM_Profile:ProblemDomain"/>
+		<Rule mappingType="2" source="UPDM2:Project" target="UPDM_Profile:Project"/>
+		<Rule mappingType="2" source="UPDM2:ProjectActivity" target="UPDM_Profile:ProjectActivity"/>
+		<Rule mappingType="2" source="UPDM2:ProjectMilestone" target="UPDM_Profile:ProjectMilestone"/>
+		<Rule mappingType="2" source="UPDM2:ProjectMilestoneRole" target="UPDM_Profile:ProjectMilestoneRole"/>
+		<Rule mappingType="2" source="UPDM2:ProjectOwnership" target="UPDM_Profile:ProjectOwnership"/>
+		<Rule mappingType="2" source="UPDM2:ProjectSequence" target="UPDM_Profile:ProjectSequence"/>
+		<Rule mappingType="2" source="UPDM2:ProjectTheme" target="UPDM_Profile:ProjectTheme"/>
+		<Rule mappingType="2" source="UPDM2:ProjectType" target="UPDM_Profile:ProjectType"/>
+		<Rule mappingType="2" source="UPDM2:Property" target="UPDM_Profile:Property"/>
+		<Rule mappingType="2" source="UPDM2:Protocol" target="UPDM_Profile:Protocol"/>
+		<Rule mappingType="2" source="UPDM2:ProtocolLayer" target="UPDM_Profile:ProtocolLayer"/>
+		<Rule mappingType="2" source="UPDM2:ProvidesCompetence" target="UPDM_Profile:ProvidesCompetence"/>
+		<Rule mappingType="2" source="UPDM2:Request" target="UPDM_Profile:Request"/>
+		<Rule mappingType="2" source="UPDM2:RequiresCompetence" target="UPDM_Profile:RequiresCompetence"/>
+		<Rule mappingType="2" source="UPDM2:ResourceArtifact" target="UPDM_Profile:ResourceArtifact"/>
+		<Rule mappingType="2" source="UPDM2:ResourceConnector" target="UPDM_Profile:ResourceConnector"/>
+		<Rule mappingType="2" source="UPDM2:ResourceConstraint" target="UPDM_Profile:ResourceConstraint"/>
+		<Rule mappingType="2" source="UPDM2:ResourceEventTrace" target="UPDM_Profile:ResourceEventTrace"/>
+		<Rule mappingType="2" source="UPDM2:ResourceInteraction" target="UPDM_Profile:ResourceInteraction"/>
+		<Rule mappingType="2" source="UPDM2:ResourceInterface" target="UPDM_Profile:ResourceInterface"/>
+		<Rule mappingType="2" source="UPDM2:ResourceMessage" target="UPDM_Profile:ResourceMessage"/>
+		<Rule mappingType="2" source="UPDM2:ResourceOperation" target="UPDM_Profile:ResourceOperation"/>
+		<Rule mappingType="4" source="UPDM2:ResourceParameter" target="UPDM_Profile:ResourceParameter" sourceMetaClass="ActivityParameter" targetMetaClass="Parameter"/>
+		<Rule mappingType="2" source="UPDM2:ResourcePort" target="UPDM_Profile:ResourcePort"/>
+		<Rule mappingType="2" source="UPDM2:ResourceRole" target="UPDM_Profile:ResourceRole"/>
+		<Rule mappingType="2" source="UPDM2:ResourceState" target="UPDM_Profile:ResourceState"/>
+		<Rule mappingType="2" source="UPDM2:ResourceStateMachine" target="UPDM_Profile:ResourceStateMachine"/>
+		<Rule mappingType="2" source="UPDM2:Responsibility" target="UPDM_Profile:Responsibility"/>
+		<Rule mappingType="2" source="UPDM2:RoleType" target="UPDM_Profile:RoleType"/>
+		<Rule mappingType="2" source="UPDM2:SameAs" target="UPDM_Profile:SameAs"/>
+		<Rule mappingType="4" source="UPDM2:SecurityAttributesGroup" target="UPDM_Profile:SecurityAttributesGroup" sourceMetaClass="Class" targetMetaClass="DataType"/>
+		<Rule mappingType="2" source="UPDM2:SecurityDomain" target="UPDM_Profile:SecurityDomain"/>
+		<Rule mappingType="2" source="UPDM2:Service" target="UPDM_Profile:Service"/>
+		<Rule mappingType="2" source="UPDM2:ServiceAccess" target="UPDM_Profile:ServiceAccess"/>
+		<Rule mappingType="2" source="UPDM2:ServiceAttribute" target="UPDM_Profile:ServiceAttribute"/>
+		<Rule mappingType="2" source="UPDM2:ServiceDescription" target="UPDM_Profile:ServiceDescription"/>
+		<Rule mappingType="2" source="UPDM2:ServiceFunction" target="UPDM_Profile:ServiceFunction"/>
+		<Rule mappingType="2" source="UPDM2:ServiceFunctionAction" target="UPDM_Profile:ServiceFunctionAction"/>
+		<Rule mappingType="4" source="UPDM2:ServiceFunctionEdge" target="UPDM_Profile:ServiceFunctionEdge" sourceMetaClass="ControlFlow" targetMetaClass="ActivityEdge"/>
+		<Rule mappingType="2" source="UPDM2:ServiceInteraction" target="UPDM_Profile:ServiceInteraction"/>
+		<Rule mappingType="2" source="UPDM2:ServiceInterface" target="UPDM_Profile:ServiceInterface"/>
+		<Rule mappingType="2" source="UPDM2:ServiceLevelValueSet" target="UPDM_Profile:ServiceLevelValueSet"/>
+		<Rule mappingType="2" source="UPDM2:ServiceMessage" target="UPDM_Profile:ServiceMessage"/>
+		<Rule mappingType="4" source="UPDM2:ServiceMessageHandler" target="UPDM_Profile:ServiceMessageHandler" sourceMetaClass="Operation" targetMetaClass="Reception"/>
+		<Rule mappingType="2" source="UPDM2:ServiceOperation" target="UPDM_Profile:ServiceOperation"/>
+		<Rule mappingType="4" source="UPDM2:ServiceParameter" target="UPDM_Profile:ServiceParameter" sourceMetaClass="ActivityParameter" targetMetaClass="Parameter"/>
+		<Rule mappingType="2" source="UPDM2:ServicePolicy" target="UPDM_Profile:ServicePolicy"/>
+		<Rule mappingType="2" source="UPDM2:ServiceStateMachine" target="UPDM_Profile:ServiceStateMachine"/>
+		<Rule mappingType="2" source="UPDM2:Skill" target="UPDM_Profile:Skill"/>
+		<Rule mappingType="2" source="UPDM2:SkillOfPersonType" target="UPDM_Profile:SkillOfPersonType"/>
+		<Rule mappingType="2" source="UPDM2:Software" target="UPDM_Profile:Software"/>
+		<Rule mappingType="2" source="UPDM2:Standard" target="UPDM_Profile:Standard"/>
+		<Rule mappingType="2" source="UPDM2:StandardConfiguration" target="UPDM_Profile:StandardConfiguration"/>
+		<Rule mappingType="2" source="UPDM2:StandardOperationalActivity" target="UPDM_Profile:StandardOperationalActivity"/>
+		<Rule mappingType="4" source="UPDM2:StatusIndicators" target="UPDM_Profile:StatusIndicators" sourceMetaClass="Class" targetMetaClass="Enumeration"/>
+		<Rule mappingType="2" source="UPDM2:StereotypeExtension" target="UPDM_Profile:StereotypeExtension"/>
+		<Rule mappingType="2" source="UPDM2:StructuralPart" target="UPDM_Profile:StructuralPart"/>
+		<Rule mappingType="2" source="UPDM2:System" target="UPDM_Profile:System"/>
+		<Rule mappingType="2" source="UPDM2:TechnicalStandard" target="UPDM_Profile:TechnicalStandard"/>
+		<Rule mappingType="2" source="UPDM2:TemporalPart" target="UPDM_Profile:TemporalPart"/>
+		<Rule mappingType="2" source="UPDM2:Trustline" target="UPDM_Profile:Trustline"/>
+		<Rule mappingType="2" source="UPDM2:VersionOfConfiguration" target="UPDM_Profile:VersionOfConfiguration"/>
+		<Rule mappingType="2" source="UPDM2:View" target="UPDM_Profile:View"/>
+		<Rule mappingType="2" source="UPDM2:Viewpoint" target="UPDM_Profile:Viewpoint"/>
+		<Rule mappingType="2" source="UPDM2:Vision" target="UPDM_Profile:Vision"/>
+		<Rule mappingType="2" source="UPDM2:VisionStatement" target="UPDM_Profile:VisionStatement"/>
+		<Rule mappingType="2" source="UPDM2:WholeLifeConfiguration" target="UPDM_Profile:WholeLifeConfiguration"/>
+		<Rule mappingType="2" source="UPDM2:WholeLifeEnterprise" target="UPDM_Profile:WholeLifeEnterprise"/>
+	</Rules>
+	<Rules>
+		<Rule mappingType="2" source="StandardProfileL2:Auxillary" target="StandardProfile:Auxillary"/>
+		<Rule mappingType="2" source="StandardProfileL2:Document" target="StandardProfile:Document"/>
+		<Rule mappingType="2" source="StandardProfileL2:Entity" target="StandardProfile:Entity"/>
+		<Rule mappingType="2" source="StandardProfileL2:Executable" target="StandardProfile:Executable"/>
+		<Rule mappingType="2" source="StandardProfileL2:File" target="StandardProfile:File"/>
+		<Rule mappingType="2" source="StandardProfileL2:Focus" target="StandardProfile:Focus"/>
+		<Rule mappingType="2" source="StandardProfileL2:Framework" target="StandardProfile:Framework"/>
+		<Rule mappingType="2" source="StandardProfileL2:Implement" target="StandardProfile:Implement"/>
+		<Rule mappingType="2" source="StandardProfileL2:ImplementationClass" target="StandardProfile:ImplementationClass"/>
+		<Rule mappingType="2" source="StandardProfileL2:Library" target="StandardProfile:Library"/>
+		<Rule mappingType="2" source="StandardProfileL2:Metaclass" target="StandardProfile:Metaclass"/>
+		<Rule mappingType="2" source="StandardProfileL2:ModelLibrary" target="StandardProfile:ModelLibrary"/>
+		<Rule mappingType="2" source="StandardProfileL2:Process" target="StandardProfile:Process"/>
+		<Rule mappingType="2" source="StandardProfileL2:Realization" target="StandardProfile:Realization"/>
+		<Rule mappingType="2" source="StandardProfileL2:Refine" target="StandardProfile:Refine"/>
+		<Rule mappingType="2" source="StandardProfileL2:Script" target="StandardProfile:Script"/>
+		<Rule mappingType="2" source="StandardProfileL2:Service" target="StandardProfile:Service"/>
+		<Rule mappingType="2" source="StandardProfileL2:Source" target="StandardProfile:Source"/>
+		<Rule mappingType="2" source="StandardProfileL2:Specification" target="StandardProfile:Specification"/>
+		<Rule mappingType="2" source="StandardProfileL2:Subsystem" target="StandardProfile:Subsystem"/>
+		<Rule mappingType="2" source="StandardProfileL2:Type" target="StandardProfile:Type"/>
+		<Rule mappingType="2" source="StandardProfileL2:Utility" target="StandardProfile:Utility"/>
+	</Rules>	
+</ProfileMap>

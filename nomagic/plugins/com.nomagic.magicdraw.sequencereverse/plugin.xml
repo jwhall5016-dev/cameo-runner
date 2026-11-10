@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.sequencereverse"
+	name="Sequence Diagram Generation from Java Source"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.sequencereverse.SequenceReversePlugin">
+
+	<requires>
+	   <api version="1.0"/>
+		<required-plugin id="com.nomagic.magicdraw.ce" name="Code Engineering"/>
+	</requires>
+
+	<runtime>
+	   <library name="sequencereverse.jar"/>
+	   <library name="sequencereverse_api.jar"/>
+	</runtime>
+</plugin>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.migrationframework"
+	name="Model migration framework"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.migration.MigrationPlugin">
+
+	<requires>
+	   	<api version="1.0"/>
+        <required-plugin	id="com.nomagic.magicdraw.usagesdependencies" name="Usages and Dependencies plugin"/>
+        <required-plugin id="com.nomagic.magicdraw.diagramtable" name="Diagram Table"/>
+        <required-plugin id="DependencyMatrixPlugin" name="Dependency Matrix"/>
+        <required-plugin id="com.nomagic.magicdraw.visualization.relationshipmap" name="Relation Map"/>
+	</requires>
+
+	<runtime>
+	   <library name="migration.jar"/>
+	   <library name="migration_api.jar"/>
+	</runtime>
+</plugin>

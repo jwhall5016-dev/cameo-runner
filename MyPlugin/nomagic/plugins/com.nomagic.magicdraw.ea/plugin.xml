@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="com.nomagic.magicdraw.ea"
+   name="Enterprise Architect Import"
+   internalVersion="202100000"
+   version="2021x Refresh1"
+   ownClassloader="false"
+   class-lookup="LocalFirst"
+   provider-name="No Magic"
+   class="com.nomagic.magicdraw.ea.EaPlugin">
+
+    <requires>
+        <api version="1.0"/>		
+    </requires>
+   <runtime>
+      <library name="ea.jar"/>
+	  <library name="ea_api.jar"/>
+	  <library name="lib/saxon9/saxon9.jar"/>
+	  <library name="lib/saxon9/saxon9-dom.jar"/>
+   </runtime>
+
+</plugin>    

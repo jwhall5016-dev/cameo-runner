@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+        id="com.nomagic.magicdraw.emfuml2xmi.v2"
+        name="Eclipse UML2 (v2.x) XMI Export/Import"
+        version="2021x Refresh1"
+		ownClassloader="true"
+		provider-name="No Magic"
+        class="com.nomagic.magicdraw.emfuml2xmi.v2.EmfUml2XmiPlugin">
+
+    <runtime>
+        <library name="emfuml2xmi_common.jar"/>
+        <library name="emfuml2xmi_common_api.jar"/>
+        <library name="emfuml2xmi_v2.jar"/>
+        <library name="emfuml2xmi_v2_api.jar"/>
+        <library name="lib/emf/org.eclipse.emf.common_2.2.1.jar"/>
+        <library name="lib/emf/org.eclipse.emf.ecore.xmi_2.2.3.jar"/>
+        <library name="lib/emf/org.eclipse.emf.ecore_2.2.3.jar"/>
+        <library name="lib/uml2/org.eclipse.uml2.common_1.2.4.jar"/>
+        <library name="lib/uml2/org.eclipse.uml2.uml_2.0.4.jar"/>
+    </runtime>
+</plugin>

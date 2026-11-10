@@ -1,0 +1,8 @@
+actionSetLabel=MagicDraw Model Transformations
+
+menu.1=<menu id="MagicDraw" label="MagicDraw"><groupMarker name="group"/><groupMarker name="group2"/></menu>
+menu.2=<menu id="Tools" label="Tools" path="MagicDraw/group2"/>
+
+transformations.id=com.nomagic.magicdraw.actions.ActionsID.MODEL_TRANSPORMATIONS
+transformations.label=Model Transformations
+transformations.menupath=MagicDraw/Tools/group

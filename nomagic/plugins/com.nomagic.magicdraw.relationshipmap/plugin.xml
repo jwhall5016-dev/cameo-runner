@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.visualization.relationshipmap"
+	name="Relation Map"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.visualization.relationshipmap.RelationMapPlugin">
+
+	<requires>
+	    <api version="1.0"/>
+        <required-plugin id="com.nomagic.magicdraw.visualization.prefuse" name="Prefuse Toolkit"/>
+	</requires>
+
+	<runtime>
+	   <library name="relationshipmap_api.jar"/>
+       <library name="relationshipmap.jar"/>
+	</runtime>
+</plugin>

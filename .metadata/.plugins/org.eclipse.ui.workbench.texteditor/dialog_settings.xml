@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="${workspaceDir}"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="parser"/>
+			<item value="C:/Users/Hall2/eclipse-workspace"/>
+			<item value="workspace_loc"/>
+			<item value="${project.basedir}"/>
+			<item value="CameoRunner"/>
+			<item value="linquest"/>
+			<item value="log4j-slf4j-impl-2.17.2.jar"/>
+			<item value="assembly"/>
+			<item value="emf"/>
+			<item value="&lt;scope&gt;system&lt;/scope&gt;"/>
+			<item value="command"/>
+			<item value="C:/Users/Hall2/eclipse-workspace/cameo-runner/"/>
+			<item value="cameo-rest-api"/>
+			<item value="sl4j"/>
+			<item value="***"/>
+		</list>
+		<list key="replacehistory">
+			<item value="${workspaceDir}"/>
+			<item value="workspaceDir"/>
+			<item value="${workspace_loc}"/>
+			<item value="C:/Users/Hall2/eclipse-workspace"/>
+			<item value=""/>
+			<item value="${project.basedir}"/>
+			<item value="cameo-runner"/>
+			<item value="C:/Users/Hall2/eclipse-workspace/cameo-rest-api/"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="760"/>
+		<item key="DIALOG_Y_ORIGIN" value="407"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

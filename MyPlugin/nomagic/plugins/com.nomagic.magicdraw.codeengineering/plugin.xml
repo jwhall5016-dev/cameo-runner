@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+		id="com.nomagic.magicdraw.ce"
+		name="Code Engineering"
+		version="2021x Refresh1"
+		provider-name="No Magic"
+		class="com.nomagic.magicdraw.ce.CodeEngineeringPlugin">
+
+	<requires>
+		<api version="1.2"/>
+	</requires>
+
+	<runtime>
+		<library name="codeengineering.jar"/>
+		<library name="codeengineering_api.jar"/>
+		<library name="lib/antlr_2.7.6.1.jar"/>
+	</runtime>
+</plugin>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+   <name>Built-in</name>
+   <description>A built-in method specification</description>
+   <defaultReport>true</defaultReport>
+   <variables>
+      <variable>
+         <name>CompanyName</name>
+         <description />
+         <type />
+         <value xml:space="preserve">No Magic</value>
+      </variable>
+      <variable>
+         <name>Author</name>
+         <description />
+         <type />
+         <value xml:space="preserve">Author</value>
+      </variable>
+      <variable>
+         <name>ReportTitle</name>
+         <description />
+         <type />
+         <value xml:space="preserve">Method Specification Report</value>
+      </variable>
+      <variable>
+         <name>DocumentTitle</name>
+         <description />
+         <type />
+         <value xml:space="preserve">Method Specification</value>
+      </variable>
+      <variable>
+         <name>Description</name>
+         <description />
+         <type />
+         <value xml:space="preserve">Method Specification show the class diagram and list of all classes in the diagram, and the detail design on each method.</value>
+      </variable>
+      <variable>
+         <name>Revisions</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+         <variable>
+            <name>0.1</name>
+            <description />
+            <type />
+            <value xml:space="preserve" />
+            <variable>
+               <name>date</name>
+               <description />
+               <type />
+               <value xml:space="preserve">&lt;date 1&gt;</value>
+            </variable>
+            <variable>
+               <name>author</name>
+               <description />
+               <type />
+               <value xml:space="preserve">&lt;Author name&gt;</value>
+            </variable>
+            <variable>
+               <name>description</name>
+               <description />
+               <type />
+               <value xml:space="preserve">&lt;draft&gt;</value>
+            </variable>
+         </variable>
+         <variable>
+            <name>0.2</name>
+            <description />
+            <type />
+            <value xml:space="preserve" />
+            <variable>
+               <name>date</name>
+               <description />
+               <type />
+               <value xml:space="preserve">&lt;date 2&gt;</value>
+            </variable>
+            <variable>
+               <name>author</name>
+               <description />
+               <type />
+               <value xml:space="preserve">&lt;Author name&gt;</value>
+            </variable>
+            <variable>
+               <name>description</name>
+               <description />
+               <type />
+               <value xml:space="preserve">&lt;release&gt;</value>
+            </variable>
+         </variable>
+      </variable>
+      <variable>
+         <name>Purpose</name>
+         <description />
+         <type />
+         <value xml:space="preserve">&lt;This Document describes Method Specification Report.&gt;</value>
+      </variable>
+      <variable>
+         <name>Scope</name>
+         <description />
+         <type />
+         <value xml:space="preserve">&lt;This Document intends to describe method specification for the system.&gt;</value>
+      </variable>
+      <variable>
+         <name>Overview</name>
+         <description />
+         <type />
+         <value xml:space="preserve">&lt;Describe what the document contains and explain how the document is organized.&gt;</value>
+      </variable>
+   </variables>
+   <selectedPackage>
+      <packageId />
+      <selectRecursive>true</selectRecursive>
+      <showAuxiliary>false</showAuxiliary>
+      <showOnlyPackageElement>true</showOnlyPackageElement>
+   </selectedPackage>
+   <outputProperty>
+      <outputFile />
+      <outputImageFormat>jpg</outputImageFormat>
+      <outputFitImageSize>1</outputFitImageSize>
+      <outputOnBlankField />
+      <displayInViewer>true</displayInViewer>
+      <outputFormat />
+      <uploadProfile />
+   </outputProperty>
+</report>

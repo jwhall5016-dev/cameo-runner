@@ -1,0 +1,26 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+#includeSection('web.html', web)
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link rel ="stylesheet" type="text/css" href="../stylesheet.css" title="style">
+   <title>$Title</title>
+</head>
+<body>
+   <h4>Diagrams</h4>
+   <div>
+      #foreach ($di in $sorter.sort($importer, 'name'))
+         #acceptType($di)
+         #if ($accept)#set($pahtName = $file.create('diagram/diagram-content.html', $file.computeName('diagram', $di.ID, 'html'), $di))
+         <div class="frameitem"><a href="../$pahtName" target="classframe"><img src="../$report.getIconFor($di)" alt="diagram" align="middle" width="16" height="16"></a>&nbsp;<a href="../$pahtName" target="classframe">
+		 #if("$di.name"=="")
+			$na
+			#else
+			$di.name
+		 #end
+		 </a></div>
+         #end
+      #end
+   </div>
+</body>
+</html>

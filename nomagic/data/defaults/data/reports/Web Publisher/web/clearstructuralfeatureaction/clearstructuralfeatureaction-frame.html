@@ -1,0 +1,1 @@
+#foreach ($ac in $sorter.sort($importer, 'name'))$file.silentCreate('clearstructuralfeatureaction/clearstructuralfeatureaction-content.html', $file.computeName('clearstructuralfeatureaction', $ac.ID, 'html'), $ac)#end

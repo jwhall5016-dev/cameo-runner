@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+        id="com.nomagic.magicdraw.examples.refactor"
+        name="Refactor Example Plugin"
+        version="2021x Refresh1"
+        provider-name="No Magic"
+        class="com.nomagic.magicdraw.examples.refactor.RefactorExamplePlugin">
+
+    <runtime>
+        <library name="refactor.jar"/>
+    </runtime>
+
+</plugin>

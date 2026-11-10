@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom_template>
+    <icon>Guide to UML Diagrams Project.gif</icon>
+    <iconLabel>Guide to
+        UML Diagrams
+        Project</iconLabel>
+    <perspective>Software Architect</perspective>
+    <compatiblePerspective>Quick Start</compatiblePerspective>
+    <compatiblePerspective>System Analyst</compatiblePerspective>
+    <compatiblePerspective>Full Featured</compatiblePerspective>
+    <tooltip>Start introduction guide for UML diagrams</tooltip>
+    <banner_title>Start guide to UML diagrams</banner_title>
+    <banner_description>Create a new UML project using quick tutorials to UML diagrams.</banner_description>
+    <banner_icon>new_project_guide_to_uml_diagrams.png</banner_icon>
+    <category_id>CATEGORY_ID_GENERAL_PURPOSE_MODELING</category_id>
+</custom_template>

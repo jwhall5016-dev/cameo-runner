@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template><name>Dependency Matrix</name><description xml:space="preserve">This Excel spreadsheet displays all dependency between element.</description><templateFile>template.xlsx</templateFile><enable>true</enable><readonly>true</readonly><category>Other Documents</category><variables><variable><name>Author</name><value xml:space="preserve"></value></variable><variable><name>Title</name><value xml:space="preserve"></value></variable></variables></template>

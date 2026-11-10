@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+        id="com.nomagic.magicdraw.ds"
+        name="SSO 3D Experience"
+        version="2021x Refresh1"
+        provider-name="No Magic"
+        class="com.nomagic.magicdraw.ds.DSPlugin">
+
+    <requires>
+        <api version="1.0"/>
+    </requires>
+
+    <runtime>
+        <library name="sso3dexperience.jar"/>
+        <library name="sso3dexperience_api.jar"/>
+    </runtime>
+</plugin>

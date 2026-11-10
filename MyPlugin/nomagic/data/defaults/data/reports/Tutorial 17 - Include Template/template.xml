@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+   <name>Tutorial 17 - Include Template</name>
+   <description>This sample template displays how to include a section from another template and insert it into the location where the directive has defined.</description>
+   <icon />
+   <enable>true</enable>
+   <readonly>true</readonly>
+   <category>Tutorial</category>
+   <templateFile>template.docx</templateFile>
+   <variables>
+      <variable>
+         <name>Author</name>
+         <value xml:space="preserve">Siri Chongasamethaworn</value>
+      </variable>
+      <variable>
+         <name>Publisher</name>
+         <value xml:space="preserve">No Magic</value>
+      </variable>
+   </variables>
+</template>

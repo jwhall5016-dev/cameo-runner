@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.informationflows"
+	name="Information Flows Management"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.informationflows.InformationFlowsPlugin">
+
+	<requires>
+	   	<api version="1.0"/>
+        <required-plugin id="com.nomagic.magicdraw.diagramtable" name="Diagram Table"/>
+		<required-plugin id="com.nomagic.magicdraw.dialogtable" name="Dialog Table"/>
+	</requires>
+
+	<runtime>
+	   <library name="informationflows.jar"/>
+	   <library name="informationflows_api.jar"/>
+	</runtime>
+</plugin>

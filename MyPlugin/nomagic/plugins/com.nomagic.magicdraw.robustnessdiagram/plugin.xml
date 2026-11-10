@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="RobustnessDiagramPlugin"
+	name="Robustness diagram tools"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.robustnessdiagram.RobustnessDiagramPlugin">
+
+	<requires>
+	   <api version="1.0"/>
+	</requires>
+
+	<runtime>
+	   <library name="robustnessdiagram_api.jar"/>
+	</runtime>
+</plugin>

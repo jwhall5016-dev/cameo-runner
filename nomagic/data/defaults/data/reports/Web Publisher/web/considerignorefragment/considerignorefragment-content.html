@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+#includeSection('web.html', web)
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel ="stylesheet" type="text/css" href="../stylesheet.css" title="style">
+   <title>$Title</title>
+</head>
+<body>
+#navbar('..')
+<h2>Consider Ignore Fragment #if("$importer.name"=="")$na#else$importer.name#end</h2>
+#comment($importer)
+<table border="1" width="100%" cellpadding="3" cellspacing="0">
+   <tr class="heading">
+      <th align="left" colspan="2"><b>General Information</b></th>
+   </tr>
+   <tr class="row">
+      <td><b>Name</b></td>
+      <td>#if("$importer.name"=="")$na#else$importer.name#end</td>
+   </tr>
+   <tr class="row">
+      <td><b>Owner</b></td>
+      <td>#link($importer.owner)</td>
+   </tr>
+   <tr class="row">
+      <td><b>Applied Stereotype</b></td>
+      #set($list = $importer.appliedStereotype)
+      <td>#printList($list)</td>
+   </tr>
+</table>
+<br>
+#includeSection('table/inner.html', inner)
+<br>
+#includeSection('table/relations.html', relations)
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+#includeSection('web.html', web)
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link rel ="stylesheet" type="text/css" href="../stylesheet.css" title="style">
+   <title>$Title</title>
+</head>
+<body>
+#navbar('..')
+   <h2>Diagram #if("$importer.name"=="")$na#else$importer.name#end</h2>
+   #comment($importer)
+   <map name="map_$importer.name">
+#foreach ($pre in $report.getPresentationDiagramElements($importer))
+   #set($el = $pre.getActualElement())
+   #set($url = '')
+   #acceptType($el)
+   #if ($report.isRelationship($el))
+   #set($url = $file.computeName('relation', $el.ID, 'html'))
+   #elseif ($accept)   
+   #set($url = $file.computeName($el.elementType, $el.ID, 'html'))
+   #end
+   #if ($url != '' && !$report.isNull($el.ID))
+      #set($pos = $report.getPresentationElementBounds($pre))
+      #if ($pos.preferedShape=='rect')
+      <area shape="rect" href="../$url" coords="#set($rect = $pos.getRectangle())$rect.x1,$rect.y1,$rect.x2,$rect.y2" alt=" $el.name ">
+      #elseif ($pos.preferedShape=='poly')
+      <area shape="poly" href="../$url" coords="#set($firstPoint = $list.get($pos.pointList,0))#foreach($p in $pos.pointList)$p.X,$p.Y,#end$firstPoint.X,$firstPoint.Y" alt=" $el.name ">
+      #end
+   #end
+#end
+   </map>
+<img src="../$importer.image" alt="$importer.name" usemap="#map_$importer.name" border="0"/>
+<table border="1" width="100%" cellpadding="3" cellspacing="0">
+   <tr class="heading">
+      <th align="left" colspan="2"><b>General Information</b></th>
+   </tr>
+   <tr class="row">
+      <td><b>Name</b></td>
+      <td>#if("$importer.name"=="")$na#else$importer.name#end&nbsp;</td>
+   </tr>
+   <tr class="row">
+      <td><b>Owner</b></td>
+      <td>#link($importer.owner)&nbsp;</td>
+   </tr>
+   <tr class="row">
+      <td><b>Applied Stereotype</b></td>
+      #set($list = $importer.appliedStereotype)
+      <td>#printList($list)</td>
+   </tr>
+   <tr class="row">
+      <td><b>Context</b></td>
+      <td>#link($importer.context)&nbsp;</td>
+   </tr>
+</table>
+<br>
+#includeSection('table/inner.html', inner)
+<br>
+#includeSection('table/relations.html', relations)
+<br>
+<table border="1" width="100%" cellpadding="3" cellspacing="0">
+   <tr class="heading">
+      <th align="left" colspan="3"><b>Diagram Information</b></th>
+   </tr>
+   <tr class="row">
+      <td><b>Name</b></td>
+      <td><b>Value</b></td>
+      <td><b>Data Type</b></td>
+   </tr>
+   #foreach ($attr in $sorter.sort($report.getAppliedStereotypeByString($importer, 'DiagramInfo').attribute))
+   #if($attr.name != 'base_Diagram')
+   <tr class="row">
+      <td>$attr.name&nbsp;</td>
+      #set($list = $sorter.sort($report.getStereotypeProperty($importer, 'DiagramInfo', $attr.name),'name'))
+      <td>#if(!$list.isEmpty())#foreach($object in $list)$object</br>#end#else$empty&nbsp;#end</td>
+      <td>$attr.type.name&nbsp;</td>
+   </tr>
+   #end
+   #end
+</table>
+</body>
+</html>

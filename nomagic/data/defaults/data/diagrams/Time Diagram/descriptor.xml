@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram abbreviation="time" baseType="Sequence Diagram" category="Other Diagrams" type="Time Diagram" version="8">
+    <edition>Architect</edition>
+    <edition>Enterprise</edition>
+    <edition>Professional C++</edition>
+    <edition>Reader</edition>
+    <edition>Professional Java</edition>
+    <edition>Standard</edition>
+    <edition>Professional ArcStyler</edition>
+    <helpID>Time+diagram</helpID>
+    <toolbarConfiguration>
+        <baseCategory expandedByDefault="false" id="COMMON_ELEMENTS_DYNAMIC" parentCategoryID="COMMON_ELEMENTS_DYNAMIC"/>
+        <category expandedByDefault="true" id="Time Diagram_ELEMENTS" name="Time Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/timediagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/timediagram.svg" size="16" type="large"/>
+            <actions>
+                <custom description="Lifeline&lt;&lt;CRconcurrent&gt;&gt;" id="IDaction_1156980065468_876873_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.interactions.mdbasicinteractions.Lifeline">
+                    <stereotype id="_8f8028c_1072090964598_84806_1254"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/lifeline.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/lifeline.svg" size="16" type="large"/>
+                </custom>
+                <custom description="Lifeline&lt;&lt;SAschedRes&gt;&gt;" id="IDaction_1156980065468_651859_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.interactions.mdbasicinteractions.Lifeline">
+                    <stereotype id="_8f8028c_1072168470751_839023_2154"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/time.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/time.svg" size="16" type="large"/>
+                </custom>
+                <custom description="Message&lt;&lt;RTevent&gt;&gt;,&lt;&lt;CRimmediate&gt;&gt;" id="IDaction_1156980065484_306062_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.interactions.mdbasicinteractions.Message">
+                    <stereotype id="_8f8028c_1072085946903_152126_462"/>
+                    <stereotype id="_8f8028c_1072091212635_155383_1411"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/messageei16.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/messageei16.svg" size="16" type="large"/>
+                    <defaults>
+                        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+                            <mdElement elementClass="PropertyManager">
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>messageSort</propertyID>
+                                    <value>synchCall</value>
+                                    <choice xmi:value="synchCall^asynchCall^asynchSignal"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>SEQUENCE_MESSAGE_KIND</propertyID>
+                                    <value>ADD_SEQUENCE_MESSAGE</value>
+                                    <choice xmi:value="ADD_SEQUENCE_MESSAGE^ADD_DIAGONAL_MESSAGE^ADD_SEQUENCE_MESSAGE_TO_SELF^ADD_RECURSIVE_MESSAGE"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                            </mdElement>
+                        </PropertyVisitorAcceptor>
+                    </defaults>
+                </custom>
+                <custom description="Message&lt;&lt;CRimmediate&gt;&gt;" id="IDaction_1156980065484_321039_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.interactions.mdbasicinteractions.Message">
+                    <stereotype id="_8f8028c_1072091212635_155383_1411"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/messagei16.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/messagei16.svg" size="16" type="large"/>
+                    <defaults>
+                        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+                            <mdElement elementClass="PropertyManager">
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>messageSort</propertyID>
+                                    <value>synchCall</value>
+                                    <choice xmi:value="synchCall^asynchCall^asynchSignal"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>SEQUENCE_MESSAGE_KIND</propertyID>
+                                    <value>ADD_SEQUENCE_MESSAGE</value>
+                                    <choice xmi:value="ADD_SEQUENCE_MESSAGE^ADD_DIAGONAL_MESSAGE^ADD_SEQUENCE_MESSAGE_TO_SELF^ADD_RECURSIVE_MESSAGE"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                            </mdElement>
+                        </PropertyVisitorAcceptor>
+                    </defaults>
+                </custom>
+                <custom description="Message&lt;&lt;SAtrigger&gt;&gt;" id="IDaction_1156980065484_417760_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.interactions.mdbasicinteractions.Message">
+                    <stereotype id="_8f8028c_1072168978060_890595_2352"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/messaget16.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/messaget16.svg" size="16" type="large"/>
+                    <defaults>
+                        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+                            <mdElement elementClass="PropertyManager">
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>messageSort</propertyID>
+                                    <value>synchCall</value>
+                                    <choice xmi:value="synchCall^asynchCall^asynchSignal"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>SEQUENCE_MESSAGE_KIND</propertyID>
+                                    <value>ADD_SEQUENCE_MESSAGE</value>
+                                    <choice xmi:value="ADD_SEQUENCE_MESSAGE^ADD_DIAGONAL_MESSAGE^ADD_SEQUENCE_MESSAGE_TO_SELF^ADD_RECURSIVE_MESSAGE"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                            </mdElement>
+                        </PropertyVisitorAcceptor>
+                    </defaults>
+                </custom>
+            </actions>
+        </category>
+        <baseCategory expandedByDefault="true" id="SEQUENCE_DIAGRAM_ELEMENTS" parentCategoryID="SEQUENCE_DIAGRAM_ELEMENTS"/>
+    </toolbarConfiguration>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/timediagram.png" size="16" type="small"/>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/time/timediagram.svg" size="-1" type="diagraming"/>
+
+
+    <module location="/Users/admin/182/C:\Program Files\MagicDraw UML 16.5 beta 1\profiles\Time &amp; Performance_Profile.mdzip" name="Time &amp; Performance_Profile.mdzip">
+        <root id="_8f8028c_1075989922415_243620_353"/>
+    </module>
+    <module location="/Users/admin/182/C:\Program Files\MagicDraw UML 16.5 beta 1\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+</diagram>

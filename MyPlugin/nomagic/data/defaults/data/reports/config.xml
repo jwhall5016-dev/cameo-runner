@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+   <template.process.size>3145728</template.process.size>
+   <template-mapping>
+      <extension>js</extension>
+      <engine-name>html</engine-name>
+   </template-mapping>
+</configuration>

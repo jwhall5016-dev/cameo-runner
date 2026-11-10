@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+	<name>Built-in</name>
+	<description>A built-in use case data</description>
+	<defaultReport>true</defaultReport>
+	<variables>
+		<variable>
+			<name>CompanyName</name>
+			<value xml:space="preserve">No Magic</value>
+		</variable>	
+		<variable>
+			<name>Author</name>
+			<value xml:space="preserve">Author</value>
+		</variable>
+		<variable>
+			<name>ReportTitle</name>
+			<value xml:space="preserve">Project Estimation</value>
+		</variable>
+		<variable>
+			<name>DocumentTitle</name>
+			<value xml:space="preserve">Use Case Document for {System name}</value>
+		</variable>	
+		<variable>
+			<name>Description</name>
+			<value xml:space="preserve">Initial version created.</value>
+		</variable>		
+		<variable>
+			<name>Revisions</name>
+			<variable>
+				<name>0.1</name>
+				<variable>
+					<name>date</name>
+					<value xml:space="preserve">&lt;date 1&gt;</value>
+				</variable>
+				<variable>
+					<name>author</name>
+					<value xml:space="preserve">&lt;Author name&gt;</value>
+				</variable>		
+				<variable>
+					<name>description</name>
+					<value xml:space="preserve">&lt;draft&gt;</value>
+				</variable>	
+			</variable>
+			<variable>
+				<name>0.2</name>
+				<variable>
+					<name>date</name>
+					<value xml:space="preserve">&lt;date 2&gt;</value>
+				</variable>
+				<variable>
+					<name>author</name>
+					<value xml:space="preserve">&lt;Author name&gt;</value>
+				</variable>		
+				<variable>
+					<name>description</name>
+					<value xml:space="preserve">&lt;release&gt;</value>
+				</variable>	
+			</variable>
+			<value/>
+		</variable>
+		<variable>
+			<name>Purpose</name>
+			<value xml:space="preserve">&lt;This document describes functionality of the system.&gt;</value>
+		</variable>		
+		<variable>
+			<name>Scope</name>
+			<value xml:space="preserve">&lt;This document is intended to define use cases for the system.&gt;</value>
+		</variable>
+		<variable>
+			<name>Overview</name>
+			<value xml:space="preserve">&lt;Describes Use Case model of the system.&gt;</value>
+		</variable>	
+		<variable>
+			<name>StaffHoursPerUseCasePoint</name>
+			<value xml:space="preserve">20</value>
+		</variable>	
+		<variable>
+			<name>HoursPerDay</name>
+			<value xml:space="preserve">8</value>
+		</variable>	
+		<variable>
+			<name>WorkingDaysPerMonth</name>
+			<value xml:space="preserve">22</value>
+		</variable>		
+		<variable>
+			<name>NumberOfDevelopersInProject</name>
+			<value xml:space="preserve">3</value>
+		</variable>			
+	</variables>
+	<selectedPackage>
+		<selectRecursive>true</selectRecursive>
+	</selectedPackage>
+	<outputProperty>
+		<outputFile></outputFile>
+		<outputImageFormat>jpg</outputImageFormat>
+		<outputFitImageSize>1</outputFitImageSize>
+		<outputOnBlankField></outputOnBlankField>
+		<displayInViewer>false</displayInViewer>
+		<outputFormat/>
+		<uploadProfile/>
+	</outputProperty>
+</report>

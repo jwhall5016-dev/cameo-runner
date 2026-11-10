@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration><velocimacro.max.depth>40</velocimacro.max.depth><template.warn.invalid.property>false</template.warn.invalid.property><template.warn.invalid.method>false</template.warn.invalid.method><template.warn.invalid.reference>false</template.warn.invalid.reference><template.warn.exception>false</template.warn.exception></configuration>

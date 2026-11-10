@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+   <name>Tutorial 30 - Document Report Designer</name>
+   <description>This tutorial template is for learning basic use cases of Document Report Designer diagram. All diagram elements are introduced in this tutorial, placed on diagram, and see how to generate the basic template from this diagram.</description>
+   <icon />
+   <enable>true</enable>
+   <readonly>true</readonly>
+   <category>Tutorial</category>
+   <templateFile>template.docx</templateFile>
+   <variables>
+      <variable>
+         <name>Author</name>
+         <value xml:space="preserve">Sararwut Waleetorncheepsawasd</value>
+      </variable>
+      <variable>
+         <name>Publisher</name>
+         <value xml:space="preserve">No Magic</value>
+      </variable>
+   </variables>
+</template>

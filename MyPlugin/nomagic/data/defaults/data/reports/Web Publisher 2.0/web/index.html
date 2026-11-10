@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+#if ($template.resourcesLocation != '' && !$template.resourcesLocation.endsWith('/'))
+#set($resourcesLocation = "${template.resourcesLocation}/")
+#else
+#set($resourcesLocation = $template.resourcesLocation)
+#end
+#set($tmp = $file.copy('images', $file.computeName($resourcesLocation, 'images')))
+#set($tmp = $file.copy('swf', $file.computeName($resourcesLocation, 'swf')))
+#set($tmp = $file.copy('js/animate.js', $file.computeName($resourcesLocation, 'js/animate.js')))
+#set($tmp = $file.copy('js/jwindow.js', $file.computeName($resourcesLocation, 'js/jwindow.js')))
+#set($tmp = $file.copy('js/shadow.js', $file.computeName($resourcesLocation, 'js/shadow.js')))
+#set($tmp = $file.copy('js/dragdrop.js', $file.computeName($resourcesLocation, 'js/dragdrop.js')))
+#set($tmp = $file.copy('js/cookies.js', $file.computeName($resourcesLocation, 'js/cookies.js')))
+#set($tmp = $file.copy('js/map.js', $file.computeName($resourcesLocation, 'js/map.js')))
+#* <!-- change home page image --> *#
+#set($logoName = $HomeImage.toString())
+#* <!-- if for default image --> *#
+#if(!$HomeImage || $logoName == "")
+#set($logoPath = $resourcesLocation.concat("images/mdlogo.gif"))
+#set($style = "position:absolute; padding-top:20%; padding-left: 10%;")
+#set($width = "450")
+#set($height = "80")
+#set($visitText="Visit us at ")
+#set($visitUrl="http://www.nomagic.com")
+#set($visitLink="www.nomagic.com")
+#* <!-- else if for image from element --> *#
+#elseif($logoName.startsWith("mdel://"))
+#set($style = "")
+#set($altName = $logoName)
+#set($logoName = $logoName.substring(7, $logoName.length()))
+#set($elementLogo = $project.getElementByID($logoName))
+#if(!$report.isEmpty($elementLogo))
+#set($logoPath = $elementLogo.image)
+#end
+#* <!-- else if for image from file --> *#
+#elseif($logoName.startsWith("file://"))
+#set($altName = $logoName)
+#set($img = $image.copy($logoName.substring(7)))
+#set($logoPath = $img)  
+#set($style = "padding-top:5%;")
+#* <!-- else if for image from web-site --> *#
+#* refer to the site directly *#
+#elseif($logoName.startsWith("http://") || $logoName.startsWith("https://"))
+#set($altName = $logoName)
+#set($style = "padding-top:5%;")
+##set($img = $image.copy($logoName))
+#set($logoPath = $logoName)
+#* <!-- else if for image from relative path --> *#
+#elseif($logoName.startsWith("/"))
+#set($altName = $logoName)
+#set($relativePath = $logoName.substring(1))
+#set($img = $image.copy($relativePath))
+#set($logoPath = $img)
+#set($style = "padding-top:5%;") 
+#* <!-- else for image from diagram --> *#
+#else
+#set($altName = $logoName)
+#set($diagram = $report.findDiagramByName($logoName))
+#if($diagram)
+#set($gotoElementId = $diagram.ID)
+#else
+#* <!-- else if for image from relative path --> *#
+#set($altName = $logoName)
+#set($relativePath = $logoName)
+#set($img = $image.copy($relativePath))
+#set($logoPath = $img)
+#set($style = "padding-top:5%;") 
+#end
+#end
+#* <!-- check for image format --> *#
+#if($logoPath)
+#set($imagePath = "$logoPath")
+#set($start = $imagePath.lastIndexOf(".") + 1)
+#set($end = $imagePath.length())
+#set($imageFormat = $imagePath.substring($start, $end))
+#end
+#* <!-- specify width and height if image is svg --> *#
+#if($imageFormat == "svg")
+#if($logoPath.getWidth() != 0)
+#set($width = $logoPath.getWidth())
+#end
+#if($logoPath.getHeight() != 0)
+#set($height = $logoPath.getHeight())
+#end
+#end
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="author" content="$Author">
+   <meta name="description" content="Web Publisher 2.0">
+   <title>$Title</title>
+   <link rel="SHORTCUT ICON" href="${resourcesLocation}images/mdicon.ico">
+   <style type="text/css" media="screen">@import url("$file.create('css/stylesheet.css', "${resourcesLocation}css/stylesheet.css", '')");</style>
+   <style type="text/css" media="print">@import url("$file.create('css/printstylesheet.css', "${resourcesLocation}css/printstylesheet.css", '')");</style>
+   <script type="text/javascript">var contextPath = '$resourcesLocation';</script>
+   <script type="text/javascript" src="$file.create('js/magiccat.js', "${resourcesLocation}js/magiccat.js", '')"></script>
+   <script type="text/javascript" src="$file.create('js/dialog.js', "${resourcesLocation}js/dialog.js", '')"></script>
+   <script type="text/javascript" src="$file.create('js/splitpane.js', "${resourcesLocation}js/splitpane.js", '')"></script>
+   <script type="text/javascript" src="$file.create('js/web.js', "${resourcesLocation}js/web.js", '')"></script>
+   <script type="text/javascript" src="$file.create('js/tree.js', "${resourcesLocation}js/tree.js", '')"></script>
+   <script type="text/javascript" src="$file.create('js/navigator.js', "${resourcesLocation}js/navigator.js", '')"></script>
+   <script type="text/javascript" src="$file.create('js/tooltip.js', "${resourcesLocation}js/tooltip.js", '')"></script>
+</head>
+<body class="nm-content">
+<div class="nm-content" id="titlebar">
+   <form id="searchForm" class="nm-content" name="searchForm" action="" onsubmit="search(document.getElementById('searchText').value); return false;" style="display:inline">
+   <ul id="menubar" class="nm-content toolbar">
+      <li class="nm-content" style="float:left;"><a href ="$template.outputFileName" class="nm-content home"><img src="${resourcesLocation}images/mdicon.gif" width="16" height="16" alt="MagicDraw" style="border:none" class="nm-content">$Title</a></li>
+      <li class="nm-content" style="float:right;" id="quicksearch"><span class="nm-content" style="vertical-align:middle; font-size: 80%;" title="Search for element&lt;br&gt;Tip: Use regular expressions to search more precisely">QUICK SEARCH:</span> <input name="searchText" id="searchText" type="text" class="nm-content"></li>
+   </ul>
+   </form>
+</div>
+<div class="nm-content" id="container">
+   <table cellspacing="0" cellpadding="0" border="0" id="splitpane" class="nm-content splitpane" width="100%">
+      <tr class="nm-content">
+		<td id="splitpane-first" class="nm-content splitpane-first" style="min-width: 255px; width:20%; height:100%">
+			<div id="tabs" style="text-align: left;height:60%;" class="nm-content tabs">
+				<div style="height: 100%; display: flex; flex-flow: column;">
+					<div>
+						<ul id="topTab" class="nm-content tabheader">
+							<li id="containment_tab" class="nm-content active" onclick="showContainmentTab()">Containment</li>
+							<li id="diagrams_tab" class="nm-content" onclick="showDiagramsTab()">Diagrams</li>
+							<li id="expand_icon" class="nm-content expandIcon"></li>
+						</ul>
+					</div>
+					<div id="containment_content" class="nm-content tabInner"  style="flex-grow : 1;"></div>
+					<div id="diagrams_content" class="nm-content tabInner" style="display:none; flex-grow : 1;"></div>
+				</div>
+			</div>
+			<div id="tabsBottom" style="text-align: left;height:40%;" class="nm-content tabs">
+				<div style="height: 100%; display: flex; flex-flow: column;">	
+					<div>
+						<ul id="bottomTab" class="nm-content tabheader">
+							<li id="documentation_tab" class="nm-content active" onclick="activeDocumentationTab()">Documentation</li>
+							<li id="properties_tab" class="nm-content" onclick="activePropertiesTab()">Properties</li>
+						</ul>
+					</div>
+					<div id="documentation_content" class="nm-content tabInner" style="height: 100%;background-color:#F0F0F0;flex-grow : 1;">
+						<div id="documentation_inner_div" style="height: 100%; display: flex; flex-flow: column;">
+							<div id="documentation_name_div" >
+								<div id="documentation_name_inner" class="nm-content">Documentation</div>
+							</div>
+							<div id="documentation_content_div" class="nm-content documentation" style="flex-grow : 1;"></div>
+						</div>
+					</div>
+					<div id="properties_content" class="nm-content tabInner" style="display:none;height: 100%;flex-grow : 1;">
+						<div id="properties_inner_div" style="height: 100%; display: flex; flex-flow: column;">
+							<div id="properties_menu_div" >
+								<div id="properties_menu_inner" class="nm-content"></div>
+							</div>
+							<div id="properties_content_div" class="nm-content properties" style="flex-grow : 1;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+         </td>
+         <td class="nm-content splitpane-vdivider">&nbsp;</td>
+         <td id="splitpane-second" class="nm-content splitpane-second" style="min-width: 430px; width:80%;">
+            <div id="content" class="nm-content">
+               <div class="nm-content" style="$style">
+                  <div class="nm-content" style="text-align: center">#if($imageFormat == "svg")#if($width && $height )<embed class="nm-content" src="$logoPath" width="$width" height="$height"/>#else<embed class="nm-content" src="$logoPath"/>#end#else#if($width && $height )<img class="nm-content" src="$logoPath" width="$width" height="$height" alt="mdlogo"/>#else<img class="nm-content" src="$logoPath" alt="$altName"/>#end#end</div>
+                  #if($visitText)<h6 class="nm-content" style="text-align: right">$visitText<a class="nm-content" href="$visitUrl" target="_blank">$visitLink</a></h6>#end
+               </div>
+            </div>
+         </td>
+      </tr>
+   </table>
+</div>
+<script type="text/javascript">
+	
+	function setupHeight() {
+		var menuHeight = document.getElementById("titlebar").getBoundingClientRect().height;
+		
+		var splitpaneHeight = window.innerHeight - menuHeight;
+		document.getElementById("splitpane").style.height = splitpaneHeight + "px";
+		
+		var topTabHeight = document.getElementById("topTab").getBoundingClientRect().height;
+		var bottomTabHeight = document.getElementById("bottomTab").getBoundingClientRect().height;
+		var allTabsHeight = topTabHeight + bottomTabHeight;
+		
+		var topHeight = document.getElementById("tabs").getBoundingClientRect().height;
+		document.getElementById("containment_content").style.height = (topHeight - allTabsHeight) + "px";
+		document.getElementById("diagrams_content").style.height = (topHeight - allTabsHeight) + "px";
+																			 
+		document.getElementById("documentation_content").style.height = (splitpaneHeight - topHeight - allTabsHeight) + "px";
+		document.getElementById("properties_content").style.height = (splitpaneHeight - topHeight - allTabsHeight) + "px";
+	}
+	
+	// in case the document is already rendered
+	if (document.readyState!='loading') setupHeight();
+	// modern browsers
+	else if (document.addEventListener) document.addEventListener('DOMContentLoaded', setupHeight);
+	// IE <= 8
+	else document.attachEvent('onreadystatechange', function(){
+	    if (document.readyState=='complete') setupHeight();
+	});
+	
+	function param(name)
+	{
+		var reg = new RegExp("[\\?&]"+name+"=([^&#]*)");
+		var results = reg.exec( window.location.href );
+		return results==null?"":results[1];
+	}
+	
+	/*
+	#macro(isTrue $v)#toBoolean($v, false)#end
+	#macro(isFalse $v)#toBoolean($v, true)#end
+	
+	#macro(toBoolean $v $defaultValue) 
+		#set($boolVar = $defaultValue)
+		#if ($v == 'true' || $v == true)
+			#set($boolVar = true)
+		#elseif ($v == 'false' || $v == false)
+			#set($boolVar = false)
+		#elseif (!$report.isEmpty($v))
+			#set($v = $v.toString().toLowerCase())
+			#if ($v == 'true')
+				#set($boolVar = true)
+			#elseif ($v == 'false')
+				#set($boolVar = false)
+			#end
+		#end
+	#end
+	*/
+	
+	window.onload = function() {
+		/* #isTrue($UseContextMenu) #set($enabledContextMenu = $boolVar) */
+		usecontextmenu = $enabledContextMenu;
+		/* #isTrue($ShowAppearsInPage) #set($enabledAppearsInPage = $boolVar) */
+		showappearsinpage = $enabledAppearsInPage;
+		/* #isTrue($AutoNavigateHyperlink) #set($useTransitiveHyperlink = $boolVar) */
+		autonavigatehyperlink = $useTransitiveHyperlink;
+		/* #isTrue($DisplayTreeElementId) #set($enableTreeElementId = $boolVar) */
+		displayelementid = $enableTreeElementId;
+		/* #isTrue($DisplayTreeElementNumber) #set($enableTreeElementNumber = $boolVar) */
+		displayelementnumber = $enableTreeElementNumber;
+		/* #isTrue($ShowAppliedStereotypes) #set($showAppliedStereotypes = $boolVar) */
+		showAppliedStereotypes = $showAppliedStereotypes;
+		/* #if($gotoElementId) */
+		gotoElementId = '$gotoElementId';
+		/* #else */
+		gotoElementId = '';
+		/* #end */
+		/* turn off to improve performance on very large report. */ 
+		/* #isTrue($SelectHistoryNode) #set($selecthistorynode = $boolVar) */
+		selecthistorynode = $selecthistorynode;
+		/*** Default value of SVGDiagramResizable is true ***/
+		/* #isFalse($SVGDiagramResizable) #set($svgdiagramresizable = $boolVar) */
+		svgdiagramresizable = $svgdiagramresizable;
+		/* #isTrue($GotoLinkByIcon) #set($gotoLinkByIcon = $boolVar) */
+		gotoLinkByIcon = $gotoLinkByIcon;
+		/* #isTrue($HexadecimalName) #set($hexadecimalName = $boolVar) */
+		hexadecimalName = $hexadecimalName;
+		
+		var refid = param('refid');
+		if (refid != '') {
+			gotoElementId = refid;
+		}
+		/* #isTrue($ExportLinkedFile) #set($linkedFile = $boolVar) */
+		XMLRequest.send('$exporter2.exportAll(true, $linkedFile)', renderBrowser);
+	};     
+</script>
+</body>
+</html>

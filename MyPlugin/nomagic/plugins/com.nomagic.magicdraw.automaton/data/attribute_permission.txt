@@ -1,0 +1,7 @@
+ControlFlow	w	source
+ControlFlow	w	target
+ObjectFlow	w	source
+ObjectFlow	w	target
+TemplateParameterSubstitution	w	formal
+TemplateParameterSubstitution	w	actual
+.*	w	owner

@@ -1,0 +1,45 @@
+#sectionBegin(attributes)
+<table border="1" width="100%" cellpadding="3" cellspacing="0">
+   <tr class="heading">
+      <th align="left" colspan="4"><b>Attributes</b></th>
+   </tr>
+   <tr class="row">
+      <td><b>Name</b></td>
+      <td><b>Type</b></td>
+      <td><b>Default Value</b></td>
+      <td><b>Classifier</b></td>
+   </tr>
+#*=============================
+ * Print element owned attribute
+ * @param element element
+==============================*#
+#macro (ownedAttribute $element)
+#if ($element.hasAttribute())
+#foreach ($att in $sorter.sort($element.attribute))
+#if ($att.elementType != 'port')
+#if ($element.ID == $importer.ID || $att.visibility != 'private')
+#set($pahtName = $file.create('attribute/attribute-content.html', $file.computeName('attribute', $att.ID, 'html'), $att))
+<tr class="row">
+   <td>#visibilityIcon($att)<a href="../$pahtName"><img src="../$report.getIconFor($att)" alt="attribute" width="16" height="16"></a>&nbsp;<a href="../$pahtName">$att.name</a>&nbsp;</td>
+   <td>#link($att.getType())&nbsp;</td>
+   <td>$att.default&nbsp;</td>
+   <td>#link($att.classifier)&nbsp;</td>
+</tr>
+#end
+#end
+#end
+#end
+#if($element.hasGeneralization())
+   #foreach ($gen in $sorter.sort($element.general))
+      #ownedAttribute($gen)
+   #end
+#end
+#if($element.hasInterfaceRealization())
+   #foreach ($rea in $sorter.sort($element.interfaceRealization))
+      #ownedAttribute($rea)
+   #end
+#end
+#end
+#ownedAttribute($importer)
+</table>
+#sectionEnd

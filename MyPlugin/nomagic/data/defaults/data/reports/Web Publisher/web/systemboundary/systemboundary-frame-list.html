@@ -1,0 +1,68 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+#*=============================
+ * Create link for HTML element
+ * @param element element
+ * @param target anchor target   
+==============================*#
+#macro (linkTarget $element $target)
+#if ($report.isNull($element))$emptyValue
+#else<span class="image">#set($pathname = false)
+#acceptType($element)
+#if ($report.isRelationship($element))#set ($pathname = $file.computeName('relation', $element.ID, 'html'))
+#elseif ($accept)#set ($pathname = $file.computeName($element.elementType, $element.ID, 'html'))
+#end
+	#if ($pathname)<a href="../$pathname" target="$target"><img src="../$report.getIconFor($element)" alt="$element.elementType" width="16" height="16"></a>&nbsp;<a href="../$pathname" target="$target">$element.name</a>
+	#else<img src="../$report.getIconFor($element)" alt="$element.elementType" width="16" height="16">&nbsp;$element.name#end</span>
+#end
+#end
+#includeSection('web.html', web)
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link rel ="stylesheet" type="text/css" href="../stylesheet.css" title="style">
+   <title>$Title</title>
+</head>
+<body>
+   <div class="frametitle">#set($pahtName = $file.create('systemboundary/systemboundary-content.html', $file.computeName($importer.elementType, $importer.ID, 'html'), $importer))<a href="../$pahtName" target="classframe"><img src="../$report.getIconFor($importer)" alt="$importer.elementType" align="middle" width="16" height="16"></a>&nbsp;<a href="../$pahtName" target="classframe">#qualifiedName($importer)</a></div>
+   $group.init()
+   #foreach ($oe in $importer.ownedElement)$group.put($oe.elementType, $oe)#end
+   #if ($group.contains('activity'))
+   <div class="frameheading">Activities</div>
+   #foreach ($oe in $sorter.sort($group.get('activity'), 'name'))
+   <div class="frameitem">&nbsp;#linkTarget($oe, 'classframe')</div>
+   #end#end            
+   #if ($group.contains('actor'))
+   <div class="frameheading">Actors</div>
+   #foreach ($oe in $sorter.sort($group.get('actor'), 'name'))
+   <div class="frameitem">&nbsp;#linkTarget($oe, 'classframe')</div>
+   #end#end            
+   #if ($group.contains('class'))
+   <div class="frameheading">Classes</div>
+   #foreach ($oe in $sorter.sort($group.get('class'), 'name'))
+   <div class="frameitem">&nbsp;#linkTarget($oe, 'classframe')</div>
+   #end#end            
+   #if ($group.contains('interface'))
+   <div class="frameheading">Interfaces</div>
+   #foreach ($oe in $sorter.sort($group.get('interface'), 'name'))
+   <div class="frameitem">&nbsp;#linkTarget($oe, 'classframe')</div>
+   #end#end            
+   #if ($group.contains('diagram'))
+   <div class="frameheading">Diagrams</div>
+   #foreach ($oe in $sorter.sort($group.get('diagram'), 'name'))
+   #acceptType($oe) #if ($accept)
+   <div class="frameitem">&nbsp;#linkTarget($oe, 'classframe')</div>
+   #end
+   #end#end            
+   #if ($group.contains('usecase'))
+   <div class="frameheading">Use Cases</div>
+   #foreach ($oe in $sorter.sort($group.get('usecase'), 'name'))
+   <div class="frameitem">&nbsp;#linkTarget($oe, 'classframe')</div>
+   #end#end
+   #if ($group.contains('statemachine'))
+   <div class="frameheading">State Machines</div>
+   #foreach ($oe in $sorter.sort($group.get('statemachine'), 'name'))
+   <div class="frameitem">&nbsp;#linkTarget($oe, 'classframe')</div>
+   #end#end
+   $group.clear()
+</body>
+</html>

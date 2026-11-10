@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.usecasedescriptor"
+	name="Use Case descriptions extensions used for modeling use cases and generating reports for them."
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.usecasedescriptor.UseCaseDescriptorPlugin">
+
+	<requires>
+	    <api version="1.0"/>
+	</requires>
+
+	<runtime>
+	   <library name="usecasedescriptor.jar"/>
+	   <library name="usecasedescriptor_api.jar"/>
+	</runtime>
+</plugin>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+   <name>Tutorial 11 - Group Tool</name>
+   <description>This sample template will print classes by grouping them into same visibility. Later, this tutorial will give you more idea of applying the group tool for other purposes.</description>
+   <icon />
+   <enable>true</enable>
+   <readonly>true</readonly>
+   <category>Tutorial</category>
+   <templateFile>template.docx</templateFile>
+   <variables>
+      <variable>
+         <name>Author</name>
+         <value xml:space="preserve">Siri Chongasamethaworn</value>
+      </variable>
+      <variable>
+         <name>Publisher</name>
+         <value xml:space="preserve">No Magic</value>
+      </variable>
+   </variables>
+</template>

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Built-By: Hall2
+Build-Jdk: 17.0.7
+Implementation-Title: cameo-rest-api
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: io.cameointegrations
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/cameo-rest-api
+ /
+Main-Class: io.cameorestservice.cameo.CameoRestAPIApp
+Created-By: Maven Integration for Eclipse
+

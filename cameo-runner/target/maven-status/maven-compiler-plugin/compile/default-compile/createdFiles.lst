@@ -1,0 +1,13 @@
+io\cameorestservice\plugin\CameoProperty.class
+io\cameorestservice\plugin\CameoParameter.class
+io\cameorestservice\plugin\CameoDiagram.class
+io\cameorestservice\plugin\CameoFeature.class
+io\cameorestservice\plugin\CameoRelationship.class
+io\cameorestservice\plugin\CameoDirectedRelationship.class
+io\cameorestservice\plugin\CameoElement.class
+io\cameorestservice\plugin\CameoRunner.class
+io\cameorestservice\plugin\CameoProxyPort.class
+io\cameorestservice\plugin\CameoCallBehaviorAction.class
+io\cameorestservice\plugin\CameoActivityEdge.class
+io\cameorestservice\plugin\CameoConnectorEnd.class
+io\cameorestservice\plugin\CameoConnector.class

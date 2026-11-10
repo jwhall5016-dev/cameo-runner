@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram abbreviation="uc" baseType="Static Diagram" type="Use Case Diagram" version="8">
+    <requiredPlugin>;UML_Standard_Profile.mdzip^UML_FEATURE</requiredPlugin>
+    <helpID>Use+Case+Diagram</helpID>
+    <toolbarConfiguration>
+        <baseCategory expandedByDefault="false" id="COMMON_ELEMENTS_STATIC" parentCategoryID="COMMON_ELEMENTS_STATIC"/>
+        <baseCategory expandedByDefault="false" id="CLASS_DIAGRAM_ELEMENTS" parentCategoryID="CLASS_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="true" id="USECASE_DIAGRAM_ELEMENTS" parentCategoryID="USECASE_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="COMPONENT_DIAGRAM_ELEMENTS" parentCategoryID="COMPONENT_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="true" id="DEPLOYMENT_DIAGRAM_ELEMENTS" parentCategoryID="DEPLOYMENT_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="COMPOSITE_STRUCTURE_DIAGRAM_ELEMENTS" parentCategoryID="COMPOSITE_STRUCTURE_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="action_category_1158589748809_528806_0" parentCategoryID="action_category_1158589748809_528806_0"/>
+    </toolbarConfiguration>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/usecasediagram.png" size="16" type="small"/>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/usecasediagram.svg" size="-1" type="diagraming"/>
+    <module location="/Users/admin/182/G:\home\monte\work\sourcecode\md\core\E:\INSTALL\MD_UML_150EAP_beta1_no_install\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.NoteView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+</diagram>
+

@@ -1,0 +1,1 @@
+#foreach ($ac in $sorter.sort($importer, 'name'))$file.silentCreate('stereotype/stereotype-content.html', $file.computeName('stereotype', $ac.ID, 'html'), $ac)#end

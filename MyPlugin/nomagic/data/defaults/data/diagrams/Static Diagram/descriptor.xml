@@ -1,0 +1,1440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram abbreviation="static" baseType="Any Diagram" type="Static Diagram" version="8">
+    <toolbarConfiguration>
+        <category expandedByDefault="false" id="COMMON_ELEMENTS_STATIC" name="Common">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.svg" size="16" type="large"/>
+            <actions>
+                <group>
+                    <standard action="ADD_NOTE" description="Note" shortcut="pressed N "/>
+                    <standard action="ADD_HTML_NOTE" description="Note(HTML Text)" shortcut="shift pressed N "/>
+                    <standard action="ADD_COMMENT"/>
+                    <standard action="ADD_HTML_COMMENT"/>
+                </group>
+                <group>
+                    <standard action="ADD_TEXT_BOX" shortcut="pressed X "/>
+                    <standard action="ADD_HTML_TEXT_BOX" shortcut="shift pressed X "/>
+                </group>
+                <group>
+                    <standard action="ADD_NOTE_ANCHOR" description="Anchor" shortcut="pressed H "/>
+                    </group>
+				<group>
+					<standard action="CONSTRAINT_ACTION"/>
+					<standard action="DURATION_CONSTRAINT_ACTION"/>
+					<standard action="TIME_CONSTRAINT_ACTION"/>
+					<standard action="ADD_CONSTRAINT_LINK" shortcut="shift pressed H "/>
+                </group>
+                <group>
+                    <standard action="ADD_CONTAINMENT_LINK" shortcut="shift pressed C "/>
+                    <standard action="ADD_CONTAINMENT_LINK_OPPOSITE" shortcut="shift pressed K "/>
+                </group>
+                <group>
+                    <standard action="ADD_ABSTRACTION" shortcut="pressed T "/>
+                    <custom description="Trace" id="IDaction_1297147200209_590759_0" listAsElement="true" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mddependencies.Abstraction">
+                        <stereotype id="magicdraw_1046861421246_733231_63"/>
+                    </custom>
+                </group>
+                <standard action="ADD_DEPENDENCY" shortcut="shift pressed D "/>
+                <group>
+                    <standard action="ADD_IMAGE_FROM_FILE" shortcut="pressed I "/>
+                    <standard action="ADD_IMAGE_FROM_ATTACHED_FILE"/>
+                </group>
+                <standard action="ADD_DIAGRAM_OVERVIEW"/>
+                                <standard action="ADD_DIAGRAM_LEGEND"/>
+                <group>
+                    <standard action="ADD_SEPARATOR" shortcut="pressed W "/>
+                    <standard action="ADD_SEPARATOR_VERTICAL"/>
+                    <standard action="ADD_RECTANGULAR_SHAPE" shortcut="shift pressed Q "/>
+                </group>
+            </actions>
+        </category>
+        <category expandedByDefault="false" id="CLASS_DIAGRAM_ELEMENTS" name="Class Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/classdiagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/classdiagram.svg" size="16" type="large"/>
+            <actions>
+                <group>
+                    <standard action="ADD_CLASS" shortcut="pressed C "/>
+                    <standard action="ADD_STRUCTURED_CLASS" shortcut="shift pressed T "/>
+                    <standard action="CLASS_BY_PATTERN" shortcut="shift pressed P "/>
+                </group>
+                <standard action="ADD_SIGNAL"/>
+                <group>
+                    <standard action="ADD_DATA_TYPE"/>
+                    <standard action="ADD_PRIMITIVE_TYPE"/>
+                    <standard action="ADD_ENUMERATION" shortcut="pressed K "/>
+                </group>
+                <standard action="ADD_PORT" shortcut="shift pressed R "/>
+                <standard action="ADD_INTERFACE" description="Interface" shortcut="pressed I "/>
+                <standard action="ADD_COLLABORATION" shortcut="pressed Q "/>
+                <group>
+                    <standard action="ADD_GENERALIZATION" shortcut="pressed G "/>
+                    <standard action="ADD_GENERALIZATION_OPPOSITE" description="Generalization" shortcut="shift pressed Z "/>
+                </group>
+                <group>
+                    <standard action="ADD_ASSOCIATION" shortcut="pressed S "/>
+                    <standard action="ADD_DIRECTED_ASSOCIATION"/>
+                    <standard action="ADD_NONNAVIGABLE_ASSOCIATION"/>
+                    <standard action="ADD_NARY_ASSOCIATION" shortcut="pressed O "/>
+                    <standard action="ADD_ASSOCIATION_CLASS"/>
+                    <standard action="ADD_NONNAVIGABLE_ASSOCIATION_CLASS"/>
+                </group>
+                <group>
+                    <standard action="ADD_COMPOSITION" description="Composition" shortcut="shift pressed M "/>
+                    <standard action="ADD_DIRECTED_COMPOSITION"/>
+                </group>
+                <group>
+                    <standard action="ADD_AGGREGATION" shortcut="pressed A "/>
+                    <standard action="ADD_DIRECTED_AGGREGATION"/>
+                </group>
+                <group>
+                    <standard action="ADD_INTERFACE_REALIZATION" description="Interface Realization" shortcut="pressed R "/>
+                    <standard action="ADD_INTERFACE_REALIZATION_OPPOSITE" description="Interface Realization" shortcut="shift pressed R "/>
+                    <standard action="ADD_REALIZE" shortcut="pressed E "/>
+                    <standard action="ADD_SUBSTITUTION"/>
+                </group>
+                <group>
+                    <standard action="ADD_USAGE" shortcut="pressed U "/>
+                    <standard action="ADD_USAGE_OPPOSITE" shortcut="shift pressed U "/>
+                </group>
+                <standard action="ADD_TEMPLATE_BINDING" shortcut="pressed B "/>
+            </actions>
+        </category>
+        <category expandedByDefault="false" id="USECASE_DIAGRAM_ELEMENTS" name="Use Case Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/usecasediagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/usecasediagram.svg" size="16" type="large"/>
+            <actions>
+                <standard action="ADD_ACTOR" shortcut="pressed A "/>
+                <standard action="ADD_USECASE" shortcut="pressed U "/>
+                <group>
+                    <standard action="ADD_PACKAGE" description="Package" shortcut="pressed P "/>
+                    <standard action="ADD_SYSTEM_BOUNDARY" description="System Boundary" shortcut="pressed B "/>
+                </group>
+                <standard action="ADD_SUBSYSTEM" description="Subsystem"/>
+                <standard action="ADD_ASSOCIATION" shortcut="pressed S "/>
+                <standard action="ADD_INCLUDE" shortcut="pressed C "/>
+                <group>
+                    <standard action="ADD_EXTEND" shortcut="pressed E "/>
+                    <standard action="ADD_EXTEND_OPPOSITE" shortcut="shift pressed E "/>
+                </group>
+                <group>
+                    <standard action="ADD_GENERALIZATION" shortcut="pressed G "/>
+                    <standard action="ADD_GENERALIZATION_OPPOSITE" shortcut="shift pressed Z "/>
+                </group>
+            </actions>
+        </category>
+        <category expandedByDefault="false" id="COMPOSITE_STRUCTURE_DIAGRAM_ELEMENTS" name="Composite Structure Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/compositestructurediagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/compositestructurediagram.svg" size="16" type="large"/>
+            <actions>
+                <standard action="ADD_PART" shortcut="pressed P "/>
+                <standard action="ADD_PORT" description="Port" shortcut="shift pressed R "/>
+                <standard action="ADD_COLLABORATIONUSE" shortcut="pressed U "/>
+                <standard action="ADD_CONNECTOR" shortcut="pressed C "/>
+                <standard action="ADD_ROLE_BINDING" shortcut="pressed B "/>
+            </actions>
+        </category>
+        <category expandedByDefault="false" id="PACKAGE_DIAGRAM_ELEMENTS" name="Package Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/packagediagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/packagediagram.svg" size="16" type="large"/>
+            <actions>
+                <group>
+                    <standard action="ADD_PACKAGE" shortcut="pressed P "/>
+                    <standard action="ADD_MODEL" shortcut="pressed M "/>
+                    <standard action="ADD_PROFILE"/>
+                </group>
+                <group>
+                    <standard action="ADD_PACKAGE_MERGE_RELATIONSHIP"/>
+                    <standard action="ADD_ELEMENT_IMPORT"/>
+                    <standard action="ADD_PROFILE_APPLICATION"/>
+                </group>
+                <standard action="ADD_PACKAGE_IMPORT_RELATIONSHIP"/>
+            </actions>
+        </category>
+        <category expandedByDefault="false" id="OBJECT_DIAGRAM_ELEMENTS" name="Object Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/objectdiagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/objectdiagram.svg" size="16" type="large"/>
+            <actions>
+                <standard action="ADD_INSTANCE_SPECIFICATION" shortcut="shift pressed O "/>
+                <standard action="ADD_LINK" shortcut="shift pressed L "/>
+            </actions>
+        </category>
+        <category expandedByDefault="false" id="COMPONENT_DIAGRAM_ELEMENTS" name="Component Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/componentdiagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/componentdiagram.svg" size="16" type="large"/>
+            <actions>
+                <standard action="ADD_CLASS" shortcut="pressed C "/>
+                <group>
+                    <standard action="ADD_COMPONENT" shortcut="pressed K "/>
+                    <standard action="ADD_COMPONENT_INSTANCE" shortcut="pressed A "/>
+                </group>
+                <standard action="ADD_PORT" shortcut="shift pressed R "/>
+                <standard action="ADD_PACKAGE" shortcut="pressed P "/>
+                <group>
+                    <standard action="ADD_ARTIFACT" shortcut="pressed B "/>
+                    <standard action="ADD_DEPLOYMENT_SPECIFICATION"/>
+                </group>
+                <group>
+                    <standard action="ADD_ARTIFACT_INSTANCE"/>
+                    <standard action="ADD_DEPLOYMENT_SPECIFICATION_INSTANCE"/>
+                </group>
+                <standard action="ADD_INTERFACE" shortcut="pressed F "/>
+                <group>
+                    <standard action="ADD_INTERFACE_REALIZATION" shortcut="pressed R "/>
+                    <standard action="ADD_INTERFACE_REALIZATION_OPPOSITE" shortcut="shift pressed R "/>
+                    <standard action="ADD_COMPONENT_REALIZATION"/>
+                    <standard action="ADD_COMPONENT_REALIZATION_OPPOSITE"/>
+                    <standard action="ADD_REALIZE" shortcut="pressed E "/>
+                </group>
+                <group>
+                    <standard action="ADD_USAGE" shortcut="pressed U "/>
+                    <standard action="ADD_USAGE_OPPOSITE" shortcut="shift pressed U "/>
+                </group>
+                <group>
+                    <standard action="ADD_GENERALIZATION" shortcut="pressed G "/>
+                    <standard action="ADD_GENERALIZATION_OPPOSITE" shortcut="shift pressed Z "/>
+                </group>
+                <standard action="ADD_LINK" shortcut="pressed L "/>
+                <standard action="ADD_MANIFESTATION"/>
+            </actions>
+        </category>
+        <category expandedByDefault="false" id="DEPLOYMENT_DIAGRAM_ELEMENTS" name="Deployment Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/deploymentdiagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/deploymentdiagram.svg" size="16" type="large"/>
+            <actions>
+                <group>
+                    <standard action="ADD_NODE" shortcut="pressed O "/>
+                    <standard action="ADD_NODE_EXECUTION_ENVIRONMENT"/>
+                    <standard action="ADD_NODE_DEVICE"/>
+                </group>
+                <group>
+                    <standard action="ADD_NODE_INSTANCE" shortcut="pressed T "/>
+                    <standard action="ADD_NODE_EXECUTION_ENVIRONMENT_INSTANCE"/>
+                    <standard action="ADD_NODE_DEVICE_INSTANCE"/>
+                </group>
+                <group>
+                    <standard action="ADD_ARTIFACT" shortcut="pressed B "/>
+                    <standard action="ADD_DEPLOYMENT_SPECIFICATION"/>
+                </group>
+                <group>
+                    <standard action="ADD_ARTIFACT_INSTANCE"/>
+                    <standard action="ADD_DEPLOYMENT_SPECIFICATION_INSTANCE"/>
+                </group>
+                <standard action="ADD_PACKAGE" shortcut="pressed P "/>
+                <group>
+                    <standard action="ADD_DEPLOYMENT_OPPOSITE"/>
+                    <standard action="ADD_DEPLOYMENT"/>
+                </group>
+                <standard action="ADD_MANIFESTATION"/>
+                <group>
+                    <standard action="ADD_GENERALIZATION" shortcut="pressed G "/>
+                    <standard action="ADD_GENERALIZATION_OPPOSITE" shortcut="shift pressed Z "/>
+                </group>
+                <standard action="ADD_LINK" shortcut="pressed L "/>
+                <standard action="ADD_COMMUNICATION_PATH"/>
+            </actions>
+        </category>
+        <category expandedByDefault="false" id="PROFILE_DIAGRAM_ELEMENTS" name="Profile Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/profilediagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/profilediagram.svg" size="16" type="large"/>
+            <actions>
+                <standard action="ADD_STEREOTYPE" shortcut="shift pressed S "/>
+                <standard action="ADD_METACLASS"/>
+                <group>
+                    <standard action="ADD_PROFILE"/>
+                    <standard action="ADD_PACKAGE" shortcut="pressed P "/>
+                    <standard action="ADD_MODEL" shortcut="pressed M "/>
+                </group>
+                <group>
+                    <standard action="ADD_DATA_TYPE"/>
+                    <standard action="ADD_PRIMITIVE_TYPE"/>
+                    <standard action="ADD_ENUMERATION" shortcut="pressed K "/>
+                </group>
+                <standard action="ADD_EXTENSION"/>
+                <group>
+                    <standard action="ADD_PROFILE_APPLICATION"/>
+                    <standard action="ADD_PACKAGE_MERGE_RELATIONSHIP"/>
+                    <standard action="ADD_PACKAGE_IMPORT_RELATIONSHIP"/>
+                </group>
+                <group>
+                    <standard action="ADD_ASSOCIATION" shortcut="pressed S "/>
+                    <standard action="ADD_DIRECTED_ASSOCIATION"/>
+                </group>
+                <group>
+                    <standard action="ADD_GENERALIZATION" shortcut="pressed G "/>
+                    <standard action="ADD_GENERALIZATION_OPPOSITE" shortcut="shift pressed Z "/>
+                </group>
+            </actions>
+        </category>
+        <category expandedByDefault="false" id="action_category_1158589748809_528806_0" name="Information Flows">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/information_flows.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/information_flows.svg" size="16" type="large"/>
+            <actions>
+                <standard action="ADD_CONVEYED_INFORMATION"/>
+                <standard action="ADD_INFORMATION_ITEM"/>
+                <standard action="ADD_INFORMATION_FLOW" description="Information Flow" shortcut="shift pressed W "/>
+            </actions>
+        </category>
+    </toolbarConfiguration>
+    <module location="/Users/admin/182/D:\No install\17.0.1 GA 0826\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.activities.mdfundamentalactivities.Activity</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_INTERFACE_REALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_USAGE">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_DIRECTED_ASSOCIATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_AGGREGATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_PORT"/>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdusecases.Actor</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_ACTOR</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_ACTOR</target>
+        </path>
+        <path action="ADD_INTERFACE_REALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_ASSOCIATION">
+            <target>ADD_USECASE</target>
+            <target>ADD_ACTOR</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_COMPONENT</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdartifacts.Artifact</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_COMPONENT</target>
+            <target>ADD_NODE</target>
+            <target>ADD_NODE_DEVICE</target>
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_ARTIFACT</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_INSTANCE_SPECIFICATION</target>
+        </path>
+        <path action="ADD_DEPLOYMENT_OPPOSITE">
+            <target>ADD_NODE</target>
+        </path>
+        <path action="ADD_MANIFESTATION">
+            <target>ADD_COMPONENT</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_ARTIFACT</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_ARTIFACT</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdassociationclasses.AssociationClass</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_INTERFACE_REALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_USAGE">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_DIRECTED_ASSOCIATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_AGGREGATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_PORT"/>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.RoleView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.AssociationView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.AssociationClassView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_INTERFACE_REALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_USAGE">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_DIRECTED_ASSOCIATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_AGGREGATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_ASSOCIATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_AGGREGATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_COMPOSITION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_PORT"/>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.compositestructures.mdcollaborations.CollaborationUse</element>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.compositestructures.mdcollaborations.Collaboration</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_CLASS</target>
+            <target>ADD_COLLABORATION</target>
+            <target>ADD_PACKAGE</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_SUBSYSTEM</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_COLLABORATION</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_COLLABORATION</target>
+        </path>
+        <path action="ADD_REALIZE">
+            <target>ADD_PACKAGE</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_SUBSYSTEM</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.CommunicationPathView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_9_0_2_91a0295_1111479028825_93211_0" name="Subsystem"/>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.ComponentView</symbol>
+        <path action="ADD_INTERFACE_REALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_SUBSYSTEM</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_SUBSYSTEM</target>
+        </path>
+        <path action="ADD_ASSOCIATION">
+            <target>ADD_USECASE</target>
+            <target>ADD_ACTOR</target>
+            <target>ADD_SUBSYSTEM</target>
+            <target>ADD_COMPONENT</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.components.mdbasiccomponents.Component</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_COMPONENT</target>
+            <target>ADD_NODE</target>
+            <target>ADD_NODE_DEVICE</target>
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_ARTIFACT</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_INSTANCE_SPECIFICATION</target>
+        </path>
+        <path action="ADD_INTERFACE_REALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_USAGE">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_COMPONENT</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_COMPONENT</target>
+        </path>
+        <path action="ADD_COMPONENT_REALIZATION">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_PORT"/>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.ConnectorView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.compositestructures.mdinternalstructures.Connector</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.DataType</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_DATA_TYPE</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_DATA_TYPE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.DependencyView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdcomponentdeployments.DeploymentSpecification</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_COMPONENT</target>
+            <target>ADD_NODE</target>
+            <target>ADD_NODE_DEVICE</target>
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_ARTIFACT</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_INSTANCE_SPECIFICATION</target>
+        </path>
+        <path action="ADD_MANIFESTATION">
+            <target>ADD_COMPONENT</target>
+        </path>
+        <path action="ADD_ABSTRACTION">
+            <target>ADD_COMPONENT</target>
+            <target>ADD_COMPONENT_INSTANCE</target>
+            <target>ADD_PACKAGE</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ARTIFACT</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_DEPLOYMENT_SPECIFICATION</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_DEPLOYMENT_SPECIFICATION</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdnodes.Device</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_NODE</target>
+            <target>ADD_NODE_DEVICE</target>
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+            <target>ADD_COMPONENT</target>
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_ARTIFACT</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_INSTANCE_SPECIFICATION</target>
+        </path>
+        <path action="ADD_COMMUNICATION_PATH">
+            <target>ADD_NODE_DEVICE</target>
+            <target>ADD_NODE</target>
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+        </path>
+        <path action="ADD_DEPLOYMENT">
+            <target>ADD_ARTIFACT</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_NODE_DEVICE</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_NODE_DEVICE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.CommentView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.ElementImportView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Enumeration</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdnodes.ExecutionEnvironment</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_NODE</target>
+            <target>ADD_NODE_DEVICE</target>
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+            <target>ADD_COMPONENT</target>
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_ARTIFACT</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_INSTANCE_SPECIFICATION</target>
+        </path>
+        <path action="ADD_COMMUNICATION_PATH">
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+            <target>ADD_NODE</target>
+            <target>ADD_NODE_DEVICE</target>
+        </path>
+        <path action="ADD_DEPLOYMENT">
+            <target>ADD_ARTIFACT</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.ExtendView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.ExtensionView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.GeneralizationSetView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.GeneralizationView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.IncludeView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.InformationFlowView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.auxiliaryconstructs.mdinformationflows.InformationItem</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.InstanceSpecification</element>
+        <path action="ADD_LINK">
+            <target>ADD_INSTANCE_SPECIFICATION</target>
+        </path>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_INSTANCE_SPECIFICATION</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_COMPONENT</target>
+            <target>ADD_NODE</target>
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+            <target>ADD_NODE_DEVICE</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_PACKAGE</target>
+            <target>ADD_ARTIFACT</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.interactions.mdbasicinteractions.Interaction</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_INTERFACE_REALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_USAGE">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_DIRECTED_ASSOCIATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_AGGREGATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_PORT"/>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.InterfaceRealizationView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdinterfaces.Interface</element>
+        <path action="ADD_INTERFACE_REALIZATION_OPPOSITE">
+            <target>ADD_CLASS</target>
+            <target>ADD_COMPONENT</target>
+        </path>
+        <path action="ADD_USAGE_OPPOSITE">
+            <target>ADD_CLASS</target>
+            <target>ADD_COMPONENT</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_DIRECTED_ASSOCIATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_ASSOCIATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.LinkAttributeView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.LinkView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.auxiliaryconstructs.mdmodels.Model</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PACKAGE_MERGE_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="magicdraw_1046861421226_625103_15" name="Use Case Model"/>
+        <element>com.nomagic.uml2.ext.magicdraw.auxiliaryconstructs.mdmodels.Model</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_PACKAGE_MERGE_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.NNaryAssociationView</symbol>
+        <path action="ADD_ASSOCIATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_AGGREGATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_COMPOSITION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdnodes.Node</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_NODE</target>
+            <target>ADD_NODE_DEVICE</target>
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+            <target>ADD_COMPONENT</target>
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_ARTIFACT</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_INSTANCE_SPECIFICATION</target>
+        </path>
+        <path action="ADD_COMMUNICATION_PATH">
+            <target>ADD_NODE</target>
+            <target>ADD_NODE_EXECUTION_ENVIRONMENT</target>
+            <target>ADD_NODE_DEVICE</target>
+        </path>
+        <path action="ADD_DEPLOYMENT">
+            <target>ADD_ARTIFACT</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_NODE</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_NODE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.commonbehaviors.mdbasicbehaviors.OpaqueBehavior</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_INTERFACE_REALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_USAGE">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_DIRECTED_ASSOCIATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_AGGREGATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_PORT"/>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.PackageImportView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.PackageMergeView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Package</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PACKAGE_MERGE_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PROFILE_APPLICATION">
+            <target>ADD_PROFILE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.PartView</symbol>
+        <path action="ADD_CONNECTOR">
+            <target>ADD_PART</target>
+        </path>
+        <path action="ADD_ROLE_BINDING">
+            <target>ADD_COLLABORATIONUSE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_PORT"/>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.compositestructures.mdports.Port</element>
+        <path action="ADD_INTERFACE_REALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_USAGE">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_CONNECTOR">
+            <target>ADD_PART</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.PrimitiveType</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_PRIMITIVE_TYPE</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_PRIMITIVE_TYPE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.ProfileApplicationView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdprofiles.Profile</element>
+        <path action="ADD_PROFILE_APPLICATION">
+            <target>ADD_PROFILE</target>
+        </path>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_MODEL</target>
+        </path>
+        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PACKAGE_MERGE_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.statemachines.mdprotocolstatemachines.ProtocolStateMachine</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_INTERFACE_REALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_USAGE">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_DIRECTED_ASSOCIATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_AGGREGATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_PORT"/>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.RealizationView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.RoleBindingView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.commonbehaviors.mdcommunications.Signal</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_SIGNAL</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_SIGNAL</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.statemachines.mdbehaviorstatemachines.StateMachine</element>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_CLASS</target>
+        </path>
+        <path action="ADD_INTERFACE_REALIZATION">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_USAGE">
+            <target>ADD_INTERFACE</target>
+        </path>
+        <path action="ADD_DIRECTED_ASSOCIATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_AGGREGATION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DIRECTED_COMPOSITION">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+        <path action="MENU_SEPARATOR"/>
+        <path action="ADD_PORT"/>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdprofiles.Stereotype</element>
+        <path action="ADD_EXTENSION"/>
+        <path action="ADD_GENERALIZATION"/>
+        <path action="ADD_GENERALIZATION_OPPOSITE"/>
+        <path action="ADD_ASSOCIATION"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.TemplateBindingView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.UsageView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdusecases.UseCase</element>
+        <path action="ADD_ASSOCIATION">
+            <target>ADD_ACTOR</target>
+            <target>ADD_USECASE</target>
+            <target>ADD_SUBSYSTEM</target>
+        </path>
+        <path action="ADD_EXTEND_OPPOSITE">
+            <target>ADD_USECASE</target>
+        </path>
+        <path action="ADD_INCLUDE">
+            <target>ADD_USECASE</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_USECASE</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_USECASE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+        <path action="MENU_SEPARATOR"/>
+    </manipulators>
+</diagram>
+

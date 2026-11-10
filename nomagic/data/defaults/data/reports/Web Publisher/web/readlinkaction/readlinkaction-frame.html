@@ -1,0 +1,1 @@
+#foreach ($ac in $sorter.sort($importer, 'name'))$file.silentCreate('readlinkaction/readlinkaction-content.html', $file.computeName('readlinkaction', $ac.ID, 'html'), $ac)#end

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+        id="com.nomagic.magicdraw.examples.customgenerictable"
+        name="Custom Generic Table Example"
+        version="2021x Refresh1"
+        provider-name="No Magic"
+        class="com.nomagic.magicdraw.examples.customgenerictable.CustomGenericTableExamplePlugin">
+
+    <requires>
+        <api version="1.0"/>
+        <required-plugin id="com.nomagic.magicdraw.diagramtable" name="Diagram Table"/>
+    </requires>
+
+    <runtime>
+        <library name="customgenerictable.jar"/>
+    </runtime>
+
+</plugin>

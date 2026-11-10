@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.usageanalytics"
+	name="Usage Analytics"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.usageanalytics.UsageAnalyticsPlugin">
+
+	<requires>
+	   <api version="1.0"/>
+	</requires>
+
+	<runtime>
+	   <library name="usageanalytics.jar"/>
+	   <library name="usageanalytics_api.jar"/>
+	   <library name="lib/httpmime-4.5.6.jar"/>
+	   <library name="lib/jackson-annotations-2.11.0.jar"/>
+	   <library name="lib/jackson-core-2.11.0.jar"/>
+	   <library name="lib/jackson-databind-2.11.0.jar"/>
+	</runtime>
+</plugin>

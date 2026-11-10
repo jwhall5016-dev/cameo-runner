@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram abbreviation="class" baseType="Static Diagram" type="Class Diagram" version="8">
+    <requiredPlugin>;UML_Standard_Profile.mdzip^UML_FEATURE</requiredPlugin>
+    <helpID>Class+Diagram</helpID>
+    <toolbarConfiguration>
+        <category expandedByDefault="false" id="COMMON_ELEMENTS_STATIC" name="Common">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.svg" size="16" type="large"/>
+            <actions>
+                <group>
+                    <standard action="ADD_NOTE" description="Note" shortcut="pressed N "/>
+                    <standard action="ADD_HTML_NOTE" description="Note(HTML Text)" shortcut="shift pressed N "/>
+                    <standard action="ADD_COMMENT"/>
+                    <standard action="ADD_HTML_COMMENT"/>
+                </group>
+                <group>
+                    <standard action="ADD_TEXT_BOX" shortcut="pressed X "/>
+                    <standard action="ADD_HTML_TEXT_BOX" shortcut="shift pressed X "/>
+                </group>
+                <group>
+                    <standard action="ADD_NOTE_ANCHOR" description="Anchor" shortcut="pressed H "/>
+                    </group>
+				<group>
+					<standard action="CONSTRAINT_ACTION"/>
+					<standard action="DURATION_CONSTRAINT_ACTION"/>
+					<standard action="TIME_CONSTRAINT_ACTION"/>
+					<standard action="ADD_CONSTRAINT_LINK" shortcut="shift pressed H "/>
+                </group>
+                <group>
+                    <standard action="ADD_CONTAINMENT_LINK" shortcut="shift pressed C "/>
+                    <standard action="ADD_CONTAINMENT_LINK_OPPOSITE" shortcut="shift pressed K "/>
+                </group>
+                <group>
+                    <standard action="ADD_ABSTRACTION" shortcut="pressed T "/>
+                    <custom description="Trace" id="IDaction_1297147200209_590759_0" listAsElement="true" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mddependencies.Abstraction">
+                        <stereotype id="magicdraw_1046861421246_733231_63"/>
+                    </custom>
+                </group>
+                <standard action="ADD_DEPENDENCY" shortcut="shift pressed D "/>
+                <group>
+                    <standard action="ADD_IMAGE_FROM_FILE" shortcut="pressed I "/>
+                    <standard action="ADD_IMAGE_FROM_ATTACHED_FILE"/>
+                </group>
+                <standard action="ADD_DIAGRAM_OVERVIEW"/>
+                                <standard action="ADD_DIAGRAM_LEGEND"/>
+                <group>
+                    <standard action="ADD_SEPARATOR" shortcut="pressed W "/>
+                    <standard action="ADD_SEPARATOR_VERTICAL"/>
+                    <standard action="ADD_RECTANGULAR_SHAPE" shortcut="shift pressed Q "/>
+                </group>
+            </actions>
+        </category>
+        <category expandedByDefault="true" id="CLASS_DIAGRAM_ELEMENTS" name="Class Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/classdiagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/classdiagram.svg" size="16" type="large"/>
+            <actions>
+                <group>
+                    <standard action="ADD_CLASS" shortcut="pressed C "/>
+                    <standard action="ADD_STRUCTURED_CLASS" shortcut="shift pressed T "/>
+                    <standard action="CLASS_BY_PATTERN" shortcut="shift pressed P "/>
+                </group>
+                <standard action="ADD_SIGNAL"/>
+                <group>
+                    <standard action="ADD_DATA_TYPE"/>
+                    <standard action="ADD_PRIMITIVE_TYPE"/>
+                    <standard action="ADD_ENUMERATION" shortcut="pressed K "/>
+                </group>
+                <standard action="ADD_PORT" shortcut="shift pressed R "/>
+                <standard action="ADD_INTERFACE" description="Interface" shortcut="pressed I "/>
+                <standard action="ADD_COLLABORATION" shortcut="pressed Q "/>
+                <group>
+                    <standard action="ADD_GENERALIZATION" shortcut="pressed G "/>
+                    <standard action="ADD_GENERALIZATION_OPPOSITE" description="Generalization" shortcut="shift pressed Z "/>
+                </group>
+                <group>
+                    <standard action="ADD_ASSOCIATION" shortcut="pressed S "/>
+                    <standard action="ADD_DIRECTED_ASSOCIATION"/>
+                    <standard action="ADD_NONNAVIGABLE_ASSOCIATION"/>
+                    <standard action="ADD_NARY_ASSOCIATION" shortcut="pressed O "/>
+                    <standard action="ADD_ASSOCIATION_CLASS"/>
+                    <standard action="ADD_NONNAVIGABLE_ASSOCIATION_CLASS"/>
+                </group>
+                <group>
+                    <standard action="ADD_COMPOSITION" description="Composition" shortcut="shift pressed M "/>
+                    <standard action="ADD_DIRECTED_COMPOSITION"/>
+                </group>
+                <group>
+                    <standard action="ADD_AGGREGATION" shortcut="pressed A "/>
+                    <standard action="ADD_DIRECTED_AGGREGATION"/>
+                </group>
+                <group>
+                    <standard action="ADD_INTERFACE_REALIZATION" description="Interface Realization" shortcut="pressed R "/>
+                    <standard action="ADD_INTERFACE_REALIZATION_OPPOSITE" description="Interface Realization" shortcut="shift pressed R "/>
+                    <standard action="ADD_REALIZE" shortcut="pressed E "/>
+                    <standard action="ADD_SUBSTITUTION"/>
+                </group>
+                <group>
+                    <standard action="ADD_USAGE" shortcut="pressed U "/>
+                    <standard action="ADD_USAGE_OPPOSITE" shortcut="shift pressed U "/>
+                </group>
+                <standard action="ADD_TEMPLATE_BINDING" shortcut="pressed B "/>
+            </actions>
+        </category>
+        <baseCategory expandedByDefault="false" id="USECASE_DIAGRAM_ELEMENTS" parentCategoryID="USECASE_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="PACKAGE_DIAGRAM_ELEMENTS" parentCategoryID="PACKAGE_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="OBJECT_DIAGRAM_ELEMENTS" parentCategoryID="OBJECT_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="COMPONENT_DIAGRAM_ELEMENTS" parentCategoryID="COMPONENT_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="DEPLOYMENT_DIAGRAM_ELEMENTS" parentCategoryID="DEPLOYMENT_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="COMPOSITE_STRUCTURE_DIAGRAM_ELEMENTS" parentCategoryID="COMPOSITE_STRUCTURE_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="action_category_1158589748809_528806_0" parentCategoryID="action_category_1158589748809_528806_0"/>
+        <baseCategory expandedByDefault="false" id="PROFILE_DIAGRAM_ELEMENTS" parentCategoryID="PROFILE_DIAGRAM_ELEMENTS"/>
+    </toolbarConfiguration>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/classdiagram.png" size="16" type="small"/>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/classdiagram.svg" size="-1" type="diagraming"/>
+    <module location="D:\No install\17.0.1\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Package</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_MODEL</target>
+        </path>
+        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PACKAGE_MERGE_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdprofiles.Profile</element>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+            <target>ADD_MODEL</target>
+        </path>
+        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PACKAGE_MERGE_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdprofiles.Stereotype</element>
+        <path action="ADD_GENERALIZATION"/>
+        <path action="ADD_GENERALIZATION_OPPOSITE"/>
+        <path action="ADD_ASSOCIATION"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+</diagram>
+

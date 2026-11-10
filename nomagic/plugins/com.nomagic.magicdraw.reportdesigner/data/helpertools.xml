@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpertools>
+	<helpertool>
+		<function>$report.filter(elementList, propertyName, propertyValue)</function>
+		<purpose>Filter element by specifying property name and value.</purpose>
+		<description type="file">1.html</description>
+		<return type="collection">$filteredElement</return>
+	</helpertool>
+	<helpertool>
+		<function>$report.filterDiagram(diagramList, diagramTypes)</function>
+		<purpose>Filter diagram by specifying diagram types.</purpose>
+		<description type="file">2.html</description>
+		<return type="collection">$filteredDiagram</return>
+	</helpertool>
+	<helpertool>
+		<function>$report.filterElement(elementList, humanTypes)</function>
+		<purpose>Filter element by specifying human types.</purpose>
+		<description type="file">3.html</description>
+		<return type="collection">$filteredElementType</return>
+	</helpertool>
+	<helpertool>
+		<function>$report.findElementInCollection(elementList, name)</function>
+		<purpose>Find an element in a collection by specifying name.</purpose>
+		<description type="file">4.html</description>
+		<return type="collection">$foundElement</return>
+	</helpertool>
+	<helpertool>
+		<function>$report.getRelationship(element)</function>
+		<purpose>Get relationship elements from a specified element.</purpose>
+		<description type="file">5.html</description>
+		<return type="collection">$relationship</return>
+	</helpertool>
+	<helpertool>
+		<function>$report.getPresentationDiagramElements(diagram)</function>
+		<purpose>Get symbols on a specified diagrams</purpose>
+		<description type="file">6.html</description>
+		<return type="collection">$pde</return>
+	</helpertool>
+	<helpertool>
+		<function>$report.getStereotypeProperty(element, stereotypeName, propertyName)</function>
+		<purpose>Get object value from Stereotype Property by specifying Stereotype and Property name.</purpose>
+		<description type="file">7.html</description>
+		<return type="object">$steretoypeProperty</return>
+	</helpertool>
+	<helpertool>
+		<function>$report.getStereotypePropertyString(element, stereotypeName, propertyName)</function>
+		<purpose>Get String value from Stereotype Property by specifying Stereotype and Property name.</purpose>
+		<description type="file">8.html</description>
+		<return type="String">$steretoypePropertyString</return>
+	</helpertool>
+	<helpertool>
+		<function>$report.isEmpty(obj)</function>
+		<purpose>Check whether an object is empty or not.</purpose>
+		<description type="file">9.html</description>
+		<return type="boolean">$isEmpty</return>
+	</helpertool>
+	<helpertool>
+		<function>$report.containsStereotype(element, stereotypeName)</function>
+		<purpose>Check whether a specified element contains a specific Stereotype or not.</purpose>
+		<description type="file">10.html</description>
+		<return type="boolean">$isContains</return>
+	</helpertool>
+	<helpertool>
+		<function>$bookmark.create(bookmarkId, bookmarkObject)</function>
+		<purpose>Create Bookmark in a report.</purpose>
+		<description type="file">11.html</description>
+		<return type="bookmark">$bookmark</return>
+	</helpertool>
+	<helpertool>
+		<function>$bookmark.open(bookmarkId, content)</function>
+		<purpose>Open Bookmark in a report.</purpose>
+		<description type="file">12.html</description>
+		<return type="link">$link</return>
+	</helpertool>
+	<helpertool>
+		<function>$bookmark.openURL(url, content)</function>
+		<purpose>Create hyperlink by specifying URL.</purpose>
+		<description type="file">13.html</description>
+		<return type="link">$link</return>
+	</helpertool>
+</helpertools>

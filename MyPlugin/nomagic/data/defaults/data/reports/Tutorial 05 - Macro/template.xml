@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+   <name>Tutorial 05 - Macro</name>
+   <description>This sample template will list all package without hierarchy order. The content of each package consists of diagram name, use case name, and nested packages.</description>
+   <icon />
+   <enable>true</enable>
+   <readonly>true</readonly>
+   <category>Tutorial</category>
+   <templateFile>template.docx</templateFile>
+   <variables>
+      <variable>
+         <name>Author</name>
+         <value xml:space="preserve">Siri Chongasamethaworn</value>
+      </variable>
+      <variable>
+         <name>Publisher</name>
+         <value xml:space="preserve">No Magic</value>
+      </variable>
+   </variables>
+</template>

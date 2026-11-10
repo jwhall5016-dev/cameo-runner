@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+#includeSection('web.html', web)
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link rel ="stylesheet" type="text/css" href="../stylesheet.css" title="style">
+   <title>$Title</title>
+</head>
+<body>
+#navbar('..')
+
+   <h2>Relation #if("$importer.name"=="")$na#else$importer.name#end</h2>
+   #set($elementType = $importer.elementType)
+   #comment($importer)
+   #if($elementType == 'generalization')
+      #includeSection('relation/generalization.html', generalization)
+   #elseif($elementType == 'association')
+      #includeSection('relation/association.html', association)
+   #elseif($elementType == 'associationclass')
+      #includeSection('relation/associationclass.html', associationclass)
+   #elseif($elementType == 'abstraction')
+      #includeSection('relation/abstraction.html', abstraction)
+   #elseif($elementType == 'usage')
+      #includeSection('relation/usage.html', usage)
+   #elseif($elementType == 'interfacerealization')
+      #includeSection('relation/interfacerealization.html', interfacerealization)
+   #elseif($elementType == 'packagemerge')
+      #includeSection('relation/packagemerge.html', packagemerge)
+   #elseif($elementType == 'packageimport')
+      #includeSection('relation/packageimport.html', packageimport)
+   #elseif($elementType == 'elementimport')
+      #includeSection('relation/elementimport.html', elementimport)
+   #elseif($elementType == 'realization')
+      #includeSection('relation/realization.html', realization)
+   #elseif($elementType == 'controlflow')
+      #includeSection('relation/controlflow.html', controlflow)
+   #elseif($elementType == 'objectflow')
+      #includeSection('relation/objectflow.html', objectflow)
+   #elseif($elementType == 'communicationpath')
+      #includeSection('relation/communicationpath.html', communicationpath)
+   #elseif($elementType == 'manifestation')
+      #includeSection('relation/manifestation.html', manifestation)
+   #elseif($elementType == 'componentrealization')
+      #includeSection('relation/componentrealization.html', componentrealization)
+   #elseif($elementType == 'deployment')
+      #includeSection('relation/deployment.html', deployment)
+   #elseif($elementType == 'dependency')
+      #includeSection('relation/dependency.html', dependency)
+   #elseif($elementType == 'connector')
+      #includeSection('relation/connector.html', connector)
+   #elseif($elementType == 'protocoltransition')
+      #includeSection('relation/protocoltransition.html', protocoltransition) 
+   #elseif($elementType == 'transition')
+      #includeSection('relation/transition.html', transition) 
+   #elseif($elementType == 'templatebinding')
+      #includeSection('relation/templatebinding.html', templatebinding) 
+   #elseif($elementType == 'substitution')
+      #includeSection('relation/substitution.html', substitution) 
+   #elseif($elementType == 'include')
+      #includeSection('relation/include.html', include) 
+   #elseif($elementType == 'extend')
+      #includeSection('relation/extend.html', extend) 
+   #elseif($elementType == 'extension')
+      #includeSection('relation/extension.html', extension)
+   #elseif($elementType == 'exceptionhandler')
+      #includeSection('relation/exceptionhandler.html', exceptionhandler)
+   #end
+<br>
+#includeSection('table/inner.html', inner)
+#if(!$elementType == 'exceptionhandler')
+<br>
+#includeSection('table/relations.html', relations)
+#end
+</body>
+</html>

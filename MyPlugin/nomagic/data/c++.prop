@@ -1,0 +1,382 @@
+(list
+	(BuiltInTypes
+		(types
+			close_set true
+			set	(list
+				"char=' '"
+				"unsigned char=' '"
+				"signed char=' '"
+				"bool=false"                
+				"unsigned=0"
+				"unsigned int=0"
+				"signed=0"
+				"signed int=0"
+				"int=0"
+				"unsigned short int=0"
+				"unsigned short=0"
+				"unsigned long int=0"
+				"unsigned long=0"
+				"signed long int=0"
+				"signed long=0"
+				"long int=0"
+				"long=0"
+				"signed short int=0"
+				"signed short=0"
+				"short int=0"
+				"short=0"
+				"wchar_t=' '"           
+				"float=0"             
+				"double=0"            
+				"long double=0"       
+				"void="
+			)
+			default_value	"int=0"
+		)
+	)
+	(Collections_types
+		(types
+			close_set true
+			set (list
+				std.list=0
+				std.vector=0
+				std.map=1
+				std.deque=0
+				std.queue=0
+				std.stack=0
+				std.set=0
+				cli.array=0
+			)
+			default_value "std.list=0"
+		)
+			
+	)
+	(Types_table
+			IDL_BOOLEAN "int"
+			IDL_CHAR "char"
+			IDL_WCHAR "int"
+			IDL_OCTET "int"
+			IDL_STRING "char*"
+			IDL_WSTRING "int*"
+			IDL_SHORT "short"
+			IDL_UNSIGNED_SHORT "unsigned short"
+			IDL_LONG "long"
+			IDL_UNSIGNED_LONG "unsigned long"
+			IDL_LONG_LONG "long"
+			IDL_UNSIGNED_LONG_LONG "unsigned long long"
+			IDL_FLOAT "float"
+			IDL_DOUBLE "double"
+			IDL_FIXED "double"
+			IDL_LONG_DOUBLE "long double"
+	)
+
+	(Generalization
+		(INHERITANCE_TYPE
+			close_set true
+			set	(list
+				"public"
+				"private"
+				"protected"
+			)
+			default_value	"public"
+		)
+		(VIRTUAL_MODIFIER
+			close_set true
+			set	(list
+				"virtual"
+				"nonvirtual"
+			)	
+		        default_value	"nonvirtual"
+		)
+    )
+    (Abstraction
+		(INHERITANCE_TYPE
+			close_set true
+			set	(list
+				"public"
+				"private"
+				"protected"
+			)
+			default_value	"public"
+		)
+		(VIRTUAL_MODIFIER
+			close_set true
+			set	(list
+				"virtual"
+				"nonvirtual"
+			)	
+		        default_value	"nonvirtual"
+		)
+    )
+	(Class
+		(CLASS_KEY
+			close_set true
+			set	(list
+				"class"
+				"struct"
+				"union"
+			)
+			default_value	"class"
+		)
+	)
+	(Method
+		(INITIALIZATION_LIST
+		close_set false
+			set	(list
+				"<empty>"
+			)
+			default_value	"<empty>"
+		)
+		(INLINE_MODIFIER
+			close_set true
+			set	(list
+				"inline"
+				"not inline"
+			)
+			default_value	"not inline"
+		)
+		(VIRTUAL_MODIFIER
+			close_set true
+			set	(list
+				"virtual"
+				"not virtual"
+			)
+			default_value	"not virtual"
+		)
+		(EXPLICIT_MODIFIER
+			close_set true
+			set	(list
+				"explicit"
+				"not explicit"
+			)
+			default_value	"not explicit"
+		)
+		(RETURN_VALUE_CHANGEABILITY
+			close_set true
+			set	(list
+				"none"
+				"const"
+			)
+			default_value	"none"
+		)
+		
+		
+	)
+	(Field
+		(MUTABLE
+			close_set true
+			set	(list
+				"true"
+				"false"
+			)
+			default_value	"false"
+			values_translatable	"true"
+		)
+		(VOLATILE
+			close_set true
+			set	(list
+				"true"
+				"false"
+			)
+			default_value	"false"
+			values_translatable	"true"
+		)
+		(BIT_FIELD
+			close_set false
+			set	(list
+				"<empty>"
+			)
+			default_value	"<empty>"
+		)
+		(ABBREVIATED_INITIALIZER
+			close_set true
+			set	(list
+				"true"
+				"false"
+			)
+			default_value	"false"
+			values_translatable	"true"
+		)
+		(POINTER_TO_FUNCTION
+			close_set true
+			set	(list
+				"true"
+				"false"
+			)
+			default_value	"false"
+			values_translatable	"true"
+		)
+		(CONTAINER
+			close_set false
+			set	(list
+				"<empty>"
+				"vector<T>"
+				"list<T>"
+				"map<Key,T,Compare>"
+				"stack<T>"
+				"multimap<Key,T,Compare>"
+				"set<Key,Compare>"
+			)
+			default_value	"<empty>"
+		)
+	)
+	(Project
+		(DEFAULT_METHOD_RETURN_TYPE
+			close_set false
+			set	(list
+				"void"
+			)
+			default_value	"void"
+		)
+		(DEFAULT_ATTRIBUTE_TYPE
+			close_set false
+			set	(list
+				"int"
+			)
+			default_value	"int"
+		)
+		(PARSE_INCLUDES
+			close_set true
+			set (list
+					"true"
+					"false"
+				)
+			default_value	"false"
+			values_translatable	"false"
+		)
+		(PRINT_INCLUDE_NOT_FOUND
+			close_set true
+			set (list
+					"true"
+					"false"
+				)
+			default_value	"false"
+			values_translatable	"false"
+		)
+		(MAX_PARSE_ERROR
+			close_set false		
+			set	(list
+			)	
+			default_value	"3"
+		)
+		(INTERACTIVE_MODE
+			close_set true		
+			set	(list
+				"true"
+				"false"
+			)	
+			default_value	"false"
+		)
+		(MAIN_FILE_EXTENSION
+			close_set true
+			set	(list
+				"cpp"
+				"c"
+				"cc"
+			)
+			default_value	"cpp"
+		)
+		(HEADER_FILE_EXTENSION
+			close_set true
+			set	(list
+				"h"
+				"hpp"
+				"hh"
+			)	
+			default_value	"h"
+		)
+		(FILE_SEPARATOR_FORMAT
+			close_set true
+			set	(list
+				"Default"
+				"Windows"
+				"Unix"
+			)	
+			default_value	"Default"
+		)
+		
+		(CHAR_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(INT_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(FLOAT_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(DOUBLE_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(SIGNED_CHAR_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(UNSIGNED_CHAR_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(WCHAR_T_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(LONG_DOUBLE_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(SHORT_INT_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(LONG_INT_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(UNSIGNED_INT_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(UNSIGNED_SHORT_INT_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(UNSIGNED_LONG_INT_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"0"
+		)
+		(BOOL_RETURN_VALUE
+			close_set false		
+			set	(list
+			)	
+			default_value	"false"
+		)
+	)	
+)

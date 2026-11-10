@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram version="8" type="Package Diagram" baseType="Static Diagram" abbreviation="package">
+    <requiredPlugin>;UML_Standard_Profile.mdzip^UML_FEATURE</requiredPlugin>
+    <helpID>Package+Diagram</helpID>
+    <toolbarConfiguration>
+        <category name="Common" id="COMMON_ELEMENTS_STATIC" expandedByDefault="false">
+            <icon type="small" size="16" filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.png"></icon>
+            <icon type="large" size="16" filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.svg"></icon>
+            <actions>
+                <group>
+                    <standard action="ADD_NOTE" description="Note" shortcut="pressed N "/>
+                    <standard action="ADD_HTML_NOTE" description="Note(HTML Text)" shortcut="shift pressed N "/>
+                    <standard action="ADD_COMMENT"/>
+                    <standard action="ADD_HTML_COMMENT"/>
+                </group>
+                <group>
+                    <standard action="ADD_TEXT_BOX" shortcut="pressed X "/>
+                    <standard action="ADD_HTML_TEXT_BOX" shortcut="shift pressed X "/>
+                </group>
+                <group>
+                    <standard action="ADD_NOTE_ANCHOR" description="Anchor" shortcut="pressed H "/>
+                    </group>
+				<group>
+					<standard action="CONSTRAINT_ACTION"/>
+					<standard action="DURATION_CONSTRAINT_ACTION"/>
+					<standard action="TIME_CONSTRAINT_ACTION"/>
+					<standard action="ADD_CONSTRAINT_LINK" shortcut="shift pressed H "/>
+                </group>
+                <group>
+                    <standard action="ADD_CONTAINMENT_LINK" shortcut="shift pressed C "/>
+                    <standard action="ADD_CONTAINMENT_LINK_OPPOSITE" shortcut="shift pressed K "/>
+                </group>
+                <group>
+                    <standard action="ADD_ABSTRACTION" shortcut="pressed T "/>
+                    <custom type="com.nomagic.uml2.ext.magicdraw.classes.mddependencies.Abstraction" description="Trace" listAsElement="true" opposite="false" id="IDaction_1297147200209_590759_0">
+                        <stereotype id="magicdraw_1046861421246_733231_63"/>
+                    </custom>
+                </group>
+                <standard action="ADD_DEPENDENCY" shortcut="shift pressed D "/>
+                <group>
+                    <standard action="ADD_IMAGE_FROM_FILE" shortcut="pressed I "/>
+                    <standard action="ADD_IMAGE_FROM_ATTACHED_FILE"/>
+                </group>
+                <standard action="ADD_DIAGRAM_OVERVIEW"/>
+                                <standard action="ADD_DIAGRAM_LEGEND"/>
+                <group>
+                    <standard action="ADD_SEPARATOR" shortcut="pressed W "/>
+                    <standard action="ADD_SEPARATOR_VERTICAL"/>
+                    <standard action="ADD_RECTANGULAR_SHAPE" shortcut="shift pressed Q "/>
+                </group>
+            </actions>
+        </category>
+        <baseCategory id="CLASS_DIAGRAM_ELEMENTS" parentCategoryID="CLASS_DIAGRAM_ELEMENTS" expandedByDefault="false"/>
+        <baseCategory id="USECASE_DIAGRAM_ELEMENTS" parentCategoryID="USECASE_DIAGRAM_ELEMENTS" expandedByDefault="false"/>
+        <baseCategory id="PACKAGE_DIAGRAM_ELEMENTS" parentCategoryID="PACKAGE_DIAGRAM_ELEMENTS" expandedByDefault="true"/>
+        <baseCategory id="OBJECT_DIAGRAM_ELEMENTS" parentCategoryID="OBJECT_DIAGRAM_ELEMENTS" expandedByDefault="false"/>
+        <baseCategory id="COMPONENT_DIAGRAM_ELEMENTS" parentCategoryID="COMPONENT_DIAGRAM_ELEMENTS" expandedByDefault="false"/>
+        <baseCategory id="DEPLOYMENT_DIAGRAM_ELEMENTS" parentCategoryID="DEPLOYMENT_DIAGRAM_ELEMENTS" expandedByDefault="false"/>
+        <baseCategory id="COMPOSITE_STRUCTURE_DIAGRAM_ELEMENTS" parentCategoryID="COMPOSITE_STRUCTURE_DIAGRAM_ELEMENTS" expandedByDefault="false"/>
+        <baseCategory id="action_category_1158589748809_528806_0" parentCategoryID="action_category_1158589748809_528806_0" expandedByDefault="false"/>
+    </toolbarConfiguration>
+    <icon type="small" size="16" filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/packagediagram.png"></icon>
+    <icon type="diagraming" size="-1" filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/packagediagram.svg"></icon>
+    <module name="UML_Standard_Profile.mdzip" location="C:\Program Files\MD18.2_07.17\profiles\UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.auxiliaryconstructs.mdmodels.Model</element>
+        <path action="ADD_CONTAINMENT_LINK"/>
+        <path action="ADD_CONTAINMENT_LINK_OPPOSITE"/>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PACKAGE_MERGE_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Package</element>
+        <path action="ADD_CONTAINMENT_LINK"/>
+        <path action="ADD_CONTAINMENT_LINK_OPPOSITE"/>
+        <path action="ADD_DEPENDENCY">
+            <target>ADD_PACKAGE</target>
+            <target>ADD_CLASS</target>
+            <target>ADD_INTERFACE</target>
+            <target>ADD_ENUMERATION</target>
+        </path>
+        <path action="ADD_PACKAGE_IMPORT_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PACKAGE_MERGE_RELATIONSHIP">
+            <target>ADD_PACKAGE</target>
+        </path>
+        <path action="ADD_PROFILE_APPLICATION">
+            <target>ADD_PROFILE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+</diagram>

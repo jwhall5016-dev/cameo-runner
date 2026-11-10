@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.htmldiff"
+	name="Html Diff"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.htmldiff.HtmlDiffPlugin">
+
+	<requires>
+	   	<api version="1.2"/>
+	</requires>
+
+	<runtime>
+		<library name="lib/nekohtml.jar"/>
+		<library name="lib/xercesImpl-2.8.0.jar"/>
+	   	<library name="htmldiff.jar"/>
+	   	<library name="htmldiff_api.jar"/>
+	</runtime>
+</plugin>

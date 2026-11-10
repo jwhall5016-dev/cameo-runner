@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+	<boundaryStyle eaName="solid" 				eaValue="0" mdName="SOLID" mdValue="1"/>
+	<boundaryStyle eaName="dotted" 			eaValue="1" mdName="DOTTED" mdValue="2"/>
+	<boundaryStyle eaName="dashed" 		eaValue="2" mdName="DASHED" mdValue="0"/>
+	<boundaryStyle eaName="solid-nofill" 	eaValue="3" mdName="SOLID" mdValue="1"/>
+	<showMemberMode mdName="ALL" mdValue="0"/>
+	<showMemberMode mdName="ONLY_PUBLIC" mdValue="1"/>
+	<showMemberMode mdName="NOT_PRIVATE" mdValue="2"/>
+	<showTaggedValueMode eaValue="0" mdName="DO_NOT_DISPLAY" mdValue="2"/>
+	<showTaggedValueMode eaValue="1" mdName="IN_COMPARTMENT" mdValue="1"/>
+	<!--showTaggedValueMode eaValue="1" mdName="ON_SHAPE" mdValue="0"/-->
+	<stereotypesDisplayMode eaUseStereotypeIcon="1" eaShowElementStereotype="1" mdName="STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE_AND_TEXT" mdValue="3"/>
+	<stereotypesDisplayMode eaUseStereotypeIcon="0" eaShowElementStereotype="1" mdName="STEREOTYPE_DISPLAY_MODE_TEXT" mdValue="1"/>
+	<stereotypesDisplayMode eaUseStereotypeIcon="1" eaShowElementStereotype="0" mdName="STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES" mdValue="5"/>
+	<stereotypesDisplayMode eaUseStereotypeIcon="0" eaShowElementStereotype="0" mdName="STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES" mdValue="5"/>
+	STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON^
+	STEREOTYPE_DISPLAY_MODE_TEXT^
+	STEREOTYPE_DISPLAY_MODE_ICON^
+	STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE_AND_TEXT^
+	STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE^
+	STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES
+</properties>

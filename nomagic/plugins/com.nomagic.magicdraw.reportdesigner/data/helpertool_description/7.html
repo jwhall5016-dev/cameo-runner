@@ -1,0 +1,45 @@
+<html>
+<head>
+<style type="text/css">
+.borderAll {border: 1px solid black;}
+.borderTRB {border-top: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;}
+.borderLRB {border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;}
+.borderRB {border-right: 1px solid black; border-bottom: 1px solid black;}
+</style>
+</head>
+<body>
+<div><b>$report.getStereotypeProperty(element, stereotypeName, propertyName)</b></div>
+<br>
+<p>Get a stereotype property.</p>
+<br>
+<table border="0" cellpadding="2" cellspacing="0" style="width:100%">
+<tr style="background-color: #F5F3F3;">
+<th class="borderAll"></th><th class="borderTRB">Name</th><th class="borderTRB">Type</th><th class="borderTRB">Description</th>
+</tr>
+<tr>
+<td class="borderLRB" rowspan="3">Parameter(s)</td><td class="borderRB">element</td><td class="borderRB">com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Element</td><td class="borderRB">An element.</td>
+</tr>
+<tr>
+<td  class="borderRB">stereotypeName</td><td class="borderRB">java.lang.String</td><td class="borderRB">A stereotype name.</td>
+</tr>
+<tr>
+<td  class="borderRB">propertyName</td><td class="borderRB">java.lang.String</td><td class="borderRB">A property name.</td>
+</tr>
+<tr>
+<td class="borderLRB">Return</td><td class="borderRB">-</td><td class="borderRB">java.lang.Object</td><td class="borderRB">A property value.</td>
+</tr>
+</table>
+<br>
+<p>For example:</p>
+<br>
+<table border="0" cellpadding="3" cellspacing="0" style="width:100%">
+<tr style="font-family: Courier New;">
+<td class="borderAll">
+<p>#set($obj = $report.getStereotypeProperty($element, "MyStereotype", "myObject"))</p>
+<p>$obj.name</p>
+</td>
+</tr>
+</table>
+<br><br>
+</body>
+</html>

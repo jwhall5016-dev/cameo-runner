@@ -1,0 +1,581 @@
+<!-- _______________________________________________________________ -->
+<!--                                                                 -->
+<!--        MagicDraw Extensions                                     -->
+<!-- _______________________________________________________________ -->
+<!ELEMENT PropertyVisitorAcceptor (mdElement*)>
+<!ELEMENT mdOwnedDiagrams (mdElement*)>
+<!ELEMENT mdOwnedWindows (mdElement*)>
+<!ELEMENT mdOwnedViews (mdElement*)>
+<!ELEMENT options (mdElement?, tipsStyle?, docsStyle?, interfaceStyle?, favoriteElements?, browserItems?, browserVisible?, browserBounds?, browserDividerLocation?)>
+<!ELEMENT componentView (UML:Package*)>
+<!ATTLIST componentView
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT number EMPTY>
+<!ATTLIST number
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT assignable EMPTY>
+<!ATTLIST assignable
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT dataTypes (UML:Package*)>
+<!ATTLIST dataTypes
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT typeModifier EMPTY>
+<!ATTLIST typeModifier
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT mdElement (UML:ModelElement.name | UML:ModelElement.comment | name | default | propertyID | value | type | lowRange | highRange | parentID | format | choice | valuesTranslatable | index | fontName | lineStyle | size | style | firstOperation | umlType | packageId | mdElement | elementID | properties | propertiesName | editable | editableProp | visible | linkFirstEndID | linkSecondEndID | geometry | edge | treeID | attributes | operations | operands | regions | literals | linkNameID | linkConstraintID | nameVisible | zoomFactor | diagramOpened | diagramWindowType | diagramWindowBounds | diagramScrollPositionX | diagramScrollPositionY | maximized | active | mdOwnedViews | showActivations | text | baseShape | verticalBarX | verticalBarY | horizontalBarLeft | horizontalBarRight | horizontalBarY | implicitlySetY | firstShapeID | firstShapeWeight | splitID | secondShapeID | secondShapeWeight | mainSplitID | lifeLineHidden | lifeLineConcurrent | lifeLineDestroyed | isCreated | roleNameID | nameID | roleMultiplicityID | roleConstraintsID | linkStereotypeID | stereotype | resizedByUser | linkTaggedValuesID | branchMessage | topMessageID | diagonalMessage | reverseIcon | recursiveMessage | associationFirstEndID | associationSecondEndID | compartment | stateID | roleStereotypeID | roleTaggedValuesID | displayableTypes | notDisplayableTypes | useReverseOnNotDisplayable | parentApplicant  | allowFiles | multiline | selectableTypes | notSelectableTypes | useReverseOnNotSelectable | useUnspecified | allowToEnterNewValue | addProjectModel | isElementValue | selectionMode | propertyManagerID | removable | extendableByDiagram | extendableByStereotype | parentPropertyManager | propertyGroup | propertyDescriptionID | diagramType|diagramStyle)*>
+<!ENTITY % mdElementAtts '%XMI.element.att; %XMI.link.att;
+	name CDATA #IMPLIED
+	visibility %UML:VisibilityKind; #IMPLIED
+	isSpecification (true|false) #IMPLIED
+	namespace IDREFS #IMPLIED
+	clientDependency IDREFS #IMPLIED
+	constraint IDREFS #IMPLIED
+	targetFlow IDREFS #IMPLIED
+	sourceFlow IDREFS #IMPLIED
+	comment IDREFS #IMPLIED
+	stereotype IDREFS #IMPLIED
+	elementClass CDATA #IMPLIED
+	name CDATA #IMPLIED'>
+<!ATTLIST mdElement
+	%mdElementAtts;
+>
+<!ELEMENT showActivations EMPTY>
+<!ATTLIST showActivations
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT reverseIcon EMPTY>
+<!ATTLIST reverseIcon
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT remoteProject EMPTY>
+<!ATTLIST remoteProject
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT remoteProjectID (#PCDATA)>
+<!ELEMENT addedElements EMPTY>
+<!ATTLIST addedElements
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT removedElements EMPTY>
+<!ATTLIST removedElements
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT removedElementsForUpdate EMPTY>
+<!ATTLIST removedElementsForUpdate
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT lockedElements EMPTY>
+<!ATTLIST lockedElements
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT changedElements EMPTY>
+<!ATTLIST changedElements
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT projectRights (#PCDATA)>
+<!ELEMENT systemRights (#PCDATA)>
+<!ELEMENT propertiesName (#PCDATA)>
+<!ELEMENT fullDependencies EMPTY>
+<!ATTLIST fullDependencies
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT portions EMPTY>
+<!ATTLIST portions
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT versionNumber EMPTY>
+<!ATTLIST versionNumber
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT user (#PCDATA)>
+<!ELEMENT maximized EMPTY>
+<!ATTLIST maximized
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT treeID (mdElement*)>
+<!ATTLIST treeID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT verticalBarX EMPTY>
+<!ATTLIST verticalBarX
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT verticalBarY EMPTY>
+<!ATTLIST verticalBarY
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT horizontalBarLeft EMPTY>
+<!ATTLIST horizontalBarLeft
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT horizontalBarRight EMPTY>
+<!ATTLIST horizontalBarRight
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT implicitlySetY EMPTY>
+<!ATTLIST implicitlySetY
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT horizontalBarY EMPTY>
+<!ATTLIST horizontalBarY
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT properties (mdElement*)>
+<!ATTLIST properties
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT baseShape (mdElement*)>
+<!ATTLIST baseShape
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT topMessageID (mdElement*)>
+<!ATTLIST topMessageID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT mainSplitID (mdElement*)>
+<!ATTLIST mainSplitID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT secondShapeID (mdElement*)>
+<!ATTLIST secondShapeID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT operations (mdElement*)>
+<!ATTLIST operations
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT literals (mdElement*)>
+<!ATTLIST literals
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT secondShapeWeight EMPTY>
+<!ATTLIST secondShapeWeight
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT firstOperation (mdElement*)>
+<!ATTLIST firstOperation
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT firstShapeWeight EMPTY>
+<!ATTLIST firstShapeWeight
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT splitID (mdElement*)>
+<!ATTLIST splitID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT isCreated EMPTY>
+<!ATTLIST isCreated
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT branchMessage EMPTY>
+<!ATTLIST branchMessage
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT lifeLineDestroyed EMPTY>
+<!ATTLIST lifeLineDestroyed
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT diagonalMessage EMPTY>
+<!ATTLIST diagonalMessage
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT recursiveMessage EMPTY>
+<!ATTLIST recursiveMessage
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT lifeLineHidden EMPTY>
+<!ATTLIST lifeLineHidden
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT lifeLineConcurrent EMPTY>
+<!ATTLIST lifeLineConcurrent
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT firstShapeID (mdElement*)>
+<!ATTLIST firstShapeID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT referenceState (UML:State*)>
+<!ATTLIST referenceState
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT mainDiagram (mdElement*)>
+<!ATTLIST mainDiagram
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT tipsStyle EMPTY>
+<!ATTLIST tipsStyle
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT lowRange EMPTY>
+<!ATTLIST lowRange
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT choice EMPTY>
+<!ATTLIST choice
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT index EMPTY>
+<!ATTLIST index
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT highRange EMPTY>
+<!ATTLIST highRange
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT fontName (#PCDATA)>
+<!ELEMENT size EMPTY>
+<!ATTLIST size
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT lineStyle EMPTY>
+<!ATTLIST lineStyle
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT style (#PCDATA)>
+<!ATTLIST style
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT value (#PCDATA)>
+<!ATTLIST value
+	xmi.value CDATA #IMPLIED
+>
+<!ELEMENT favoriteElements EMPTY>
+<!ATTLIST favoriteElements
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT browserVisible EMPTY>
+<!ATTLIST browserVisible
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT docsStyle EMPTY>
+<!ATTLIST docsStyle
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT browserDividerLocation EMPTY>
+<!ATTLIST browserDividerLocation
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT browserBounds (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+
+
+<!ELEMENT default EMPTY>
+<!ATTLIST default
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT elementClass (#PCDATA)>
+<!ELEMENT propertyID (#PCDATA)>
+<!ELEMENT propertyManagerID (#PCDATA)>
+<!ELEMENT format (#PCDATA)>
+<!ELEMENT elementID (mdElement?, XMI.extension?)>
+<!ATTLIST elementID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT interfaceStyle EMPTY>
+<!ATTLIST interfaceStyle
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT parentID (UML:Model?)>
+<!ATTLIST parentID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT type (#PCDATA)>
+<!ATTLIST type
+	xmi.value CDATA #IMPLIED
+>
+<!ELEMENT zoomFactor (#PCDATA)>
+<!ATTLIST zoomFactor
+	xmi.value CDATA #REQUIRED
+>
+
+
+
+<!ELEMENT geometry (#PCDATA)>
+<!ELEMENT edge (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT linkFirstEndID (mdElement*)>
+<!ATTLIST linkFirstEndID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT linkSecondEndID (mdElement*)>
+<!ATTLIST linkSecondEndID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT linkNameID (mdElement*)>
+<!ATTLIST linkNameID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT linkConstraintID (mdElement*)>
+<!ATTLIST linkConstraintID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT nameVisible (#PCDATA)>
+<!ATTLIST nameVisible
+	xmi.value (true | false) #IMPLIED
+>
+<!ELEMENT editable EMPTY>
+<!ATTLIST editable
+	xmi.value (true | false) #REQUIRED
+>
+
+<!ELEMENT valuesTranslatable EMPTY>
+<!ATTLIST valuesTranslatable
+	xmi.value (true | false) #REQUIRED
+>
+
+<!ELEMENT editableProp EMPTY>
+<!ATTLIST editableProp
+	xmi.value (true | false) #REQUIRED
+>
+
+<!ELEMENT resizedByUser EMPTY>
+<!ATTLIST resizedByUser
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT visible EMPTY>
+<!ATTLIST visible
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT roleMultiplicityID (mdElement*)>
+<!ATTLIST roleMultiplicityID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT roleStereotypeID EMPTY>
+<!ATTLIST roleStereotypeID
+	xmi.idref IDREF #REQUIRED
+>
+<!ELEMENT roleTaggedValuesID EMPTY>
+<!ATTLIST roleTaggedValuesID
+	xmi.idref IDREF #REQUIRED
+>
+<!ELEMENT roleConstraintsID (mdElement*)>
+<!ATTLIST roleConstraintsID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT nameID (mdElement*)>
+<!ATTLIST nameID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT linkStereotypeID (mdElement*)>
+<!ATTLIST linkStereotypeID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT linkTaggedValuesID (mdElement*)>
+<!ATTLIST linkTaggedValuesID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT associationFirstEndID (mdElement*)>
+<!ATTLIST associationFirstEndID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT associationSecondEndID (mdElement*)>
+<!ATTLIST associationSecondEndID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT compartment EMPTY>
+<!ATTLIST compartment
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT isRegion EMPTY>
+<!ATTLIST isRegion
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT stateID EMPTY>
+<!ATTLIST stateID
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT active EMPTY>
+<!ATTLIST active
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT iconData (#PCDATA | XMI.reference)*>
+<!ELEMENT UML:StateAttribute (%UML:ModelElementFeatures;)*>
+<!ATTLIST UML:StateAttribute
+	%UML:ModelElementAtts; 
+>
+<!ELEMENT UML:State.stateAttributes (UML:StateAttribute)*>
+<!ELEMENT stateAttributes (UML:StateAttribute)*>
+<!ELEMENT UML:TagDefinition.baseClass (#PCDATA)>
+<!ELEMENT TagDefinition.baseClass (#PCDATA)>
+<!ATTLIST TagDefinition.baseClass
+	xmi.value CDATA #IMPLIED
+>
+<!ELEMENT TagDefinition.defaultValue.dataValue (#PCDATA)>
+<!ELEMENT TagDefinition.defaultValue.referenceValue (UML:ModelElement)*>
+<!ELEMENT TagDefinition. EMPTY>
+
+<!ELEMENT TagDefinition.createTaggedValue EMPTY>
+<!ATTLIST TagDefinition.createTaggedValue
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT TagDefinition.showInDiagrams EMPTY>
+<!ATTLIST TagDefinition.showInDiagrams
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT UML:Constraint.baseClass (#PCDATA)>
+<!ELEMENT Constraint.baseClass (#PCDATA)>
+<!ATTLIST Constraint.baseClass
+	xmi.value CDATA #IMPLIED
+>
+<!ELEMENT initialValue (#PCDATA)>
+<!ELEMENT rtProperties (mdElement)*>
+<!ELEMENT attributes (mdElement)*>
+<!ELEMENT operands (mdElement)*>
+<!ELEMENT regions (mdElement)*>
+<!ELEMENT diagramOpened EMPTY>
+<!ATTLIST diagramOpened
+	xmi.value (true | false) #REQUIRED
+>
+<!ELEMENT diagramWindowType (#PCDATA)>
+<!ELEMENT diagramWindowBounds (#PCDATA)>
+<!ELEMENT diagramScrollPositionX EMPTY>
+<!ATTLIST diagramScrollPositionX
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT diagramScrollPositionY EMPTY>
+<!ATTLIST diagramScrollPositionY
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT initialValueExpr (UML:Expression*)>
+<!ATTLIST initialValueExpr
+	%XMI.element.att; %XMI.link.att;
+>
+<!ELEMENT notDisplayableTypes EMPTY>
+<!ATTLIST notDisplayableTypes
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT displayableTypes EMPTY>
+<!ATTLIST displayableTypes
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT useReverseOnNotDisplayable EMPTY>
+<!ATTLIST useReverseOnNotDisplayable
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT notSelectableTypes EMPTY>
+<!ATTLIST notSelectableTypes
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT parentApplicant  EMPTY>
+<!ATTLIST parentApplicant
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT multiline  EMPTY>
+<!ATTLIST multiline
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT allowFiles  EMPTY>
+<!ATTLIST allowFiles
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT selectableTypes EMPTY>
+<!ATTLIST selectableTypes
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT useReverseOnNotSelectable EMPTY>
+<!ATTLIST useReverseOnNotSelectable
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT useUnspecified EMPTY>
+<!ATTLIST useUnspecified
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT allowToEnterNewValue EMPTY>
+<!ATTLIST allowToEnterNewValue
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT addProjectModel EMPTY>
+<!ATTLIST addProjectModel
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT isElementValue EMPTY>
+<!ATTLIST isElementValue
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT selectionMode EMPTY>
+<!ATTLIST selectionMode
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT browserItems EMPTY>
+<!ATTLIST browserItems
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT moduleRoot EMPTY>
+<!ATTLIST moduleRoot
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT referentType EMPTY>
+<!ATTLIST referentType
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT referentPath EMPTY>
+<!ATTLIST referentPath
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT referentSupplier EMPTY>
+<!ATTLIST referentSupplier
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT referentClient EMPTY>
+<!ATTLIST referentClient
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT operationParameters EMPTY>
+<!ATTLIST operationParameters
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT moduleID EMPTY>
+<!ATTLIST moduleID
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT remoteModuleID EMPTY>
+<!ATTLIST remoteModuleID
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT remoteModuleVersion EMPTY>
+<!ATTLIST remoteModuleVersion
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT moduleName EMPTY>
+<!ATTLIST moduleName
+	xmi.value CDATA #REQUIRED
+>
+<!ELEMENT umlType (#PCDATA)>
+<!ATTLIST umlType
+	xmi.value CDATA #IMPLIED
+>
+<!ELEMENT packageId (#PCDATA)>
+<!ATTLIST packageId
+	xmi.value CDATA #IMPLIED
+	xmi.idref CDATA #IMPLIED
+>
+<!ELEMENT removable EMPTY>
+<!ATTLIST removable
+	xmi.value CDATA #IMPLIED
+>
+<!ELEMENT extendableByDiagram EMPTY>
+<!ATTLIST extendableByDiagram
+	xmi.value CDATA #IMPLIED
+>
+<!ELEMENT extendableByStereotype EMPTY>
+<!ATTLIST extendableByStereotype
+	xmi.value CDATA #IMPLIED
+>
+<!ELEMENT parentPropertyManager (#PCDATA)>
+<!ATTLIST parentPropertyManager
+	xmi.value CDATA #IMPLIED
+>
+<!ELEMENT propertyGroup (#PCDATA)>
+<!ELEMENT propertyDescriptionID (#PCDATA)>
+<!ELEMENT diagramType (#PCDATA)>
+
+<!ELEMENT stereotype  (#PCDATA)>
+
+<!ELEMENT diagramStyle  (#PCDATA)>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+   <name>Tutorial 23 - Presentation Element</name>
+   <description>This sample template will show the presentation classes from diagram. The presentation element is a element symbol which is display on a diagram.</description>
+   <icon />
+   <enable>true</enable>
+   <readonly>true</readonly>
+   <category>Tutorial</category>
+   <templateFile>template.docx</templateFile>
+   <variables>
+      <variable>
+         <name>Author</name>
+         <value xml:space="preserve">Siri Chongasamethaworn</value>
+      </variable>
+      <variable>
+         <name>Publisher</name>
+         <value xml:space="preserve">No Magic</value>
+      </variable>
+   </variables>
+</template>

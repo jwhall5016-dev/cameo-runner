@@ -1,0 +1,120 @@
+#!/bin/bash
+# argument file name
+abspath()
+{
+local D=`dirname "$1"`
+local B=`basename "$1"`
+local rez="`command cd "$D" 2>/dev/null && pwd || echo "$D"`/"$B""
+echo $rez
+}
+
+absdirname()
+{
+local D=`dirname "$1"`
+local rez="`command cd "$D" 2>/dev/null && pwd || echo "$D"`"
+echo $rez
+}
+
+# argument file name where search for variable
+# argument variable name to find
+getvariable()
+{
+local rez=`grep "^"$2"" "$1" | cut -d= -f 2-100`
+# if java writes props it writes \: insteaod of :
+# replacing \: with :
+rez=${rez//"\:"/:}      #for bash >= 3.0
+rez=${rez//'\\:'/:}     #for bash < 3.0
+# replacing \= with =
+rez=${rez//"\="/=}      #for bash >= 3.0
+rez=${rez//'\\='/=}     #for bash < 3.0
+echo $rez
+}
+
+###########################################################################
+########## SCRIPT START ###################################################
+
+if [ `uname -s` = "Darwin" ]; then
+        UNLINK="$0"
+else
+        UNLINK=`readlink -f "$0"`
+fi
+cd "`dirname "$UNLINK"`"
+cmd="`basename "$UNLINK"`"
+cmd=${cmd//.sh/}
+cmd=${cmd//.command/}
+cmd="$cmd".properties
+
+# finding files locations
+BASENAME=`basename "$UNLINK"`
+SCRIPT_FILE="$PWD"/$BASENAME
+BIN_DIR=`absdirname "$SCRIPT_FILE"`
+APP_HOME=`absdirname "$BIN_DIR"`
+PROP_FILE=`abspath "$PWD"/"$cmd"`
+
+# seting variables
+if [ `uname -s` = "Linux" ]; then
+        JAVA_HOME_PLATFORM=`getvariable "$PROP_FILE" JAVA_HOME_LINUX`
+elif [ `uname -s` = "Darwin" ]; then
+        JAVA_HOME_PLATFORM=`getvariable "$PROP_FILE" JAVA_HOME_MACOSX`
+fi
+if [ -n "$JAVA_HOME_PLATFORM" ]; then
+        JAVA_HOME="$JAVA_HOME_PLATFORM"
+        UPDATED_JAVA_HOME="-Ddefined.java.home=true"
+else
+        JAVA_HOME=`getvariable "$PROP_FILE" JAVA_HOME`
+        UPDATED_JAVA_HOME=""
+fi
+APP_ARGS=`getvariable "$PROP_FILE" APP_ARGS`
+CLASSPATH=`getvariable "$PROP_FILE" CLASSPATH`
+JAVA_ARGS=`getvariable "$PROP_FILE" JAVA_ARGS`
+JAVA_HOME_ORIGINAL=$JAVA_HOME
+JAVA_ARGS=${JAVA_ARGS//"-splash:"/"-Dsplash="}
+if [ `uname -s` = "Darwin" ]; then
+        MAC_ARGS=`getvariable "$PROP_FILE" MAC_JAVA_ARGS`;
+else
+        MAC_ARGS="";
+fi
+
+eval "APP_ARGS=($(echo "$APP_ARGS" | sed 's/\$/\\$/g'))"
+eval "JAVA_ARGS=($(echo "$JAVA_ARGS" | sed 's/\$/\\$/g'))"
+eval "MAC_ARGS=($(echo "$MAC_ARGS" | sed 's/\$/\\$/g'))"
+
+MAIN_CLASS=`getvariable "$PROP_FILE" MAIN_CLASS`
+
+cd "$APP_HOME"
+if [ -d "$JAVA_HOME" ]; then
+        echo "JAVA_HOME ok: $JAVA_HOME";
+else
+        echo "JAVA_HOME not set properly: $JAVA_HOME";
+        if [ `uname -s` = "Darwin" ]; then
+                JAVA_HOME="$APP_HOME"/`ls -1tU "$APP_HOME" | grep -m 1 jre`/mac/Contents/Home/jre
+        fi
+        if [ -d "$JAVA_HOME" ]; then
+                echo "JAVA_HOME set to MAC APP bundled: $JAVA_HOME";
+        else
+                echo "searching default java"
+                JAVA_LAUNCHER=`which java`
+                JAVA_BIN_DIR=`absdirname "$JAVA_LAUNCHER"`
+                JAVA_HOME=`absdirname "$JAVA_BIN_DIR"`
+        fi
+fi
+
+JAVA_LAUNCHER="$JAVA_HOME"/bin/java
+
+if [ -x "$JAVA_LAUNCHER" ]; then
+        if [ -n "$MAIN_CLASS" ]; then
+                MAIN_CLASS=`echo -DMAIN_CLASS=$MAIN_CLASS`
+        fi
+        if [ -x "$JAVA_LAUNCHER" ]; then
+            if [ -n "$MAIN_CLASS" ]; then
+                MAIN_CLASS=`echo -DMAIN_CLASS=$MAIN_CLASS`
+            fi
+        fi
+        #APP LAUNCHER
+        "$JAVA_LAUNCHER" "${JAVA_ARGS[@]}" "${MAC_ARGS[@]}" $UPDATED_JAVA_HOME "-Dlauncher.properties.file=$PROP_FILE" "$MAIN_CLASS" "-cp" "$CLASSPATH" com.nomagic.launcher.Launcher "${APP_ARGS[@]}" "$@"
+
+else
+        echo "ERROR!"
+        echo "Java executable not found in" $JAVA_HOME/bin/java
+        echo "Please add java to your PATH environment variable, or specify it in file" $PROP_FILE
+fi

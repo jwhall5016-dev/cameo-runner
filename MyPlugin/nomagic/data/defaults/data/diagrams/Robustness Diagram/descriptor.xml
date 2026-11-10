@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram abbreviation="robustness" baseType="Class Diagram" category="Analysis Diagrams" type="Robustness Diagram" version="8">
+    <edition>Architect</edition>
+    <edition>Enterprise</edition>
+    <edition>Professional C++</edition>
+    <edition>Reader</edition>
+    <edition>Professional Java</edition>
+    <edition>Standard</edition>
+    <helpID>Robustness+diagram</helpID>
+    <toolbarConfiguration>
+        <baseCategory expandedByDefault="false" id="COMMON_ELEMENTS_STATIC" parentCategoryID="COMMON_ELEMENTS_STATIC"/>
+        <category expandedByDefault="true" id="Robustness Diagram_ELEMENTS" name="Robustness Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/robustness/robustnessdiagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/robustness/robustnessdiagram.svg" size="16" type="large"/>
+            <actions>
+                <custom description="Actor" id="IDaction_1156958827921_485089_0" listAsElement="false" opposite="false" shortcut="pressed A " type="com.nomagic.uml2.ext.magicdraw.mdusecases.Actor">
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/robustness/actorrobustness.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/robustness/actorrobustness.svg" size="16" type="large"/>
+                </custom>
+                <custom description="Boundary" id="IDaction_1156958827921_26454_0" listAsElement="false" opposite="false" shortcut="pressed B " type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                    <stereotype id="magicdraw_1046861421246_561509_69"/>
+                </custom>
+                <custom description="Control" id="IDaction_1156958827937_258089_0" listAsElement="false" opposite="false" shortcut="pressed C " type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                    <stereotype id="magicdraw_1046861421226_233101_6"/>
+                </custom>
+                <custom description="Entity" id="IDaction_1156958827953_543628_0" listAsElement="false" opposite="false" shortcut="pressed E " type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                    <stereotype id="magicdraw_1046861421226_813777_19"/>
+                </custom>
+                <custom description="Robustness Association" id="IDaction_1156958827968_706588_0" listAsElement="false" opposite="false" shortcut="pressed S " type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Association">
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/robustness/dira16.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/robustness/dira16.svg" size="16" type="large"/>
+                    <defaults>
+                        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+                            <mdElement elementClass="PropertyManager">
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>isDerived</propertyID>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>isAbstract</propertyID>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>isLeaf</propertyID>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>visibility</propertyID>
+                                    <value>public</value>
+                                    <choice xmi:value="public^private^protected^package"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                                <mdElement elementClass="StringProperty">
+                                    <propertyID>documentation</propertyID>
+                                    <multiline xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isDerived</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isDerivedUnion</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_A.aggregation</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <value>none</value>
+                                    <choice xmi:value="none^shared^composite"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isReadOnly</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isOrdered</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isUnique</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <value xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isStatic</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_A.visibility</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <value>private</value>
+                                    <choice xmi:value="public^private^protected^package"/>
+                                    <index xmi:value="1"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isLeaf</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="StringProperty">
+                                    <propertyID>END_A.documentation</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <multiline xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_A.multiplicity</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <choice xmi:value="0^0..1^0..*^1^1..*^*"/>
+                                    <index xmi:value="-1"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.navigable</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <value xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isDerived</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isDerivedUnion</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_B.aggregation</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                    <value>none</value>
+                                    <choice xmi:value="none^shared^composite"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isReadOnly</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isOrdered</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isUnique</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                    <value xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isStatic</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_B.visibility</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                    <value>private</value>
+                                    <choice xmi:value="public^private^protected^package"/>
+                                    <index xmi:value="1"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isLeaf</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="StringProperty">
+                                    <propertyID>END_B.documentation</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                    <multiline xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_B.multiplicity</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                    <choice xmi:value="0^0..1^0..*^1^1..*^*"/>
+                                    <index xmi:value="-1"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.navigable</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                            </mdElement>
+                        </PropertyVisitorAcceptor>
+                    </defaults>
+                </custom>
+            </actions>
+        </category>
+    </toolbarConfiguration>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/robustness/robustnessdiagram.png" size="16" type="small"/>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/robustness/robustnessdiagram.svg" size="-1" type="diagraming"/>
+
+
+    <module location="/Users/admin/182/C:\Program Files\MagicDraw UML 15.1 EAP beta\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <elementstyle name="Association">
+        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+            <mdElement elementClass="PropertyManager">
+                <mdElement elementClass="ChoiceProperty">
+                    <propertyID>LINK_LINE_STYLE</propertyID>
+                    <value>OBLIQUE</value>
+                    <choice xmi:value="RECTILINEAR^OBLIQUE^BEZIER"/>
+                    <index xmi:value="1"/>
+                </mdElement>
+                <mdElement elementClass="ChoiceProperty">
+                    <propertyID>STEREOTYPES_DISPLAY_MODE</propertyID>
+                    <value>STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES</value>
+                    <choice xmi:value="STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON^STEREOTYPE_DISPLAY_MODE_TEXT^STEREOTYPE_DISPLAY_MODE_ICON^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE_AND_TEXT^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE^STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES"/>
+                    <index xmi:value="5"/>
+                </mdElement>
+            </mdElement>
+        </PropertyVisitorAcceptor>
+    </elementstyle>
+    <elementstyle name="Actor">
+        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+            <mdElement elementClass="PropertyManager">
+                <mdElement elementClass="ColorProperty">
+                    <propertyID>FILL_COLOR</propertyID>
+                    <value xmi:value="-6234956.0"/>
+                </mdElement>
+                <mdElement elementClass="ChoiceProperty">
+                    <propertyID>STEREOTYPES_DISPLAY_MODE</propertyID>
+                    <choice xmi:value="STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON^STEREOTYPE_DISPLAY_MODE_TEXT^STEREOTYPE_DISPLAY_MODE_ICON^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE_AND_TEXT^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE^STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES"/>
+                    <index xmi:value="-1"/>
+                </mdElement>
+            </mdElement>
+        </PropertyVisitorAcceptor>
+    </elementstyle>
+    <elementstyle name="Diagram">
+        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+            <mdElement elementClass="PropertyManager">
+                <mdElement elementClass="BooleanProperty">
+                    <propertyID>SHOW_DIAGRAM_FRAME</propertyID>
+                    <propertyGroup>DIAGRAM_FRAME</propertyGroup>
+                </mdElement>
+                <mdElement elementClass="ChoiceProperty">
+                    <propertyID>STEREOTYPES_DISPLAY_MODE</propertyID>
+                    <value>STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON</value>
+                    <choice xmi:value="STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON^STEREOTYPE_DISPLAY_MODE_TEXT^STEREOTYPE_DISPLAY_MODE_ICON^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE_AND_TEXT^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE^STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES"/>
+                    <index xmi:value="0"/>
+                </mdElement>
+            </mdElement>
+        </PropertyVisitorAcceptor>
+    </elementstyle>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdusecases.Actor</element>
+        <path action="IDaction_1156958827968_706588_0">
+            <target>IDaction_1156958827921_26454_0</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdartifacts.Artifact</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.AssociationClassView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="magicdraw_1046861421226_233101_6" name="Control"/>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.ClassView</symbol>
+        <path action="IDaction_1156958827968_706588_0">
+            <target>IDaction_1156958827953_543628_0</target>
+            <target>IDaction_1156958827921_26454_0</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="magicdraw_1046861421246_561509_69" name="Boundary"/>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.ClassView</symbol>
+        <path action="IDaction_1156958827968_706588_0">
+            <target>IDaction_1156958827937_258089_0</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="magicdraw_1046861421226_813777_19" name="Entity"/>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.ClassView</symbol>
+        <path action="IDaction_1156958827968_706588_0">
+            <target>IDaction_1156958827937_258089_0</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.compositestructures.mdcollaborations.CollaborationUse</element>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.compositestructures.mdcollaborations.Collaboration</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_9_0_2_91a0295_1111479028825_93211_0" name="Subsystem"/>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.ComponentView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.components.mdbasiccomponents.Component</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.DataType</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdcomponentdeployments.DeploymentSpecification</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdnodes.Device</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Enumeration</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdnodes.ExecutionEnvironment</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.InstanceSpecification</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdinterfaces.Interface</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.auxiliaryconstructs.mdmodels.Model</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.NNaryAssociationView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdnodes.Node</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Package</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.PartView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.compositestructures.mdports.Port</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.PrimitiveType</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdprofiles.Profile</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.commonbehaviors.mdcommunications.Signal</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdprofiles.Stereotype</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdusecases.UseCase</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+</diagram>

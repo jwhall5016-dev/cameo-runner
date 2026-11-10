@@ -1,0 +1,260 @@
+(list
+	(BuiltInTypes
+		(types
+			close_set true
+			set	(list
+				"short=0"
+				"long=0"
+				"long long= 0"
+				"unsigned short=0"
+				"unsigned long=0"
+				"unsigned long long=0"
+				"float=0"
+				"double=0"
+				"long double=0"
+				"char="
+				"wchar="
+				"boolean="
+				"octet="
+				"any="
+				"void="
+				"string="
+				"wstring="
+			)
+			default_value	"long=0"
+		)
+	)
+	(Types_table
+			IDL_BOOLEAN "boolean"
+			IDL_CHAR "char"
+			IDL_WCHAR "wchar"
+			IDL_OCTET "octet"
+			IDL_STRING "string"
+			IDL_WSTRING "wstring"
+			IDL_SHORT "short"
+			IDL_UNSIGNED_SHORT "unsigned short"
+			IDL_LONG "long"
+			IDL_UNSIGNED_LONG "unsigned long"
+			IDL_LONG_LONG "long"
+			IDL_UNSIGNED_LONG_LONG "unsigned long long"
+			IDL_FLOAT "float"
+			IDL_DOUBLE "double"
+			IDL_FIXED "fixed"
+			IDL_LONG_DOUBLE "long double"
+	)
+
+	(ReservedWords
+		(words
+			close_set true
+			set	(list
+				"abstract"
+				"any"
+				"attribute"
+				"boolean"
+				"case"
+				"char"
+				"const"
+				"context"
+				"custom"
+				"default"
+				"double"
+				"enum"
+				"exception"
+				"factory"
+				"false"
+				"fixed"
+				"float"
+				"in"
+				"out"
+				"interface"
+				"long"
+				"module"
+				"native"
+				"object"
+				"octet"
+				"oneway"
+				"private"
+				"public"
+				"raises"
+				"readonly"
+				"sequence"
+				"short"
+				"supports"
+				"switch"
+				"string"
+				"true"
+				"truncable"
+				"typedef"
+				"unsigned"
+				"union"
+				"valuebase"
+				"valuetype"
+				"void"
+				"wchar"
+				"wstring"
+			)
+			default_value	"none"
+		)
+	)
+	
+	
+	(Class
+		(UNION_SWITCH_TYPE_MODIFIER
+			close_set false
+			set (list
+				"long"
+				)
+				default_value "long"
+		)
+		(ADVANCED_TYPE_MODIFIER
+			close_set true
+			set (list
+			"valuetype"
+			"union"
+			"struct"
+			"exception"
+			)
+			default_value "valuetype"
+		)
+	)
+	(Method
+		(ONEWAY_MODIFIER
+			close_set true
+			set	(list
+				"oneway"
+				"blank"
+			)
+			default_value	"blank"
+		)
+
+	(CONTEXT_EXCEPTIONS
+			close_set false
+			set	(list
+				"<empty>"
+			)
+			default_value	"<empty>"
+		)
+	(RAISES_EXCEPTIONS
+			close_set false
+			set	(list
+				"<empty>"
+			)
+			default_value	"<empty>"
+		)
+	(CONTAINER_MODIFIER
+		close_set true
+		set ( list
+			  "sequence"
+			  "array"
+			  "none"
+			)
+		default_value "none"
+		)
+
+	)
+	(Argument
+	(CONTAINER_MODIFIER
+		close_set true
+		set ( list
+			  "sequence"
+			  "array"
+			  "none"
+			)
+		default_value "none"
+		)
+
+)
+	(Field
+		(UNION_TYPE_MODIFIER
+			close_set false
+			set ( list
+				"default"
+				)
+				default_value "default"
+		)
+		(READONLY_MODIFIER
+			close_set true
+			set	(list
+				"readonly"
+				"blank"
+			)
+			default_value	"blank"
+		)
+		(CONTAINER_MODIFIER
+		close_set true
+		set ( list
+			  "sequence"
+			  "array"
+			  "none"
+			)
+		default_value "none"
+		)
+			  
+   )
+(Role
+		(UNION_TYPE_MODIFIER
+			close_set false
+			set ( list
+				"<empty>"
+				)
+				default_value "<empty>"
+		)
+		(READONLY_MODIFIER
+			close_set true
+			set	(list
+				"readonly"
+				"blank"
+			)
+			default_value	"blank"
+		)
+		(CONTAINER_MODIFIER
+		close_set true
+		set ( list
+			  "sequence"
+			  "array"
+			  "none"
+			)
+		default_value "none"
+		)
+	)
+	(Project
+		(DEFAULT_METHOD_RETURN_TYPE
+			close_set false
+			set	(list
+				"void"
+			)
+			default_value	"void"
+		)
+		(DEFAULT_ATTRIBUTE_TYPE
+			close_set false
+			set	(list
+				"long"
+			)
+			default_value	"long"
+		)
+		(MAIN_FILE_EXTENSION
+			close_set true
+			set	(list
+				"idl"
+			)
+			default_value	"idl"
+		)
+		(GENERATE_INCLUDES_ON_DEMAND_IDL
+		    close_set true
+			set	(list
+				"true"
+				"false"
+			)
+			default_value	"true"
+		)
+		(INCLUDE_FILE_SEPARATOR_FORMAT_IDL
+		    close_set true
+			set	(list
+				"Default"
+				"Windows"
+				"Unix"
+			)
+			default_value	"Default"
+		)
+	)
+)

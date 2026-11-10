@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram abbreviation="any" type="Any Diagram" version="8">
+    <toolbarConfiguration>
+        <category expandedByDefault="false" id="COMMON_ELEMENTS_STATIC" name="Common">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.svg" size="16" type="large"/>
+            <actions>
+                <group>
+                    <standard action="ADD_NOTE" shortcut="pressed N "/>
+                    <standard action="ADD_HTML_NOTE" shortcut="shift pressed N "/>
+                    <standard action="ADD_COMMENT"/>
+                    <standard action="ADD_HTML_COMMENT"/>
+                </group>
+                <group>
+                    <standard action="ADD_TEXT_BOX" shortcut="pressed X "/>
+                    <standard action="ADD_HTML_TEXT_BOX" shortcut="shift pressed X "/>
+                </group>
+                <group>
+                    <standard action="ADD_NOTE_ANCHOR" shortcut="pressed H "/>
+                </group>
+                <group>
+                    <standard action="CONSTRAINT_ACTION"/>
+                    <standard action="DURATION_CONSTRAINT_ACTION"/>
+                    <standard action="TIME_CONSTRAINT_ACTION"/>
+                    <standard action="ADD_CONSTRAINT_LINK" shortcut="shift pressed H "/>
+                </group>
+                <group>
+                    <standard action="ADD_CONTAINMENT_LINK" shortcut="shift pressed C "/>
+                    <standard action="ADD_CONTAINMENT_LINK_OPPOSITE" shortcut="shift pressed K "/>
+                </group>
+                <standard action="ADD_DEPENDENCY" shortcut="shift pressed D "/>
+                <group>
+                    <standard action="ADD_IMAGE_FROM_FILE" shortcut="pressed I "/>
+                    <standard action="ADD_IMAGE_FROM_ATTACHED_FILE"/>
+                </group>
+                <standard action="ADD_DIAGRAM_OVERVIEW"/>
+                <standard action="ADD_DIAGRAM_LEGEND"/>
+                <group>
+                    <standard action="ADD_SEPARATOR" shortcut="pressed W "/>
+                    <standard action="ADD_SEPARATOR_VERTICAL"/>
+                    <standard action="ADD_RECTANGULAR_SHAPE" shortcut="shift pressed Q "/>
+                </group>
+            </actions>
+        </category>
+        <category expandedByDefault="false" id="action_category_1239974101621_433764_0" name="Information Flows">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/information_flows.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/information_flows.svg" size="16" type="large"/>
+            <actions>
+                <standard action="ADD_CONVEYED_INFORMATION"/>
+            </actions>
+        </category>
+    </toolbarConfiguration>
+    <module location="/Users/admin/182/G:\1704\md\core\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Comment</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.ConstraintLinkView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.DependencyView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.DiagramShape</symbol>
+        <path action="ADD_DEPENDENCY"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Diagram</element>
+        <path action="ADD_DEPENDENCY"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.ImageShapeView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.NoteView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Property</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>	
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.RectangularShape</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.SeparatorView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.TextBoxView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+</diagram>
+

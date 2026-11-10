@@ -1,0 +1,62 @@
+(list
+	(BuiltInTypes
+		(types
+			close_set true
+			set	(list
+				"int=0"
+				"byte=0"
+				"short=0"
+				"long=0"
+				"char=' '"
+				"float=0"
+				"double=0"
+				"boolean=false"
+				"void="
+			)
+			default_value	"int=0"
+		)
+	)
+	(Types_table
+			IDL_BOOLEAN "boolean"
+			IDL_CHAR "char"
+			IDL_WCHAR "char"
+			IDL_OCTET "byte"
+			IDL_STRING "String"
+			IDL_WSTRING "String"
+			IDL_SHORT "short"
+			IDL_UNSIGNED_SHORT "short"
+			IDL_LONG "int"
+			IDL_UNSIGNED_LONG "int"
+			IDL_LONG_LONG "long"
+			IDL_UNSIGNED_LONG_LONG "long"
+			IDL_FLOAT "float"
+			IDL_DOUBLE "double"
+			IDL_FIXED "double"
+			IDL_LONG_DOUBLE "double"
+	)
+	(Project
+		(DEFAULT_METHOD_RETURN_TYPE
+			close_set false
+			set	(list
+				"void"
+			)
+			default_value	"void"
+		)
+		(DEFAULT_ATTRIBUTE_TYPE
+			close_set false
+			set	(list
+				"int"
+			)
+			default_value	"int"
+		)
+		(MAIN_FILE_EXTENSION
+			close_set true
+			set	(list
+				"class"
+				"jar"
+				"zip"
+			)
+			default_value	"class"
+		)
+	)
+)

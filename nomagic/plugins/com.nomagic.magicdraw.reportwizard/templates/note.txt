@@ -1,0 +1,4 @@
+The folder contains the internal templates which must not be shifted to the users.
+
+MagicDraw Profile.mrzip: The template which is used to generate the MagicDraw's profile such as UPDM or SysML project. 
+UML2Bible.mrzip: The MagicDraw UML2 Metamodel bible generator. To generate select "UML2 Metamodel" of "UML Standard Profile" as root package scope.

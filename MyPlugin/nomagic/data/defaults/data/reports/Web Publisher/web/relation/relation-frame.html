@@ -1,0 +1,35 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+#includeSection('web.html', web)
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link rel ="stylesheet" type="text/css" href="../stylesheet.css" title="style">
+   <title>$Title</title>
+</head>
+<body>
+   <h4>Relations</h4>
+   <div>
+      #set ($packAndModel = $array.createArray($Package))
+      #set ($void = $packAndModel.addAll($SystemBoundary))
+      #set ($void = $packAndModel.addAll($Profile))
+      #set ($void = $packAndModel.addAll($Model))
+      #set ($void = $packAndModel.addAll($Subsystem))
+      #foreach ($p in $sorter.sort($packAndModel, 'name'))
+      #set ($relationship = $sorter.sort($report.findRelationship($p, true)))
+      #if ($relationship.size() > 0)
+      <div class="frameheading">$p.humanType&nbsp;<span style="font-weight: normal">$p.name</span></div>
+      #foreach ($rel in $sorter.sort($relationship, 'name'))
+         #set ($valid = false)
+         #foreach ($ele in $rel.relatedElement)
+            #acceptType($ele)#if ($accept)#set($valid = true)#end
+         #end
+         #if ($valid == true)
+      <div class="frameitem">&nbsp;<img src="../$report.getIconFor($rel)" alt="relation" align="middle" width="16" height="16">&nbsp;
+      <a href="../$file.computeName('relation', $rel.ID, 'html')" target="classframe">$rel.name</a></div>
+         #end
+      #end
+      #end
+      #end
+   </div>
+</body>
+</html>

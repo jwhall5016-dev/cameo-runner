@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram abbreviation="component" baseType="Static Diagram" type="Component Diagram" version="8">
+    <requiredPlugin>;UML_Standard_Profile.mdzip^UML_FEATURE</requiredPlugin>
+    <helpID>Component+Diagram</helpID>
+    <toolbarConfiguration>
+        <category expandedByDefault="false" id="COMMON_ELEMENTS_STATIC" name="Common">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.svg" size="16" type="large"/>
+            <actions>
+                <group>
+                    <standard action="ADD_NOTE" description="Note" shortcut="pressed N "/>
+                    <standard action="ADD_HTML_NOTE" description="Note(HTML Text)" shortcut="shift pressed N "/>
+                    <standard action="ADD_COMMENT"/>
+                    <standard action="ADD_HTML_COMMENT"/>
+                </group>
+                <group>
+                    <standard action="ADD_TEXT_BOX" shortcut="pressed X "/>
+                    <standard action="ADD_HTML_TEXT_BOX" shortcut="shift pressed X "/>
+                </group>
+                <group>
+                    <standard action="ADD_NOTE_ANCHOR" description="Anchor" shortcut="pressed H "/>
+                    </group>
+				<group>
+					<standard action="CONSTRAINT_ACTION"/>
+					<standard action="DURATION_CONSTRAINT_ACTION"/>
+					<standard action="TIME_CONSTRAINT_ACTION"/>
+					<standard action="ADD_CONSTRAINT_LINK" shortcut="shift pressed H "/>
+                </group>
+                <group>
+                    <standard action="ADD_CONTAINMENT_LINK" shortcut="shift pressed C "/>
+                    <standard action="ADD_CONTAINMENT_LINK_OPPOSITE" shortcut="shift pressed K "/>
+                </group>
+                <group>
+                    <standard action="ADD_ABSTRACTION" shortcut="pressed T "/>
+                    <custom description="Trace" id="IDaction_1297147200209_590759_0" listAsElement="true" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mddependencies.Abstraction">
+                        <stereotype id="magicdraw_1046861421246_733231_63"/>
+                    </custom>
+                </group>
+                <standard action="ADD_DEPENDENCY" shortcut="shift pressed D "/>
+                <group>
+                    <standard action="ADD_IMAGE_FROM_FILE" shortcut="pressed I "/>
+                    <standard action="ADD_IMAGE_FROM_ATTACHED_FILE"/>
+                </group>
+                <standard action="ADD_DIAGRAM_OVERVIEW"/>
+                                <standard action="ADD_DIAGRAM_LEGEND"/>
+                <group>
+                    <standard action="ADD_SEPARATOR" shortcut="pressed W "/>
+                    <standard action="ADD_SEPARATOR_VERTICAL"/>
+                    <standard action="ADD_RECTANGULAR_SHAPE" shortcut="shift pressed Q "/>
+                </group>
+            </actions>
+        </category>
+        <baseCategory expandedByDefault="false" id="CLASS_DIAGRAM_ELEMENTS" parentCategoryID="CLASS_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="USECASE_DIAGRAM_ELEMENTS" parentCategoryID="USECASE_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="PACKAGE_DIAGRAM_ELEMENTS" parentCategoryID="PACKAGE_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="OBJECT_DIAGRAM_ELEMENTS" parentCategoryID="OBJECT_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="true" id="COMPONENT_DIAGRAM_ELEMENTS" parentCategoryID="COMPONENT_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="DEPLOYMENT_DIAGRAM_ELEMENTS" parentCategoryID="DEPLOYMENT_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="COMPOSITE_STRUCTURE_DIAGRAM_ELEMENTS" parentCategoryID="COMPOSITE_STRUCTURE_DIAGRAM_ELEMENTS"/>
+        <baseCategory expandedByDefault="false" id="action_category_1158589748809_528806_0" parentCategoryID="action_category_1158589748809_528806_0"/>
+    </toolbarConfiguration>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/componentdiagram.png" size="16" type="small"/>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/componentdiagram.svg" size="-1" type="diagraming"/>
+    <module location="/Users/admin/182/D:\No install\17.0.1\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+</diagram>
+

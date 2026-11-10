@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram abbreviation="networking" baseType="Component Diagram" category="Other Diagrams" type="Networking Diagram" version="8">
+    <edition>Architect</edition>
+    <edition>Enterprise</edition>
+    <edition>Reader</edition>
+    <edition>Professional C++</edition>
+    <edition>Standard</edition>
+    <edition>Professional Java</edition>
+    <helpID>Networking+diagram</helpID>
+    <toolbarConfiguration>
+        <baseCategory expandedByDefault="false" id="COMMON_ELEMENTS_STATIC" parentCategoryID="COMMON_ELEMENTS_STATIC"/>
+        <category expandedByDefault="true" id="action_category_1160384638640_171178_0" name="Networking Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/networkingdiagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/networkingdiagram.svg" size="16" type="large"/>
+            <actions>
+                <group>
+                    <custom description="Server" id="IDaction_1160394776187_876824_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157955642515_559173_3"/>
+                    </custom>
+                    <custom description="Application Server" id="IDaction_1160464004703_737892_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157955887718_620497_184"/>
+                    </custom>
+                    <custom description="DB Server" id="IDaction_1160464038171_721664_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157955789062_227358_109"/>
+                    </custom>
+                    <custom description="File Server" id="IDaction_1160464086656_206815_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157955873890_755753_159"/>
+                    </custom>
+                    <custom description="Proxy Server" id="IDaction_1160464162843_707340_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157963165765_211133_985"/>
+                    </custom>
+                    <custom description="Web Server" id="IDaction_1160464224203_836497_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157955798078_128188_134"/>
+                    </custom>
+                </group>
+                <group>
+                    <custom description="PC " id="IDaction_1160481125234_435721_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1160466129609_869566_25"/>
+                    </custom>
+                    <custom description="PC" id="IDaction_1160481141640_76920_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157971827343_736447_1655"/>
+                    </custom>
+                    <custom description="Laptop" id="IDaction_1160464137375_836598_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157971837359_521856_1680"/>
+                    </custom>
+                </group>
+                <custom description="Monitor" id="IDaction_1160464413515_725653_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                    <stereotype id="_11_5_8740266_1157970271843_586063_1340"/>
+                </custom>
+                <group>
+                    <custom description="Printer" id="IDaction_1160464483281_518666_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157970003609_813814_1243"/>
+                    </custom>
+                    <custom description="Fax" id="IDaction_1160464361984_199550_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157970019546_633444_1315"/>
+                    </custom>
+                    <custom description="Scanner" id="IDaction_1160464566546_885263_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157970018140_408364_1267"/>
+                    </custom>
+                    <custom description="Plotter" id="IDaction_1160464447890_603289_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157970018921_600904_1291"/>
+                    </custom>
+                </group>
+                <group>
+                    <custom description="Modem" id="IDaction_1160481172562_822454_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1160466610734_296074_212"/>
+                    </custom>
+                    <custom description="Switch" id="IDaction_1160464645796_980230_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157972667468_89474_2154"/>
+                    </custom>
+                    <custom description="Router" id="IDaction_1160464528390_18129_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157972639750_795891_2082"/>
+                    </custom>
+                    <custom description="Hub" id="IDaction_1164612116453_523170_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_12_0_3750177_1164569460421_958031_483"/>
+                    </custom>
+                </group>
+                <custom description="Firewall" id="IDaction_1160481188078_884399_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                    <stereotype id="_11_5_8740266_1160466505578_406113_165"/>
+                </custom>
+                <custom description="Database" id="IDaction_1160464678328_472498_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                    <stereotype id="_11_5_8740266_1157972013625_359031_1889"/>
+                </custom>
+                <group>
+                    <custom description="Program" id="IDaction_1160464719328_264936_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.deployments.mdartifacts.Artifact">
+                        <stereotype id="_11_5_8740266_1157972028031_594356_2009"/>
+                    </custom>
+                    <custom description="Internet Browser" id="IDaction_1160464709359_576685_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.deployments.mdartifacts.Artifact">
+                        <stereotype id="_11_5_8740266_1157972027000_190408_1937"/>
+                    </custom>
+                    <custom description="Document " id="IDaction_1160481203031_863375_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.deployments.mdartifacts.Artifact">
+                        <stereotype id="_11_5_8740266_1160466284500_470349_72"/>
+                    </custom>
+                    <custom description="File " id="IDaction_1160481237703_957678_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.deployments.mdartifacts.Artifact">
+                        <stereotype id="_11_5_8740266_1160466411812_830474_119"/>
+                    </custom>
+                </group>
+                <custom description="Wireless Network" id="IDaction_1160481158500_237386_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                    <stereotype id="_11_5_8740266_1160477807843_532362_1063"/>
+                </custom>
+                <custom description="Internet" id="IDaction_1160464109593_221244_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                    <stereotype id="_11_5_8740266_1157963236421_394754_1031"/>
+                </custom>
+                <group>
+                    <custom description="Building" id="IDaction_1160464298125_474832_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157964484312_225584_1168"/>
+                    </custom>
+                    <custom description="City" id="IDaction_1160464324328_800150_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5_8740266_1157964582390_953816_1193"/>
+                    </custom>
+                </group>
+                <group>
+                    <custom description=" User" id="IDaction_1160464271031_438845_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.mdusecases.Actor">
+                        <stereotype id="_11_5_8740266_1157971893000_592239_1705"/>
+                    </custom>
+                    <custom description="User " id="IDaction_1160481250078_386763_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.mdusecases.Actor">
+                        <stereotype id="_11_5_8740266_1160477259843_700471_991"/>
+                    </custom>
+                </group>
+                <custom description="HTTP" id="IDaction_1160481259859_483571_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mddependencies.Dependency">
+                    <stereotype id="_11_5_8740266_1157972563000_823727_2033"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/http.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/http.svg" size="16" type="large"/>
+                </custom>
+                <custom description="Ethernet" id="IDaction_1160481273484_766765_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mddependencies.Dependency">
+                    <stereotype id="_11_5_8740266_1157964616343_181059_1218"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/ethernet.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/ethernet.svg" size="16" type="large"/>
+                </custom>
+                <custom description="RMI" id="IDaction_1160481291625_710440_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mddependencies.Dependency">
+                    <stereotype id="_11_5_8740266_1157972566750_952324_2057"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/rmi.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/rmi.svg" size="16" type="large"/>
+                </custom>
+                <custom description="Connection" id="IDaction_1164369792265_297087_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mddependencies.Dependency">
+                    <stereotype id="_12_0_8740266_1164353135312_780709_116"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/line.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/line.svg" size="16" type="large"/>
+                </custom>
+            </actions>
+        </category>
+    </toolbarConfiguration>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/networkingdiagram.png" size="16" type="small"/>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/networking/networkingdiagram.svg" size="-1" type="diagraming"/>
+
+
+    <module location="/Users/admin/182/G:\Users\minde\md\md\core\E:\INSTALL\MD_UML_150EAP_beta1_no_install\profiles\Networking_Profile.mdzip" name="Networking_Profile.mdzip">
+        <root id="_11_5_8740266_1160394048718_408216_117"/>
+    </module>
+    <module location="/Users/admin/182/G:\Users\minde\md\md\core\E:\INSTALL\MD_UML_150EAP_beta1_no_install\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <elementstyle name="Diagram">
+        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+            <mdElement elementClass="PropertyManager">
+                <mdElement elementClass="BooleanProperty">
+                    <propertyID>SHOW_DIAGRAM_FRAME</propertyID>
+                    <propertyGroup>DIAGRAM_FRAME</propertyGroup>
+                </mdElement>
+                <mdElement elementClass="BooleanProperty">
+                    <propertyID>SHOW_DIAGRAM_TYPE</propertyID>
+                    <propertyGroup>DIAGRAM_FRAME</propertyGroup>
+                    <value xmi:value="true"/>
+                </mdElement>
+                <mdElement elementClass="BooleanProperty">
+                    <propertyID>SHOW_PARAMETERS</propertyID>
+                    <propertyGroup>DIAGRAM_FRAME</propertyGroup>
+                </mdElement>
+                <mdElement elementClass="BooleanProperty">
+                    <propertyID>SHOW_CONTEXT_NAME</propertyID>
+                    <propertyGroup>DIAGRAM_FRAME</propertyGroup>
+                </mdElement>
+                <mdElement elementClass="BooleanProperty">
+                    <propertyID>SHOW_FRAME_OWNER</propertyID>
+                    <propertyGroup>DIAGRAM_FRAME</propertyGroup>
+                </mdElement>
+                <mdElement elementClass="ChoiceProperty">
+                    <propertyID>STEREOTYPES_DISPLAY_MODE</propertyID>
+                    <value>STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON</value>
+                    <choice xmi:value="STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON^STEREOTYPE_DISPLAY_MODE_TEXT^STEREOTYPE_DISPLAY_MODE_ICON^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE_AND_TEXT^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE^STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES"/>
+                    <index xmi:value="0"/>
+                </mdElement>
+            </mdElement>
+        </PropertyVisitorAcceptor>
+    </elementstyle>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157970003609_813814_1243" name="Printer"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157972028031_594356_2009" name="Program"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160464719328_264936_0</target>
+            <target>IDaction_1160464709359_576685_0</target>
+            <target>IDaction_1160481203031_863375_0</target>
+            <target>IDaction_1160481237703_957678_0</target>
+            <target>IDaction_1160464678328_472498_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1160466129609_869566_25" name="PC "/>
+        <path action="IDaction_1160481259859_483571_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481141640_76920_0</target>
+            <target>IDaction_1160464109593_221244_0</target>
+        </path>
+        <path action="IDaction_1160481273484_766765_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481141640_76920_0</target>
+            <target>IDaction_1160464109593_221244_0</target>
+        </path>
+        <path action="IDaction_1160481291625_710440_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481141640_76920_0</target>
+            <target>IDaction_1160464109593_221244_0</target>
+        </path>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481141640_76920_0</target>
+            <target>IDaction_1160464109593_221244_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157971827343_736447_1655" name="PC"/>
+        <path action="IDaction_1160481259859_483571_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+            <target>IDaction_1160464109593_221244_0</target>
+        </path>
+        <path action="IDaction_1160481273484_766765_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+            <target>IDaction_1160464109593_221244_0</target>
+        </path>
+        <path action="IDaction_1160481291625_710440_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+            <target>IDaction_1160464109593_221244_0</target>
+        </path>
+        <path action="IDaction_1164369792265_297087_0"/>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157970271843_586063_1340" name="Monitor"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160481125234_435721_0</target>
+            <target>IDaction_1160394776187_876824_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157955789062_227358_109" name="DB Server"/>
+        <path action="IDaction_1160481259859_483571_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481273484_766765_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481291625_710440_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157955642515_559173_3" name="Server"/>
+        <path action="IDaction_1160481259859_483571_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481273484_766765_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481291625_710440_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1160477259843_700471_991" name="User "/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160481125234_435721_0</target>
+            <target>IDaction_1160464709359_576685_0</target>
+            <target>IDaction_1160464719328_264936_0</target>
+            <target>IDaction_1160481203031_863375_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157963165765_211133_985" name="Proxy Server"/>
+        <path action="IDaction_1160481259859_483571_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481273484_766765_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481291625_710440_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1160466610734_296074_212" name="Modem"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160464109593_221244_0</target>
+            <target>IDaction_1160394776187_876824_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157972027000_190408_1937" name="Internet Browser"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160464709359_576685_0</target>
+            <target>IDaction_1160464109593_221244_0</target>
+            <target>IDaction_1160464719328_264936_0</target>
+            <target>IDaction_1160481203031_863375_0</target>
+            <target>IDaction_1160481237703_957678_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157970018921_600904_1291" name="Plotter"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157972013625_359031_1889" name="Database"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464678328_472498_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1160466411812_830474_119" name="File "/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160464719328_264936_0</target>
+            <target>IDaction_1160481203031_863375_0</target>
+            <target>IDaction_1160481237703_957678_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157964484312_225584_1168" name="Building"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160464298125_474832_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157971893000_592239_1705" name="User"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160481125234_435721_0</target>
+            <target>IDaction_1160464709359_576685_0</target>
+            <target>IDaction_1160464719328_264936_0</target>
+            <target>IDaction_1160481203031_863375_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1160466284500_470349_72" name="Document "/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160464719328_264936_0</target>
+            <target>IDaction_1160481203031_863375_0</target>
+            <target>IDaction_1160481237703_957678_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157955887718_620497_184" name="Application Server"/>
+        <path action="IDaction_1160481259859_483571_0">
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481273484_766765_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481291625_710440_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157971837359_521856_1680" name="Laptop"/>
+        <path action="IDaction_1160481259859_483571_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+            <target>IDaction_1160464137375_836598_0</target>
+        </path>
+        <path action="IDaction_1160481273484_766765_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+            <target>IDaction_1160464137375_836598_0</target>
+        </path>
+        <path action="IDaction_1160481291625_710440_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+            <target>IDaction_1160464137375_836598_0</target>
+        </path>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+            <target>IDaction_1160464137375_836598_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157972639750_795891_2082" name="Router"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1160466505578_406113_165" name="Firewall"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157964582390_953816_1193" name="City"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160464324328_800150_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157970019546_633444_1315" name="Fax"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157970018140_408364_1267" name="Scanner"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157972667468_89474_2154" name="Switch"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157955873890_755753_159" name="File Server"/>
+        <path action="IDaction_1160481259859_483571_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481273484_766765_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481291625_710440_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1164369792265_297087_0"/>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157955798078_128188_134" name="Web Server"/>
+        <path action="IDaction_1160481259859_483571_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481273484_766765_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1160481291625_710440_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160464004703_737892_0</target>
+            <target>IDaction_1160464038171_721664_0</target>
+            <target>IDaction_1160464086656_206815_0</target>
+            <target>IDaction_1160464162843_707340_0</target>
+            <target>IDaction_1160464224203_836497_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1160477807843_532362_1063" name="Wireless Network"/>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+            <target>IDaction_1160464137375_836598_0</target>
+        </path>
+        <path action="ADD_DEPENDENCY"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5_8740266_1157963236421_394754_1031" name="Internet"/>
+        <path action="IDaction_1160481259859_483571_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+        </path>
+        <path action="IDaction_1160481273484_766765_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+        </path>
+        <path action="IDaction_1160481291625_710440_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+        </path>
+        <path action="IDaction_1164369792265_297087_0">
+            <target>IDaction_1160394776187_876824_0</target>
+            <target>IDaction_1160481125234_435721_0</target>
+        </path>
+    </manipulators>
+</diagram>

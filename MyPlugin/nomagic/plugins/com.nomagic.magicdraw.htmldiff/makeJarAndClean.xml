@@ -1,0 +1,19 @@
+<project name="HTMLDiffMakeJarAndClean" basedir="." default="run em ALL">
+
+    <property name="dir.root" value="..\..\.."/>
+    <property name="dir.htmldiff.classes" value="${dir.root}\classes\production\htmldiff"/>
+
+    <target name="make jar">
+        <jar destfile="htmldiff.jar">
+            <fileset dir="${dir.htmldiff.classes}"/>
+        </jar>
+    </target>
+
+    <target name="delete source files" depends="make jar">
+        <delete dir="${dir.htmldiff.classes}"/>
+    </target>
+
+    <target name="run em ALL" depends="make jar, delete source files">
+    </target>
+
+</project>

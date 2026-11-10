@@ -1,0 +1,43 @@
+#sectionBegin(operations)
+<table border="1" width="100%" cellpadding="3" cellspacing="0">
+   <tr class="heading">
+      <th align="left" colspan="3"><b>Operations</b></th>
+   </tr>
+   <tr class="row">
+      <td><b>Name</b></td>
+      <td><b>Return Type</b></td>
+      <td><b>Classifier</b></td>
+   </tr>
+#*=============================
+ * Print element owned attribute
+ * @param element element
+==============================*#
+#macro (ownedOperation $element)
+#if ($element.hasOwnedOperation())
+#foreach ($ope in $sorter.sort($element.ownedOperation))
+#if ($element.ID == $importer.ID || $ope.visibility != 'private')
+#set($pahtName = $file.create('operation/operation-content.html', $file.computeName('operation', $ope.ID, 'html'), $ope))
+<tr class="row">
+   <td>#visibilityIcon($ope)<a href="../$pahtName"><img src="../$report.getIconFor($ope)" alt="operation" width="16" height="16"></a>&nbsp;<a href="../$pahtName">$ope.name</a>&nbsp;</td>
+   <td>#link($ope.getType())&nbsp;</td>
+   #set($num = 0)
+   #foreach ($fea in $sorter.sort($ope.featuringClassifier))#set($num = 1)#end
+   <td>#if($num == 1)#foreach ($fea in $sorter.sort($ope.featuringClassifier))#link($fea)<br>#end#else$emptry&nbsp;#end</td>
+</tr>
+#end
+#end
+#end
+#if($element.hasGeneralization())
+   #foreach ($gen in $sorter.sort($element.general))
+      #ownedOperation($gen)
+   #end
+#end
+#if($element.hasInterfaceRealization())
+   #foreach ($rea in $sorter.sort($element.interfaceRealization))
+      #ownedOperation($rea)
+   #end
+#end
+#end
+#ownedOperation($importer)
+</table>
+#sectionEnd

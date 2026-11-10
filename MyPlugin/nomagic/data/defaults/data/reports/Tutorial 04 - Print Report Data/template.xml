@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+   <name>Tutorial 04 - Print Report Data</name>
+   <description>This sample template will print user report data.</description>
+   <icon />
+   <enable>true</enable>
+   <readonly>true</readonly>
+   <category>Tutorial</category>
+   <templateFile>template.docx</templateFile>
+   <variables>
+      <variable>
+         <name>Author</name>
+         <description />
+         <type />
+         <value xml:space="preserve">Siri Chongasamethaworn</value>
+      </variable>
+      <variable>
+         <name>CompanyName</name>
+         <description />
+         <type />
+         <value xml:space="preserve">No Magic Asia</value>
+      </variable>
+      <variable>
+         <name>GeneratedBy</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+      </variable>
+      <variable>
+         <name>Publisher</name>
+         <description />
+         <type />
+         <value xml:space="preserve">No Magic</value>
+      </variable>
+      <variable>
+         <name>Version</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+         <variable>
+            <name>1.0</name>
+            <description />
+            <type />
+            <value xml:space="preserve">Initial created</value>
+         </variable>
+         <variable>
+            <name>2.0</name>
+            <description />
+            <type />
+            <value xml:space="preserve">Update description</value>
+         </variable>
+      </variable>
+   </variables>
+</template>

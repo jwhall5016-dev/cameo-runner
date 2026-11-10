@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.fileattachmentsmerge"
+	name="File Attachments Merge"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.fileattachments.merge.FileAttachmentsMergePlugin">
+
+	<requires>
+	   	<api version="1.0"/>
+        <required-plugin id="com.nomagic.magicdraw.fileattachments" name="File Attachments"/>
+        <required-plugin id="com.nomagic.magicdraw.merge" name="Project Merge"/>
+	</requires>
+
+	<runtime>
+	   <library name="fileattachmentsmerge.jar"/>
+	   <library name="fileattachmentsmerge_api.jar"/>
+	</runtime>
+</plugin>

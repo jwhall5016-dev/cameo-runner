@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="elements">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="element">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element minOccurs="1" maxOccurs="1" name="name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="members">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="function">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="1" maxOccurs="1" name="name" type="xs:string" />
+                                <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string" />
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="param">
+                                  <xs:complexType>
+                                    <xs:all>
+                                      <xs:element minOccurs="1" maxOccurs="1" name="name" type="xs:string" />
+                                      <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string" />
+                                      <xs:element minOccurs="0" maxOccurs="1" name="type" nillable="true" type="xs:string" />
+                                      <xs:element minOccurs="0" maxOccurs="1" name="direction">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:enumeration value="in" />
+                                            <xs:enumeration value="out" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                    </xs:all>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="attribute">
+                            <xs:complexType>
+                              <xs:all>
+                                <xs:element minOccurs="1" maxOccurs="1" name="name" type="xs:string" />
+                                <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string" />
+                                <xs:element minOccurs="0" maxOccurs="1" name="type" nillable="true" type="xs:string" />
+                              </xs:all>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:all>
+                  <xs:attribute name="often" type="xs:boolean" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_20" class="java.beans.XMLDecoder"> 
+ <object class="java.util.ArrayList"> 
+  <void method="add"> 
+   <object class="com.nomagic.magicdraw.automaton.EngineDescriptor"> 
+    <void property="extensions"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <string>js</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="jars"> 
+     <object class="java.util.ArrayList"/> 
+    </void> 
+    <void property="name"> 
+     <string>JavaScript</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="com.nomagic.magicdraw.automaton.EngineDescriptor"> 
+    <void property="extensions"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <string>js</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="aliases"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <string>rhino-nonjdk</string> 
+      </void>
+     </object> 
+    </void>
+    <void property="jars"> 
+     <object class="java.util.ArrayList"/> 
+    </void> 
+    <void property="name"> 
+     <string>JavaScript Rhino</string> 
+    </void> 
+   </object> 
+  </void>
+  <void method="add"> 
+   <object class="com.nomagic.magicdraw.automaton.EngineDescriptor"> 
+    <void property="extensions"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <string>rb</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="jars"> 
+     <object class="java.util.ArrayList"/> 
+    </void> 
+    <void property="name"> 
+     <string>JRuby</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="com.nomagic.magicdraw.automaton.EngineDescriptor"> 
+    <void property="extensions"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <string>bsh</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="jars"> 
+     <object class="java.util.ArrayList"/> 
+    </void> 
+    <void property="name"> 
+     <string>BeanShell</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="com.nomagic.magicdraw.automaton.EngineDescriptor"> 
+    <void property="extensions"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <string>py</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="jars"> 
+     <object class="java.util.ArrayList"/> 
+    </void> 
+    <void property="name"> 
+     <string>Jython</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="com.nomagic.magicdraw.automaton.EngineDescriptor"> 
+    <void property="extensions"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <string>groovy</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="jars"> 
+     <object class="java.util.ArrayList"/> 
+    </void> 
+    <void property="name"> 
+     <string>Groovy</string> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

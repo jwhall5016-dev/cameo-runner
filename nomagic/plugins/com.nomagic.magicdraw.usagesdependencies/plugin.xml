@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.usagesdependencies"
+	name="Usages and Dependencies plugin"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.usagesdependencies.UsagesDependenciesPlugin">
+
+	<requires>
+	    <api version="1.0"/>
+        <required-plugin 	id="com.nomagic.magicdraw.visualization.relationshipmap" name="Relation Map"/>
+        <required-plugin 	id="DependencyMatrixPlugin"/>
+	</requires>
+
+	<runtime>
+	   <library name="usagesdependencies.jar"/>
+	   <library name="usagesdependencies_api.jar"/>
+	</runtime>
+</plugin>

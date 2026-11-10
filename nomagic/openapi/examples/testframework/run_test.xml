@@ -1,0 +1,85 @@
+<!--
+Usage: ant -lib <JUnit5 jars folder> -Djunit5.jars=<JUnit5 jars folder> -f run_tests.xml
+JUnit5 jars folder must contain following files:
+junit-4.x
+junit-platform-commons
+junit-platform-engine
+junit-platform-launcher
+junit-jupiter-engine
+junit-jupiter-api
+junit-vintage-engine
+
+
+JUnit4 can be started with a single junit-4.x file. Set junit5 to "false" in the magicunit task.
+-->
+<project name="MagicDraw Test Framework sample" default="build" basedir=".">
+
+	<target name="set.properties">
+		<property name="src" location="${basedir}" />
+		<property name="build" location="bin" />
+		<property name="magicdraw.home" location="../../.." />
+		<property name="magicdraw.lib" location="${magicdraw.home}/lib" />
+		<property name="junit5.jars" location="Download junit5 jars and define location" />
+
+		<condition property="run" value="true">
+			<available file="${junit5.jars}" type="dir"/>
+		</condition>
+		<fail message="Usage: ant -lib [JUnit5 jars folder] -Djunit5.jars=[JUnit5 jars folder] -f run_tests.xml" unless="run"/>
+	</target>
+
+	<target name="build" depends="set.properties, test">
+	</target>
+
+	<target name="compile" description="compiles report tool java source code">
+		<mkdir dir="${build}" />
+		<javac srcdir="${src}" destdir="${build}">
+			<classpath>
+				<fileset dir="${magicdraw.lib}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="taskdef.unit">
+		<taskdef name="magicunit" classname="com.nomagic.tools.ant.CustomizableJUnitTask">
+			<classpath>
+				<fileset dir="${magicdraw.lib}" includes="junit-osgi.jar"/>
+			</classpath>
+		</taskdef>
+	</target>
+
+	<target name="test" depends="compile, taskdef.unit">
+		<magicunit dir="${magicdraw.home}" showoutput="true" printsummary="true" fork="true" junit5="true">
+			<jvmarg value="-Xmx800m" />
+			<sysproperty key="tests.resources" value="${basedir}/resources" />
+			<sysproperty key="install.root" value="${magicdraw.home}" />
+			<sysproperty key="esi.system.config" value="${magicdraw.home}/data/application.conf" />
+			<sysproperty key="com.nomagic.osgi.config.dir" value="${magicdraw.home}/configuration" />
+			<sysproperty key="test.bundle.name" value="com.nomagic.magicdraw" />
+			<classpath>
+				<fileset dir="${junit5.jars}">
+					<include name="junit-4.*.jar" />
+					<include name="junit-platform-commons-*.jar" />
+					<include name="junit-platform-engine-*.jar" />
+					<include name="junit-platform-launcher-*.jar" />
+					<include name="junit-jupiter-engine-*.jar" />
+					<include name="junit-jupiter-api-*.jar" />
+					<include name="junit-vintage-engine-*.jar" />
+				</fileset>
+				<fileset dir="${magicdraw.lib}">
+					<include name="**/*.jar" />
+					<exclude name="bundles/com.nomagic.esi.*" />
+					<exclude name="bundles/com.nomagic.esi.*/**" />
+					<exclude name="bundles/org.junit.*.jar" />
+				</fileset>
+				<pathelement path="${build}" />
+			</classpath>
+
+			<formatter type="plain" />
+			<test name="com.nomagic.magicdraw.examples.testframework.ComponentCreatorTest"/>
+			<test name="com.nomagic.magicdraw.examples.testframework.DiagramLayoutTest" />
+			<test name="com.nomagic.magicdraw.examples.testframework.ConvertElementTest" />
+		</magicunit>
+	</target>
+</project>

@@ -1,0 +1,4583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data name="Built-in Tools" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="fields.xsd">
+  <elements>
+    <element often="true">
+      <name>array</name>
+      <description>Use for creating the Array or HashSet instance.</description>
+      <members>
+        <function>
+          <name>createArray</name>
+          <description>Create an empty ArrayList.</description>
+          <param>
+            <name>list</name>
+            <direction>out</direction>
+            <type>List</type>
+            <description>the instance of ArrayList.</description>
+          </param>
+        </function>
+        <function>
+          <name>createArray</name>
+          <description>Constructs an ArrayList containing the elements of the specified collection, in the order they are returned by the collection's iterator. Return ArrayList with zero size if given collection is null.</description>
+          <param>
+            <name>collection</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>the collection whose elements are to be placed into this list.</description>
+          </param>
+          <param>
+            <name>list</name>
+            <direction>out</direction>
+            <type>List</type>
+            <description>an ArrayList containing the elements of the specified collection.
+</description>
+          </param>
+        </function>
+        <function>
+          <name>subList</name>
+          <description>Create ArrayList of the portion of list in given size.</description>
+          <param>
+            <name>list</name>
+            <direction>in</direction>
+            <type>List</type>
+            <description>an original list.</description>
+          </param>
+          <param>
+            <name>size</name>
+            <direction>in</direction>
+            <type>int</type>
+            <description>view size of given list</description>
+          </param>
+          <param>
+            <name>list</name>
+            <direction>out</direction>
+            <type>List</type>
+            <description>a List of view of the specified size within given list.</description>
+          </param>
+        </function>
+        <function>
+          <name>addCollection</name>
+          <description>Add child list into parent collection. It helps the template in order to handle the child is null. </description>
+          <param>
+            <name>parent</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>the parent collection.</description>
+          </param>
+          <param>
+            <name>child</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>the child collection.</description>
+          </param>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>createHashSet</name>
+          <description>Create HashSet instance.</description>
+          <param>
+            <name>set</name>
+            <direction>out</direction>
+            <type>Set</type>
+            <description>the instance of HashSet.</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="true">
+      <name>bookmark</name>
+      <description>Contains utilities functions for bookmark. Context name of this class is "bookmark". Public functions of this class are able to access via template by using $bookmark </description>
+      <members>
+        <function>
+          <name>openURL</name>
+          <description>Function to create hyperlink for open an URL.
+
+$bookmark.openURL(&amp;quot;http://www.nomagicasia.com&amp;quot;, &amp;quot;NoMagic Asia&amp;quot;)</description>
+          <param>
+            <name>url</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>The url text</description>
+          </param>
+          <param>
+            <name>content</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the text content</description>
+          </param>
+          <param>
+            <name>link</name>
+            <direction>out</direction>
+            <type>Link</type>
+            <description>content with hyperlink in RTF format.</description>
+          </param>
+        </function>
+        <function>
+          <name>openURL</name>
+          <description>Function to create hyperlink for open an URL.
+
+$bookmark.openURL($url, &amp;quot;NoMagic Asia&amp;quot;)</description>
+          <param>
+            <name>url</name>
+            <direction>in</direction>
+            <type>URL</type>
+            <description>the URL instance.</description>
+          </param>
+          <param>
+            <name>content</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>text content</description>
+          </param>
+          <param>
+            <name>link</name>
+            <direction>out</direction>
+            <type>Link</type>
+            <description>content with hyperlink in RTF format.</description>
+          </param>
+        </function>
+        <function>
+          <name>openURL</name>
+          <description>Function to create hyperlink for open an URL.
+
+$bookmark.openURL($uri, &amp;quot;NoMagic Asia&amp;quot;)</description>
+          <param>
+            <name>uri</name>
+            <direction>in</direction>
+            <type>URL</type>
+            <description>the URI instance.</description>
+          </param>
+          <param>
+            <name>content</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>text content</description>
+          </param>
+          <param>
+            <name>link</name>
+            <direction>out</direction>
+           <type>Link</type>
+            <description>content with hyperlink in RTF format.</description>
+          </param>
+        </function>
+        <function>
+          <name>open</name>
+          <description>Function to create hyperlink for bookmark. The bookmark ID will be automatically generated from content.
+
+#foreach ($uc in $UseCase)
+   $bookmark.open($uc.name)
+#end
+#foreach ($uc in $UseCase)
+   $bookmark.create($uc.name)
+#end</description>
+          <param>
+            <name>content</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>text content</description>
+          </param>
+          <param>
+            <name>link</name>
+            <direction>out</direction>
+            <type>Link</type>
+            <description>content with hyperlink in RTF format.</description>
+          </param>
+        </function>
+        <function>
+          <name>open</name>
+          <description>Function to create hyperlink for bookmark. bookmarkID value must match with parameter bookmarkID that pass into create(String, Object) function. 
+
+#foreach ($uc in $UseCase)
+    $bookmark.open($uc.name)
+#end
+#foreach ($uc in $UseCase)
+    $bookmark.create($uc.name)
+#end </description>
+          <param>
+            <name>bookmarkId</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the bookmark id</description>
+          </param>
+          <param>
+            <name>content</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>text content</description>
+          </param>
+          <param>
+            <name>link</name>
+            <direction>out</direction>
+            <type>Link</type>
+            <description>content with hyperlink in RTF format.</description>
+          </param>
+        </function>
+        <function>
+          <name>create</name>
+          <description>Function to create bookmark. The bookmark ID will be automatically generated from bookmark object.
+
+#foreach ($uc in $UseCase)
+    $bookmark.open($uc.name)
+#end
+#foreach ($uc in $UseCase)
+    $bookmark.create($uc.name)
+#end </description>
+          <param>
+            <name>bookmarkObject</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the bookmark object or content</description>
+          </param>
+          <param>
+            <name>bookmark</name>
+            <direction>out</direction>
+           <type>Bookmark</type>
+            <description>content with bookmark in RTF format.</description>
+          </param>
+        </function>
+        <function>
+          <name>create</name>
+          <description>Function to create bookmark. The default element type for this function is "label".
+
+#foreach ($uc in $UseCase)
+    $bookmark.open($uc.ID, $uc.name)
+#end
+#foreach ($uc in $UseCase)
+    $bookmark.create($uc.ID, $uc.name)
+#end</description>
+          <param>
+            <name>bookmarkId</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the bookmark id</description>
+          </param>
+          <param>
+            <name>bookmarkObject</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the bookmark object or content</description>
+          </param>
+          <param>
+            <name>bookmark</name>
+            <direction>out</direction>
+            <type>Bookmark</type>
+            <description>content with bookmark in RTF format.</description>
+          </param>
+        </function>
+        <function>
+          <name>create</name>
+          <description>Function to create bookmark with the specified element type.
+
+#foreach ($uc in $UseCase)
+    $bookmark.open($uc.ID, $uc.name)
+#end
+#foreach ($uc in $UseCase)
+    $bookmark.create($uc.ID, $uc.name, &amp;quot;label&amp;quot;)
+#end</description>
+          <param>
+            <name>bookmarkId</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the bookmark id</description>
+          </param>
+          <param>
+            <name>bookmarkObject</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the bookmark object or content</description>
+          </param>
+          <param>
+            <name>elementType</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>name of element type e.g. html tag.</description>
+          </param>
+          <param>
+            <name>bookmark</name>
+            <direction>out</direction>
+            <type>Bookmark</type>
+            <description>content with bookmark in RTF format.</description>
+          </param>
+        </function>
+        <function>
+          <name>getBookmarkId</name>
+          <description>Return a bookmark id from given string.</description>
+          <param>
+            <name>id</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>original string value</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>a bookmark id</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="false">
+      <name>date</name>
+      <description>Tool for working with Date and Calendar
+ in Velocity templates.  It is useful for accessing and
+ formatting the "current" date as well as for formatting
+ arbitrary Date and Calendar objects. Also
+ the tool can be used to retrieve DateFormat instances
+ or make conversions to and from various date types.
+
+ Example of formatting the "current" date:
+  $date                         -&amp;gt; Oct 19, 2003 9:54:50 PM
+  $date.long                    -&amp;gt; October 19, 2003 9:54:50 PM PDT
+  $date.medium_time             -&amp;gt; 9:54:50 PM
+  $date.full_date               -&amp;gt; Sunday, October 19, 2003
+  $date.get('default','short')  -&amp;gt; Oct 19, 2003 9:54 PM
+  $date.get('yyyy-M-d H:m:s')   -&amp;gt; 2003-10-19 21:54:50
+
+ Example of formatting an arbitrary date:
+  $myDate                        -&amp;gt; Tue Oct 07 03:14:50 PDT 2003
+  $date.format('medium',$myDate) -&amp;gt; Oct 7, 2003 3:14:50 AM
+
+ Example toolbox.xml config (if you want to use this with VelocityView):
+ &amp;lt;tool&amp;gt;
+   &amp;lt;key&amp;gt;date&amp;lt;/key&amp;gt;
+   &amp;lt;scope&amp;gt;application&amp;lt;/scope&amp;gt;
+   &amp;lt;class&amp;gt;org.apache.velocity.tools.generic.DateTool&amp;lt;/class&amp;gt;
+   &amp;lt;parameter name="format" value="yyyy-M-d"/&amp;gt;
+ &amp;lt;/tool&amp;gt;
+
+
+ The methods of this tool are highly interconnected, and overriding
+ key methods provides an easy way to create subclasses that use
+ a non-default format, calendar, locale, or timezone.</description>
+      <members>
+        <function>
+          <name>configure</name>
+          <description>Looks for configuration values in the given params.</description>
+          <param>
+            <name>params</name>
+            <direction>in</direction>
+            <type>Map</type>
+            <description />
+          </param>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>getSystemTime</name>
+          <description />
+          <param>
+            <name>long</name>
+            <direction>out</direction>
+            <type>Long</type>
+            <description>the system's current time as the number of milliseconds
+ elapsed since January 1, 1970, 00:00:00 GMT.</description>
+          </param>
+        </function>
+        <function>
+          <name>getSystemDate</name>
+          <description />
+          <param>
+            <name>date</name>
+            <direction>out</direction>
+            <type />
+            <description>the system's current time as a Date</description>
+          </param>
+        </function>
+        <function>
+          <name>getSystemCalendar</name>
+          <description />
+          <param>
+            <name>calendar</name>
+            <direction>out</direction>
+            <type />
+            <description>the system's current time as a Calendar</description>
+          </param>
+        </function>
+        <function>
+          <name>getLocale</name>
+          <description>This implementation returns the configured default locale. Subclasses
+ may override this to return alternate locales. Please note that
+ doing so will affect all formatting methods where no locale is
+ specified in the parameters.</description>
+          <param>
+            <name>locale</name>
+            <direction>out</direction>
+            <type />
+            <description>the default Locale</description>
+          </param>
+        </function>
+        <function>
+          <name>getTimeZone</name>
+          <description>This implementation returns the default TimeZone. Subclasses
+ may override this to return alternate timezones. Please note that
+ doing so will affect all formatting methods where no timezone is
+ specified in the parameters.</description>
+          <param>
+            <name>timezone</name>
+            <direction>out</direction>
+            <type />
+            <description>the default TimeZone</description>
+          </param>
+        </function>
+        <function>
+          <name>getDate</name>
+          <description>Returns a Date derived from the result of #getCalendar</description>
+          <param>
+            <name>date</name>
+            <direction>out</direction>
+            <type />
+            <description>a Date derived from the result of #getCalendar</description>
+          </param>
+        </function>
+        <function>
+          <name>getCalendar</name>
+          <description>Returns a Calendar instance created using the timezone and
+ locale returned by getTimeZone() and getLocale().  This allows subclasses
+ to easily override the default locale and timezone used by this tool.
+
+ Sub-classes may override this method to return a Calendar instance
+ not based on the system date.
+ Doing so will also cause the getDate(), get(String), get(String,String),
+ and toString() methods to return dates equivalent to the Calendar
+ returned by this method, because those methods return values derived
+ from the result of this method.</description>
+          <param>
+            <name>calendar</name>
+            <direction>out</direction>
+            <type />
+            <description>a Calendar instance created using the results of
+         #getTimeZone() and #getLocale().</description>
+          </param>
+        </function>
+        <function>
+          <name>getFormat</name>
+          <description>Return the pattern or style to be used for formatting dates when none
+ is specified. This implementation gives a 'default' date-time format.
+ Subclasses may override this to provide a different default format.
+
+ This can now be configured via the toolbox definition.
+ Add a
+ to your date tool configuration.</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>getYear</name>
+          <description>Returns the year value of the date returned by #getCalendar().</description>
+          <param>
+            <name>integer</name>
+            <direction>out</direction>
+            <type />
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>getYear</name>
+          <description>Returns the year value of the specified date.</description>
+          <param>
+            <name>date</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description />
+          </param>
+          <param>
+            <name>integer</name>
+            <direction>out</direction>
+            <type>Integer</type>
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>getMonth</name>
+          <description>Returns the month value of the date returned by #getCalendar().</description>
+          <param>
+            <name>integer</name>
+            <direction>out</direction>
+            <type>Integer</type>
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>getMonth</name>
+          <description>Returns the month value of the specified date.</description>
+          <param>
+            <name>date</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description />
+          </param>
+          <param>
+            <name>integer</name>
+            <direction>out</direction>
+            <type>Integer</type>
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>getDay</name>
+          <description>Returns the day (of the month) value of the date
+ returned by #getCalendar().
+
+ NOTE: Unlike java.util.Date, this returns the day of the month.
+ It is equivalent to Date.getDate() and
+ Calendar.get(Calendar.DAY_OF_MONTH).  We could not call this method
+ getDate() because that already exists in this class with a different
+ function.</description>
+          <param>
+            <name>integer</name>
+            <direction>out</direction>
+            <type>Integer</type>
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>getDay</name>
+          <description>Returns the day (of the month) value for the specified date.
+
+ NOTE: Unlike java.util.Date, this returns the day of the month.
+ It is equivalent to Date.getDate() and
+ Calendar.get(Calendar.DAY_OF_MONTH).  We could not call this method
+ getDate() because that already exists in this class with a different
+ function.</description>
+          <param>
+            <name>date</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description />
+          </param>
+          <param>
+            <name>integer</name>
+            <direction>out</direction>
+            <type>Integer</type>
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>getValue</name>
+          <description>Return the specified value of the date returned by
+ #getCalendar() or null if the field is invalid.</description>
+          <param>
+            <name>field</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description />
+          </param>
+          <param>
+            <name>integer</name>
+            <direction>out</direction>
+            <type>Integer</type>
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>getValue</name>
+          <description>Returns the specified value of the specified date,
+ or null if the field or date is invalid.  The field may be
+ an Integer or it may be the name of the field as a String.</description>
+          <param>
+            <name>field</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the corresponding Integer value or String name of the desired value</description>
+          </param>
+          <param>
+            <name>date</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date/calendar from which the field value will be taken</description>
+          </param>
+          <param>
+            <name>integer</name>
+            <direction>out</direction>
+            <type>Integer</type>
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>getValue</name>
+          <description>Returns the specified value of the specified date,
+ or null if the field or date is invalid.</description>
+          <param>
+            <name>field</name>
+            <direction>in</direction>
+            <type>int</type>
+            <description>the int for the desired field (e.g. Calendar.MONTH)</description>
+          </param>
+          <param>
+            <name>date</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date/calendar from which the field value will be taken</description>
+          </param>
+          <param>
+            <name>integer</name>
+            <direction>out</direction>
+            <type />
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>get</name>
+          <description>Returns a formatted string representing the date returned by
+ #getDate().  In its default implementation, this method
+ allows you to retrieve the current date in standard formats by
+ simply doing things like  or
+ .  If you want only the date or time portion
+ you can specify that along with the standard formats. (e.g.
+ )
+ More complex or custom formats can be retrieved
+ by using the full method syntax. (e.g. $date.get('E, MMMM d'))</description>
+          <param>
+            <name>format</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the formatting instructions</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+           <type>String</type>
+            <description>a formatted representation of the date returned by
+         #getDate()</description>
+          </param>
+        </function>
+        <function>
+          <name>get</name>
+          <description>Returns a formatted string representing the date and/or time given by
+ #getDate() in standard, localized patterns.</description>
+          <param>
+            <name>dateStyle</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the style pattern for the date</description>
+          </param>
+          <param>
+            <name>timeStyle</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the style pattern for the time</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>a formatted representation of the date returned by
+         #getDate()</description>
+          </param>
+        </function>
+        <function>
+          <name>format</name>
+          <description>Converts the specified object to a date and formats it according to
+ the pattern or style returned by #getFormat().</description>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date object to be formatted</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the specified date formatted as a string</description>
+          </param>
+        </function>
+        <function>
+          <name>format</name>
+          <description>Converts the specified object to a date and returns
+ a formatted string representing that date in the locale
+ returned by #getLocale().</description>
+          <param>
+            <name>format</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the formatting instructions</description>
+          </param>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date object to be formatted</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>a formatted string for this locale representing the specified
+         date or  if the parameters are invalid</description>
+          </param>
+        </function>
+        <function>
+          <name>format</name>
+          <description>Converts the specified object to a date and returns
+ a formatted string representing that date in the specified
+ Locale.</description>
+          <param>
+            <name>format</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the formatting instructions</description>
+          </param>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date object to be formatted</description>
+          </param>
+          <param>
+            <name>locale</name>
+            <direction>in</direction>
+            <type>Locale</type>
+            <description>the locale to be used when formatting</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the given date as a formatted string</description>
+          </param>
+        </function>
+        <function>
+          <name>format</name>
+          <description>Returns a formatted string representing the specified date,
+ Locale, and TimeZone.
+
+
+ The specified format may be a standard style pattern ('full', 'long',
+ 'medium', 'short', or 'default').
+
+
+ You may also specify that you want only the date or time portion be
+ appending '_date' or '_time' respectively to the standard style pattern.
+ (e.g. 'full_date' or 'long_time')
+
+
+ If the format fits neither of these patterns, then the output
+ will be formatted according to the symbols defined by
+ SimpleDateFormat:
+
+   Symbol   Meaning                 Presentation        Example
+   ------   -------                 ------------        -------
+   G        era designator          (Text)              AD
+   y        year                    (Number)            1996
+   M        month in year           (Text &amp; Number)     July &amp; 07
+   d        day in month            (Number)            10
+   h        hour in am/pm (1~12)    (Number)            12
+   H        hour in day (0~23)      (Number)            0
+   m        minute in hour          (Number)            30
+   s        second in minute        (Number)            55
+   S        millisecond             (Number)            978
+   E        day in week             (Text)              Tuesday
+   D        day in year             (Number)            189
+   F        day of week in month    (Number)            2 (2nd Wed in July)
+   w        week in year            (Number)            27
+   W        week in month           (Number)            2
+   a        am/pm marker            (Text)              PM
+   k        hour in day (1~24)      (Number)            24
+   K        hour in am/pm (0~11)    (Number)            0
+   z        time zone               (Text)              Pacific Standard Time
+   '        escape for text         (Delimiter)
+   ''       single quote            (Literal)           '
+
+   Examples: "E, MMMM d" will result in "Tue, July 24"
+             "EEE, M-d (H:m)" will result in "Tuesday, 7-24 (14:12)"
+
+ </description>
+          <param>
+            <name>format</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the custom or standard pattern to be used</description>
+          </param>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date to format</description>
+          </param>
+          <param>
+            <name>locale</name>
+            <direction>in</direction>
+            <type>Locale</type>
+            <description>the Locale to format the date for</description>
+          </param>
+          <param>
+            <name>timezone</name>
+            <direction>in</direction>
+            <type>TimeZone</type>
+            <description>the TimeZone to be used when formatting</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>a formatted string representing the specified date or
+          if the parameters are invalid</description>
+          </param>
+        </function>
+        <function>
+          <name>format</name>
+          <description>Returns the specified date as a string formatted according to the
+ specified date and/or time styles.</description>
+          <param>
+            <name>dateStyle</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the style pattern for the date</description>
+          </param>
+          <param>
+            <name>timeStyle</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the style pattern for the time</description>
+          </param>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date to be formatted</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>a formatted representation of the given date</description>
+          </param>
+        </function>
+        <function>
+          <name>format</name>
+          <description>Returns the specified date as a string formatted according to the
+ specified Locale and date and/or time styles.</description>
+          <param>
+            <name>dateStyle</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the style pattern for the date</description>
+          </param>
+          <param>
+            <name>timeStyle</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the style pattern for the time</description>
+          </param>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date to be formatted</description>
+          </param>
+          <param>
+            <name>locale</name>
+            <direction>in</direction>
+            <type>Locale</type>
+            <description>the Locale to be used for formatting the date</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>a formatted representation of the given date</description>
+          </param>
+        </function>
+        <function>
+          <name>format</name>
+          <description>Returns the specified date as a string formatted according to the
+ specified Locale and date and/or time styles.</description>
+          <param>
+            <name>dateStyle</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the style pattern for the date</description>
+          </param>
+          <param>
+            <name>timeStyle</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the style pattern for the time</description>
+          </param>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date to be formatted</description>
+          </param>
+          <param>
+            <name>locale</name>
+            <direction>in</direction>
+            <type>Locale</type>
+            <description>the Locale to be used for formatting the date</description>
+          </param>
+          <param>
+            <name>timezone</name>
+            <direction>in</direction>
+            <type>TimeZone</type>
+            <description>the TimeZone the date should be formatted for</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>a formatted representation of the given date</description>
+          </param>
+        </function>
+        <function>
+          <name>getDateFormat</name>
+          <description>Returns a DateFormat instance for the specified
+ format, Locale, and TimeZone.  If the format
+ specified is a standard style pattern, then a date-time instance
+ will be returned with both the date and time styles set to the
+ specified style.  If it is a custom format, then a customized
+ SimpleDateFormat will be returned.</description>
+          <param>
+            <name>format</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the custom or standard formatting pattern to be used</description>
+          </param>
+          <param>
+            <name>locale</name>
+            <direction>in</direction>
+            <type>Locale</type>
+            <description>the Locale to be used</description>
+          </param>
+          <param>
+            <name>timezone</name>
+            <direction>in</direction>
+            <type>TimeZone</type>
+            <description>the TimeZone to be used</description>
+          </param>
+          <param>
+            <name>dateformat</name>
+            <direction>out</direction>
+            <type />
+            <description>an instance of DateFormat</description>
+          </param>
+        </function>
+        <function>
+          <name>getDateFormat</name>
+          <description>Returns a DateFormat instance for the specified
+ date style, time style, Locale, and TimeZone.</description>
+          <param>
+            <name>dateStyle</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the date style</description>
+          </param>
+          <param>
+            <name>timeStyle</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the time style</description>
+          </param>
+          <param>
+            <name>locale</name>
+            <direction>in</direction>
+            <type>Locale</type>
+            <description>the Locale to be used</description>
+          </param>
+          <param>
+            <name>timezone</name>
+            <direction>in</direction>
+            <type>TimeZone</type>
+            <description>the TimeZone to be used</description>
+          </param>
+          <param>
+            <name>dateformat</name>
+            <direction>out</direction>
+            <type />
+            <description>an instance of DateFormat</description>
+          </param>
+        </function>
+        <function>
+          <name>toDate</name>
+          <description>Converts an object to an instance of Date using the
+ format returned by #getFormat(),the Locale returned
+ by #getLocale(), and the TimeZone returned by
+ #getTimeZone() if the object is not already an instance
+ of Date, Calendar, or Long.</description>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date to convert</description>
+          </param>
+          <param>
+            <name>date</name>
+            <direction>out</direction>
+            <type />
+            <description>the object as a Date or  if no
+         conversion is possible</description>
+          </param>
+        </function>
+        <function>
+          <name>toDate</name>
+          <description>Converts an object to an instance of Date using the
+ specified format,the Locale returned by
+ #getLocale(), and the TimeZone returned by
+ #getTimeZone() if the object is not already an instance
+ of Date, Calendar, or Long.</description>
+          <param>
+            <name>format</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the format the date is in</description>
+          </param>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date to convert</description>
+          </param>
+          <param>
+            <name>date</name>
+            <direction>out</direction>
+            <type />
+            <description>the object as a Date or  if no
+         conversion is possible</description>
+          </param>
+        </function>
+        <function>
+          <name>toDate</name>
+          <description>Converts an object to an instance of Date using the
+ specified format and Locale if the object is not already
+ an instance of Date, Calendar, or Long.</description>
+          <param>
+            <name>format</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the format the date is in</description>
+          </param>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date to convert</description>
+          </param>
+          <param>
+            <name>locale</name>
+            <direction>in</direction>
+            <type>Locale</type>
+            <description>the Locale</description>
+          </param>
+          <param>
+            <name>date</name>
+            <direction>out</direction>
+            <type />
+            <description>the object as a Date or  if no
+         conversion is possible</description>
+          </param>
+        </function>
+        <function>
+          <name>toDate</name>
+          <description>Converts an object to an instance of Date using the
+ specified format, Locale, and TimeZone if the
+ object is not already an instance of Date, Calendar, or Long.</description>
+          <param>
+            <name>format</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the format the date is in</description>
+          </param>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date to convert</description>
+          </param>
+          <param>
+            <name>locale</name>
+            <direction>in</direction>
+            <type>Locale</type>
+            <description>the Locale</description>
+          </param>
+          <param>
+            <name>timezone</name>
+            <direction>in</direction>
+            <type>TimeZone</type>
+            <description>the TimeZone</description>
+          </param>
+          <param>
+            <name>date</name>
+            <direction>out</direction>
+            <type />
+            <description>the object as a Date or  if no
+         conversion is possible</description>
+          </param>
+        </function>
+        <function>
+          <name>toCalendar</name>
+          <description>Converts an object to an instance of Calendar using the
+ locale returned by #getLocale() if necessary.</description>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date to convert</description>
+          </param>
+          <param>
+            <name>calendar</name>
+            <direction>out</direction>
+            <type />
+            <description>the converted date</description>
+          </param>
+        </function>
+        <function>
+          <name>toCalendar</name>
+          <description>Converts an object to an instance of Calendar using the
+ locale returned by #getLocale() if necessary.</description>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the date to convert</description>
+          </param>
+          <param>
+            <name>locale</name>
+            <direction>in</direction>
+            <type>Locale</type>
+            <description>the locale used</description>
+          </param>
+          <param>
+            <name>calendar</name>
+            <direction>out</direction>
+            <type />
+            <description>the converted date</description>
+          </param>
+        </function>
+        <function>
+          <name>toString</name>
+          <description />
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the result of #getDate() formatted according to the result
+         of #getFormat().</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="false">
+      <name>file</name>
+      <description>This class enables to generate output report file in the template file.</description>
+      <members>
+        <function>
+          <name>silentCreate</name>
+          <description>A shortcut to create file which output filename is template name and no import context object.
+
+For example:
+
+$file.silentCreate('overview.html')</description>
+          <param>
+            <name>template</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the input template name</description>
+          </param>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description/>
+          </param>
+        </function>
+        <function>
+          <name>silentCreate</name>
+          <description>A shortcut to create file which output filename is template name.
+
+For example:
+
+$file.silentCreate('overview.html','')</description>
+          <param>
+            <name>template</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the input template name</description>
+          </param>
+          <param>
+            <name>importObject</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the object reference, which will be DefaultElement in the template file. You can use DefaultElement variable in the template file for getting the data.</description>
+          </param>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description>void</description>
+          </param>
+        </function>
+        <function>
+          <name>silentCreate</name>
+          <description>Generate the report output from given template name.
+
+For example:
+
+$file.silentCreate('overview.html','overview.html','')</description>
+          <param>
+            <name>template</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the input template name</description>
+          </param>
+          <param>
+            <name>outputFileName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the output file name</description>
+          </param>
+          <param>
+            <name>importObject</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the object reference, which will be DefaultElement in the template file. You can use DefaultElement variable in the template file for getting the data.</description>
+          </param>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description/>
+          </param>
+        </function>
+        <function>
+          <name>silentCreate</name>
+          <description>Generate the report output from given template name.
+
+For example:
+
+$file.silentCreate('html','overview','overview','')</description>
+          <param>
+            <name>templateType</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the template type such rtf, html, htm.</description>
+          </param>
+          <param>
+            <name>template</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the input pathname string without extension</description>
+          </param>
+          <param>
+            <name>outputname</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the output file name, not include any extension.</description>
+          </param>
+          <param>
+            <name>importObject</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the object reference, which will be DefaultElement in the template file. You can use DefaultElement variable in the template file for getting the data.</description>
+          </param>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description/>
+          </param>
+        </function>
+        <function>
+          <name>create</name>
+          <description>A shortcut to create file which output filename is template name and no import context object.
+
+For example:
+
+&amp;lt;a href=&amp;quot;$file.create('overview.html')&amp;quot;&amp;gt;overview.html&amp;lt;/a&amp;gt; </description>
+          <param>
+            <name>template</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the input template name</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the output pathname. It will return empty string, if there is any error.</description>
+          </param>
+        </function>
+        <function>
+          <name>create</name>
+          <description>A shortcut to create file which output filename is template name.
+
+For example:
+
+&amp;lt;a href=&amp;quot;$file.create('overview.html','')&amp;quot;&amp;gt;overview.html&amp;lt;/a&amp;gt; </description>
+          <param>
+            <name>template</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the input template name</description>
+          </param>
+          <param>
+            <name>importObject</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the object reference, which will be DefaultElement in the template file. You can use DefaultElement variable in the template file for getting the data.</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+           <type>String</type>
+            <description>the output pathname. It will return empty string, if there is any error.</description>
+          </param>
+        </function>
+        <function>
+          <name>create</name>
+          <description>Generate the report output from given template name.
+
+For example:
+
+&amp;lt;a href=&amp;quot;$file.create, 'overview.html','overview.html','')&amp;quot;&amp;gt;overview.html&amp;lt;/a&amp;gt; </description>
+          <param>
+            <name>template</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the input template name</description>
+          </param>
+          <param>
+            <name>outputFileName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the output file name</description>
+          </param>
+          <param>
+            <name>importObject</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the object reference, which will be DefaultElement in the template file. You can use DefaultElement variable in the template file for getting the data.</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the output pathname. It will return empty string, if there is any error.</description>
+          </param>
+        </function>
+        <function>
+          <name>create</name>
+          <description>Generate the report output from given template name.
+
+For example:
+
+&amp;lt;a href=&amp;quot;$file.create('html','overview','overview','')&amp;quot;&amp;gt;overview.html&amp;lt;/a&amp;gt;</description>
+          <param>
+            <name>templateType</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the template type such rtf, html, htm.</description>
+          </param>
+          <param>
+            <name>template</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the input pathname string without extension</description>
+          </param>
+          <param>
+            <name>outputname</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the output file name, not include any extension.</description>
+          </param>
+          <param>
+            <name>importObject</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the object reference, which will be DefaultElement in the template file. You can use DefaultElement variable in the template file for getting the data.</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the output pathname. It will return empty string, if there is any error.</description>
+          </param>
+        </function>
+        <function>
+          <name>copy</name>
+          <description>Copy an input file to output file with the same name in binary format For example:
+
+&amp;lt;img src=&amp;quot;$file.copy('icon.gif')&amp;quot;&amp;gt;</description>
+          <param>
+            <name>inputFilename</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the input filename</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the output pathname. It will return empty string, if there is any error.</description>
+          </param>
+        </function>
+        <function>
+          <name>copy</name>
+          <description>Copy an input file to output file in binary format For example:
+
+&amp;lt;img src=&amp;quot;$file.copy('icon.gif','icon.gif')&amp;quot;&amp;gt;</description>
+          <param>
+            <name>inputFilename</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the input filename</description>
+          </param>
+          <param>
+            <name>outputFilename</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the output filename</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the output pathname. It will return empty string, if there is any error.</description>
+          </param>
+        </function>
+        <function>
+          <name>exists</name>
+          <description>Tests whether the template file denoted by this name exists.</description>
+          <param>
+            <name>pathname</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>A pathname string</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>Boolean</type>
+            <description>true if and only if the file or directory denoted by this name exists; false otherwise</description>
+          </param>
+        </function>
+        <function>
+          <name>computeName</name>
+          <description>Create pathname string from given directory, name.</description>
+          <param>
+            <name>directory</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>a parent directory of file</description>
+          </param>
+          <param>
+            <name>name</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>a name of file (exclude extension)</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>pathname from given directory, name.</description>
+          </param>
+        </function>
+        <function>
+          <name>computeName</name>
+          <description>Create pathname string from given directory, name, and file type.</description>
+          <param>
+            <name>directory</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>a parent directory of file</description>
+          </param>
+          <param>
+            <name>name</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>a name of file (exclude extension)</description>
+          </param>
+          <param>
+            <name>fileType</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>type of file. e.g. rtf, txt, html</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>pathname string to filename</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="false">
+      <name>group</name>
+      <description>Contains utilities functions for group an object. Context name of this class is "group". Public functions of this class are able to access via template by using $group</description>
+      <members>
+        <function>
+          <name>create</name>
+          <description>Create new instance of group tool</description>
+          <param>
+            <name>grouptool</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>a new instance of group tool</description>
+          </param>
+        </function>
+        <function>
+          <name>init</name>
+          <description>Initialize a group tool.</description>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description/>
+          </param>
+        </function>
+        <function>
+          <name>groupNames</name>
+          <description>Return a set of group name</description>
+          <param>
+            <name>set</name>
+            <direction>out</direction>
+            <type>Set</type>
+            <description>set of group name</description>
+          </param>
+        </function>
+        <function>
+          <name>contains</name>
+          <description>Returns true if contains a group name. </description>
+          <param>
+            <name>groupName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>a group name</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>Boolean</type>
+            <description> if contains a group name.</description>
+          </param>
+        </function>
+        <function>
+          <name>put</name>
+          <description>Add object into group.</description>
+          <param>
+            <name>groupName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>a group name</description>
+          </param>
+          <param>
+            <name>object</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>a object being added</description>
+          </param>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description/>
+          </param>
+        </function>
+        <function>
+          <name>get</name>
+          <description>Return List of group object</description>
+          <param>
+            <name>groupName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>a group name</description>
+          </param>
+          <param>
+            <name>list</name>
+            <direction>out</direction>
+            <type>List</type>
+            <description>list of group object.</description>
+          </param>
+        </function>
+        <function>
+          <name>remove</name>
+          <description>Remove the group for this group name</description>
+          <param>
+            <name>groupName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>a group name</description>
+          </param>
+          <param>
+            <name>list</name>
+            <direction>out</direction>
+            <type>List</type>
+            <description>previous List of group object associated with group name, or null if there was no group for key.</description>
+          </param>
+        </function>
+        <function>
+          <name>removeAll</name>
+          <description>Remove all group.</description>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description>void</description>
+          </param>
+        </function>
+        <function>
+          <name>clear</name>
+          <description>Removes all mappings.</description>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description>void</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="false">
+      <name>image</name>
+	  <description>
+	  $image is an image tool that provides a rich set of image manipulation methods that enable you to transform
+images during report generation. Images can be scaled, rotated, and resized.
+	  </description>
+	  <members>
+        <function>
+          <name>scale</name>
+          <description>Returns an image icon for an element.</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+          <param>
+            <name>scaleWidth</name>
+            <direction>in</direction>
+            <type>Double</type>
+            <description>the width parameter of the image.</description>
+          </param>
+		  <param>
+            <name>scaleHeight</name>
+            <direction>in</direction>
+            <type>Double</type>
+            <description>the height parameter of the image.</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>scale</name>
+          <description>Returns an image icon for an element.</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+          <param>
+            <name>scaleFactor</name>
+            <direction>in</direction>
+            <type>Double</type>
+            <description>the scaling parameter of the image.</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>setScalingQuality</name>
+          <description>The image tool provides several methods for scaling images. The quality of scaled image depends on the algorithm
+uses. To set the image scaling quality, $image.setScalingQuality() code must be inserted before scaling
+images. 
+
+For example:
+ $image.setScalingQuality(5)
+ $image.scale(0.5)
+
+The above code will set the image scaling quality to ‘highest’
+
+The possible values are 1 to 5, where 5 is ‘highest’ and 1 is ‘lowest’.
+ - 1 :‘lowest’ scaling quality. Current implementation is interpolation nearest neighbor.
+ - 2 :‘low’ scaling quality. Current implementation is one step interpolation bi-linear.
+ - 3 :‘medium’ scaling quality. Current implementation is interpolation bi-cubic.
+ - 4 :‘high’ scaling quality. Current implementation is multi-steps interpolation bi-linear.
+ - 5 :‘highest’ scaling quality. Current implementation is area average image scaling algorithm.
+		   </description>
+           <param>
+            <name>value</name>
+            <direction>in</direction>
+            <type>Integer</type>
+            <description>Scaling quality</description>
+          </param>
+		  <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type/>
+            <description/>
+          </param>
+        </function>
+		<function>
+          <name>rotateRight</name>
+          <description>Returns an image icon for an element.</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the rotated image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>rotateLeft</name>
+          <description>Returns an image icon for an element.</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the rotated image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>setSize</name>
+          <description>Returns an image icon for an element. This method is used to resize the image to an exact size; width and height in pixels.</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>sizeWidth</name>
+            <direction>in</direction>
+            <type>Integer</type>
+            <description>the width of the image in pixels.</description>
+          </param>
+		  <param>
+            <name>sizeHeight</name>
+            <direction>in</direction>
+            <type>Integer</type>
+            <description>the height of the image in pixels.</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>setHeight</name>
+          <description>Returns an image icon for an element. This method is used to resize the image to a specific height (in pixels), while maintaining the image aspect ratio.</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>size</name>
+            <direction>in</direction>
+            <type>Integer</type>
+            <description>the height of the image in pixels.</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>setHeight</name>
+          <description>Returns an image icon for an element. This method is used to resize the image to a specific height (in pixels), while maintaining the image aspect ratio.</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>size</name>
+            <direction>in</direction>
+            <type>Integer</type>
+            <description>the height of the image in pixels.</description>
+          </param>
+		  <param>
+            <name>keepRatio</name>
+            <direction>in</direction>
+            <type>Boolean</type>
+            <description>flag to maintain the image aspect ratio</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		
+		<function>
+          <name>setWidth</name>
+          <description>Returns an image icon for an element. This method is used to resize the image to a specific width (in pixels), while maintaining the image aspect ratio.</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>size</name>
+            <direction>in</direction>
+            <type>Integer</type>
+            <description>the width of the image in pixels.</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>setWidth</name>
+          <description>Returns an image icon for an element. This method is used to resize the image to a specific width (in pixels), while maintaining or not maintaining the image aspect ratio (depending on the keepRatio parameter).</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>size</name>
+            <direction>in</direction>
+            <type>Integer</type>
+            <description>the width of the image in pixels.</description>
+          </param>
+		  <param>
+            <name>keepRatio</name>
+            <direction>in</direction>
+            <type>Boolean</type>
+            <description>flag to maintain the image aspect ratio</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		
+		<function>
+          <name>setSize</name>
+          <description>Returns an image icon for an element. This method is used to resize the image to an exact size; width and height in terms of measurements.</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>measureWidth</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the width of the image in a term of measurement.</description>
+          </param>
+		  <param>
+            <name>measureHeight</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the height of the image in a term of measurement.</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>setHeight</name>
+          <description>Returns an image icon for an element. This method is used to resize the image to a specific height in a term of measurement, while maintaining the image aspect ratio.</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>measureSize</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the height of the image in a term of measurement.</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>setHeight</name>
+          <description>Returns an image icon for an element. This method is used to resize the image to a specific height (a term of measurement), while either maintaining or not maintaining the image aspect ratio (depending on the keepRatio parameter).</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>measureSize</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the height of the image in a term of measurement.</description>
+          </param>
+		  <param>
+            <name>keepRatio</name>
+            <direction>in</direction>
+            <type>Boolean</type>
+            <description>flag to maintain the image aspect ratio</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>setWidth</name>
+          <description>Returns an image icon for an element. This method is used to resize the image to a specific width in a term of measurement, while maintaining the image aspect ratio.</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>measureSize</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the width of the image in a term of measurement.</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>setWidth</name>
+          <description>Returns an image icon for an element. This method is used to resize the image to a specific width (a term of measurement), while either maintaining or not maintaining the image aspect ratio (depending on the keepRatio parameter).</description>
+          <param>
+            <name>image</name>
+            <direction>in</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+		  <param>
+            <name>measureSize</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the width of the image in a term of measurement.</description>
+          </param>
+		  <param>
+            <name>keepRatio</name>
+            <direction>in</direction>
+            <type>Boolean</type>
+            <description>flag to maintain the image aspect ratio</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>the resized image object for the element icon.</description>
+          </param>
+        </function>
+		<function>
+          <name>setDPI</name>
+          <description>This method is used to set the resolution (dpi) of images. The default value is 96 dpi. The dpi value will only affect the methods that take inches, centimeters, and millimeters as their parameters.</description>
+		  <param>
+            <name>dotsPerInches</name>
+            <direction>in</direction>
+            <type>Integer</type>
+            <description>the resolution (dpi) of images.</description>
+          </param>
+		  <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type/>
+            <description/>
+          </param>
+        </function>	
+		<function>
+          <name>include</name>
+          <description>Includes an external image from a local file or URL in a report.</description>
+		  <param>
+            <name>location</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>an image location. The location format can be either aURL or a system file.</description>
+          </param>
+		  <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>a report image.</description>
+          </param>
+        </function>
+	  </members>
+	</element>
+    <element often="false">
+      <name>iterator</name>
+      <description>
+A convenience tool to use with #foreach loops. It wraps a list to let the designer specify a condition to terminate the loop, and reuse the same list in different loops.
+
+Example of use:
+
+  Java
+  ----
+  context.put("mill", new IteratorTool());
+
+  VTL
+  ---
+
+  #set ($list = [1, 2, 3, 5, 8, 13])
+  #set ($numbers = $mill.wrap($list))
+
+  #foreach ($item in $numbers)
+  #if ($item &amp;lt; 8) $numbers.more()#end
+  #end
+
+  $numbers.more()
+
+
+  Output
+  ------
+
+  1 2 3 5
+  8
+
+It is not recommended to use hasNext() with this tool as it is used to control the #foreach. Use hasMore() instead.
+ </description>
+      <members>
+        <function>
+          <name>wrap</name>
+          <description>Wraps a list with the tool. The list can be an array, a Collection, a Map, an Iterator or an Enumeration. If the list is a Map, the tool iterates over the values. If the list is an iterator or an Enumeration, the tool can be used only once.</description>
+          <param>
+            <name>list</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>The list to wrap.</description>
+          </param>
+          <param>
+            <name>iteratortool</name>
+            <direction>out</direction>
+            <type />
+            <description>A new wrapper if this object is used as a tool, or itself if it is a wrapper.</description>
+          </param>
+        </function>
+        <function>
+          <name>reset</name>
+          <description>
+Resets the wrapper so that it starts over at the beginning of the list. This method has no effect if the wrapped
+ object is an enumeration or an iterator.</description>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>next</name>
+          <description>
+Gets the next object in the list. This method is called by #foreach to define $item in:
+
+ #foreach( $item in $list )
+
+This method is not intended for template designers, but they can use them if they want to read the value of the next item without doing more().</description>
+          <param>
+            <name>object</name>
+            <direction>out</direction>
+            <type />
+            <description>The next item in the list.</description>
+          </param>
+        </function>
+        <function>
+          <name>hasNext</name>
+          <description>Returns true if there are more elements in the
+ list and more() was called.
+ This code always return false:
+
+ tool.hasNext()? tool.hasNext(): false;
+ </description>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description>true if there are more elements, and either more() or hasNext() was called since last call.</description>
+          </param>
+        </function>
+        <function>
+          <name>remove</name>
+          <description>Removes the current element from the list. The current element is defined as the last element that was read from the list, either with next() or with more().</description>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>more</name>
+          <description>
+ Asks for the next element in the list. This method is to be used
+ by the template designer in #foreach loops. If this method is called in the body of #foreach, the loop continues as long as there are elements in the list. If this method is not called the loop terminates after the current iteration.
+ </description>
+          <param>
+            <name>object</name>
+            <direction>out</direction>
+            <type />
+            <description>The next element in the list, or null if there are no more elements.</description>
+          </param>
+        </function>
+        <function>
+          <name>hasMore</name>
+          <description>Returns true if there are more elements in the wrapped list. If this object doesn't wrap a list, the method always returns false.</description>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description>true if there are more elements in the list.</description>
+          </param>
+        </function>
+        <function>
+          <name>stop</name>
+          <description>Puts a condition to break out of the loop. The #foreach loop will terminate after this iteration, unless more() is called after stop().</description>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>toString</name>
+          <description>Returns this object as a String. If this object is used as a tool, it just gives the class name. Otherwise it appends the wrapped list to the class name.</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type />
+            <description>A string representation of this object.</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="false">
+      <name>list</name>
+      <description>An ordered collection (also known as a ). The user of this interface has precise control over where in the list each element is inserted. The user can access elements by their integer index (position in the list), and search for elements in the list.
+
+Unlike sets, lists typically allow duplicate elements.  More formally, lists typically allow pairs of elements such that , and they typically allow multiple null elements if they allow null elements at all. It is not inconceivable that someone might wish to implement a list that prohibits duplicates, by throwing runtime exceptions when the user attempts to insert them, but we
+ expect this usage to be rare.
+
+The interface places additional stipulations, beyond those  specified in the  interface, on the contracts of the, and  methods. Declarations for other inherited methods are also included here for convenience.
+
+The interface provides four methods for positional (indexed)  access to list elements.  Lists (like Java arrays) are zero based. Note that these operations may execute in time proportional to the index value for some implementations (the  class, for example). Thus, iterating over the elements in a list is typically preferable to indexing through it if the caller does not know the implementation.
+
+The interface provides a special iterator, called a , that allows element insertion and replacement, and bidirectional access in addition to the normal operations that the interface provides.  A method is provided to obtain a list iterator that starts at a specified position in the list.
+
+The interface provides two methods to search for a specified  object. From a performance standpoint, these methods should be used with caution.  In many implementations they will perform costly linear searches.
+
+The interface provides two methods to efficiently insert and
+ remove multiple elements at an arbitrary point in the list.
+
+Note: While it is permissible for lists to contain themselves as elements, extreme caution is advised: the methods are no longer well defined on a such a list.
+
+Some list implementations have restrictions on the elements that
+ they may contain.  For example, some implementations prohibit null elements, and some have restrictions on the types of their elements. Attempting to add an ineligible element throws an unchecked exception, typically.  Attempting to query the presence of an ineligible element may throw an exception, or it may simply return false; some implementations will exhibit the former  behavior and some will exhibit the latter.  More generally, attempting an operation on an ineligible element whose completion would not result in the insertion of an ineligible element into the list may throw an exception or it may succeed, at the option of the implementation. Such exceptions are marked as "optional" in the specification for this interface.
+
+This interface is a member of the Java Collections Framework.</description>
+      <members>
+        <function>
+          <name>size</name>
+          <description>Returns the number of elements in this list. If this list contains more than  elements, returns.</description>
+          <param>
+            <name>int</name>
+            <direction>out</direction>
+            <type />
+            <description>the number of elements in this list.</description>
+          </param>
+        </function>
+        <function>
+          <name>size</name>
+          <description>the number of elements in this list. If this list contains more than  elements, returns.</description>
+          <param>
+            <name>list</name>
+            <direction>out</direction>
+            <type>List</type>
+            <description>A list of objects.</description>
+          </param>
+		  <param>
+            <name>int</name>
+            <direction>out</direction>
+            <type>Integer</type>
+            <description>the size of the list as
+an Integer instance.</description>
+          </param>
+        </function>
+		<function>
+          <name>get</name>
+          <description>Returns a specified element of the List/array.</description>
+          <param>
+            <name>list</name>
+            <direction>in</direction>
+            <type />
+            <description>A list or array instance.</description>
+          </param>
+		  <param>
+            <name>index</name>
+            <direction>in</direction>
+            <type />
+            <description>The index of objects in the list.</description>
+          </param>
+		  <param>
+            <name>object</name>
+            <direction>out</direction>
+			<type>Object</type>
+            <description>An object in the list.</description>
+          </param>
+        </function>
+		<function>
+          <name>isArray</name>
+          <description>Checks if an object is an array.</description>
+          <param>
+            <name>object</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>An object</description>
+          </param>
+		  <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description>Returns true, if the object is an array. Otherwise, returns false.</description>
+          </param>
+        </function>
+        <function>
+          <name>isEmpty</name>
+          <description>Returns if this list contains no elements.</description>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description>if this list contains no elements.</description>
+          </param>
+        </function>
+        <function>
+          <name>isEmpty</name>
+          <description>Checks if a list or array is empty.</description>
+          <param>
+            <name>list</name>
+            <direction>in</direction>
+            <type/>
+            <description>A list of objects</description>
+          </param>
+		  <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>boolean</type>
+            <description>Returns true, if the list/array is empty. Otherwise, returns false.</description>
+          </param>
+        </function>
+		<function>
+          <name>isList</name>
+          <description>Checks if an object is a list.</description>
+          <param>
+            <name>object</name>
+            <direction>in</direction>
+            <type/>
+            <description>An object</description>
+          </param>
+		  <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>boolean</type>
+            <description>Returns true, if the object is a List. Otherwise, return false.</description>
+          </param>
+        </function>
+        <function>
+          <name>contains</name>
+          <description>Returns if this list contains the specified element. More formally, returns  if and only if this list contains at least one element such that.</description>
+          <param>
+            <name>o</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>element whose presence in this list is to be tested.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description> if this list contains the specified element.</description>
+          </param>
+        </function>
+        <function>
+          <name>contains</name>
+          <description>Returns if this list contains the specified element. More formally, returns  if and only if this list contains at least one element such that.</description>
+          <param>
+            <name>list</name>
+            <direction>in</direction>
+            <type/>
+            <description>A list or array instance.</description>
+          </param>
+		  <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type/>
+            <description>An element instance.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description/>
+          </param>
+        </function>
+        <function>
+          <name>iterator</name>
+          <description>Returns an iterator over the elements in this list in proper sequence.</description>
+          <param>
+            <name>iterator</name>
+            <direction>out</direction>
+            <type />
+            <description>an iterator over the elements in this list in proper sequence.</description>
+          </param>
+        </function>
+        <function>
+          <name>toArray</name>
+          <description>Returns an array containing all of the elements in this list in proper sequence. Obeys the general contract of the method.</description>
+          <param>
+            <name>object</name>
+            <direction>out</direction>
+            <type />
+            <description>an array containing all of the elements in this list in proper sequence.</description>
+          </param>
+        </function>
+        <function>
+          <name>toArray</name>
+          <description>Returns an array containing all of the elements in this list in proper sequence; the runtime type of the returned array is that of the specified array. Obeys the general contract of the  method.</description>
+          <param>
+            <name>a</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the array into which the elements of this list are to		be stored, if it is big enough; otherwise, a new array of the 		same runtime type is allocated for this purpose.</description>
+          </param>
+          <param>
+            <name>object</name>
+            <direction>out</direction>
+            <type />
+            <description>an array containing the elements of this list.</description>
+          </param>
+        </function>
+        <function>
+          <name>add</name>
+          <description>Appends the specified element to the end of this list (optional  operation).
+
+Lists that support this operation may place limitations on what  elements may be added to this list.  In particular, some lists will refuse to add null elements, and others will impose  restrictions on the type of elements that may be added. List  classes should clearly specify in their documentation any restrictions on what elements may be added.</description>
+          <param>
+            <name>o</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>element to be appended to this list.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description>(as per the general contract of the method).</description>
+          </param>
+        </function>
+        <function>
+          <name>remove</name>
+          <description>Removes the first occurrence in this list of the specified element (optional operation). If this list does not contain the element, it is unchanged.  More formally, removes the element with the lowest index i such that (if such an element exists).</description>
+          <param>
+            <name>o</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>element to be removed from this list, if present.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description> if this list contained the specified element.</description>
+          </param>
+        </function>
+        <function>
+          <name>containsAll</name>
+          <description>Returns if this list contains all of the elements of the
+ specified collection.</description>
+          <param>
+            <name>c</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>collection to be checked for containment in this list.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description> if this list contains all of the elements of the specified collection.</description>
+          </param>
+        </function>
+        <function>
+          <name>addAll</name>
+          <description>Appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator (optional operation).  The behavior of this operation is unspecified if the specified collection is modified while the operation is in progress.  (Note that this will occur if the specified collection is this list, and it's nonempty.)</description>
+          <param>
+            <name>c</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>collection whose elements are to be added to this list.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description> if this list changed as a result of the call.</description>
+          </param>
+        </function>
+        <function>
+          <name>addAll</name>
+          <description>Inserts all of the elements in the specified collection into this list at the specified position (optional operation). Shifts the element currently at that position (if any) and any subsequent elements to the right (increases their indices). The new elements will appear in this list in the order that they are returned by the specified collection's iterator.  The behavior of this operation is unspecified if the specified collection is modified while the operation is in progress.  (Note that this will occur if the specified collection is this list, and it's nonempty.)</description>
+          <param>
+            <name>index</name>
+            <direction>in</direction>
+            <type>int</type>
+            <description>index at which to insert first element from the specified collection.</description>
+          </param>
+          <param>
+            <name>c</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>elements to be inserted into this list.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description> if this list changed as a result of the call.</description>
+          </param>
+        </function>
+        <function>
+          <name>removeAll</name>
+          <description>Removes from this list all the elements that are contained in the
+ specified collection (optional operation).</description>
+          <param>
+            <name>c</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>collection that defines which elements will be removed from this list.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description> if this list changed as a result of the call.</description>
+          </param>
+        </function>
+        <function>
+          <name>retainAll</name>
+          <description>Retains only the elements in this list that are contained in the  specified collection (optional operation).  In other words, removes from this list all the elements that are not contained in the specified collection.</description>
+          <param>
+            <name>c</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>collection that defines which elements this set will retain.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description> if this list changed as a result of the call.</description>
+          </param>
+        </function>
+        <function>
+          <name>clear</name>
+          <description>Removes all of the elements from this list (optional operation). This list will be empty after this call returns (unless it throws an exception).</description>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>equals</name>
+          <description>Compares the specified object with this list for equality. Returns if and only if the specified object is also a list, both lists have the same size, and all corresponding pairs of elements in the two lists are and (e1==null ? e2==null : e1.equals(e2)).)  In other words, two lists are defined to be equal if they contain the same elements in the same order.  This definition ensures that the equals method works properly across different implementations of the  interface.</description>
+          <param>
+            <name>o</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the object to be compared for equality with this list.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type />
+            <description> if the specified object is equal to this list.</description>
+          </param>
+        </function>
+        <function>
+          <name>hashCode</name>
+          <description>Returns the hash code value for this list.  The hash code of a list is defined to be the result of the following calculation:
+
+hashCode = 1;
+Iterator i = list.iterator();
+while (i.hasNext()) {
+    Object obj = i.next();
+    hashCode = 31*hashCode + (obj==null ? 0 : obj.hashCode());
+}
+
+This ensures that  implies that for any two lists, as required by the general
+ contract of .</description>
+          <param>
+            <name>int</name>
+            <direction>out</direction>
+            <type />
+            <description>the hash code value for this list.</description>
+          </param>
+        </function>
+        <function>
+          <name>get</name>
+          <description>Returns the element at the specified position in this list.</description>
+          <param>
+            <name>index</name>
+            <direction>in</direction>
+            <type>int</type>
+            <description>index of element to return.</description>
+          </param>
+          <param>
+            <name>object</name>
+            <direction>out</direction>
+            <type />
+            <description>the element at the specified position in this list.</description>
+          </param>
+        </function>
+        <function>
+          <name>set</name>
+          <description>Replaces the element at the specified position in this list with the  specified element (optional operation).</description>
+          <param>
+            <name>index</name>
+            <direction>in</direction>
+            <type>int</type>
+            <description>index of element to replace.</description>
+          </param>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>element to be stored at the specified position.</description>
+          </param>
+          <param>
+            <name>object</name>
+            <direction>out</direction>
+            <type />
+            <description>the element previously at the specified position.</description>
+          </param>
+        </function>
+        <function>
+          <name>set</name>
+          <description>Sets a specified element of the List/array.</description>
+		  <param>
+            <name>list</name>
+            <direction>in</direction>
+            <type>List</type>
+            <description>A list of objects.</description>
+          </param>
+          <param>
+            <name>index</name>
+            <direction>in</direction>
+            <type>int</type>
+            <description>index of element to replace.</description>
+          </param>
+          <param>
+            <name>value</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>An object that will be set in the list.</description>
+          </param>
+          <param>
+            <name>object</name>
+            <direction>out</direction>
+            <type />
+            <description>An object previously at the specified position.</description>
+          </param>
+        </function>
+        <function>
+          <name>add</name>
+          <description>Inserts the specified element at the specified position in this list (optional operation). Shifts the element currently at that position (if any) and any subsequent elements to the right (adds one to their indices).</description>
+          <param>
+            <name>index</name>
+            <direction>in</direction>
+            <type>int</type>
+            <description>index at which the specified element is to be inserted.</description>
+          </param>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>element to be inserted.</description>
+          </param>
+          <param>
+            <name>void</name>
+            <direction>out</direction>
+            <type />
+            <description />
+          </param>
+        </function>
+        <function>
+          <name>remove</name>
+          <description>Removes the element at the specified position in this list (optional operation). Shifts any subsequent elements to the left (subtracts one from their indices). Returns the element that was removed from the list.</description>
+          <param>
+            <name>index</name>
+            <direction>in</direction>
+            <type>int</type>
+            <description>the index of the element to removed.</description>
+          </param>
+          <param>
+            <name>object</name>
+            <direction>out</direction>
+            <type />
+            <description>the element previously at the specified position.</description>
+          </param>
+        </function>
+        <function>
+          <name>indexOf</name>
+          <description>Returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element. More formally, returns the lowest index  such that, or -1 if there is no such index.</description>
+          <param>
+            <name>o</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>element to search for.</description>
+          </param>
+          <param>
+            <name>int</name>
+            <direction>out</direction>
+            <type />
+            <description>the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.</description>
+          </param>
+        </function>
+        <function>
+          <name>lastIndexOf</name>
+          <description>Returns the index in this list of the last occurrence of the specified element, or -1 if this list does not contain this element. More formally, returns the highest index  such that, or -1 if there is no such index.</description>
+          <param>
+            <name>o</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>element to search for.</description>
+          </param>
+          <param>
+            <name>int</name>
+            <direction>out</direction>
+            <type />
+            <description>the index in this list of the last occurrence of the specified element, or -1 if this list does not contain this element.</description>
+          </param>
+        </function>
+        <function>
+          <name>listIterator</name>
+          <description>Returns a list iterator of the elements in this list (in proper sequence).</description>
+          <param>
+            <name>listiterator</name>
+            <direction>out</direction>
+            <type />
+            <description>a list iterator of the elements in this list (in proper sequence).</description>
+          </param>
+        </function>
+        <function>
+          <name>listIterator</name>
+          <description>Returns a list iterator of the elements in this list (in proper sequence), starting at the specified position in this list. The specified index indicates the first element that would be returned by an initial call to the  method.  An initial call to the  method would return the element with the specified index minus one.</description>
+          <param>
+            <name>index</name>
+            <direction>in</direction>
+            <type>int</type>
+            <description>index of first element to be returned from the list iterator (by a call to the  method).</description>
+          </param>
+          <param>
+            <name>listiterator</name>
+            <direction>out</direction>
+            <type />
+            <description>a list iterator of the elements in this list (in proper sequence), starting at the specified position in this list.</description>
+          </param>
+        </function>
+        <function>
+          <name>subList</name>
+          <description>Returns a view of the portion of this list between the specified, exclusive. (If are equal, the returned list is empty.)  The returned list is backed by this list, so non-structural changes in the returned list are reflected in this list, and vice-versa. The returned list supports all of the optional list operations supported by this list.
+
+This method eliminates the need for explicit range operations (of the sort that commonly exist for arrays). Any operation that expects a list can be used as a range operation by passing a subList view instead of a whole list.  For example, the following idiom removes a range of elements from a list:
+
+list.subList(from, to).clear();
+
+Similar idioms may be constructed for and , and all of the algorithms in the
+
+The semantics of the list returned by this method become undefined if the backing list (i.e., this list) is in any way other than via the returned list.  (Structural modifications are those that change the size of this list, or otherwise perturb it in such a fashion that iterations in progress may yield incorrect results.)</description>
+          <param>
+            <name>fromIndex</name>
+            <direction>in</direction>
+            <type>int</type>
+            <description>low endpoint (inclusive) of the subList.</description>
+          </param>
+          <param>
+            <name>toIndex</name>
+            <direction>in</direction>
+            <type>int</type>
+            <description>high endpoint (exclusive) of the subList.</description>
+          </param>
+          <param>
+            <name>list</name>
+            <direction>out</direction>
+            <type>List</type>
+            <description>a view of the specified range within this list.</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="true">
+      <name>map</name>
+      <description>Use for creating the HashMap instance.</description>
+      <members>
+        <function>
+          <name>createHashMap</name>
+          <description>Create HashMap instance.</description>
+          <param>
+            <name>hashmap</name>
+            <direction>out</direction>
+            <type>HashMap</type>
+            <description>the instance of HashMap.</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="false">
+      <name>profiling</name>
+      <description>Contains utilities functions for profiling MagicDraw meta-model. Context name of this class is "profiling".</description>
+      <members>
+        <function>
+          <name>getGeneralizationName</name>
+          <description>Return generalization model of modelName</description>
+          <param>
+            <name>modelName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>meta-model name</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>generalization model</description>
+          </param>
+        </function>
+        <function>
+          <name>getDeclaringElementName</name>
+          <description>Retrieve the name of meta-model which property name is declared.</description>
+          <param>
+            <name>modelName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>meta-model name</description>
+          </param>
+          <param>
+            <name>propertyName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>property name</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>name of property type</description>
+          </param>
+        </function>
+        <function>
+          <name>getPropertyTypeName</name>
+          <description>Retrieve type of property.</description>
+          <param>
+            <name>modelName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>meta-model name</description>
+          </param>
+          <param>
+            <name>propertyName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>property name</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>name of property type</description>
+          </param>
+        </function>
+        <function>
+          <name>getElementProperties</name>
+          <description>Retrieve Collection of element properties name from meta-model name.</description>
+          <param>
+            <name>modelName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>meta-model name</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of element properties</description>
+          </param>
+        </function>
+        <function>
+          <name>getElementProperties</name>
+          <description>Return Collection of element properties name.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Element</type>
+            <description>target element</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of element properties</description>
+          </param>
+        </function>
+        <function>
+          <name>getElementProperty</name>
+          <description>Retrieve property value of specified element and property name.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>target element</description>
+          </param>
+          <param>
+            <name>propertyName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>property name</description>
+          </param>
+          <param>
+            <name>object</name>
+            <direction>out</direction>
+            <type>Object</type>
+            <description>an Object of element property name.</description>
+          </param>
+        </function>
+        <function>
+          <name>getHumanPropertyName</name>
+          <description>Return text representing property name.</description>
+          <param>
+            <name>propertyName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>property name</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>a human name of given propertyName</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="false">
+      <name>project</name>
+      <description>A MagicDraw project wrapper</description>
+      <members>
+        <function>
+          <name>getType</name>
+          <description>Return file type. File type is one of following value. 
+
+0 - UNDEF 
+2 - XML_NATIVE 
+3 - UNISYS_XMI</description>
+          <param>
+            <name>int</name>
+            <direction>out</direction>
+            <type>int</type>
+            <description>project file type</description>
+          </param>
+        </function>
+        <function>
+          <name>getDiagrams</name>
+          <description>Return all existing diagrams stored in this Project.</description>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of Diagram instance.</description>
+          </param>
+        </function>
+        <function>
+          <name>getDiagrams</name>
+          <description>Return existing diagrams of given type stored in Project.</description>
+          <param>
+            <name>type</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the given diagrams type.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of Diagram instance.</description>
+          </param>
+        </function>
+        <function>
+          <name>getPresentationDiagrams</name>
+          <description>Return all existing presentation diagrams stored in this Project.</description>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of diagram views.</description>
+          </param>
+        </function>
+        <function>
+          <name>getPresentationDiagrams</name>
+          <description>Return existing presentation diagrams of given type stored in Project.</description>
+          <param>
+            <name>type</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the given diagrams type.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of diagram views.</description>
+          </param>
+        </function>
+        <function>
+          <name>getName</name>
+          <description>Return project name.</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>project name.</description>
+          </param>
+        </function>
+        <function>
+          <name>getTitle</name>
+          <description>Return project title</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>project title</description>
+          </param>
+        </function>
+        <function>
+          <name>getExtension</name>
+          <description>Return project file extension.</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>project file extension.</description>
+          </param>
+        </function>
+        <function>
+          <name>getDirectory</name>
+          <description>Return project directory.</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>project location directory.</description>
+          </param>
+        </function>
+        <function>
+          <name>getFileName</name>
+          <description>Method returns file name of this project. If file name is undefined returns project name.</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>file name of this project.</description>
+          </param>
+        </function>
+        <function>
+          <name>isRemote</name>
+          <description>Return the remote or not remote state of the project.</description>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>Boolean</type>
+            <description>true if project is a remote project, false otherwise.</description>
+          </param>
+        </function>
+        <function>
+          <name>isDirty</name>
+          <description>Return true if this project was modified after last save/load.</description>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>Boolean</type>
+            <description>true if this project was modified after last save/load.</description>
+          </param>
+        </function>
+        <function>
+          <name>getElementByID</name>
+          <description>Return the Element with given id.</description>
+          <param>
+            <name>id</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the id of the element.</description>
+          </param>
+          <param>
+            <name>baseelement</name>
+            <direction>out</direction>
+            <type>BaseElement</type>
+            <description>the Element with given id or null if Element with such id is not registered in the project.</description>
+          </param>
+        </function>
+        <function>
+          <name>getAllElementId</name>
+          <description>Return the collection of all element id in the project.</description>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the collection of all element id in the project.</description>
+          </param>
+        </function>
+        <function>
+          <name>getXmiVersion</name>
+          <description>Return the projects XMI version</description>
+          <param>
+            <name>int</name>
+            <direction>out</direction>
+           <type>int</type>
+            <description>xmi version</description>
+          </param>
+        </function>
+        <function>
+          <name>getVersion</name>
+          <description>Return project version number.</description>
+          <param>
+            <name>long</name>
+            <direction>out</direction>
+            <type>long</type>
+            <description>project version number</description>
+          </param>
+        </function>
+        <function>
+          <name>getVersionList</name>
+          <description>Returns a list of version information from an open Teamwork Server project.</description>
+          <param>
+            <name>list</name>
+            <direction>out</direction>
+            <type>List</type>
+            <description>a list of com.nomagic.teamwork.common.projects.Version.</description>
+          </param>
+        </function>
+        <function>
+          <name>getModel</name>
+          <description>Returns model. The root container of all model structure.</description>
+          <param>
+            <name>model</name>
+            <direction>out</direction>
+            <type>Model</type>
+            <description>model.</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="true">
+      <name>report</name>
+      <description>Contains utilities functions for template report. Context name of this class is "report". Public functions of this class are able to access via template by using $report 
+
+For example: 
+
+#foreach ($rel in $report.getRelationships($package))
+   $rel.name
+#end</description>
+      <members>
+        <function>
+          <name>getDSLProperty</name>
+          <description>Get DSL Property.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>the element.</description>
+          </param>
+          <param>
+            <name>propertyName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the property name.</description>
+          </param>
+          <param>
+            <name>object</name>
+            <direction>out</direction>
+            <type>Object</type>
+            <description>the property value.</description>
+          </param>
+        </function>
+        <function>
+          <name>getStereotypeProperty</name>
+          <description>Gets stereotype property.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>the element.</description>
+          </param>
+          <param>
+            <name>stereotypeName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the stereotype name.</description>
+          </param>
+          <param>
+            <name>propertyName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the property name.</description>
+          </param>
+          <param>
+            <name>object</name>
+            <direction>out</direction>
+            <type>Object</type>
+            <description>the property value.</description>
+          </param>
+        </function>
+        <function>
+          <name>getStereotypePropertyString</name>
+          <description>Gets stereotype property as String value</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>the element instance</description>
+          </param>
+          <param>
+            <name>stereotypeName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the stereotype name</description>
+          </param>
+          <param>
+            <name>propertyName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the property name</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the value as String</description>
+          </param>
+        </function>
+        <function>
+          <name>isNamedElement</name>
+          <description>Returns whether the element an NamedElement. </description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>element to test</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>Boolean</type>
+            <description>true if given element is NamedElement; otherwise false</description>
+          </param>
+        </function>
+        <function>
+          <name>getAppliedStereotypeByString</name>
+          <description>Returns stereotype assigned to element.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>element</description>
+          </param>
+          <param>
+            <name>stereotype</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>name of stereotype</description>
+          </param>
+          <param>
+            <name>stereotype</name>
+            <direction>out</direction>
+            <type>Stereotype</type>
+            <description>assigned stereotype with that name.</description>
+          </param>
+        </function>
+        <function>
+          <name>getAppliedStereotypeByName</name>
+          <description>Returns stereotype assigned to element.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>element</description>
+          </param>
+          <param>
+            <name>stereotypeName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>name of stereotype</description>
+          </param>
+          <param>
+            <name>stereotype</name>
+            <direction>out</direction>
+            <type>Stereotype</type>
+            <description>assigned stereotype with that name.</description>
+          </param>
+        </function>
+        <function>
+          <name>containsStereotype</name>
+          <description>Returns true if element contains a stereotype for the specified stereotype name.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>element to test</description>
+          </param>
+          <param>
+            <name>stereotypeName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>stereotype name to be tested</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>Boolean</type>
+            <description>true if element contains a stereotype for the specified stereotype name.</description>
+          </param>
+        </function>
+        <function>
+          <name>getStereotypes</name>
+          <description>Gets all stereotypes applied to element. This method is replaced with $element.appliedStereotype.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>the element</description>
+          </param>
+          <param>
+            <name>list</name>
+            <direction>out</direction>
+            <type>List</type>
+            <description>the stereotype instances</description>
+          </param>
+        </function>
+        <function>
+          <name>hasStereotype</name>
+          <description>Checks if element has stereotypes</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>element to check</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>Boolean</type>
+            <description>true if has</description>
+          </param>
+        </function>
+        <function>
+          <name>findElementInCollection</name>
+          <description>Search and return the element in the collection by element name.</description>
+          <param>
+            <name>col</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>the collection of elements</description>
+          </param>
+          <param>
+            <name>elementName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the name of element</description>
+          </param>
+          <param>
+            <name>element</name>
+            <direction>out</direction>
+            <type>Element</type>
+            <description>the element instance, If it does not find, it will return null.</description>
+          </param>
+        </function>
+        <function>
+          <name>getDerivedClassifiers</name>
+          <description>Returns classifier derived elements.</description>
+          <param>
+            <name>parentClassifier</name>
+            <direction>in</direction>
+            <type>Classifier</type>
+            <description>the parent class</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of derived elements (classifiers)</description>
+          </param>
+        </function>
+        <function>
+          <name>getBaseClassifiers</name>
+          <description>Return classifier based elements.</description>
+          <param>
+            <name>childClassifier</name>
+            <direction>in</direction>
+            <type>Classifier</type>
+            <description>the child class</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of based elements (classifiers)</description>
+          </param>
+        </function>
+        <function>
+          <name>getComment</name>
+          <description>Returns documentation of given element.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>the element which will be gotten the name.</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the document</description>
+          </param>
+        </function>
+        <function>
+          <name>getElementComment</name>
+          <description>Returns comment annotated to this element. If comment is attached to this element, returns null.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>the element which will be gotten the Comment.</description>
+          </param>
+          <param>
+            <name>comment</name>
+            <direction>out</direction>
+            <type>Comment</type>
+            <description>Comment instance of this element.</description>
+          </param>
+        </function>
+        <function>
+          <name>getRelativeActor</name>
+          <description>Gets element relative actor.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>the element</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the collection of Actor.</description>
+          </param>
+        </function>
+        <function>
+          <name>getUseCaseAssociatedElement</name>
+          <description>Gets associated Element</description>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>the element that we would like to find the other part</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the other parts</description>
+          </param>
+        </function>
+        <function>
+          <name>getIncludeUseCase</name>
+          <description>Gets use case included element.</description>
+          <param>
+            <name>useCase</name>
+            <direction>in</direction>
+            <type>UseCase</type>
+            <description>the UseCase instance</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the collection of included use case.</description>
+          </param>
+        </function>
+        <function>
+          <name>createValueSpecificationText</name>
+          <description>Create text represents the ValueSpecification element.</description>
+          <param>
+            <name>specification</name>
+            <direction>in</direction>
+            <type>ValueSpecification</type>
+            <description>the given ValueSpecification.</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the String value for ValueSpecification</description>
+          </param>
+        </function>
+        <function>
+          <name>getPresentationDiagramElements</name>
+          <description>Gets presentation element in the diagram.</description>
+          <param>
+            <name>diagram</name>
+            <direction>in</direction>
+            <type>Diagram</type>
+            <description>the diagram instance.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the collection of elements.</description>
+          </param>
+        </function>
+        <function>
+          <name>getPresentationElementBounds</name>
+          <description>Gets the bounds of this element in the form of a Polygon object. The bounds specify this component's coordinate to its diagram.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>PresentationElement</type>
+            <description>the presentation element on diagram.</description>
+          </param>
+          <param>
+            <name>polygon</name>
+            <direction>out</direction>
+            <type />
+            <description>the bound of element as Polygon</description>
+          </param>
+        </function>
+        <function>
+          <name>getPresentationElementRectangle</name>
+          <description>Gets the bounds of this element in the form of a Rectangle object. The bounds specify this component's coordinate to its diagram.</description>
+          <param>
+            <name>diagram</name>
+            <direction>in</direction>
+            <type>Diagram</type>
+            <description>the target diagram.</description>
+          </param>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>the presentation element on given diagram.</description>
+          </param>
+          <param>
+            <name>list</name>
+            <direction>out</direction>
+            <type>List</type>
+            <description>the bound of element as Rectangle. If element is not found in the diagram, it will return null.</description>
+          </param>
+        </function>
+        <function>
+          <name>getQualifiedName</name>
+          <description>Get a qualified name. Qualified is a name that allows the NamedElement to be identified within a hierarchy of nested Namespaces. It is constructed from the names of the containing namespaces starting at the root of the hierarchy and ending with the name of the NamedElement itself.</description>
+          <param>
+            <name>namedElement</name>
+            <direction>in</direction>
+            <type>NamedElement</type>
+            <description>a NamedElement.</description>
+          </param>
+          <param>
+            <name>separator</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>separator symbol. If the value is null or an empty string, the '::' will be used.</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>a qualified name.</description>
+          </param>
+        </function>
+		<function>
+          <name>getPackageQualifiedName</name>
+          <description>Get a qualified name by considering only Packages and the given element. Models and Profiles will not be included on the qualified name. 
+
+  For example, given the element hierarchy: 
+  Design : Model -> com : Package -> nomagic : Package -> ui -> Package -> BaseDialog : Class
+and the template code:
+  $report.getPackageQualifiedName($class, ".")
+If $class is “BaseDialog” element, the result from the above template code will be:
+  com.nomagic.ui.BaseDialog
+		</description>
+          <param>
+            <name>namedElement</name>
+            <direction>in</direction>
+            <type>NamedElement</type>
+            <description>a NamedElement.</description>
+          </param>
+          <param>
+            <name>separator</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>separator symbol. If the value is null or an empty string, the '::' will be used.</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>a qualified name.</description>
+          </param>
+        </function>
+        <function>
+          <name>getPresentationElementBounds</name>
+          <description>Gets the bounds of this element in the form of a Polygon object. The bounds specify this component's coordinate to its diagram.</description>
+          <param>
+            <name>diagram</name>
+            <direction>in</direction>
+            <type>Diagram</type>
+            <description>the target diagram.</description>
+          </param>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>the presentation element on given diagram.</description>
+          </param>
+          <param>
+            <name>list</name>
+            <direction>out</direction>
+            <type>List</type>
+            <description>the bound of element as Polygon. If element is not found in the diagram, it will return null.</description>
+          </param>
+        </function>
+        <function>
+          <name>getDiagramType</name>
+          <description>Gets diagram type.</description>
+          <param>
+            <name>diagram</name>
+            <direction>in</direction>
+            <type>Diagram</type>
+            <description>the diagram instance.</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the type of diagram.</description>
+          </param>
+        </function>
+        <function>
+          <name>getMetaClass</name>
+          <description>Get stereotype meta class.</description>
+          <param>
+            <name>stereotype</name>
+            <direction>in</direction>
+            <type>Stereotype</type>
+            <description>the stereotype</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the collection of Meta Class</description>
+          </param>
+        </function>
+        <function>
+          <name>getDiagramElements</name>
+          <description>Gets elements from this diagram.</description>
+          <param>
+            <name>diagram</name>
+            <direction>in</direction>
+            <type>Diagram</type>
+            <description>the target diagram.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the collection of elements.</description>
+          </param>
+        </function>
+        <function>
+          <name>serialize</name>
+          <description>Convert com.nomagic.magicdraw.hyperlinks.Hyperlink to Hyperlink.</description>
+          <param>
+            <name>hyperlink</name>
+            <direction>in</direction>
+            <type>com.nomagic.magicdraw.hyperlinks.Hyperlink</type>
+            <description>the magicdraw hyperlink</description>
+          </param>
+          <param>
+            <name>hyperlink</name>
+            <direction>out</direction>
+            <type>Hyperlink</type>
+            <description>the magic report hyperlink instance</description>
+          </param>
+        </function>
+        <function>
+          <name>getSendingOperationalNode</name>
+          <description>Get needline association ends</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>element</description>
+          </param>
+          <param>
+            <name>element</name>
+            <direction>out</direction>
+            <type>Element</type>
+            <description>needline association ends</description>
+          </param>
+        </function>
+        <function>
+          <name>getRecievingOperationalNode</name>
+          <description>Get needline association ends</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>element</description>
+          </param>
+          <param>
+            <name>element</name>
+            <direction>out</direction>
+            <type>Element</type>
+            <description>needline association ends</description>
+          </param>
+        </function>
+        <function>
+          <name>findRelationship</name>
+          <description>Search and return a collection of relationship element inside package.</description>
+          <param>
+            <name>modelPackage</name>
+            <direction>in</direction>
+            <type>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Package</type>
+            <description>package element</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of relationship in this package</description>
+          </param>
+        </function>
+        <function>
+          <name>findRelationship</name>
+          <description>Search and return a collection of relationship element inside package.</description>
+          <param>
+            <name>modelPackage</name>
+            <direction>in</direction>
+            <type>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Package</type>
+            <description>package element</description>
+          </param>
+          <param>
+            <name>recursive</name>
+            <direction>in</direction>
+            <type>boolean</type>
+            <description>if true, perform recursively</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of relationship in this package</description>
+          </param>
+        </function>
+        <function>
+          <name>getRelationship</name>
+          <description>Gets element relationship.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>element element to be collect</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of relationship</description>
+          </param>
+        </function>
+        <function>
+          <name>getRelationship</name>
+          <description>Return relationship of this element.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>element element to be collect</description>
+          </param>
+          <param>
+            <name>recursive</name>
+            <direction>in</direction>
+            <type>boolean</type>
+            <description>if true, perform recursively</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>Collection of relationship</description>
+          </param>
+        </function>
+        <function>
+          <name>getClientElement</name>
+          <description>Gets relationship client.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>relationship model element.</description>
+          </param>
+          <param>
+            <name>element</name>
+            <direction>out</direction>
+            <type>Element</type>
+            <description>client element</description>
+          </param>
+        </function>
+        <function>
+          <name>getSupplierElement</name>
+          <description>Gets relationship supplier.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>relationship model element.</description>
+          </param>
+          <param>
+            <name>element</name>
+            <direction>out</direction>
+            <type>Element</type>
+            <description>supplier element</description>
+          </param>
+        </function>
+        <function>
+          <name>getInnerElement</name>
+          <description>Return a collection of inner element.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>element element to be collect</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of inner</description>
+          </param>
+        </function>
+        <function>
+          <name>getIconFor</name>
+          <description>Return image icon for element</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>BaseElement</type>
+            <description>a Magic Draw element</description>
+          </param>
+          <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>image object for element's icon</description>
+          </param>
+        </function>
+        <function>
+          <name>getIconFor</name>
+          <description>Return image icon for element</description>
+          <param>
+            <name>type</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>the type name.</description>
+          </param>
+          <param>
+            <name>image</name>
+            <direction>out</direction>
+            <type>Image</type>
+            <description>an image object for the element icon.</description>
+          </param>
+        </function>
+        <function>
+          <name>isNull</name>
+          <description>test and return true if object is null.</description>
+          <param>
+            <name>obj</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>object being tested.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>Boolean</type>
+            <description>true if object is null</description>
+          </param>
+        </function>
+        <function>
+          <name>isRelationship</name>
+          <description>Test and return true if element is relationship.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>element being tested.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>Boolean</type>
+            <description>true if object is relationship</description>
+          </param>
+        </function>
+        <function>
+          <name>getInteractionMessageType</name>
+          <description>Gets interaction message type.</description>
+          <param>
+            <name>message</name>
+            <direction>in</direction>
+            <type>Message</type>
+            <description>Message</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>type of message</description>
+          </param>
+        </function>
+        <function>
+          <name>getUsageRepresentationText</name>
+          <description>Formats the usage subject. The output string is the same as Result column of  table in MagicDraw.</description>
+          <param>
+            <name>be</name>
+            <direction>in</direction>
+            <type>BaseElement</type>
+            <description> to format.</description>
+          </param>
+          <param>
+            <name>addFullPath</name>
+            <direction>in</direction>
+            <type>boolean</type>
+            <description>use full path.</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>formatted element, String.</description>
+          </param>
+        </function>
+        <function>
+          <name>getUsages</name>
+          <description>Returns Usage Map of MD and then use getUsageElements method for returning the usage of the specified element.</description>
+          <param>
+            <name>selectedObjects</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the elements that this method will find the usage.</description>
+          </param>
+          <param>
+            <name>map</name>
+            <direction>out</direction>
+            <type>Map</type>
+            <description>map of Usages of elements</description>
+          </param>
+        </function>
+        <function>
+          <name>getUsageElements</name>
+          <description>Gets the element usages from usage map.</description>
+          <param>
+            <name>usagesMap</name>
+            <direction>in</direction>
+            <type>Map</type>
+            <description>the Usages Map of MagicDraw.</description>
+          </param>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>the element which will be gotten the list of element name that uses the specified element.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>collection of usage name of elements.</description>
+          </param>
+        </function>
+        <function>
+          <name>getElementName</name>
+          <description>Gets name of the element. If the name of element is empty, it will return "&lt;unnamed&gt;". This method performs the following procedures:
+
+1. If element is generalized from NamedElement, return $element.name 
+2. If element is generalized from Slot, return $element.definingFeature.name 
+3. If element is an UML element, return $element.humanName 
+4. else return $element.toString() </description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Object</type>
+            <description>the element.</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>element name</description>
+          </param>
+        </function>
+        <function>
+          <name>filterDiagram</name>
+          <description>Return the collection from the diagram list filtered by types.</description>
+          <param>
+            <name>diagramList</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>the collection of diagrams.</description>
+          </param>
+          <param>
+            <name>digramTypes</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>the collection of diagram types which is used to filter.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the collection of filtered diagrams.</description>
+          </param>
+        </function>
+        <function>
+          <name>filterElement</name>
+          <description>Return the collection from the element list filtered by types.</description>
+          <param>
+            <name>elementList</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>the collection of element.</description>
+          </param>
+          <param>
+            <name>elementTypes</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>the collection of element types which is used to filter.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the collection of filtered elements.</description>
+          </param>
+        </function>
+        <function>
+          <name>filter</name>
+          <description>Returns a collection from the element list filtered by types.</description>
+          <param>
+            <name>elementList</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>the collection of element.</description>
+          </param>
+          <param>
+            <name>humanTypes</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>the collection of element types which is used to filters.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the collection of filtered elements.</description>
+          </param>
+        </function>
+        <function>
+          <name>getBaseClassInheritableAttributes</name>
+          <description>Gets the classifier inheritable attributes.</description>
+          <param>
+            <name>classifier</name>
+            <direction>in</direction>
+            <type>Classifier</type>
+            <description>the Classifier.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the Collection of Attributes.</description>
+          </param>
+        </function>
+        <function>
+          <name>getBaseClassInheritableOperations</name>
+          <description>Gets the classifier inheritable operations.</description>
+          <param>
+            <name>classifier</name>
+            <direction>in</direction>
+            <type>Classifier</type>
+            <description>the Classifier.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the Collection of Operations.</description>
+          </param>
+        </function>
+        <function>
+          <name>getBaseClassAssociations</name>
+          <description>Gets the classifier associations.</description>
+          <param>
+            <name>classifier</name>
+            <direction>in</direction>
+            <type>Classifier</type>
+            <description>the Classifier.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the Collection of Associations.</description>
+          </param>
+        </function>
+        <function>
+          <name>getBaseRelations</name>
+          <description>Gets the classifier relations.</description>
+          <param>
+            <name>classifier</name>
+            <direction>in</direction>
+            <type>Classifier</type>
+            <description>the Classifier.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the Collection of Relations.</description>
+          </param>
+        </function>
+        <function>
+          <name>getBaseClassifiers</name>
+          <description>Returns based elements of the classifier.</description>
+          <param>
+            <name>child</name>
+            <direction>in</direction>
+            <type>Classifier</type>
+            <description>a child class.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>a collection of base elements(classifiers).</description>
+          </param>
+        </function>
+        <function>
+          <name>getBaseClassPorts</name>
+          <description>Gets the classifier port.</description>
+          <param>
+            <name>classifier</name>
+            <direction>in</direction>
+            <type>Classifier</type>
+            <description>the Classifier.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the Collection of Ports.</description>
+          </param>
+        </function>
+        <function>
+          <name>getBaseRealizedInterfaces</name>
+          <description>Gets the behavior classifier realized interfaces.</description>
+          <param>
+            <name>behavioredClassifier</name>
+            <direction>in</direction>
+            <type>BehavioredClassifier</type>
+            <description>the BehavioredClassifier.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>the Collection of RealizedInterfaces.</description>
+          </param>
+        </function>
+        <function>
+          <name>isDerivedClassifier</name>
+          <description>Checks if child is derived from parent by generalization</description>
+          <param>
+            <name>parent</name>
+            <direction>in</direction>
+            <type>Classifier</type>
+            <description>parent</description>
+          </param>
+          <param>
+            <name>child</name>
+            <direction>in</direction>
+            <type>Classifier</type>
+            <description>possible parent</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>Boolean</type>
+            <description>true if derived</description>
+          </param>
+        </function>
+		<function>
+          <name>getUsedBy</name>
+          <description>Return a list of element(s) used by this element (except diagrams).</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>an element you like to find its usage.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>a collection of elements used by an input element.</description>
+          </param>
+        </function>
+		<function>
+          <name>hasProperty</name>
+          <description>Returns true when a property with a given name is specified in this element, otherwise returns false.</description>
+          <param>
+            <name>element</name>
+            <direction>in</direction>
+            <type>Element</type>
+            <description>an element.</description>
+          </param>
+		  <param>
+            <name>propertyName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>a property name.</description>
+          </param>
+          <param>
+            <name>boolean</name>
+            <direction>out</direction>
+            <type>Boolean</type>
+			<description>Returns true when a property with a given name is specified in this element, otherwise returns false.A collection of elements used by an input element.</description>
+          </param>
+        </function>
+		<function>
+          <name>findElementByName</name>
+          <description>Searches and returns elements from names by a regular expression.</description>
+          <param>
+            <name>source</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>a collection of elements.</description>
+          </param>
+		  <param>
+            <name>regex</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>a regular expression with which the name is to be matched.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+			<description>a collection of matched elements.</description>
+          </param>
+        </function>
+		<function>
+          <name>getPresentationElements</name>
+          <description>Gets the presentation element in a diagram. This method is equivalent to $report.getPresentationDiagramElements(diagram).</description>
+          <param>
+            <name>diagram</name>
+            <direction>in</direction>
+            <type>Diagram</type>
+            <description>a diagram instance.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+			<description>a collection of elements.</description>
+          </param>
+        </function>
+		<function>
+          <name>getUsageRepresentationText</name>
+          <description>Formats the usage subject. The output string is the same as the Result column of Used by table in Magic Draw.</description>
+          <param>
+            <name>baseElement</name>
+            <direction>in</direction>
+            <type>BaseElement</type>
+            <description>a model element to be formatted.</description>
+          </param>
+		  <param>
+            <name>bool</name>
+            <direction>in</direction>
+            <type>Boolean</type>
+            <description>true if a full path is used, otherwise false.</description>
+          </param>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+			<description>a formatted element.</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="true">
+      <name>sorter</name>
+      <description>This class is use to sort the collection in template report.</description>
+      <members>
+        <function>
+          <name>sort</name>
+          <description>Sort function for template report. Context name of this class is "sorter". Public functions of this class are able to access via template by using $sorter 
+For example: 
+
+#foreach ($rel in $sorter.sort($package, "name:desc"))
+   $rel.name
+#end
+
+- $package is collection to sort 
+- "name:desc" separate by ":" in 2 part 
+- first part to identify the property name to sorting 
+- second part is option to identify type of sorting. 
+- if type of sorting is not identified, the default value is ascending </description>
+          <param>
+            <name>collection</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>collection to be sort</description>
+          </param>
+          <param>
+            <name>propertyName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>identify property name to sorting and type of sorting</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>sorted collection</description>
+          </param>
+        </function>
+        <function>
+          <name>sort</name>
+          <description>Sort function for template report. Context name of this class is "sorter". Public functions of this class are able to access via template by using $sorter 
+For example: 
+
+#foreach ($rel in $sorter.sort($package))
+    $rel.name
+#end
+
+- $package is collection to sort </description>
+          <param>
+            <name>collection</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>collection collection to be sort</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>sorted collection</description>
+          </param>
+        </function>
+        <function>
+          <name>sortByLocale</name>
+          <description>Sort the given collection by specified country code. 
+For example: 
+
+#foreach ($rel in $sorter.sortByLocale($package, "DE"))
+    $rel.name
+#end
+
+- $package is collection to sort 
+- "DE" is the country argument for GERMANY (ISO Country Code)
+ 
+Note: This method performs sorting by attribute "name" of each element by default. </description>
+          <param>
+            <name>collection</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>collection collection to be sort</description>
+          </param>
+          <param>
+            <name>locale</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>identified country name</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>sorted collection</description>
+          </param>
+        </function>
+        <function>
+          <name>sortByLocale</name>
+          <description>Sort the given collection by specified country code. 
+For example: 
+
+#foreach ($rel in $sorter.sortByLocale($package, "DE"))
+    $rel.name
+#end
+
+- $package is collection to sort 
+- "DE" is the country argument for GERMANY (ISO Country Code) </description>
+          <param>
+            <name>collection</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>collection collection to be sort</description>
+          </param>
+          <param>
+            <name>propertyName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>identify property name to sorting</description>
+          </param>
+          <param>
+            <name>locale</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>identified country name</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>sorted collection</description>
+          </param>
+        </function>
+        <function>
+          <name>sortByFirstNumber</name>
+          <description>Sort function with special text ordering. This function will sort the collection by give the priority to first digit found in String. 
+For example: 
+
+["1abc", "2abc", "a1bc", "a2bc"]
+
+The output order will be: 
+
+["1abc", "a1bc", "2abc", "a2bc"]
+</description>
+          <param>
+            <name>collection</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>collection collection to be sort</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>sorted collection</description>
+          </param>
+        </function>
+        <function>
+          <name>sortByFirstNumber</name>
+          <description>Sort function with special text ordering. This function will sort the collection by give the priority to first digit found in String. 
+For example: 
+
+["1abc", "2abc", "a1bc", "a2bc"]
+
+The output order will be: 
+
+["1abc", "a1bc", "2abc", "a2bc"]
+</description>
+          <param>
+            <name>collection</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>collection to be sort</description>
+          </param>
+          <param>
+            <name>propertyName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>identify property name to sorting and type of sorting</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>a sorted collection</description>
+          </param>
+        </function>
+		<function>
+          <name>humanSort</name>
+          <description>This is a special sort function with human order, which says to split text to be sorted into numeric and nonnumeric chunks, then sort so that the numeric chunks are treated as numbers. This makes "foo10" sorted after
+"foo2".</description>
+          <param>
+            <name>collection</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>a collection collection to be sort</description>
+          </param>
+		  <param>
+            <name>fieldName</name>
+            <direction>in</direction>
+            <type>String</type>
+            <description>a fieldName to be sorted and the sort direction.</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>a sorted collection</description>
+          </param>
+        </function>
+		<function>
+          <name>humanSort</name>
+          <description>A special sort function with human order, which says to split the text to be sorted into numeric and non-numeric chunks, then sort so that the numeric chunks are treated as numbers. This makes "foo10" sorted after "foo2".</description>
+          <param>
+            <name>collection</name>
+            <direction>in</direction>
+            <type>Collection</type>
+            <description>a collection collection to be sort</description>
+          </param>
+          <param>
+            <name>collection</name>
+            <direction>out</direction>
+            <type>Collection</type>
+            <description>a sorted collection</description>
+          </param>
+        </function>
+      </members>
+    </element>
+    <element often="false">
+      <name>template</name>
+      <description>The Tool for getting template information.</description>
+      <members>
+        <function>
+          <name>getResourcesLocation</name>
+          <description>Gets the folder location of resources files.</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the folder location of the resources files</description>
+          </param>
+        </function>
+        <function>
+          <name>getTemplateFile</name>
+          <description>Gets the template file name</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the template file name.</description>
+          </param>
+        </function>
+        <function>
+          <name>getTemplateLocation</name>
+          <description>Gets the folder location of the template file.</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the folder location of the template file</description>
+          </param>
+        </function>
+        <function>
+          <name>getOutputFileNoExt</name>
+          <description>Gets the output name.</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the output name.</description>
+          </param>
+        </function>
+        <function>
+          <name>getOutputFile</name>
+          <description>Gets the output file name.</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the output file name.</description>
+          </param>
+        </function>
+        <function>
+          <name>getOutputLocation</name>
+          <description>Gets the folder location of the output file.</description>
+          <param>
+            <name>string</name>
+            <direction>out</direction>
+            <type>String</type>
+            <description>the folder location of the output file.</description>
+          </param>
+        </function>
+      </members>
+    </element>
+  </elements>
+</data>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram version="9" type="Document Report Designer Diagram" baseType="Class Diagram" abbreviation="DocumentReportDesigner" category="Report Designer Diagrams">
+    <helpID>Report+Designer</helpID>
+    <toolbarConfiguration>
+        <baseCategory id="COMMON_ELEMENTS_STATIC" parentCategoryID="COMMON_ELEMENTS_STATIC" expandedByDefault="false"/>
+        <category name="Tool" id="action_category_1573459081697_886599_1" expandedByDefault="true">
+            <actions>
+                <custom type="com.nomagic.uml2.ext.magicdraw.components.mdbasiccomponents.Component" description="Element Box" listAsElement="false" opposite="false" id="IDaction_1601439775279_489794_0">
+                    <stereotype id="_19_1beta_300011e_1573455409581_296860_4848"/>
+                </custom>
+                <custom type="com.nomagic.uml2.ext.magicdraw.components.mdbasiccomponents.Component" description="Property Box" listAsElement="false" opposite="false" id="IDaction_1601439793446_46512_1">
+                    <stereotype id="_19_1beta_300011e_1573533910199_496021_4793"/>
+                </custom>
+                <custom type="com.nomagic.uml2.ext.magicdraw.components.mdbasiccomponents.Component" description="Page Box" listAsElement="false" opposite="false" id="IDaction_1601439814590_207308_2">
+                    <stereotype id="_20_0_300011e_1579489407721_175087_8777"/>
+                </custom>
+                <custom type="com.nomagic.uml2.ext.magicdraw.components.mdbasiccomponents.Component" description="Condition Box" listAsElement="false" opposite="false" id="IDaction_1581928633808_133474_0">
+                    <stereotype id="_20_0_300011e_1581921516030_106563_9131"/>
+                </custom>
+                <custom type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class" description="Text Box" listAsElement="false" opposite="false" id="IDaction_1573546108285_214436_1">
+                    <stereotype id="_19_1beta_300011e_1573455466394_650449_4922"/>
+                    <buttonicon type="small" size="16" filename="mdp://resource/com/nomagic/magicdraw/reportdesigner/icons/profile/textbox.png"></buttonicon>
+                    <buttonicon type="large" size="16" filename="mdp://resource/com/nomagic/magicdraw/reportdesigner/icons/profile/textbox.svg"></buttonicon>
+                </custom>
+                <custom type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class" description="Report Data Variable" listAsElement="false" opposite="false" id="IDaction_1574836759736_906066_0">
+                    <stereotype id="_19_1beta_300011e_1574834984827_802857_7466"/>
+                </custom>
+                <custom type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class" description="Include" listAsElement="false" opposite="false" id="IDaction_1578641493649_732292_0">
+                    <stereotype id="_20_0_300011e_1578641179577_944514_8380"/>
+                </custom>
+                <custom type="com.nomagic.uml2.ext.magicdraw.components.mdbasiccomponents.Component" description="Element Table" listAsElement="false" opposite="false" id="IDaction_1601439836230_731038_3">
+                    <stereotype id="_19_1beta_300011e_1573455433436_716867_4879"/>
+                </custom>
+                <custom type="com.nomagic.uml2.ext.magicdraw.components.mdbasiccomponents.Component" description="Property Table" listAsElement="false" opposite="false" id="IDaction_1601439859302_492215_5">
+                    <stereotype id="_19_1beta_300011e_1577435067654_987451_7950"/>
+                </custom>
+                <custom type="com.nomagic.uml2.ext.magicdraw.components.mdbasiccomponents.Component" description="Helper Tool" listAsElement="false" opposite="false" id="IDaction_1585631897197_522185_0">
+                    <stereotype id="_20_0_420017e_1585630134357_465197_1373"/>
+                </custom>
+                <standard action="ADD_SEPARATOR" description="Page Break"/>
+            </actions>
+        </category>
+    </toolbarConfiguration>
+    <icon type="small" size="16" filename="mdp://resource/com/nomagic/magicdraw/reportdesigner/icons/diagram/documentdiagram.png"></icon>
+    <icon type="diagraming" size="-1" filename="mdp://resource/com/nomagic/magicdraw/reportdesigner/icons/diagram/documentdiagram.svg"></icon>
+    <module name="UML_Standard_Profile.mdzip" location="C:\Workspace\Workspace_MD_200\md-sourcecode\md\core\profiles\UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <module name="Report Designer Profile.mdzip" location="C:\Workspace\Workspace_MD_200\md-sourcecode\md\core\profiles\Report Designer Profile.mdzip">
+        <root id="_19_1beta_300011e_1573455321638_762144_4793"/>
+    </module>
+</diagram>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template><name>Package Element Table</name><description xml:space="preserve">The OpenDocument Spreadsheet Report. 
+This spreadsheet display all project elements with package structure.</description><templateFile>template.ods</templateFile><enable>true</enable><readonly>true</readonly><category>Other Documents</category><variables><variable><name>Author</name><value xml:space="preserve"></value></variable><variable><name>Title</name><value xml:space="preserve"></value></variable></variables></template>

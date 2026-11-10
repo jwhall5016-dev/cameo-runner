@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceDescriptor
+ critical="true"
+ date="2021-06-04"
+ description="Model Merge enables copying changes between different project versions. This functionality is usually needed when there are several branches that reflect different releases or versions of the product, e.g. when certain fixes have to be copied from a release branch to the mainstream development."
+ homePage="http://www.nomagic.com"
+ id="1449"
+ mdVersionMax="2021x Refresh1"
+ mdVersionMin="2021x Refresh1"
+ name="Project Merge"
+ product="Merge"
+ 
+ type="Plugin (commercial)">
+  <version
+   human="2021x Refresh1"
+
+   resource="2021000000"
+   internal="202100000" />
+  <provider
+   name="No Magic" />
+
+  <edition>Standard</edition>
+
+  <edition>Enterprise</edition>
+
+  <edition>Architect</edition>
+
+  <edition>Professional Java</edition>
+
+  <edition>Professional C++</edition>
+
+  <installation>
+  
+		<file
+			from="data/defaults/data/merge reports/Changes_Commits_Report.docx"
+			to="data/defaults/data/merge reports/Changes_Commits_Report.docx"
+		/>
+		<file
+			from="data/defaults/data/merge reports/Diagrams_Full_Report.docx"
+			to="data/defaults/data/merge reports/Diagrams_Full_Report.docx"
+		/>
+		<file
+			from="plugins/com.nomagic.magicdraw.merge/merge.jar"
+			to="plugins/com.nomagic.magicdraw.merge/merge.jar"
+		/>
+		<file
+			from="plugins/com.nomagic.magicdraw.merge/merge_api.jar"
+			to="plugins/com.nomagic.magicdraw.merge/merge_api.jar"
+		/>
+		<file
+			from="plugins/com.nomagic.magicdraw.merge/plugin.xml"
+			to="plugins/com.nomagic.magicdraw.merge/plugin.xml"
+		/>
+		<file
+			from="plugins/com.nomagic.magicdraw.merge/resources/text.jar"
+			to="plugins/com.nomagic.magicdraw.merge/resources/text.jar"
+		/>
+		<file
+			from="plugins/com.nomagic.magicdraw.merge/resources/text_de.jar"
+			to="plugins/com.nomagic.magicdraw.merge/resources/text_de.jar"
+		/>
+		<file
+			from="plugins/com.nomagic.magicdraw.merge/resources/text_fr.jar"
+			to="plugins/com.nomagic.magicdraw.merge/resources/text_fr.jar"
+		/>
+		<file
+			from="plugins/com.nomagic.magicdraw.merge/resources/text_ja.jar"
+			to="plugins/com.nomagic.magicdraw.merge/resources/text_ja.jar"
+		/>
+		<file
+			from="plugins/com.nomagic.magicdraw.merge/resources/text_ru.jar"
+			to="plugins/com.nomagic.magicdraw.merge/resources/text_ru.jar"
+		/>
+
+
+  </installation>
+
+
+</resourceDescriptor>
+

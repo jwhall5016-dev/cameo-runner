@@ -1,0 +1,43 @@
+<html>
+<head>
+<style type="text/css">
+.borderAll {border: 1px solid black;}
+.borderTRB {border-top: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;}
+.borderLRB {border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;}
+.borderRB {border-right: 1px solid black; border-bottom: 1px solid black;}
+</style>
+</head>
+<body>
+<div><b>$report.filterDiagram(diagramList, diagramTypes)</b></div>
+<br>
+<p>Return a collection of diagrams from a list of diagrams filtered by types.</p>
+<br>
+<table border="0" cellpadding="2" cellspacing="0" style="width:100%">
+<tr style="background-color: #F5F3F3;">
+<th class="borderAll"></th><th class="borderTRB">Name</th><th class="borderTRB">Type</th><th class="borderTRB">Description</th>
+</tr>
+<tr>
+<td class="borderLRB" rowspan="2">Parameter(s)</td><td class="borderRB">diagramList</td><td class="borderRB">java.util.Collection</td><td class="borderRB">A collection of diagrams.</td>
+</tr>
+<tr>
+<td  class="borderRB">diagramTypes</td><td class="borderRB">java.util.Collection</td><td class="borderRB">A collection of diagram types used as filters.</td>
+</tr>
+<tr>
+<td class="borderLRB">Return</td><td class="borderRB">-</td><td class="borderRB">java.util.Collection</td><td class="borderRB">A collection of filtered diagrams.</td>
+</tr>
+</table>
+<br>
+<p>For example:</p>
+<br>
+<table border="0" cellpadding="3" cellspacing="0" style="width:100%">
+<tr style="font-family: Courier New;">
+<td class="borderAll">
+<p>#foreach($diagram in $report.filterDiagram($Diagram,["Class Diagram","Communication Diagram"]))</p>
+<p style="text-indent:20px;">$diagram.name : $diagram.diagramType</p>
+<p>#end</p>
+</td>
+</tr>
+</table>
+<br><br>
+</body>
+</html>

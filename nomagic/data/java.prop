@@ -1,0 +1,176 @@
+(list
+	(BuiltInTypes
+		(types
+			close_set true
+			set	(list
+				"int=0"
+				"byte=0"
+				"short=0"
+				"long=0"
+				"char=' '"
+				"float=0"
+				"double=0"
+				"boolean=false"
+				"void="
+			)
+			default_value	"int=0"
+		)
+	)
+	
+	(Collections_types
+		(types
+			close_set true
+			set (list
+				java.util.Collection=0
+				java.util.List=0
+				java.util.Set=0
+				java.util.Map=1
+				java.util.Queue=0
+				java.util.ArrayList=0
+				java.util.HashSet=0
+				java.util.HashMap=1
+				java.util.Hashtable=1
+				java.util.Vector=0
+				java.util.LinkedList=0
+				java.util.AbstractMap=1
+				java.util.Dictionary=1
+				java.util.AbstractList=0
+				java.util.AbstractCollection=0
+				java.util.AbstractSet=0
+				java.util.AbstractQueue=0
+			)
+			default_value "java.util.ArrayList=0"
+		)
+			
+	)
+	(Class
+		(STRICTFP_MODIFIER
+			close_set true
+			set	(list
+				"strictfp"
+				"<empty>"
+			)
+			default_value	"<empty>"
+		)
+		(STATIC_MODIFIER
+			close_set true
+			set (list
+				"static"
+				"not static"
+				)
+			default_value	"not static"
+		)
+	)
+	(Enumeration
+		(STRICTFP_MODIFIER
+			close_set true
+			set	(list
+				"strictfp"
+				"<empty>"
+			)
+			default_value	"<empty>"
+		)
+		(STATIC_MODIFIER
+			close_set true
+			set (list
+				"static"
+				"not static"
+				)
+			default_value	"not static"
+		)
+	)
+	(Method
+		(NATIVE_MODIFIER
+			close_set true
+			set	(list
+				"native"
+				"not native"
+			)
+			default_value	"not native"
+		)
+		(STRICTFP_MODIFIER
+			close_set true
+			set	(list
+				"strictfp"
+				"<empty>"
+			)
+			default_value	"<empty>"
+		)
+	)
+	(Field
+		(TRANSIENT_MODIFIER
+			close_set true
+			set	(list
+				"transient"
+				"not transient"
+			)
+			default_value	"not transient"
+		)
+		(VOLATILE_MODIFIER
+			close_set true
+			set	(list
+				"volatile"
+				"not volatile"
+			)
+			default_value	"not volatile"
+		)
+		(CONTAINER
+			close_set false
+			set	(list
+				"<empty>"
+				"java.util.Collection<$$type$$>"
+				"java.util.List<$$type$$>"
+				"java.util.Set<$$type$$>"
+				"java.util.Collection"
+				"java.util.Map"
+				"java.util.List"
+				"java.util.Set"
+				"java.util.Vector"
+				"java.util.Hashtable"
+			)
+			default_value	"<empty>"
+		)
+	)
+	(Argument
+		(USE_FINAL_KEYWORD_FOR_PARAMETERS_WITH_DIRECTION_IN
+			close_set true
+			set	(list
+			"true"
+			"false"
+			)
+			default_value "false"
+		)
+	)
+	(Project
+		(DEFAULT_METHOD_RETURN_TYPE
+			close_set false
+			set	(list
+				"void"
+			)
+			default_value	"void"
+		)
+		(DEFAULT_ATTRIBUTE_TYPE
+			close_set false
+			set	(list
+				"int"
+			)
+			default_value	"int"
+		)
+		(MAIN_FILE_EXTENSION
+			close_set true
+			set	(list
+				"java"
+			)
+			default_value	"java"
+		)
+		(COLLECTCODE
+			close_set false
+			set (list
+				"false"
+				"true"
+			)
+			default_value	"false"
+			values_translatable	"true"
+		)		
+	)
+)

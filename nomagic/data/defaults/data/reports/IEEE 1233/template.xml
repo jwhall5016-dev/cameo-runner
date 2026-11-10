@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template>
+   <name>IEEE 1233</name>
+   <description>Use IEEE 1233 report to describe System Requirements Specification (SyRS). 
+   Note: IEEE 1233 profile is required for generating report. The specific stereotypes must be applied to Package and Use Case.  </description>
+   <templateFile>template.docx</templateFile>
+   <icon/>
+   <enable>true</enable>
+   <readonly>true</readonly>
+   <pinned>false</pinned>
+   <category>Default Template</category>
+   <variables>
+      <variable>
+         <name>CompanyName</name>
+         <description/>
+			<type/>
+         <value xml:space="preserve"></value>
+      </variable>
+      <variable>
+         <name>Author</name>
+         <description/>
+			<type/>
+         <value xml:space="preserve"/>
+      </variable>
+   </variables>
+   <perspectives/>
+</template>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.commonintegrators"
+	name="Abstract MagicDraw integrator with other applications"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.commonintegrators.AbstractIntegratorPlugin">
+
+	<requires>
+	    <api version="1.0"/>
+	</requires>
+
+	<runtime>
+	   <library name="coreintegrator.jar"/>
+	   <library name="coreintegrator_api.jar"/>
+       <library name="lib/coreintegrator_util.jar"/>
+	</runtime>
+</plugin>

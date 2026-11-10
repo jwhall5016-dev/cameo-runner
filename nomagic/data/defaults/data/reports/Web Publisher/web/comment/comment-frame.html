@@ -1,0 +1,1 @@
+﻿#foreach ($ac in $sorter.sort($importer, 'name'))$file.silentCreate('comment/comment-content.html', $file.computeName('comment', $ac.ID, 'html'), $ac)#end

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link rel ="stylesheet" type="text/css" href="../stylesheet.css" title="style">
+   <title>$Title</title>
+</head>
+<body>
+   <h4>Interfaces</h4>
+   <div>
+      #foreach ($fa in $sorter.sort($importer, 'name'))
+      #set($pahtName = $file.create('interface/interface-content.html', $file.computeName('interface', $fa.ID, 'html'), $fa))
+      <div class="frameitem"><a href="../$pahtName" target="classframe"><img src="../$report.getIconFor($fa)" alt="interface" align="middle" width="16" height="16"></a>&nbsp;<a href="../$pahtName" target="classframe">
+	  #if("$fa.name"=="")
+		 $na
+		 #else
+		 $fa.name
+	  #end
+	  </a></div>
+      #end
+   </div>
+</body>
+</html>

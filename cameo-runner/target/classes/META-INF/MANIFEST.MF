@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Hall2
+Build-Jdk: 17.0.7
+Class-Path: target/ucanaccess-5.0.1.jar target/hsqldb-2.5.0.jar target/j
+ ackcess-3.0.1.jar target/commons-lang3-3.8.1.jar target/commons-logging
+ -1.2.jar target/jackson-databind-2.12.2.jar target/jackson-annotations-
+ 2.12.2.jar target/jackson-core-2.12.2.jar
+Main-Class: io.cameorestservice.plugin.CameoRunner
+Created-By: Maven Integration for Eclipse
+

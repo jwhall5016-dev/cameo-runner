@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram abbreviation="sd" baseType="Interaction Diagram" type="Sequence Diagram" version="8">
+    <requiredPlugin>;UML_Standard_Profile.mdzip^UML_FEATURE</requiredPlugin>
+    <helpID>Sequence+Diagram</helpID>
+    <toolbarConfiguration>
+        <baseCategory expandedByDefault="false" id="COMMON_ELEMENTS_DYNAMIC" parentCategoryID="COMMON_ELEMENTS_DYNAMIC"/>
+        <category expandedByDefault="true" id="SEQUENCE_DIAGRAM_ELEMENTS" name="Sequence Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/sequencediagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/sequencediagram.svg" size="16" type="large"/>
+            <actions>
+                <standard action="ADD_LIFELINE" shortcut="pressed O "/>
+                <standard action="ADD_COMBINED_FRAGMENT_ALT" shortcut="shift pressed A "/>
+                <standard action="ADD_COMBINED_FRAGMENT_LOOP" shortcut="shift pressed L "/>
+                <group>
+                    <standard action="ADD_COMBINED_FRAGMENT_OPT" shortcut="shift pressed O "/>
+                    <standard action="ADD_COMBINED_FRAGMENT_PAR" shortcut="shift pressed P "/>
+                    <standard action="ADD_COMBINED_FRAGMENT_BREAK" shortcut="shift pressed B "/>
+                    <standard action="ADD_COMBINED_FRAGMENT_NEG" shortcut="shift pressed G "/>
+                    <standard action="ADD_COMBINED_FRAGMENT_CRITICAL" description="Critical Region" shortcut="shift pressed E "/>
+                    <standard action="ADD_COMBINED_FRAGMENT_CONSIDER" shortcut="shift pressed C "/>
+                    <standard action="ADD_COMBINED_FRAGMENT_IGNORE" shortcut="shift pressed I "/>
+                    <standard action="ADD_COMBINED_FRAGMENT_SEQ" shortcut="shift pressed W "/>
+                    <standard action="ADD_COMBINED_FRAGMENT_STRICT" shortcut="shift pressed S "/>
+                    <standard action="ADD_COMBINED_FRAGMENT_ASSERT" shortcut="shift pressed R "/>
+                </group>
+                <standard action="ADD_INTERACTION_USE_IN_SEQUENCE" shortcut="shift pressed T "/>
+                <standard action="ADD_SEQUENCE_MESSAGE" shortcut="pressed M "/>
+                <standard action="ADD_CALL_MESSAGE" shortcut="pressed A "/>
+                <standard action="ADD_SEND_MESSAGE" shortcut="pressed E "/>
+                <standard action="ADD_REPLY_MESSAGE" shortcut="pressed R "/>
+                <standard action="ADD_CREATE_MESSAGE" shortcut="pressed C "/>
+                <standard action="ADD_DESTROY_MESSAGE" shortcut="pressed T "/>
+                <standard action="ADD_DIAGONAL_MESSAGE" shortcut="pressed D "/>
+                <standard action="ADD_SEQUENCE_MESSAGE_TO_SELF" shortcut="pressed S "/>
+                <standard action="ADD_RECURSIVE_MESSAGE" shortcut="pressed U "/>
+                <group>
+                    <standard action="ADD_LOST_MESSAGE" shortcut="pressed L "/>
+                    <standard action="ADD_FOUND_MESSAGE" shortcut="pressed F "/>
+                </group>
+                <standard action="ADD_STATE_INVARIANT" shortcut="shift pressed V "/>
+                <group>
+                    <standard action="ADD_DURATION_CONSTRAINT"/>
+                    <standard action="ADD_TIME_CONSTRAINT"/>
+                </group>
+            </actions>
+        </category>
+        <baseCategory expandedByDefault="false" id="action_category_1239974101621_433764_0" parentCategoryID="action_category_1239974101621_433764_0"/>
+    </toolbarConfiguration>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/sequencediagram.png" size="16" type="small"/>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/sequencediagram.svg" size="-1" type="diagraming"/>
+    <module location="/Users/admin/182/C:\Program Files\MagicDraw UML 16.9\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.interactions.mdfragments.CombinedFragment</element>
+        <path action="ADD_SEQUENCE_MESSAGE"/>
+        <path action="ADD_CALL_MESSAGE"/>
+        <path action="ADD_SEND_MESSAGE"/>
+        <path action="ADD_REPLY_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_CREATE_MESSAGE"/>
+        <path action="ADD_DESTROY_MESSAGE"/>
+        <path action="ADD_DIAGONAL_MESSAGE"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.interactions.mdfragments.ConsiderIgnoreFragment</element>
+        <path action="ADD_SEQUENCE_MESSAGE"/>
+        <path action="ADD_CALL_MESSAGE"/>
+        <path action="ADD_SEND_MESSAGE"/>
+        <path action="ADD_REPLY_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_CREATE_MESSAGE"/>
+        <path action="ADD_DESTROY_MESSAGE"/>
+        <path action="ADD_DIAGONAL_MESSAGE"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.interactions.mdfragments.InteractionUse</element>
+        <path action="ADD_REPLY_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.interactions.mdbasicinteractions.Lifeline</element>
+        <path action="ADD_SEQUENCE_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_CALL_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_SEND_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_REPLY_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_CREATE_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_DESTROY_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_DIAGONAL_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_SEQUENCE_MESSAGE_TO_SELF"/>
+        <path action="ADD_RECURSIVE_MESSAGE"/>
+        <path action="ADD_LOST_MESSAGE"/>
+        <path action="ADD_FOUND_MESSAGE"/>
+        <path action="ADD_STATE_INVARIANT"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+	<manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.interactions.mdbasicinteractions.BehaviorExecutionSpecification</element>
+        <path action="ADD_SEQUENCE_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_CALL_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_SEND_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_REPLY_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_CREATE_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_DESTROY_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_DIAGONAL_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_SEQUENCE_MESSAGE_TO_SELF"/>
+        <path action="ADD_RECURSIVE_MESSAGE"/>
+        <path action="ADD_LOST_MESSAGE"/>
+        <path action="ADD_FOUND_MESSAGE"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+		<manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.interactions.mdbasicinteractions.ActionExecutionSpecification</element>
+        <path action="ADD_SEQUENCE_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_CALL_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_SEND_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_REPLY_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_CREATE_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_DESTROY_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_DIAGONAL_MESSAGE">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_SEQUENCE_MESSAGE_TO_SELF"/>
+        <path action="ADD_RECURSIVE_MESSAGE"/>
+        <path action="ADD_LOST_MESSAGE"/>
+        <path action="ADD_FOUND_MESSAGE"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.SequenceLifelineView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.interactions.mdbasicinteractions.StateInvariant</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+</diagram>
+

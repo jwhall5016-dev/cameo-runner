@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report>
+   <name>Built-in</name>
+   <description>A built-in IEEE 1233 data</description>
+   <defaultReport>true</defaultReport>
+   <variables>
+      <variable>
+         <name>CompanyName</name>
+         <description>A company's name</description>
+			<type/>
+         <value xml:space="preserve">No Magic</value>
+      </variable>
+      <variable>
+         <name>Author</name>
+         <description>Author who edited report in this revision</description>
+			<type/>
+         <value xml:space="preserve"/>
+      </variable>
+   </variables>
+   <selectedPackage>
+      <packageId></packageId>
+      <selectRecursive>true</selectRecursive>
+      <showAuxiliary>false</showAuxiliary>
+      <showOnlyPackageElement>true</showOnlyPackageElement>
+   </selectedPackage>
+   <outputProperty>
+      <outputFile></outputFile>
+      <outputImageFormat>jpg</outputImageFormat>
+      <outputFitImageSize>1</outputFitImageSize>
+      <outputOnBlankField></outputOnBlankField>
+      <displayInViewer>false</displayInViewer>
+      <outputFormat/>
+      <uploadProfile/>
+   </outputProperty>
+</report>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<name>Table Report</name>
+	<description>The excel spreadsheet displays data from diagram table</description>
+	<templateFile>template.xlsx</templateFile>
+	<icon/>
+	<enable>true</enable>
+	<readonly>true</readonly>
+	<pinned>false</pinned>
+	<category>Other Documents</category>
+	<variables>
+		<variable>
+			<name>Author</name>
+			<description/>
+			<type/>
+			<value xml:space="preserve"/></variable>
+		<variable>
+			<name>Title</name>
+			<description/><type/>
+			<value xml:space="preserve"/>
+		</variable>
+	</variables>
+	<perspectives/>
+</template>

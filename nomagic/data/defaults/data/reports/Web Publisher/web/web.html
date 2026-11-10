@@ -1,0 +1,325 @@
+#sectionBegin(web)
+#*=============================
+ * Test if this element type accepted by template or not
+ * @param element element to test
+==============================*#
+#macro (acceptType $element)
+#set ($accept = false)
+#set ($elementType = $element.elementType)
+#if ($elementType == 'diagram')
+#set ($diagramType = $report.getDiagramType($element))
+#if ($diagramType == 'Class Diagram'
+  || $diagramType == 'Use Case Diagram'
+  || $diagramType == 'Activity Diagram'
+  || $diagramType == 'State Machine Diagram'
+  || $diagramType == 'Sequence Diagram'
+  || $diagramType == 'Composite Structure Diagram'
+  || $diagramType == 'Communication Diagram'
+  || $diagramType == 'Component Diagram'
+  || $diagramType == 'Deployment Diagram'
+  || $diagramType == 'Object Diagram'
+  || $diagramType == 'Profile Diagram'
+  || $diagramType == 'Package Diagram'
+  || $diagramType == 'Protocol State Machine Diagram'
+  || $diagramType == 'Content Diagram')
+#set ($accept = true)#end
+#elseif ($elementType == 'actor' 
+   || $elementType == 'activity' 
+   || $elementType == 'initialnode' 
+   || $elementType == 'callbehavioraction' 
+   || $elementType == 'decisionnode' 
+   || $elementType == 'activityfinalnode' 
+   || $elementType == 'class' 
+   || $elementType == 'clause'
+   || $elementType == 'interface' 
+   || $elementType == 'package' 
+   || $elementType == 'smartpackage' 
+   || $elementType == 'usecase'
+   || $elementType == 'model'
+   || $elementType == 'profile'
+   || $elementType == 'systemboundary'
+   || $elementType == 'finalstate'
+   || $elementType == 'pseudostate'
+   || $elementType == 'state'
+   || $elementType == 'statemachine'
+   || $elementType == 'region'
+   || $elementType == 'usecase'
+   || $elementType == 'instancespecification'
+   || $elementType == 'lifeline'
+   || $elementType == 'combinedfragment'
+   || $elementType == 'interactionuse'
+   || $elementType == 'message'
+   || $elementType == 'timeconstraint'
+   || $elementType == 'property'
+   || $elementType == 'port'
+   || $elementType == 'collaborationuse'
+   || $elementType == 'signal'
+   || $elementType == 'enumeration'
+   || $elementType == 'component'
+   || $elementType == 'interruptibleactivityregion'
+   || $elementType == 'expansionnode'
+   || $elementType == 'primitivetype'
+   || $elementType == 'datatype'
+   || $elementType == 'deploymentspecification'
+   || $elementType == 'artifact'
+   || $elementType == 'executionenvironment'
+   || $elementType == 'device'
+   || $elementType == 'flowfinalnode'
+   || $elementType == 'calloperationaction'
+   || $elementType == 'opaqueaction'
+   || $elementType == 'acceptcallaction'
+   || $elementType == 'centralbuffernode'
+   || $elementType == 'datastorenode'
+   || $elementType == 'sendsignalaction'
+   || $elementType == 'accepteventaction'
+   || $elementType == 'forknode'
+   || $elementType == 'structuredactivitynode'
+   || $elementType == 'expansionregion'
+   || $elementType == 'conditionalnode'
+   || $elementType == 'loopnode'
+   || $elementType == 'sequencenode'
+   || $elementType == 'activitypartition'
+   || $elementType == 'inputpin'
+   || $elementType == 'valuepin'
+   || $elementType == 'outputpin'
+   || $elementType == 'connectionpointreference'
+   || $elementType == 'node'
+   || $elementType == 'model'
+   || $elementType == 'durationconstraint'
+   || $elementType == 'interactionconstraint'
+   || $elementType == 'constraint'
+   || $elementType == 'functionbehavior'
+   || $elementType == 'interaction'
+   || $elementType == 'opaquebehavior'
+   || $elementType == 'protocolstatemachine'
+   || $elementType == 'anyreceiveevent'
+   || $elementType == 'callevent'
+   || $elementType == 'changeevent'
+   || $elementType == 'creationevent'
+   || $elementType == 'destructionevent'
+   || $elementType == 'executionevent'
+   || $elementType == 'receiveoperationevent'
+   || $elementType == 'sendoperationevent'
+   || $elementType == 'sendsignalevent'
+   || $elementType == 'signalevent'
+   || $elementType == 'timeevent'
+   || $elementType == 'comment'
+   || $elementType == 'createlinkaction'
+   || $elementType == 'createlinkobjectaction'
+   || $elementType == 'createobjectaction'
+   || $elementType == 'linkendcreationdata'
+   || $elementType == 'destroylinkaction'
+   || $elementType == 'clearassociationaction'
+   || $elementType == 'clearstructuralfeatureaction'
+   || $elementType == 'clearvariableaction'
+   || $elementType == 'addstructuralfeaturevalueaction'
+   || $elementType == 'broadcastsignalaction'
+   || $elementType == 'raiseexceptionaction'
+   || $elementType == 'readextentaction'
+   || $elementType == 'readisclassifiedobjectaction'
+   || $elementType == 'readlinkaction'
+   || $elementType == 'readlinkobjectendaction'
+   || $elementType == 'readlinkobjectendqualifieraction'
+   || $elementType == 'readselfaction'
+   || $elementType == 'readstructuralfeatureaction'
+   || $elementType == 'readvariableaction'
+   || $elementType == 'reclassifyobjectaction'
+   || $elementType == 'reduceaction'
+   || $elementType == 'removestructuralfeaturevalueaction'
+   || $elementType == 'addvariablevalueaction'
+   || $elementType == 'destroyobjectaction'
+   || $elementType == 'removevariablevalueaction'
+   || $elementType == 'replyaction'
+   || $elementType == 'startclassifierbehavioraction'
+   || $elementType == 'sendobjectaction'
+   || $elementType == 'testidentityaction'
+   || $elementType == 'unmarshallaction'
+   || $elementType == 'valuespecificationaction'
+   || $elementType == 'actioninputpin'
+   || $elementType == 'trigger'
+   || $elementType == 'collaboration'
+   || $elementType == 'considerignorefragment'
+   || $elementType == 'operation'
+   || $elementType == 'objectflow'
+   || $elementType == 'controlflow'
+   || $elementType == 'generalization'
+   || $elementType == 'association'
+   || $elementType == 'associationclass'
+   || $elementType == 'abstraction'
+   || $elementType == 'usage'
+   || $elementType == 'interfacerealization'
+   || $elementType == 'packagemerge'
+   || $elementType == 'packageimport'
+   || $elementType == 'elementimport'
+   || $elementType == 'realization'
+   || $elementType == 'communicationpath'
+   || $elementType == 'manifestation'
+   || $elementType == 'componentrealization'
+   || $elementType == 'deployment'
+   || $elementType == 'dependency'
+   || $elementType == 'connector'
+   || $elementType == 'protocoltransition'
+   || $elementType == 'transition'
+   || $elementType == 'templatebinding'
+   || $elementType == 'substitution'
+   || $elementType == 'include'
+   || $elementType == 'extend'
+   || $elementType == 'extension'
+   || $elementType == 'exceptionhandler'
+   || $elementType == 'variable'
+   || $elementType == 'stereotype'
+   || $elementType == 'receivesignalevent'
+   || $elementType == 'redefinabletemplatesignature'
+   || $elementType == 'activityparameternode'
+   || $elementType == 'parameter'
+   || $elementType == 'booleantaggedvalue'
+   || $elementType == 'elementtaggedvalue'
+   || $elementType == 'integertaggedvalue'
+   || $elementType == 'realtaggedvalue'
+   || $elementType == 'stringtaggedvalue'
+   || $elementType == 'subsystem')#set ($accept = true)
+#end
+#end
+#*=============================
+ * Create link for HTML element And Create Icon
+ * @param element element   
+==============================*#
+#macro (link $element)
+#if($report.isNull($element))$emptyValue
+#else<span class="image">#set($pathname = false)
+#acceptType($element)
+#if ($report.isRelationship($element))#set($pathname = $file.computeName('relation', $element.ID, 'html'))
+#elseif ($accept)#set($pathname = $file.computeName($element.elementType, $element.ID, 'html'))
+#end
+#if ($pathname)<a href="../$pathname"><img src="../$report.getIconFor($element)" alt="$element.elementType" width="16" height="16"></a>&nbsp;<a href="../$pathname">#if($element.hasName())#if("$element.name"=="")$na#else$element.name#end#else$report.getRepresentationText($element)#end</a>#else<img src="../$report.getIconFor($element)" alt="$element.elementType" width="16" height="16">&nbsp;#if($element.hasName())$element.name#else$report.getRepresentationText($element)#end#end</span>
+#end
+#end
+#*=============================
+ * Display element's comment
+ * @param element element
+=============================*#
+#macro (comment $element)
+<table border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="heading">
+   <th align="left" colspan="2"><b>Comment</b></th>
+</tr>
+   <tr class="row">
+     <td colspan="2">$report.getComment($element)&nbsp;</td>
+   </tr>
+</table>
+<br>
+#end
+#*=============================
+ * Create Navigator bar
+ * @param home home path
+==============================*#
+#macro (navbar $home)
+<div id="header">
+<ul id="navbar">
+   <li><img src="$home/nmicon.gif" width="16" height="16" alt="nmicon"></li>
+   <li><a href="javascript:void(0)" onclick="parent.location.href = '$home/$indexFile';return false;">Home</a></li>
+   <li><a href="$home/packages.html">Packages/Models</a></li>
+   <li style="float:right; font-size: 70%"><a href="javascript:void(0)" onclick="parent.location.href = '$home/$indexFile?'+location.href;return false;">FRAMES</a> | <a href="javascript:void(0)" onclick="parent.location.href = location.href;return false;">NO FRAMES</a></li>
+</ul>
+</div>
+#end
+#*=============================
+ * Print element's visibility icon
+ * @param element element
+==============================*#
+#macro (visibilityIcon $element)
+#set ($visibility = $element.visibility)
+#if ($visibility == 'private')<code>-</code>#elseif ($visibility == 'package')<code>~</code>#elseif ($visibility == 'protected')<code>#</code>#elseif ($visibility == 'public')<code>+</code>#end
+#end
+#*=============================
+ * Print element's qualified name
+ * @param element element
+==============================*#
+#macro (qualifiedName $element)
+#if ($element.qualifiedName)$element.qualifiedName#else$empty#end
+#end
+#*=============================
+ * Get Trigger
+ * Create Icon for HTML element
+ * Create Qualified Name
+ * @param element element   
+==============================*#
+#macro (getTrigger $element)
+#acceptType($element)
+#if ($accept)
+#set ($pathname = $file.computeName($element.elementType, $element.ID, 'html'))
+#elseif ($report.isRelationship($element))
+#set ($valid = false)
+#foreach ($ele in $element.relatedElement)
+#acceptType($ele)#if ($accept)#set($valid = true)#end
+#end
+#if ($valid)#set ($pathname = $file.computeName('relation', $element.ID, 'html'))#end
+#end
+#if ($report.isNull($element))$emptyValue
+#else 
+	#if ($pathname)<a href="../$pathname"><span class="image"><img src="../$report.getIconFor($element)" alt="$element.elementType" width="16" height="16"></a><a href="../$pathname">$element.getHumanType()&nbsp;#getPreString($element)</a> 
+	#else <span class="image"><img src="../$report.getIconFor($element)" alt="$element.elementType" width="16" height="16">&nbsp;$element.getHumanName():&nbsp;#getPreString($element.getEvent())</span>
+	#end
+#end
+#end
+#*=============================
+ * Get Event
+ * Create Icon for HTML element
+ * Create Qualified Name
+ * @param element element   
+==============================*#
+#macro (getEvent $element)
+#acceptType($element)
+#if ($accept)
+#set ($pathname = $file.computeName($element.elementType, $element.ID, 'html'))
+#elseif ($report.isRelationship($element))
+#set ($valid = false)
+#foreach ($ele in $element.relatedElement)
+#acceptType($ele)#if ($accept)#set($valid = true)#end
+#end
+#if ($valid)#set ($pathname = $file.computeName('relation', $element.ID, 'html'))#end
+#end
+#if ($report.isNull($element))$emptyValue
+#else 
+	#if ($pathname)<a href="../$pathname"><span class="image"><img src="../$report.getIconFor($element)" alt="$element.elementType" width="16" height="16"></a><a href="../$pathname">$element.getHumanType()&nbsp;#getPreString($element)</a> 
+	#else <span class="image"><img src="../$report.getIconFor($element)" alt="$element.elementType" width="16" height="16">&nbsp;$element.getHumanType()&nbsp;#getPreString($element)</span>
+	#end
+#end
+#end
+#*=============================
+ * get Pre String
+ * @param element flat   
+==============================*#
+#macro (getPreString $element)
+#set($flat = $element.elementType)
+#if($flat == 'anyreceiveevent')all
+#elseif($flat == 'changeevent')when( $report.createValueSpecificationText($element.getChangeExpression()) )
+#elseif($flat == 'timeevent')#if($element.isRelative())after()#else at()#end
+#elseif($flat == 'sendoperationevent')#if(!$report.isNull($element.getOperation()))$element.getOperation().getName()()#end
+#elseif($flat == 'sendsignalevent' || $flat == 'signalevent')#if(!$report.isNull($element.getSignal()))$element.getSignal().getName()#end
+#else#if($element.hasName())#if($element.name != $empty )$element.name#end#end
+#end
+#end
+#*=============================
+ * Print Diagram
+ * @param element element  
+==============================*#
+#macro (printDiagram $element)
+#foreach ($oe in $sorter.sort($element.getOwnedDiagram(),'name'))
+<tr class="row">
+   <td>#link($oe)</td>
+   <td>$report.getDiagramType($oe)</td>
+</tr>
+#end
+#end
+#*=============================
+ * Print List
+ * @param element element  
+==============================*#
+#macro (printList $list)
+#if($report.isNull($list) || $list.isEmpty())$empty&nbsp;#else#foreach($object in $sorter.sort($list,'name'))#link($object)</br>#end#end
+#end
+#macro (printPrimitiveList $list)
+#if($report.isNull($list) || $list.isEmpty())$empty&nbsp;#else#foreach($object in $sorter.sort($list))$object</br>#end#end
+#end
+#sectionEnd

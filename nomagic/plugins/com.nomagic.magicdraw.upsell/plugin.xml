@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.upsell"
+	name="Up-Sell"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.upsell.UpSellPlugin">
+
+	<requires>
+	    <api version="1.0"/>
+		<required-plugin id="com.nomagic.magicdraw.upsellapi"	name="Up-Sell API"/>
+	</requires>
+
+	<runtime>
+		<library name="upsell_api.jar"/>
+	   <library name="upsell.jar"/>
+	</runtime>
+</plugin>

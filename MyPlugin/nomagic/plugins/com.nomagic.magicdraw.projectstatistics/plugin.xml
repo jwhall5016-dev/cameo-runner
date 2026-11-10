@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.projectstatistics"
+	
+	name="Project Statistics"
+	version="2021x Refresh1"
+	ownClassloader="false"
+	class-lookup="GlobalFirst"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.projectstatistics.ProjectStatisticsPlugin">
+
+	<requires>
+		<api version="1.2"/>
+	    
+		<required-plugin id="com.nomagic.magicdraw.ganttchartdiagram" name="Gantt Chart Diagram"/>
+		<required-plugin id="com.nomagic.magicdraw.diagramtable" name="Diagram Table"/>
+		<required-plugin id="DependencyMatrixPlugin" name="Dependency Matrix"/>
+		<required-plugin id="com.nomagic.magicdraw.visualization.relationshipmap" name="Relation Map"/>
+	</requires>
+
+	<runtime>
+		<library name="projectstatistics.jar"/>
+		<library name="projectstatistics_api.jar"/>
+	
+	</runtime>
+
+</plugin>

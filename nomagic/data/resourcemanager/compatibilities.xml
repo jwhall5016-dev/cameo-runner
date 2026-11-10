@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<compatibleResources timestamp="1619021895908">
+    <resource name="Cameo Data Modeler" version="17.0.4 SP2" compatible="false"/>
+    <resource name="SoaML Profile" version="19.0 SP2" compatible="false"/>
+    <resource name="Magic Teamcenter Connector" version="2021x" compatible="false"/>
+    <resource name="Cameo SOA+" version="18.2" compatible="false"/>
+    <resource name="UPDM" version="16.8 SP1" compatible="false"/>
+    <resource name="Magic Model Analyst" version="2021x" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.0" compatible="false"/>
+    <resource name="DoDAF Plugin" version="16.0 beta 1" compatible="false"/>
+    <resource name="ExtendIX" version="1.1" compatible="false"/>
+    <resource name="SysML" version="16.6 beta" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.5" compatible="false"/>
+    <resource name="DoDAF" version="16.5 SP2" compatible="false"/>
+    <resource name="UPDM 2" version="18.5 SP2" compatible="false"/>
+    <resource name="SysML" version="17.0.3 SP1" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP3" compatible="false"/>
+    <resource name="EstimIX" version="16.6" compatible="false"/>
+    <resource name="VeTis Business Rule Editor integration plugin for Linux 64" version="1.0 linux64" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.0 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.2 SP1" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.0.1" compatible="false"/>
+    <resource name="SysML" version="17.0.4" compatible="false"/>
+    <resource name="Testing Profile" version="16.8" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP5" compatible="false"/>
+    <resource name="MARTE 1.0 Profile" version="16.9" compatible="true"/>
+    <resource name="UPDM 2" version="17.0.4" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.4 beta" compatible="false"/>
+    <resource name="QVT" version="17.0.2" compatible="false"/>
+    <resource name="CSV Import" version="18.3" compatible="false"/>
+    <resource name="QVT" version="19.0 SP1" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.0 SP4" compatible="false"/>
+    <resource name="VeTis Business Rule Editor integration plugin for Windows 32" version="1.0 win32" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="19.0 SP3" compatible="false"/>
+    <resource name="Testing Profile" version="18.1" compatible="true"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.2 SP4" compatible="false"/>
+    <resource name="SysML" version="17.0.2 SP4" compatible="false"/>
+    <resource name="SoaML Profile" version="1.0" compatible="false"/>
+    <resource name="ParaMagic Plugin" version="16.5" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.0.1 SP3" compatible="false"/>
+    <resource name="Zachman Framework" version="17.0.2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.3" compatible="false"/>
+    <resource name="ExtendIX" version="16.6" compatible="false"/>
+    <resource name="FAS - Functional Architectures for Systems with SysML" version="18.3.1" compatible="false"/>
+    <resource name="SysML" version="17.0 SP6" compatible="false"/>
+    <resource name="SoaML Profile" version="16.9" compatible="false"/>
+    <resource name="Development Tools" version="19.0 beta" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.0" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="19.0 SP4" compatible="false"/>
+    <resource name="UPDM 2" version="18.2 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="16.8 alpha" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="19.0 SP2" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.3 beta" compatible="false"/>
+    <resource name="ParaMagic Plugin" version="16.0" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.5 SP2" compatible="false"/>
+    <resource name="UPDM 2" version="18.0 SP1" compatible="false"/>
+    <resource name="Excel Import" version="18.5 beta" compatible="false"/>
+    <resource name="UPDM 2" version="18.0 beta" compatible="false"/>
+    <resource name="SysML" version="18.5 beta" compatible="false"/>
+    <resource name="Java SE 8 Library" version="1.0" compatible="true"/>
+    <resource name="Cameo Business Modeler" version="19.0 SP1" compatible="false"/>
+    <resource name="Document Modeling" version="18.1 beta" compatible="false"/>
+    <resource name="DoDAF" version="16.8 beta" compatible="false"/>
+    <resource name="Methodology Wizards" version="19.0" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP13" compatible="false"/>
+    <resource name="TOGAF" version="17.0.1 beta 1" compatible="false"/>
+    <resource name="Java SE 7 Library" version="1.0" compatible="true"/>
+    <resource name="Cameo Simulation Toolkit" version="18.2 beta" compatible="false"/>
+    <resource name="ParaMagic Plugin" version="15.5 SP2" compatible="false"/>
+    <resource name="UPDM" version="16.8" compatible="false"/>
+    <resource name="Methodology Wizards" version="16.8" compatible="false"/>
+    <resource name="DoDAF" version="16.0 beta 2" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.4" compatible="false"/>
+    <resource name="SysML" version="17.0 SP2" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.1" compatible="false"/>
+    <resource name="ParaMagic Plugin" version="15.5 SP1" compatible="false"/>
+    <resource name="ParaMagic Lite" version="16.9" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.1" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.5 beta" compatible="false"/>
+    <resource name="Strict UML XMI Exporter" version="17.0 SP1" compatible="false"/>
+    <resource name="QVT" version="18.0 beta" compatible="false"/>
+    <resource name="DoDAF Plugin" version="15.0 beta 1" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="18.0 alpha" compatible="false"/>
+    <resource name="Cameo Safety and Reliability Analyzer" version="19.0 SP1" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.2 SP3" compatible="false"/>
+    <resource name="Methodology Wizards" version="17.0.5" compatible="false"/>
+    <resource name="Cameo SOA+" version="16.6" compatible="false"/>
+    <resource name="Resource Builder" version="1.0 alpha" compatible="false"/>
+    <resource name="Model Obfuscator" version="18.2 beta" compatible="false"/>
+    <resource name="Cameo DataHub" version="19.0" compatible="false"/>
+    <resource name="SoaML Profile" version="19.0" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP3" compatible="false"/>
+    <resource name="QVT" version="17.0.1 beta 2" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.3 beta" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.0" compatible="false"/>
+    <resource name="Pure Variants Integration" version="18.0 SP1" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.0 SP6" compatible="false"/>
+    <resource name="DoDAF Plugin" version="15.0 beta 2" compatible="false"/>
+    <resource name="Cameo Safety and Reliability Analyzer" version="19.0 beta" compatible="false"/>
+    <resource name="Nomos OCL Export" version="1.4" compatible="false"/>
+    <resource name="UPDM Plugin" version="16.5 beta 2" compatible="false"/>
+    <resource name="MagicRQ" version="15.0 SP2" compatible="false"/>
+    <resource name="Excel Import" version="19.0 SP3" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.1 beta" compatible="false"/>
+    <resource name="Cameo XSD Import" version="1.5 SP2" compatible="false"/>
+    <resource name="Product Line Engineering" version="19.0 SP4" compatible="false"/>
+    <resource name="Project element counter" version="19.0 beta" compatible="false"/>
+    <resource name="MagicRQ" version="15.0" compatible="false"/>
+    <resource name="UPDM 3" version="18.4 SP1" compatible="false"/>
+    <resource name="UPDM 2" version="18.5 SP1" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="18.0" compatible="false"/>
+    <resource name="Document Modeling" version="19.0" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="16.8" compatible="false"/>
+    <resource name="Pure Variants Integration" version="2021x" compatible="false"/>
+    <resource name="SysML" version="18.5 SP1" compatible="false"/>
+    <resource name="UAF" version="2021x" compatible="false"/>
+    <resource name="Methodology Wizards" version="17.0.1 SP1" compatible="false"/>
+    <resource name="Product Line Engineering" version="19.0" compatible="false"/>
+    <resource name="SYSMOD" version="16.9" compatible="false"/>
+    <resource name="SYSMOD" version="1.0 SP2" compatible="false"/>
+    <resource name="Alf" version="2021x" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.3" compatible="false"/>
+    <resource name="ParaMagic" version="17.0.1" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.4 SP1" compatible="false"/>
+    <resource name="Model Obfuscator" version="17.0" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.5 SP4" compatible="false"/>
+    <resource name="SYSMOD" version="1.0 SP3" compatible="false"/>
+    <resource name="DoDAF" version="16.5 SP1" compatible="false"/>
+    <resource name="Testing Profile" version="17.0.2" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.5" compatible="false"/>
+    <resource name="Methodology Wizards" version="19.0 beta" compatible="false"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="2021x" compatible="false"/>
+    <resource name="Strict UML XMI Exporter" version="17.0 SP2" compatible="false"/>
+    <resource name="Teamcenter Integration" version="19.0" compatible="false"/>
+    <resource name="Methodology Wizards" version="16.6" compatible="false"/>
+    <resource name="NIEM" version="17.0.1 beta 1" compatible="false"/>
+    <resource name="TOGAF" version="19.0 SP3" compatible="false"/>
+    <resource name="SysML" version="19.0 SP1" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.1 beta 1" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="19.0 SP1" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="2021x" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="2021x" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="19.0 beta" compatible="false"/>
+    <resource name="Development Tools" version="19.0 SP4" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.5" compatible="false"/>
+    <resource name="UPDM 2" version="18.0 SP5" compatible="false"/>
+    <resource name="UPDM" version="16.7" compatible="false"/>
+    <resource name="Alf" version="18.5 beta" compatible="false"/>
+    <resource name="UPDM" version="17.0 SP3" compatible="false"/>
+    <resource name="Methodology Wizards" version="17.0.4" compatible="false"/>
+    <resource name="Document Modeling" version="19.0 beta" compatible="false"/>
+    <resource name="Excel Import" version="18.0" compatible="false"/>
+    <resource name="UPDM 1" version="17.0.1" compatible="false"/>
+    <resource name="SysML" version="16.6 SP1" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.1 SP2" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="16.9" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.1 beta 2" compatible="false"/>
+    <resource name="DoDAF" version="16.5 SP3" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.5 beta" compatible="false"/>
+    <resource name="UPDM" version="16.9" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.4 beta" compatible="false"/>
+    <resource name="SysML" version="19.0" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.1 SP1" compatible="false"/>
+    <resource name="Teamcenter Integration" version="18.5 beta" compatible="false"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="18.5" compatible="false"/>
+    <resource name="UPDM" version="17.0" compatible="false"/>
+    <resource name="Methodology Wizards" version="17.0.1 beta 1" compatible="false"/>
+    <resource name="Model Obfuscator" version="18.2" compatible="false"/>
+    <resource name="Document Modeling" version="19.0 SP4" compatible="false"/>
+    <resource name="CSV Import" version="17.0.2 SP4" compatible="false"/>
+    <resource name="ParaMagic Plugin" version="16.6" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.5 SP3" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.0 beta" compatible="false"/>
+    <resource name="3DS Variant Management Integration" version="19.0 SP2" compatible="false"/>
+    <resource name="SysML" version="17.0.3" compatible="false"/>
+    <resource name="Cameo SOA+" version="18.3 beta" compatible="false"/>
+    <resource name="CSV Import" version="18.4 SP3" compatible="false"/>
+    <resource name="UPDM 2" version="19.0 beta" compatible="false"/>
+    <resource name="Excel Import" version="18.3" compatible="false"/>
+    <resource name="Document Modeling" version="18.2" compatible="false"/>
+    <resource name="EstimIX" version="3.0" compatible="false"/>
+    <resource name="SPEM 2.0 Plugin" version="1.0" compatible="false"/>
+    <resource name="UPDM 2" version="18.1" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP8" compatible="false"/>
+    <resource name="UPDM 3" version="18.3 beta" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.0 SP2" compatible="false"/>
+    <resource name="ParaMagic Plugin" version="15.5" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="19.0 SP1" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.0 SP5" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.2" compatible="false"/>
+    <resource name="Excel Import" version="18.0 SP3" compatible="false"/>
+    <resource name="SysML" version="17.0 SP5" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.1 beta 1" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.3" compatible="false"/>
+    <resource name="DoDAF" version="16.5" compatible="false"/>
+    <resource name="SysML" version="17.0.1 SP1" compatible="false"/>
+    <resource name="UML2 Metamodel with attributes" version="2.5" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="19.0 SP2" compatible="false"/>
+    <resource name="UPDM" version="17.0 SP2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.3 beta" compatible="false"/>
+    <resource name="QVT" version="17.0.1 beta 1" compatible="false"/>
+    <resource name="Cameo SOA+ Plugin" version="16.5" compatible="false"/>
+    <resource name="TOGAF" version="18.0" compatible="false"/>
+    <resource name="VeTis Business Rule Editor integration plugin for Linux 32" version="1.0 linux32" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.3" compatible="false"/>
+    <resource name="UPDM 3" version="18.5 SP3" compatible="false"/>
+    <resource name="SysML" version="19.0 beta" compatible="false"/>
+    <resource name="MagicRq Plugin" version="2.0 EAP beta" compatible="false"/>
+    <resource name="SoaML Profile" version="2.0" compatible="false"/>
+    <resource name="UPDM 3" version="18.5 SP1" compatible="false"/>
+    <resource name="DoDAF" version="16.0" compatible="false"/>
+    <resource name="QVT" version="19.0" compatible="false"/>
+    <resource name="LL Embedded Engineer" version="2.6" compatible="false"/>
+    <resource name="Development Tools" version="19.0 SP2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="1.0 SP1" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="1.1 beta 1" compatible="false"/>
+    <resource name="SysML" version="15.5" compatible="false"/>
+    <resource name="SysML" version="17.0.2" compatible="false"/>
+    <resource name="Document Modeling" version="18.4" compatible="false"/>
+    <resource name="UPDM 2" version="18.0 SP2" compatible="false"/>
+    <resource name="QVT" version="17.0.4 beta" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.0 SP6" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.4 beta" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.5 SP3" compatible="false"/>
+    <resource name="Alf" version="18.4 beta" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.5 SP1" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.5 beta" compatible="false"/>
+    <resource name="SysML" version="17.0 SP3" compatible="false"/>
+    <resource name="UPDM 2" version="18.2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.0 SP4" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.1" compatible="false"/>
+    <resource name="SysML" version="16.6 SP2" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="18.0 SP4" compatible="false"/>
+    <resource name="Product Line Engineering" version="18.0" compatible="false"/>
+    <resource name="Cameo Safety and Reliability Analyzer" version="19.0" compatible="false"/>
+    <resource name="UAF" version="19.0 beta" compatible="false"/>
+    <resource name="Methodology Wizards" version="16.8 beta" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.2" compatible="false"/>
+    <resource name="SysML" version="17.0.5 SP1" compatible="false"/>
+    <resource name="FAS - Functional Architectures for Systems" version="17.0.1" compatible="false"/>
+    <resource name="Enterprise Architect Import" version="18.5 SP4" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.3 beta" compatible="false"/>
+    <resource name="SysML" version="16.5 beta 1" compatible="false"/>
+    <resource name="ParaMagic Lite" version="17.0.1 beta" compatible="false"/>
+    <resource name="TOGAF" version="17.0.4" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="19.0 SP4" compatible="false"/>
+    <resource name="Development Tools" version="19.0 SP3" compatible="false"/>
+    <resource name="DoDAF" version="16.8" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.5 SP2" compatible="false"/>
+    <resource name="Enterprise Architect Import" version="2021x" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.0 SP4" compatible="false"/>
+    <resource name="SoaML Profile" version="2021x" compatible="false"/>
+    <resource name="Cameo Safety and Reliability Analyzer" version="19.0 SP2" compatible="false"/>
+    <resource name="SysML" version="17.0.4 beta" compatible="false"/>
+    <resource name="UPDM 2" version="19.0 SP1" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.3 SP1" compatible="false"/>
+    <resource name="DoDAF" version="16.9 beta" compatible="false"/>
+    <resource name="UPDM 2" version="18.5 beta" compatible="false"/>
+    <resource name="Cameo SOA+" version="18.5" compatible="false"/>
+    <resource name="UML Standard Profile with attributes for OCL" version="1.0" compatible="false"/>
+    <resource name="UPDM 2" version="18.4 SP1" compatible="false"/>
+    <resource name="Document Modeling" version="18.0 SP1" compatible="false"/>
+    <resource name="Development Tools" version="18.5 beta" compatible="false"/>
+    <resource name="DoDAF Plugin" version="15.5 beta 2" compatible="false"/>
+    <resource name="UML2 Meta Model with attributes" version="2.4" compatible="false"/>
+    <resource name="UPDM 2" version="18.0 SP4" compatible="false"/>
+    <resource name="Excel Import" version="19.0 SP1" compatible="false"/>
+    <resource name="Cameo SOA+ Plugin" version="16.5 SP1" compatible="false"/>
+    <resource name="SysML" version="16.8" compatible="false"/>
+    <resource name="UPDM 2" version="2021x" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="19.0" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP12" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.2 SP1" compatible="false"/>
+    <resource name="Model Obfuscator" version="18.3" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="18.0 SP1" compatible="false"/>
+    <resource name="SysML" version="17.0.1 SP2" compatible="false"/>
+    <resource name="Methodology Wizards" version="19.0 SP1" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP4" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP10" compatible="false"/>
+    <resource name="VeTIS" version="1.1 linux32" compatible="false"/>
+    <resource name="MagicRq Plugin" version="2.0 SP1" compatible="false"/>
+    <resource name="Excel Import" version="18.5" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.5 SP3" compatible="false"/>
+    <resource name="Pure Variants Integration" version="19.0 SP3" compatible="false"/>
+    <resource name="MDZipX Publisher" version="19.0 SP2" compatible="false"/>
+    <resource name="CameoMDA" version="16.9 beta" compatible="false"/>
+    <resource name="SysML" version="18.0 SP4" compatible="false"/>
+    <resource name="MagicRQ" version="14.0 beta1" compatible="false"/>
+    <resource name="Magic Alf Analyst" version="19.0 SP3" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="2021x" compatible="false"/>
+    <resource name="Excel Import" version="18.2" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.3 beta" compatible="false"/>
+    <resource name="Excel Import" version="18.0 SP5" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="1.0" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP2" compatible="false"/>
+    <resource name="Excel Import" version="18.1" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.6 SP1" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="19.0 SP1" compatible="false"/>
+    <resource name="QVT" version="19.0 SP4" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="19.0 beta" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="1.0 beta" compatible="false"/>
+    <resource name="Intel CoFluent Studio" version="2.2" compatible="false"/>
+    <resource name="Magic Teamcenter Connector" version="19.0 SP2" compatible="false"/>
+    <resource name="SPEM_Profile" version="16.6" compatible="true"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="19.0 SP4" compatible="false"/>
+    <resource name="DSL Sample" version="16.6" compatible="true"/>
+    <resource name="Methodology Wizards" version="17.0.5 beta" compatible="false"/>
+    <resource name="CSV Import" version="18.4 SP2" compatible="false"/>
+    <resource name="AutoStyler" version="19.0" compatible="false"/>
+    <resource name="Product Line Engineering" version="19.0 SP1" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.4" compatible="false"/>
+    <resource name="Document Modeling" version="18.0 SP3" compatible="false"/>
+    <resource name="QVT" version="18.0 SP3" compatible="false"/>
+    <resource name="UPDM 2" version="19.0 SP3" compatible="false"/>
+    <resource name="SysML" version="18.0 SP6" compatible="false"/>
+    <resource name="Cameo Inter-Op Plugin" version="19.0" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.0 SP2" compatible="false"/>
+    <resource name="UPDM 3" version="18.5" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="19.0 SP4" compatible="false"/>
+    <resource name="Cameo Safety and Reliability Analyzer" version="18.0 SP2" compatible="false"/>
+    <resource name="SysML" version="16.9 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="16.9 beta" compatible="false"/>
+    <resource name="UPDM 3" version="18.4" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.2" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="19.0" compatible="false"/>
+    <resource name="MARTE 1.1 Profile" version="17.0" compatible="false"/>
+    <resource name="SysML" version="18.5" compatible="false"/>
+    <resource name="Cameo XSD Import" version="1.1" compatible="false"/>
+    <resource name="SysML" version="18.1 beta" compatible="false"/>
+    <resource name="Methodology Wizards" version="17.0.3 beta" compatible="false"/>
+    <resource name="SysML" version="17.0.2 SP1" compatible="false"/>
+    <resource name="Teamcenter Integration" version="19.0 SP3" compatible="false"/>
+    <resource name="MagicRQ" version="14.0" compatible="false"/>
+    <resource name="UML 2.5.1 Migrator" version="19.0 SP4" compatible="false"/>
+    <resource name="Resource Builder" version="1.0" compatible="false"/>
+    <resource name="Methodology Wizards" version="17.0.4 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="19.0 SP3" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="19.0 SP2" compatible="false"/>
+    <resource name="Document Modeling" version="18.2 beta" compatible="false"/>
+    <resource name="Methodology Wizards" version="15.5" compatible="false"/>
+    <resource name="UPDM Plugin" version="16.5" compatible="false"/>
+    <resource name="DoDAF" version="16.9" compatible="false"/>
+    <resource name="Strict UML XMI Exporter" version="17.0" compatible="false"/>
+    <resource name="Pure Variants Integration" version="18.0 beta" compatible="false"/>
+    <resource name="Cameo SOA+" version="18.4 beta" compatible="false"/>
+    <resource name="Teamcenter Integration" version="19.0 SP2" compatible="false"/>
+    <resource name="Magic Alf Analyst" version="19.0 SP2" compatible="false"/>
+    <resource name="SysML" version="18.0 beta" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.3" compatible="false"/>
+    <resource name="Model Obfuscator" version="17.0.2" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.3" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.5 SP4" compatible="false"/>
+    <resource name="SoaML Profile" version="17.0.1" compatible="false"/>
+    <resource name="SysML" version="18.2 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.2 beta" compatible="false"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="19.0 beta" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.4" compatible="false"/>
+    <resource name="Cameo DataHub" version="19.0 beta" compatible="false"/>
+    <resource name="Model Obfuscator" version="18.4 beta" compatible="false"/>
+    <resource name="SysML" version="17.0.5 beta" compatible="false"/>
+    <resource name="SysML" version="15.5 beta 2" compatible="false"/>
+    <resource name="EstimIX" version="2.2" compatible="false"/>
+    <resource name="SysML" version="19.0 SP3" compatible="false"/>
+    <resource name="SysML" version="2021x" compatible="false"/>
+    <resource name="Magic Model Analyst" version="19.0 SP2" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.0 beta" compatible="false"/>
+    <resource name="Excel Import" version="18.5 SP1" compatible="false"/>
+    <resource name="Magic Alf Analyst" version="2021x" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.5 SP3" compatible="false"/>
+    <resource name="CameoMDA" version="16.8" compatible="false"/>
+    <resource name="UPDM 2" version="18.0 SP3" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0 beta" compatible="false"/>
+    <resource name="NIEM" version="17.0.2" compatible="false"/>
+    <resource name="DoDAF Plugin" version="2.1 beta 2" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.0 SP3" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.1 SP1" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.1" compatible="false"/>
+    <resource name="SPEM_Profile" version="1.0" compatible="false"/>
+    <resource name="Cameo OCL Transformer" version="2.0" compatible="false"/>
+    <resource name="FAS - Functional Architectures for Systems with SysML" version="18.0" compatible="false"/>
+    <resource name="TOGAF" version="17.0" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.2 SP1" compatible="false"/>
+    <resource name="SysML" version="17.0.2 SP3" compatible="false"/>
+    <resource name="Alf" version="19.0 SP3" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.3" compatible="false"/>
+    <resource name="Cameo DataHub" version="19.0 SP3" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.4" compatible="false"/>
+    <resource name="Cameo DataHub" version="19.0 SP4" compatible="false"/>
+    <resource name="SPEM_Profile" version="1.1" compatible="false"/>
+    <resource name="Cameo OCL Transformer" version="2.0 SP1" compatible="false"/>
+    <resource name="Project element counter" version="17.0.1" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.2" compatible="false"/>
+    <resource name="Alf" version="19.0 SP2" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.0 SP1" compatible="false"/>
+    <resource name="SysML" version="18.5 SP2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="19.0 SP2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.5 SP2" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP11" compatible="false"/>
+    <resource name="Testing Profile" version="16.6" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.1 beta" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.4" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.0 beta" compatible="false"/>
+    <resource name="Information System for Training Organization" version="17.0.2" compatible="false"/>
+    <resource name="TOGAF" version="17.0.1 beta 2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.4" compatible="false"/>
+    <resource name="LL Embedded Engineer" version="1.0" compatible="false"/>
+    <resource name="Excel Import" version="18.0 beta" compatible="false"/>
+    <resource name="SysML" version="16.0 beta 2" compatible="false"/>
+    <resource name="UPDM 2" version="19.0 SP2" compatible="false"/>
+    <resource name="MagicRQ" version="15.0 SP1" compatible="false"/>
+    <resource name="Pure Variants Integration" version="19.0" compatible="false"/>
+    <resource name="SysML" version="17.0 SP1" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.5" compatible="false"/>
+    <resource name="Excel Import" version="18.1 beta" compatible="false"/>
+    <resource name="LL Embedded Engineer" version="1.1" compatible="false"/>
+    <resource name="UPDM 2" version="19.0 SP4" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP5" compatible="false"/>
+    <resource name="ParaMagic Lite" version="17.0.1" compatible="false"/>
+    <resource name="CSV Import" version="18.4 SP1" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="19.0" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.0 SP3" compatible="false"/>
+    <resource name="SPEM 2.0 Plugin" version="16.8" compatible="true"/>
+    <resource name="Cameo Simulation Toolkit" version="18.0 SP2" compatible="false"/>
+    <resource name="VeTIS" version="1.1 win32" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="19.0 beta" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.3 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.0 SP3" compatible="false"/>
+    <resource name="Cameo SOA+ Plugin" version="16.0 beta 1" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.2 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.0" compatible="false"/>
+    <resource name="SYSMOD" version="17.0.1" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.1" compatible="false"/>
+    <resource name="ParaMagic Lite" version="18.0 beta" compatible="false"/>
+    <resource name="AutoStyler" version="19.0 SP3" compatible="false"/>
+    <resource name="UPDM 1" version="17.0.2 beta" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.4 beta" compatible="false"/>
+    <resource name="Magic Model Analyst" version="19.0 SP4" compatible="false"/>
+    <resource name="UAF" version="19.0 SP4" compatible="false"/>
+    <resource name="SysML" version="16.0 SP1" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.4 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.0 SP4" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.5 beta" compatible="false"/>
+    <resource name="Cameo Data Modeler Plugin" version="16.6" compatible="false"/>
+    <resource name="Cameo SOA+" version="16.9" compatible="false"/>
+    <resource name="SysML" version="16.5 SP1" compatible="false"/>
+    <resource name="Zachman Framework" version="19.0 SP1" compatible="true"/>
+    <resource name="TOGAF" version="17.0.1" compatible="false"/>
+    <resource name="Cameo Inter-Op Plugin" version="18.5" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="19.0 SP4" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.2 beta" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 beta" compatible="false"/>
+    <resource name="Enterprise Architect Import" version="19.0 SP3" compatible="false"/>
+    <resource name="Enterprise Architect Import" version="18.0 SP7" compatible="false"/>
+    <resource name="Magic Model Analyst" version="19.0 SP3" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP7" compatible="false"/>
+    <resource name="ParaMagic Lite" version="18.0" compatible="false"/>
+    <resource name="SysML" version="19.0 SP2" compatible="false"/>
+    <resource name="MARTE 1.0 Profile" version="16.8" compatible="false"/>
+    <resource name="UAF" version="19.0 SP3" compatible="false"/>
+    <resource name="GNU common C++" version="1.1" compatible="true"/>
+    <resource name="Methodology Wizards" version="17.0" compatible="false"/>
+    <resource name="ParaMagic" version="18.0 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.5" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="19.0 SP2" compatible="false"/>
+    <resource name="Magic Alf Analyst" version="19.0 SP4" compatible="false"/>
+    <resource name="SysML" version="18.5 SP3" compatible="false"/>
+    <resource name="EstimIX" version="2.0" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0 SP1" compatible="false"/>
+    <resource name="MARTE 1.0 Profile" version="16.5" compatible="false"/>
+    <resource name="Enterprise Architect Import" version="19.0 SP4" compatible="false"/>
+    <resource name="DSL Sample" version="1.0" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.1 SP2" compatible="false"/>
+    <resource name="CSV Import" version="17.0.2 SP6" compatible="false"/>
+    <resource name="UML 2.5.1 Migrator" version="19.0 beta" compatible="false"/>
+    <resource name="CSV Import" version="18.0" compatible="false"/>
+    <resource name="UML 2.5.1 Migrator" version="19.0 SP3" compatible="false"/>
+    <resource name="Document Modeling" version="18.4 beta" compatible="false"/>
+    <resource name="Testing Profile" version="16.9" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP6" compatible="false"/>
+    <resource name="SysML" version="17.0.1" compatible="false"/>
+    <resource name="Excel Import" version="19.0" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.0 SP3" compatible="false"/>
+    <resource name="Excel Import" version="19.0 SP4" compatible="false"/>
+    <resource name="Model Obfuscator" version="18.4" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP9" compatible="false"/>
+    <resource name="Alf" version="19.0 SP4" compatible="false"/>
+    <resource name="SPEM 2.0 Plugin" version="16.6" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.2 beta" compatible="false"/>
+    <resource name="SysML" version="16.0" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.2" compatible="false"/>
+    <resource name="Zachman Framework" version="19.0" compatible="false"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="19.0 SP1" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.1 beta" compatible="false"/>
+    <resource name="ISO 26262 Functional Safety" version="19.0 SP4" compatible="false"/>
+    <resource name="SysML" version="18.4 beta" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP10" compatible="false"/>
+    <resource name="ParaMagic Lite" version="16.8" compatible="false"/>
+    <resource name="SysML" version="16.5 SP3" compatible="false"/>
+    <resource name="QVT" version="18.1" compatible="false"/>
+    <resource name="SysML" version="18.1" compatible="false"/>
+    <resource name="Information System for Training Organization" version="18.1" compatible="false"/>
+    <resource name="SysML" version="16.9" compatible="false"/>
+    <resource name="UPDM 3" version="18.3" compatible="false"/>
+    <resource name="UPDM" version="17.0 SP1" compatible="false"/>
+    <resource name="UPDM 1" version="17.0.1 SP1" compatible="false"/>
+    <resource name="Project element counter" version="19.0" compatible="false"/>
+    <resource name="UPDM Plugin" version="16.5 SP1" compatible="false"/>
+    <resource name="SysML" version="18.3 beta" compatible="false"/>
+    <resource name="MagicRQ" version="14.0 SP1" compatible="false"/>
+    <resource name="Methodology Wizards" version="17.0.2" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.5 beta" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.2 beta" compatible="false"/>
+    <resource name="QVT" version="17.0.1 SP1" compatible="false"/>
+    <resource name="VeTIS" version="1.1 linux64" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.4 beta" compatible="false"/>
+    <resource name="Cameo Safety and Reliability Analyzer" version="2021x" compatible="false"/>
+    <resource name="SysML" version="15.5 SP1" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.1" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.4" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.0 SP5" compatible="false"/>
+    <resource name="VeTis Business Rule Editor integration plugin for Windows 64" version="1.0 win64" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.5 SP2" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.5 SP1" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="19.0 beta" compatible="false"/>
+    <resource name="Zachman Framework" version="1.3" compatible="false"/>
+    <resource name="DoDAF" version="16.6 beta" compatible="false"/>
+    <resource name="Methodology Wizards" version="17.0.1" compatible="false"/>
+    <resource name="Product Line Engineering" version="19.0 SP2" compatible="false"/>
+    <resource name="ParaMagic" version="17.0.1 beta" compatible="false"/>
+    <resource name="MagicRq Plugin" version="1.0" compatible="false"/>
+    <resource name="Cameo E2E Builder" version="18.0" compatible="false"/>
+    <resource name="Model Obfuscator" version="18.0 SP4" compatible="false"/>
+    <resource name="TOGAF" version="17.0.2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.2" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP4" compatible="false"/>
+    <resource name="Nomos XSD Import" version="1.4" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.0 beta" compatible="false"/>
+    <resource name="Working with modules" version="1.1" compatible="true"/>
+    <resource name="UAF" version="19.0 SP1" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.6" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP8" compatible="false"/>
+    <resource name="QVT" version="17.0.1" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.2 beta" compatible="false"/>
+    <resource name="VeTis Business Rule Editor integration plugin for MAC'OS" version="1.0 mac" compatible="false"/>
+    <resource name="UAF" version="19.0" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.4 beta" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.4" compatible="false"/>
+    <resource name="Document Modeling" version="18.5 beta" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.1 SP1" compatible="false"/>
+    <resource name="Development Tools" version="2021x" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP13" compatible="false"/>
+    <resource name="MagicRq Plugin" version="2.0 SP2" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.3 beta" compatible="false"/>
+    <resource name="MFC" version="2.1" compatible="true"/>
+    <resource name="Cameo SOA+" version="17.0.5" compatible="false"/>
+    <resource name="RM-ODP Plugin" version="1.0.0" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.5 beta" compatible="false"/>
+    <resource name="Development Tools" version="18.2" compatible="false"/>
+    <resource name="UPDM 2" version="18.0 SP6" compatible="false"/>
+    <resource name="RM-ODP Plugin" version="0.9.1" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP9" compatible="false"/>
+    <resource name="DoDAF" version="16.6" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.5 SP2" compatible="false"/>
+    <resource name="Methodology Wizards" version="19.0 SP2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="2021x" compatible="false"/>
+    <resource name="Model Obfuscator" version="17.0.5" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.3" compatible="false"/>
+    <resource name="SysML" version="16.6" compatible="false"/>
+    <resource name="Cameo DataHub" version="2021x" compatible="false"/>
+    <resource name="NIEM" version="18.0" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.1 SP1" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.5 SP1" compatible="false"/>
+    <resource name="Excel Import" version="18.3 beta" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.2 beta" compatible="false"/>
+    <resource name="SysML" version="18.3" compatible="false"/>
+    <resource name="Excel Import" version="18.3 SP1" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.3 beta" compatible="false"/>
+    <resource name="DoDAF" version="16.5 beta 2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="19.0" compatible="false"/>
+    <resource name="MagicRq Plugin" version="1.1" compatible="false"/>
+    <resource name="Resource Builder" version="16.9" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="19.0" compatible="false"/>
+    <resource name="Simulink and Modelica Transformation" version="19.0 SP2" compatible="false"/>
+    <resource name="SysML" version="16.5" compatible="false"/>
+    <resource name="Model Obfuscator" version="18.5" compatible="false"/>
+    <resource name="SoaML Profile" version="17.0.1 beta 1" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="2021x" compatible="false"/>
+    <resource name="Cameo SOA+" version="16.8 beta" compatible="false"/>
+    <resource name="ParaMagic Plugin" version="15.5 b1" compatible="false"/>
+    <resource name="UPDM 1" version="17.0.1 SP2" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="19.0 SP4" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.0.1 SP2" compatible="false"/>
+    <resource name="CSV Import" version="18.0 SP2" compatible="false"/>
+    <resource name="Development Tools" version="19.0" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.0" compatible="false"/>
+    <resource name="SysML" version="17.0 SP7" compatible="false"/>
+    <resource name="Excel Import" version="18.4 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.4 beta" compatible="false"/>
+    <resource name="SysML" version="16.5 beta 2" compatible="false"/>
+    <resource name="Document Modeling" version="18.3" compatible="false"/>
+    <resource name="Cameo SOA+" version="18.4" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.2" compatible="false"/>
+    <resource name="ParaMagic" version="16.9" compatible="false"/>
+    <resource name="Development Tools" version="18.4 beta" compatible="false"/>
+    <resource name="Product Line Engineering" version="18.0 SP1" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0 SP2" compatible="false"/>
+    <resource name="Java 6.0 Profile" version="1.0" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0 beta" compatible="false"/>
+    <resource name="SysML" version="18.0 SP5" compatible="false"/>
+    <resource name="SoaML Profile" version="19.0 SP1" compatible="false"/>
+    <resource name="QVT" version="19.0 SP2" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="18.0 SP3" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.1 beta 2" compatible="false"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="19.0 SP2" compatible="false"/>
+    <resource name="Intel CoFluent Studio" version="2.0" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="19.0" compatible="false"/>
+    <resource name="CSV Import" version="18.0 beta" compatible="false"/>
+    <resource name="UPDM 2" version="19.0" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 beta" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.0 SP2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.2 SP3" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.5 SP2" compatible="false"/>
+    <resource name="SoaML Profile" version="17.0.2" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="19.0 SP4" compatible="false"/>
+    <resource name="Magic Teamcenter Connector" version="19.0 SP3" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.1" compatible="false"/>
+    <resource name="Excel Import" version="19.0 beta" compatible="false"/>
+    <resource name="QVT" version="18.0" compatible="false"/>
+    <resource name="Methodology Wizards" version="17.0.1 beta 2" compatible="false"/>
+    <resource name="Testing Profile" version="18.0" compatible="true"/>
+    <resource name="Document Modeling" version="18.0 beta" compatible="false"/>
+    <resource name="SoaML Profile" version="19.0 SP3" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.5 SP2" compatible="false"/>
+    <resource name="Project xmi exporter" version="1.0" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.4 SP2" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="19.0 SP1" compatible="false"/>
+    <resource name="DoDAF Plugin" version="2.0" compatible="false"/>
+    <resource name="QVT" version="17.0.4" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.3" compatible="false"/>
+    <resource name="CPU Memory Profiler" version="17.0" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.1 beta 1" compatible="false"/>
+    <resource name="CSV Import" version="18.0 SP1" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP2" compatible="false"/>
+    <resource name="Cameo XSD Import" version="1.5 SP1" compatible="false"/>
+    <resource name="SysML" version="18.0 SP2" compatible="false"/>
+    <resource name="CSV Import" version="18.4" compatible="false"/>
+    <resource name="DoDAF Plugin" version="15.5 beta 1" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.0 SP5" compatible="false"/>
+    <resource name="Magic Teamcenter Connector" version="19.0 SP4" compatible="false"/>
+    <resource name="Product Line Engineering" version="19.0 beta" compatible="false"/>
+    <resource name="AutoStyler" version="19.0 SP2" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.5" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.4 SP1" compatible="false"/>
+    <resource name="UML 2.5.1 Migrator" version="19.0 SP2" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.5 SP1" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.5" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.1 beta 2" compatible="false"/>
+    <resource name="UPDM 2" version="18.5" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="1.1 beta 2" compatible="false"/>
+    <resource name="SysML" version="17.0.1 beta 1" compatible="false"/>
+    <resource name="UPDM 2" version="18.5 SP3" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="16.8" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0" compatible="false"/>
+    <resource name="CSV Import" version="2021x" compatible="false"/>
+    <resource name="SysML" version="17.0.3 beta" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.2 SP3" compatible="false"/>
+    <resource name="Teamcenter Integration" version="19.0 SP4" compatible="false"/>
+    <resource name="TOGAF" version="19.0" compatible="false"/>
+    <resource name="Product Line Engineering" version="2021x" compatible="false"/>
+    <resource name="ParaMagic Plugin" version="15.5 a1" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.4 beta" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.0 SP1" compatible="false"/>
+    <resource name="SysML" version="18.0 SP1" compatible="false"/>
+    <resource name="Alf" version="18.5 SP2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.5 beta" compatible="false"/>
+    <resource name="AutoStyler" version="19.0 SP1" compatible="false"/>
+    <resource name="Pure Variants Integration" version="19.0 SP1" compatible="false"/>
+    <resource name="CSV Import" version="17.0.2 SP3" compatible="false"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="18.5 SP2" compatible="false"/>
+    <resource name="NIEM" version="v17.0.2 SP1" compatible="false"/>
+    <resource name="Cameo Data Modeler Plugin" version="16.5" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="19.0 SP3" compatible="false"/>
+    <resource name="Model Obfuscator" version="19.0 beta" compatible="false"/>
+    <resource name="Testing Profile" version="1.0" compatible="false"/>
+    <resource name="DoDAF" version="16.5 beta 1" compatible="false"/>
+    <resource name="SoaML Profile" version="16.6" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.1 SP1" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP1" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.0 SP6" compatible="false"/>
+    <resource name="ISO 26262 Functional Safety" version="19.0 SP3" compatible="false"/>
+    <resource name="ParaMagic" version="18.0" compatible="false"/>
+    <resource name="Cameo eWork" version="17.0.4" compatible="false"/>
+    <resource name="DoDAF Plugin" version="2.1" compatible="false"/>
+    <resource name="ExtendIX" version="2.0" compatible="false"/>
+    <resource name="Product Line Engineering" version="18.0 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.3 beta" compatible="false"/>
+    <resource name="Methodology Wizards" version="19.0 SP3" compatible="false"/>
+    <resource name="UPDM 2" version="18.0" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.5 SP3" compatible="false"/>
+    <resource name="Methodology Wizards" version="16.5" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.3 SP1" compatible="false"/>
+    <resource name="Document Modeling" version="18.0 SP4" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="19.0 SP1" compatible="false"/>
+    <resource name="AutoStyler" version="2021x" compatible="false"/>
+    <resource name="ExtendIX" version="1.4" compatible="false"/>
+    <resource name="SysML" version="17.0" compatible="false"/>
+    <resource name="Model Obfuscator" version="19.0" compatible="false"/>
+    <resource name="CSV Import" version="17.0.2 SP5" compatible="false"/>
+    <resource name="Cameo SOA+ Plugin" version="16.5 SP2" compatible="false"/>
+    <resource name="UAF" version="19.0 SP2" compatible="false"/>
+    <resource name="ParaMagic Lite" version="17.0" compatible="false"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="19.0 SP3" compatible="false"/>
+    <resource name="SysML" version="17.0 beta" compatible="false"/>
+    <resource name="Excel Import" version="18.0 SP4" compatible="false"/>
+    <resource name="UPDM 3" version="18.5 SP2" compatible="false"/>
+    <resource name="Model Obfuscator" version="1.0" compatible="false"/>
+    <resource name="Teamcenter Integration" version="19.0 beta" compatible="false"/>
+    <resource name="MagicRq Plugin" version="2.0" compatible="false"/>
+    <resource name="Product Line Engineering" version="19.0 SP3" compatible="false"/>
+    <resource name="Document Modeling" version="18.0 SP2" compatible="false"/>
+    <resource name="Alf" version="18.5" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.2 SP1" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="18.0 SP2" compatible="false"/>
+    <resource name="Cameo XSD Import" version="1.5 SP3" compatible="false"/>
+    <resource name="ParaMagic" version="16.8" compatible="false"/>
+    <resource name="SysML" version="19.0 SP4" compatible="false"/>
+    <resource name="Cameo Safety and Reliability Analyzer" version="18.0 SP1" compatible="false"/>
+    <resource name="Cameo XSD Import" version="1.4" compatible="false"/>
+    <resource name="Model Obfuscator" version="18.5 beta" compatible="false"/>
+    <resource name="J2ME - Java Wireless Toolkit 2.5" version="16.6" compatible="true"/>
+    <resource name="Model Obfuscator" version="2021x" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0" compatible="false"/>
+    <resource name="SysML" version="18.2" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.2 beta" compatible="false"/>
+    <resource name="MagicRq Plugin" version="1.1 SP1" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.1" compatible="false"/>
+    <resource name="AutoStyler" version="18.0 SP7" compatible="false"/>
+    <resource name="NIEM" version="18.0 SP1" compatible="false"/>
+    <resource name="SysML" version="17.0.1 beta 2" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.1" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="19.0 beta" compatible="false"/>
+    <resource name="UPDM 2" version="18.1 beta" compatible="false"/>
+    <resource name="Zachman Framework" version="17.0.4" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.0 SP1" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="19.0 SP3" compatible="false"/>
+    <resource name="Development Tools" version="18.5" compatible="false"/>
+    <resource name="DoDAF Plugin" version="15.5" compatible="false"/>
+    <resource name="Cameo Data Modeler Plugin" version="16.6 beta" compatible="false"/>
+    <resource name="UPDM 1" version="17.0.2" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.0" compatible="false"/>
+    <resource name="J2ME - Java Wireless Toolkit 2.5" version="1.0" compatible="false"/>
+    <resource name="SysML" version="18.0 SP3" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.5 SP1" compatible="false"/>
+    <resource name="MagicRQ (Windows only)" version="16.0 SP5" compatible="false"/>
+    <resource name="Cameo SOA+" version="16.8" compatible="false"/>
+    <resource name="SysML" version="17.0.2 beta" compatible="false"/>
+    <resource name="Alf" version="18.5 SP1" compatible="false"/>
+    <resource name="Information System for Training Organization" version="18.0" compatible="false"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="18.5 SP1" compatible="false"/>
+    <resource name="UPDM" version="17.0 beta" compatible="false"/>
+    <resource name="SysML" version="16.5 SP2" compatible="false"/>
+    <resource name="SysML" version="16.8 beta" compatible="false"/>
+    <resource name="SYSMOD" version="17.0.2" compatible="false"/>
+    <resource name="Excel Import" version="18.0 SP2" compatible="false"/>
+    <resource name="MagicRq Plugin" version="1.0 SP1" compatible="false"/>
+    <resource name="Zachman Framework" version="1.2" compatible="false"/>
+    <resource name="UPDM 2" version="18.4" compatible="false"/>
+    <resource name="SysML" version="16.9 SP1" compatible="false"/>
+    <resource name="LL Embedded Engineer" version="2.5" compatible="false"/>
+    <resource name="Methodology Wizards" version="16.0" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.1 beta" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.3 beta" compatible="false"/>
+    <resource name="QVT" version="18.2" compatible="false"/>
+    <resource name="SYSMOD" version="1.0" compatible="false"/>
+    <resource name="UPDM 3" version="18.5 beta" compatible="false"/>
+    <resource name="Excel Import" version="18.4" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="18.0 beta" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.4 beta" compatible="false"/>
+    <resource name="Alf" version="18.3 beta" compatible="false"/>
+    <resource name="Development Tools" version="18.5 SP2" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.5 SP1" compatible="false"/>
+    <resource name="SysML" version="18.0" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="19.0 SP3" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="19.0 SP2" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.1 beta" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.0.1 SP4" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="17.0.3" compatible="false"/>
+    <resource name="TOGAF" version="17.0 SP1" compatible="false"/>
+    <resource name="Document Modeling" version="18.5" compatible="false"/>
+    <resource name="SysML" version="18.4 SP1" compatible="false"/>
+    <resource name="Document Modeling" version="18.0" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.5 beta" compatible="false"/>
+    <resource name="UPDM 3" version="18.4 beta" compatible="false"/>
+    <resource name="AutoStyler" version="18.0" compatible="false"/>
+    <resource name="MARTE 1.0 Profile" version="16.6" compatible="false"/>
+    <resource name="Pure Variants Integration" version="19.0 SP2" compatible="false"/>
+    <resource name="Cameo Data Modeler Plugin" version="16.5 SP1" compatible="false"/>
+    <resource name="Alf" version="19.0 SP1" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="18.4 SP1" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.2 beta" compatible="false"/>
+    <resource name="UPDM 2" version="18.3" compatible="false"/>
+    <resource name="ExtendIX" version="1.2" compatible="false"/>
+    <resource name="UML Standard Profile with attributes for OCL" version="1.1" compatible="false"/>
+    <resource name="TOGAF" version="17.0.2 beta" compatible="false"/>
+    <resource name="ParaMagic" version="17.0.2" compatible="false"/>
+    <resource name="DoDAF Plugin" version="2.1 SP1" compatible="false"/>
+    <resource name="Development Tools" version="18.4" compatible="false"/>
+    <resource name="DoDAF Plugin" version="2.0 EAP beta" compatible="false"/>
+    <resource name="Development Tools" version="18.3" compatible="false"/>
+    <resource name="Cameo DataHub" version="19.0 SP1" compatible="false"/>
+    <resource name="MagicRQ" version="14.0 SP2" compatible="false"/>
+    <resource name="Model Obfuscator" version="18.3 beta" compatible="false"/>
+    <resource name="CameoMDA" version="16.9" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.5 SP3" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="2021x" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.5" compatible="false"/>
+    <resource name="ParaMagic" version="17.0" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP12" compatible="false"/>
+    <resource name="SysML" version="18.4" compatible="false"/>
+    <resource name="Cameo eWork" version="17.0.2 beta" compatible="false"/>
+    <resource name="ParaMagic Plugin" version="16.6 SP1" compatible="false"/>
+    <resource name="Cameo SOA+" version="17.0.2" compatible="false"/>
+    <resource name="Zachman Framework" version="1.1" compatible="false"/>
+    <resource name="Alf" version="19.0" compatible="false"/>
+    <resource name="Model Obfuscator" version="18.5 SP2" compatible="false"/>
+    <resource name="Model Obfuscator" version="19.0 SP4" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.5 beta" compatible="false"/>
+    <resource name="DoDAF Plugin" version="2.1 beta 1" compatible="false"/>
+    <resource name="Simulation Toolkit" version="1.1" compatible="false"/>
+    <resource name="QVT" version="19.0 SP3" compatible="false"/>
+    <resource name="Document Modeling" version="18.3 beta" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.5 beta" compatible="false"/>
+    <resource name="ParaMagic" version="17.0.2 beta" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.4 beta" compatible="false"/>
+    <resource name="Cameo Collaborator Publisher" version="18.0 SP5" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.1" compatible="false"/>
+    <resource name="DoDAF Plugin" version="2.0 SP1" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.5" compatible="false"/>
+    <resource name="Cameo Safety and Reliability Analyzer" version="19.0 SP3" compatible="false"/>
+    <resource name="SYSMOD" version="18.4" compatible="false"/>
+    <resource name="Pure Variants Integration" version="19.0 SP4" compatible="false"/>
+    <resource name="TOGAF" version="19.0 SP4" compatible="false"/>
+    <resource name="Methodology Wizards" version="18.4" compatible="false"/>
+    <resource name="SysML" version="17.0 SP4" compatible="false"/>
+    <resource name="Nomos XSD Import" version="1.4 SP1" compatible="false"/>
+    <resource name="Cameo Safety and Reliability Analyzer" version="18.0" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.2" compatible="false"/>
+    <resource name="Development Tools" version="18.3 beta" compatible="false"/>
+    <resource name="TOGAF" version="2021x" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="18.5 SP1" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.1 beta 2" compatible="false"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="19.0" compatible="false"/>
+    <resource name="ParaMagic Lite" version="17.0.2 beta" compatible="false"/>
+    <resource name="Cameo SOA+" version="18.5 beta" compatible="false"/>
+    <resource name="Cameo Business Modeler" version="18.2" compatible="false"/>
+    <resource name="ParaMagic Lite" version="17.0.2" compatible="false"/>
+    <resource name="DoDAF Plugin" version="15.0" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.5" compatible="false"/>
+    <resource name="Document Modeling" version="19.0 SP3" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="16.8 beta" compatible="false"/>
+    <resource name="Cameo Simulation Toolkit" version="17.0.4 SP2" compatible="false"/>
+    <resource name="Alf" version="19.0 beta" compatible="false"/>
+    <resource name="UML Standard Profile with attributes for OCL" version="2.3" compatible="false"/>
+    <resource name="Methodology Wizards" version="17.0.3" compatible="false"/>
+    <resource name="UPDM" version="16.6 beta 1" compatible="false"/>
+    <resource name="DSL Sample" version="2.0" compatible="false"/>
+    <resource name="DoDAF Plugin" version="2.1 SP2" compatible="false"/>
+    <resource name="SoaML Profile" version="16.8" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP11" compatible="false"/>
+    <resource name="SysML" version="16.0 beta 1" compatible="false"/>
+    <resource name="UPDM 2" version="18.3 beta" compatible="false"/>
+    <resource name="Cameo Requirements Modeler" version="18.2" compatible="false"/>
+    <resource name="Excel Import" version="18.2 beta" compatible="false"/>
+    <resource name="SysML" version="17.0.5" compatible="false"/>
+    <resource name="Cameo DataHub" version="19.0 SP2" compatible="false"/>
+    <resource name="UML 2.5.1 Migrator" version="19.0" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.4" compatible="false"/>
+    <resource name="Intel CoFluent Studio" version="2.1" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.3" compatible="false"/>
+    <resource name="AutoStyler" version="19.0 SP4" compatible="false"/>
+    <resource name="UML2.5.1 Metamodel with attributes" version="2.5.1" compatible="true"/>
+    <resource name="Pure Variants Integration" version="18.0" compatible="false"/>
+    <resource name="Cameo DataHub" version="18.5" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="18.0 SP6" compatible="false"/>
+    <resource name="UPDM Plugin" version="16.5 beta 3" compatible="false"/>
+    <resource name="Document Modeling" version="18.1" compatible="false"/>
+    <resource name="Methodology Wizards" version="19.0 SP4" compatible="false"/>
+    <resource name="Excel Import" version="19.0 SP2" compatible="false"/>
+    <resource name="QVT" version="19.0 beta" compatible="false"/>
+    <resource name="SPEM 2.0 Plugin" version="16.9" compatible="true"/>
+    <resource name="Cameo Data Modeler" version="19.0 SP3" compatible="false"/>
+    <resource name="Cameo Data Modeler" version="17.0.2 SP3" compatible="false"/>
+    <resource name="UPDM" version="16.6" compatible="false"/>
+    <resource name="ISO 26262 Functional Safety" version="2021x" compatible="false"/>
+    <resource name="UPDM" version="16.9 beta" compatible="false"/>
+    <resource name="UPDM" version="16.8 beta" compatible="false"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="18.5 SP3" compatible="false"/>
+    <resource name="Cameo Safety and Reliability Analyzer" version="19.0 SP4" compatible="false"/>
+    <resource name="Pure Variants Integration" version="19.0 beta" compatible="false"/>
+    <resource name="UPDM 2" version="18.4 beta" compatible="false"/>
+    <resource name="MBSE Plugin" version="18.0" compatible="false"/>
+    <resource name="UPDM 2" version="17.0.1" compatible="false"/>
+    <resource name="Cameo SOA+" version="18.3" compatible="false"/>
+    <resource name="SYSMOD" version="1.0 SP1" compatible="false"/>
+    <resource name="MARTE 1.1 Profile" version="2021x" compatible="true"/>
+    <resource name="Teamcenter Integration" version="2021x" compatible="false"/>
+    <resource name="MARTE 1.2 Profile" version="2021x" compatible="true"/>
+    <resource name="Information System for Training Organization" version="2021x" compatible="true"/>
+    <resource name="V4MD" version="2.3.0.M3" compatible="false"/>
+    <resource name="DDS Real-Time Communication" version="2021x" compatible="false"/>
+    <resource name="Magic Real-Time Communication Designer" version="2021x" compatible="false"/>
+    <resource name="DDS Real-Time Communication" version="2021x Refresh1" compatible="true"/>
+    <resource name="ISO 26262 Functional Safety" version="2021x Refresh1" compatible="true"/>
+    <resource name="Cameo Data Modeler" version="2021x Refresh1" compatible="true"/>
+    <resource name="AutoStyler" version="2021x Refresh1" compatible="true"/>
+    <resource name="Magic Real-Time Communication Designer" version="2021x Refresh1" compatible="false"/>
+    <resource name="UAF" version="2021x Refresh1" compatible="true"/>
+    <resource name="Teamcenter Integration" version="2021x Refresh1" compatible="true"/>
+    <resource name="Enterprise Architect Import" version="2021x Refresh1" compatible="true"/>
+    <resource name="Magic Teamcenter Connector" version="2021x Refresh1" compatible="false"/>
+    <resource name="CSV Import" version="2021x Refresh1" compatible="true"/>
+    <resource name="Magic Model Analyst" version="2021x Refresh1" compatible="false"/>
+    <resource name="Magic Alf Analyst" version="2021x Refresh1" compatible="false"/>
+    <resource name="Cameo Concept Modeler" version="2021x Refresh1" compatible="true"/>
+    <resource name="Web Server for Cameo Simulation Toolkit" version="2021x Refresh1" compatible="true"/>
+    <resource name="SoaML Profile" version="2021x Refresh1" compatible="true"/>
+    <resource name="Product Line Engineering" version="2021x Refresh1" compatible="true"/>
+    <resource name="Pure Variants Integration" version="2021x Refresh1" compatible="true"/>
+    <resource name="Model Obfuscator" version="2021x Refresh1" compatible="true"/>
+    <resource name="Alf" version="2021x Refresh1" compatible="true"/>
+    <resource name="Cameo Requirements Modeler" version="2021x Refresh1" compatible="true"/>
+    <resource name="SysML" version="2021x Refresh1" compatible="true"/>
+    <resource name="Development Tools" version="2021x Refresh1" compatible="true"/>
+    <resource name="Cameo Safety and Reliability Analyzer" version="2021x Refresh1" compatible="true"/>
+    <resource name="Cameo Simulation Toolkit" version="2021x Refresh1" compatible="true"/>
+    <resource name="Cameo Collaborator Publisher" version="2021x Refresh1" compatible="true"/>
+    <resource name="UPDM 2" version="2021x Refresh1" compatible="true"/>
+    <resource name="Cameo DataHub" version="2021x Refresh1" compatible="true"/>
+    <resource name="TOGAF" version="2021x Refresh1" compatible="true"/>
+    <resource name="Cameo Business Modeler" version="2021x Refresh1" compatible="true"/>
+    <resource name="3DEXPERIENCE ENOVIA Model Definition Integration" version="2021x Refresh1" compatible="true"/>
+    <resource name="Strict UML XMI Exporter" version="2021x Refresh1" compatible="true"/>
+    <resource name="V4MD" version="2.5.1" compatible="true"/>
+</compatibleResources>

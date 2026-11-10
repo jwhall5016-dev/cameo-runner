@@ -1,0 +1,40 @@
+<html>
+<head>
+<style type="text/css">
+.borderAll {border: 1px solid black;}
+.borderTRB {border-top: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;}
+.borderLRB {border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;}
+.borderRB {border-right: 1px solid black; border-bottom: 1px solid black;}
+</style>
+</head>
+<body>
+<div><b>$report.isEmpty(obj)</b></div>
+<br>
+<p>Test and return true if an object is null, empty string, or empty collection.</p>
+<br>
+<table border="0" cellpadding="2" cellspacing="0" style="width:100%">
+<tr style="background-color: #F5F3F3;">
+<th class="borderAll"></th><th class="borderTRB">Name</th><th class="borderTRB">Type</th><th class="borderTRB">Description</th>
+</tr>
+<tr>
+<td class="borderLRB">Parameter(s)</td><td class="borderRB">obj</td><td class="borderRB">java.lang.Object</td><td class="borderRB">An object being tested.</td>
+</tr>
+<tr>
+<td class="borderLRB">Return</td><td class="borderRB">-</td><td class="borderRB">boolean</td><td class="borderRB">True if the object is null, empty string, or empty collection.</td>
+</tr>
+</table>
+<br>
+<p>For example:</p>
+<br>
+<table border="0" cellpadding="3" cellspacing="0" style="width:100%">
+<tr style="font-family: Courier New;">
+<td class="borderAll">
+<p>#if ($report.isEmpty($var))</p>
+<p style="text-indent:20px;">Object is null, empty string or empty collection</p>
+<p>#end</p>
+</td>
+</tr>
+</table>
+<br><br>
+</body>
+</html>

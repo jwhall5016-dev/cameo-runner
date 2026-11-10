@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+   <name>Use Case Specification</name>
+   <description>Use Case Specification shows the use case diagram and the list of all use case in the diagram.</description>
+   <templateFile>template.docx</templateFile>
+   <icon />
+   <enable>true</enable>
+   <readonly>true</readonly>
+   <pinned>false</pinned>
+   <category>Use Case Driven Template</category>
+   <variables>
+      <variable>
+         <name>CompanyName</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+      </variable>
+      <variable>
+         <name>Author</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+      </variable>
+      <variable>
+         <name>ReportTitle</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+      </variable>
+      <variable>
+         <name>DocumentTitle</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+      </variable>
+      <variable>
+         <name>Description</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+      </variable>
+      <variable>
+         <name>Revisions</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+         <variable>
+            <name>0.1</name>
+            <description />
+            <type />
+            <value xml:space="preserve" />
+            <variable>
+               <name>date</name>
+               <description />
+               <type />
+               <value xml:space="preserve" />
+            </variable>
+            <variable>
+               <name>author</name>
+               <description />
+               <type />
+               <value xml:space="preserve" />
+            </variable>
+            <variable>
+               <name>description</name>
+               <description />
+               <type />
+               <value xml:space="preserve" />
+            </variable>
+         </variable>
+      </variable>
+      <variable>
+         <name>Purpose</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+      </variable>
+      <variable>
+         <name>Scope</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+      </variable>
+      <variable>
+         <name>Overview</name>
+         <description />
+         <type />
+         <value xml:space="preserve" />
+      </variable>
+   </variables>
+   <perspectives />
+</template>

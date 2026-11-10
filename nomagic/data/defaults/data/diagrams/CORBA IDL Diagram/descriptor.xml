@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram abbreviation="Corba IDL" baseType="Class Diagram" category="Other Diagrams" type="CORBA IDL Diagram" version="8">
+    <edition>Architect</edition>
+    <edition>Enterprise</edition>
+    <edition>Reader</edition>
+    <edition>Professional ArcStyler</edition>
+    <helpID>CORBA+IDL+diagram</helpID>
+    <toolbarConfiguration>
+        <baseCategory expandedByDefault="false" id="COMMON_ELEMENTS_STATIC" parentCategoryID="COMMON_ELEMENTS_STATIC"/>
+        <category expandedByDefault="true" id="CORBA IDL Diagram_ELEMENTS" name="CORBA IDL Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/corbadiagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/corbadiagram.svg" size="16" type="large"/>
+            <actions>
+                <custom description="CORBAModule" id="IDaction_1150876469998_587629_0" listAsElement="false" opposite="false" shortcut="pressed M " type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Package">
+                    <stereotype id="magicdraw_1046768528276_725410_350"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/corba1.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/corba1.svg" size="16" type="large"/>
+                </custom>
+                <standard action="CORBA_IDL_ACTION_ID_action_1150876470014_369812_0" shortcut="pressed U "/>
+                <custom description="CORBA IDL Value" id="IDaction_1150876470014_385810_0" listAsElement="false" opposite="false" shortcut="pressed V " type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                    <stereotype id="magicdraw_1044343503443_536688_2122"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/corba3.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/corba3.svg" size="16" type="large"/>
+                </custom>
+                <standard action="CLASS_BY_PATTERN" shortcut="shift pressed P "/>
+                <group>
+                    <standard action="ADD_GENERALIZATION" shortcut="pressed G "/>
+                    <custom description="Truncatable Generalization" id="IDaction_1150876470030_73073_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Generalization">
+                        <stereotype id="magicdraw_1046770818672_404204_103"/>
+                        <buttonicon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/generalt16.png" size="16" type="small"/>
+                        <buttonicon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/generalt16.svg" size="16" type="large"/>
+                        <defaults>
+                            <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+                                <mdElement elementClass="PropertyManager">
+                                    <mdElement elementClass="BooleanProperty">
+                                        <propertyID>isSubstitutable</propertyID>
+                                    </mdElement>
+                                    <mdElement elementClass="StringProperty">
+                                        <propertyID>documentation</propertyID>
+                                        <multiline xmi:value="true"/>
+                                    </mdElement>
+                                </mdElement>
+                            </PropertyVisitorAcceptor>
+                        </defaults>
+                    </custom>
+                    <standard action="CORBA_IDL_VALUE_SUPPORT_GENERALIZATION_ACTION_ID_action_1150876470030_357209_0"/>
+                </group>
+                <custom description="CORBA IDL Association" id="IDaction_1150876470045_898460_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Association">
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/corbaidlass.png" size="16" type="small"/>
+                    <buttonicon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/corbaidlass.svg" size="16" type="large"/>
+                    <defaults>
+                        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+                            <mdElement elementClass="PropertyManager">
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>isDerived</propertyID>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>isAbstract</propertyID>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>isLeaf</propertyID>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>visibility</propertyID>
+                                    <value>public</value>
+                                    <choice xmi:value="public^private^protected^package"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                                <mdElement elementClass="StringProperty">
+                                    <propertyID>documentation</propertyID>
+                                    <multiline xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isDerived</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isDerivedUnion</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_A.aggregation</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <value>none</value>
+                                    <choice xmi:value="none^shared^composite"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isReadOnly</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isOrdered</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isUnique</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <value xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isStatic</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_A.visibility</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <value>private</value>
+                                    <choice xmi:value="public^private^protected^package"/>
+                                    <index xmi:value="1"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.isLeaf</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="StringProperty">
+                                    <propertyID>END_A.documentation</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <multiline xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_A.multiplicity</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <choice xmi:value="0^0..1^0..*^1^1..*^*"/>
+                                    <index xmi:value="-1"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_A.navigable</propertyID>
+                                    <propertyGroup>END_A</propertyGroup>
+                                    <value xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isDerived</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isDerivedUnion</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_B.aggregation</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                    <value>none</value>
+                                    <choice xmi:value="none^shared^composite"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isReadOnly</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isOrdered</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isUnique</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                    <value xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isStatic</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_B.visibility</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                    <value>public</value>
+                                    <choice xmi:value="public^private^protected^package"/>
+                                    <index xmi:value="0"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.isLeaf</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                                <mdElement elementClass="StringProperty">
+                                    <propertyID>END_B.documentation</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                    <multiline xmi:value="true"/>
+                                </mdElement>
+                                <mdElement elementClass="ChoiceProperty">
+                                    <propertyID>END_B.multiplicity</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                    <choice xmi:value="0^0..1^0..*^1^1..*^*"/>
+                                    <index xmi:value="-1"/>
+                                </mdElement>
+                                <mdElement elementClass="BooleanProperty">
+                                    <propertyID>END_B.navigable</propertyID>
+                                    <propertyGroup>END_B</propertyGroup>
+                                </mdElement>
+                            </mdElement>
+                        </PropertyVisitorAcceptor>
+                    </defaults>
+                </custom>
+                <standard action="ADD_INTERFACE" shortcut="pressed F "/>
+            </actions>
+        </category>
+    </toolbarConfiguration>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/corbadiagram.png" size="16" type="small"/>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/corbaidl/icons/corbadiagram.svg" size="-1" type="diagraming"/>
+
+
+    <module location="/Users/admin/182/E:\workspace\MD_UML_170_branch\md\core\profiles\CORBA_IDL_Profile.mdzip" name="CORBA_IDL_Profile.mdzip">
+        <root id="magicdraw_1044343503443_839962_2121"/>
+    </module>
+    <module location="/Users/admin/182/E:\workspace\MD_UML_170_branch\md\core\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <elementstyle name="Class">
+        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+            <mdElement elementClass="PropertyManager">
+                <mdElement elementClass="ColorProperty">
+                    <propertyID>FILL_COLOR</propertyID>
+                    <value xmi:value="-19276.0"/>
+                </mdElement>
+                <mdElement elementClass="ChoiceProperty">
+                    <propertyID>STEREOTYPES_DISPLAY_MODE</propertyID>
+                    <value>STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES</value>
+                    <choice xmi:value="STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON^STEREOTYPE_DISPLAY_MODE_TEXT^STEREOTYPE_DISPLAY_MODE_ICON^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE_AND_TEXT^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE^STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES"/>
+                    <index xmi:value="5"/>
+                </mdElement>
+            </mdElement>
+        </PropertyVisitorAcceptor>
+    </elementstyle>
+    <elementstyle name="Package">
+        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+            <mdElement elementClass="PropertyManager">
+                <mdElement elementClass="ColorProperty">
+                    <propertyID>FILL_COLOR</propertyID>
+                    <value xmi:value="-3287061.0"/>
+                </mdElement>
+                <mdElement elementClass="ChoiceProperty">
+                    <propertyID>STEREOTYPES_DISPLAY_MODE</propertyID>
+                    <value>STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES</value>
+                    <choice xmi:value="STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON^STEREOTYPE_DISPLAY_MODE_TEXT^STEREOTYPE_DISPLAY_MODE_ICON^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE_AND_TEXT^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE^STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES"/>
+                    <index xmi:value="5"/>
+                </mdElement>
+            </mdElement>
+        </PropertyVisitorAcceptor>
+    </elementstyle>
+    <elementstyle name="Interface">
+        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+            <mdElement elementClass="PropertyManager">
+                <mdElement elementClass="ColorProperty">
+                    <propertyID>FILL_COLOR</propertyID>
+                    <value xmi:value="-6234956.0"/>
+                </mdElement>
+                <mdElement elementClass="ChoiceProperty">
+                    <propertyID>STEREOTYPES_DISPLAY_MODE</propertyID>
+                    <value>STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES</value>
+                    <choice xmi:value="STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON^STEREOTYPE_DISPLAY_MODE_TEXT^STEREOTYPE_DISPLAY_MODE_ICON^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE_AND_TEXT^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE^STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES"/>
+                    <index xmi:value="5"/>
+                </mdElement>
+            </mdElement>
+        </PropertyVisitorAcceptor>
+    </elementstyle>
+    <elementstyle name="Diagram">
+        <PropertyVisitorAcceptor xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+            <mdElement elementClass="PropertyManager">
+                <mdElement elementClass="BooleanProperty">
+                    <propertyID>SHOW_DIAGRAM_FRAME</propertyID>
+                    <propertyGroup>DIAGRAM_FRAME</propertyGroup>
+                </mdElement>
+                <mdElement elementClass="ChoiceProperty">
+                    <propertyID>STEREOTYPES_DISPLAY_MODE</propertyID>
+                    <value>STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON</value>
+                    <choice xmi:value="STEREOTYPE_DISPLAY_MODE_TEXT_AND_ICON^STEREOTYPE_DISPLAY_MODE_TEXT^STEREOTYPE_DISPLAY_MODE_ICON^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE_AND_TEXT^STEREOTYPE_DISPLAY_MODE_SHAPE_IMAGE^STEREOTYPE_DISPLAY_MODE_DO_NOT_DISPLAY_STEREOTYPES"/>
+                    <index xmi:value="0"/>
+                </mdElement>
+            </mdElement>
+        </PropertyVisitorAcceptor>
+    </elementstyle>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdusecases.Actor</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdartifacts.Artifact</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.paths.AssociationClassView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="magicdraw_1044343503443_536688_2122" name="CORBA Value"/>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.ClassView</symbol>
+        <path action="ADD_GENERALIZATION">
+            <target>IDaction_1150876470014_385810_0</target>
+        </path>
+        <path action="IDaction_1150876470030_73073_0">
+            <target>IDaction_1150876470014_385810_0</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="magicdraw_1046768204142_883675_66" name="CORBA Interface"/>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.ClassView</symbol>
+        <path action="ADD_GENERALIZATION">
+            <target>CORBA_IDL_ACTION_ID_action_1150876470014_369812_0</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.compositestructures.mdcollaborations.CollaborationUse</element>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.compositestructures.mdcollaborations.Collaboration</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_9_0_2_91a0295_1111479028825_93211_0" name="Subsystem"/>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.ComponentView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.components.mdbasiccomponents.Component</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.DataType</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdcomponentdeployments.DeploymentSpecification</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdnodes.Device</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Diagram</element>
+        <path action="ADD_DEPENDENCY"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Enumeration</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdnodes.ExecutionEnvironment</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.InstanceSpecification</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdinterfaces.Interface</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="magicdraw_1046768204142_883675_66" name="CORBA Interface"/>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdinterfaces.Interface</element>
+        <path action="ADD_GENERALIZATION">
+            <target>CORBA_IDL_ACTION_ID_action_1150876470014_369812_0</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.auxiliaryconstructs.mdmodels.Model</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.NNaryAssociationView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.deployments.mdnodes.Node</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="magicdraw_1046768528276_725410_350" name="CORBA Module"/>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.PackageView</symbol>
+        <path action="ADD_CONTAINMENT_LINK">
+            <target>IDaction_1150876469998_587629_0</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Package</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.PartView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.compositestructures.mdports.Port</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.classes.mdkernel.PrimitiveType</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdprofiles.Profile</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.commonbehaviors.mdcommunications.Signal</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdprofiles.Stereotype</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdusecases.UseCase</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+</diagram>

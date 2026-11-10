@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template><name>Diagram Presentation PowerPoint</name><description>The Microsoft PowerPoint Report. 
+Generate a report for presentation. This presentation demonstrates selected diagram and information.</description><templateFile>template.pptx</templateFile><icon/><enable>true</enable><readonly>true</readonly><pinned>false</pinned><category>Other Documents</category><variables><variable><name>Author</name><description/><type/><value xml:space="preserve"/></variable><variable><name>Title</name><description/><type/><value xml:space="preserve"/></variable></variables><perspectives/></template>

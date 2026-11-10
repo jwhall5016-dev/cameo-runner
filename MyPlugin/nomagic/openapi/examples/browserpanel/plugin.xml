@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.examples.browserpanel.BrowserPanelPlugin"
+	name="Browser Panel"
+	version="2021x Refresh1"
+	provider-name="Modestas"
+	ownClassLoader="true"
+	class-lookup="LocalFirst"
+	class="com.nomagic.magicdraw.examples.browserpanel.BrowserPanelPlugin">
+
+	<requires>
+	   <api version="1.0"/>
+	</requires>
+
+	<runtime>
+		<library name="browserpanel.jar"/>
+ 	</runtime>
+</plugin>

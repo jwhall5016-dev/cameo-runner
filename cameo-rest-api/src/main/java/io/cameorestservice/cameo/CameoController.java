@@ -1,0 +1,48 @@
+package io.cameorestservice.cameo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController()
+public class CameoController {
+	
+	@Autowired
+	private CameoManager cameoManager;
+	
+	public CameoController()throws Exception {
+		
+
+	}
+	
+	@RequestMapping("/test")
+	public String Test() {
+		return "hi there";
+	}
+	
+	@RequestMapping("/cameoOutput/{processKey}")
+	public String CameoOutput(@PathVariable String processKey) throws Exception {
+		return cameoManager.getJsonOutput(processKey);
+	}
+	
+	@RequestMapping(method=RequestMethod.POST, value= "/UploadMDZIP/{packageName}")
+	public String UploadMDZIP(@PathVariable String packageName, @RequestBody byte[] mbseFile) throws Exception{
+		
+		try 
+	    {
+			String processKey = cameoManager.startSecondJVM(mbseFile, packageName);
+			return "starting cameo application process key: " + processKey;
+	    }
+	    catch(Exception ex) {
+			String secondVMError = ex.getMessage();
+			System.out.println("Couldn't start second VM: " + secondVMError);
+			return "error has occurred check logs";
+	    }
+		
+	}
+
+}

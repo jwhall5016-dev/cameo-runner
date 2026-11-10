@@ -1,0 +1,1 @@
+#foreach ($ac in $sorter.sort($importer, 'name'))$file.silentCreate('removevariablevalueaction/removevariablevalueaction-content.html', $file.computeName('removevariablevalueaction', $ac.ID, 'html'), $ac)#end

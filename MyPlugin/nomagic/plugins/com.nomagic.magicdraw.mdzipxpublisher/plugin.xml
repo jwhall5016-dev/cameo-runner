@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+        id="com.nomagic.magicdraw.mdzipxpublisher"
+        name="MDZipX Publisher"
+        version="2021x Refresh1"
+        provider-name="No Magic"
+        class="com.nomagic.magicdraw.mdzipxpublisher.MdzipxPublisherPlugin">
+
+    <runtime>
+        <library name="mdzipxpublisher.jar"/>
+        <library name="mdzipxpublisher_api.jar"/>
+    </runtime>
+</plugin>

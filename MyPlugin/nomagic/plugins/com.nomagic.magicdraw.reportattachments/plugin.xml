@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.reportattachments"
+	name="Report Attachments"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.reportattachments.ReportAttachmentsPlugin">
+
+	<requires>
+	   	<api version="1.0"/>
+        <required-plugin id="com.nomagic.magicdraw.fileattachments" name="File Attachments"/>
+        <required-plugin id="com.nomagic.magicdraw.magicreport" name="Report Wizard"/>
+	</requires>
+
+	<runtime>
+	   <library name="reportattachments.jar"/>
+	   <library name="reportattachments_api.jar"/>
+	</runtime>
+</plugin>

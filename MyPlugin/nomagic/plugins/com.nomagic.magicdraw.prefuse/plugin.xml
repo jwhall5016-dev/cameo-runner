@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+        id="com.nomagic.magicdraw.visualization.prefuse"
+        name="Prefuse Toolkit"
+        version="2021x Refresh1"
+        provider-name="No Magic"
+        class="com.nomagic.magicdraw.visualization.prefuse.PrefusePlugin">
+
+    <requires>
+        <api version="1.0"/>
+    </requires>
+
+    <runtime>
+        <library name="prefuse_api.jar"/>
+        <library name="lib/prefuse.jar"/>
+    </runtime>
+</plugin>

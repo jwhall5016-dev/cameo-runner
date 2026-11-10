@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element elementClass="Model" viewClass="Package"/>
+	<element elementClass="Device" viewClass="Node"/>
+	<element elementClass="Abstraction" viewClass="Dependency"/>
+	<element elementClass="Boundary" viewClass="Package"/>
+	<element elementClass="ExecutionEnvironment" viewClass="Node"/>
+	<element elementClass="DeploymentSpecification" viewClass="Artifact"/>
+	
+	<!-- Nack: Elements for the Activity Diagram -->
+	<element elementClass="StructuredActivityNode" viewClass="StructuredActivityNode"/>
+	<element elementClass="ConditionalNode" viewClass="ConditionalNode"/>
+	<element elementClass="LoopNode" viewClass="LoopNode"/>
+	<element elementClass="SequenceNode" viewClass="SequenceNode"/>
+	<element elementClass="CallBehaviorAction" viewClass="CallBehaviorAction"/>
+	<element elementClass="CallOperationAction" viewClass="CallOperationAction"/>
+	<element elementClass="AcceptEventAction" viewClass="SignalAction"/>
+	<element elementClass="AcceptEventTimerAction" viewClass="SignalAction"/>
+	<element elementClass="SendSignalAction" viewClass="SignalAction"/>
+	<element elementClass="AcceptCallAction" viewClass="SignalAction"/>
+	<element elementClass="AddStructuralFeatureValueAction" viewClass="Action"/>
+	<element elementClass="AddVariableValueAction" viewClass="Action"/>
+	<element elementClass="BroadcastSignalAction" viewClass="Action"/>
+	<element elementClass="ClearAssociationAction" viewClass="Action"/>
+	<element elementClass="ClearStructuralFeatureAction" viewClass="Action"/>
+	<element elementClass="ClearStructualFeatureAction" viewClass="Action"/> <!-- Nack: EA's human error. -->
+	<element elementClass="ClearVariableAction" viewClass="Action"/>
+	<element elementClass="CreateLinkAction" viewClass="Action"/>
+	<element elementClass="CreateLinkObjectAction" viewClass="Action"/>
+	<element elementClass="CreateObjectAction" viewClass="Action"/>
+	<element elementClass="DestroyLinkAction" viewClass="Action"/>
+	<element elementClass="DestroyObjectAction" viewClass="Action"/>
+	<element elementClass="RaiseExceptionAction" viewClass="Action"/>
+	<element elementClass="ReadExtentAction" viewClass="Action"/>
+	<element elementClass="ReadIsClassifiedObjectAction" viewClass="Action"/>
+	<element elementClass="ReadLinkAction" viewClass="Action"/>
+	<element elementClass="ReadLinkObjectEndAction" viewClass="Action"/>
+	<element elementClass="ReadLinkObjectEndQualifierAction" viewClass="Action"/>
+	<element elementClass="ReadSelfAction" viewClass="Action"/>
+	<element elementClass="ReadStructuralFeatureAction" viewClass="Action"/>
+	<element elementClass="ReadVariableAction" viewClass="Action"/>
+	<element elementClass="ReclassifyObjectAction" viewClass="Action"/>
+	<element elementClass="RemoveStructuralFeatureValueAction" viewClass="Action"/>
+	<element elementClass="RemoveVariableValueAction" viewClass="Action"/>
+	<element elementClass="ReplyAction" viewClass="Action"/>
+	<element elementClass="SendObjectAction" viewClass="Action"/>
+	<element elementClass="TestIdentityAction" viewClass="Action"/>
+	<element elementClass="ActivityPartition" viewClass="Swimlane"/>
+	<element elementClass="CentralBufferNode" viewClass="ObjectNode"/>
+	<element elementClass="DataStoreNode" viewClass="ObjectNode"/>
+	<element elementClass="InitialNode" viewClass="PseudoNode"/>
+	<element elementClass="ActivityFinalNode" viewClass="PseudoNode"/>
+	<element elementClass="FlowFinalNode" viewClass="PseudoNode"/>
+	<element elementClass="DecisionNode" viewClass="Decision"/>
+	<element elementClass="MergeNode" viewClass="Decision"/>
+	<element elementClass="ForkNode" viewClass="Bar"/>
+	<element elementClass="JoinNode" viewClass="Bar"/>
+	<element elementClass="InterruptibleActivityRegion" viewClass="InterruptibeActivityRegion"/> <!-- This one is a human error. -->
+	
+	<element elementClass="HyperlinkAction" viewClass="Action"/>
+	<element elementClass="StartOwnedBehaviorAction" viewClass="Action"/>
+	<element elementClass="WriteLinkAction" viewClass="Action"/>
+	<element elementClass="WriteStructuralFeatureAction" viewClass="Action"/>
+	<element elementClass="WriteVariableAction" viewClass="Action"/>
+	<!-- <element elementClass="ActivityParameter" viewClass="ActivityParameterNode"/> -->
+	<element elementClass="ActivityParameter" viewClass="ActivityParameterNode"/>
+	
+	<element elementClass="Activity" viewClass="CallBehaviorAction"/>
+	<!-- <element elementClass="InstanceSpecification" viewClass="ObjectNode"/> -->
+	
+	<!-- Nack: Elements for the Sequence Diagram -->
+	<element elementClass="Lifeline" viewClass="SequenceLifeline"/>
+	<element elementClass="Manifestation" viewClass="Dependency"/>
+	
+	<!-- Jord: Element for StateMachine Diagram -->
+	<element elementClass="Pseudostate" viewClass="PseudoState"/>
+	<element elementClass="FinalState" viewClass="PseudoState"/>
+	
+</elements>

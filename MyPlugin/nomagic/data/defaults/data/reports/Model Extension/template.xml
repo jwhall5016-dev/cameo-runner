@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template>
+   <name>Model Extension</name>
+   <description>Use Model Extension report to describe common UML model extension mechanisms (stereotypes, tagged values and constraints).</description>
+   <templateFile>template.docx</templateFile>
+   <icon/>
+   <enable>true</enable>
+   <readonly>true</readonly>
+   <pinned>false</pinned>
+   <category>Default Template</category>
+   <variables>
+      <variable>
+         <name>Author</name>
+         <description/>
+			<type/>
+         <value xml:space="preserve"/>
+      </variable>
+      <variable>
+         <name>ReportTitle</name>
+         <description/>
+			<type/>
+         <value xml:space="preserve"></value>
+      </variable>
+      <variable>
+         <name>DocumentTitle</name>
+         <description/>
+			<type/>
+         <value xml:space="preserve"></value>
+      </variable>
+      <variable>
+         <name>SystemName</name>
+         <description/>
+			<type/>
+         <value xml:space="preserve">Profile</value>
+      </variable>
+      <variable>
+         <name>Description</name>
+         <description/>
+			<type/>
+         <value xml:space="preserve"></value>
+      </variable>
+      <variable>
+         <name>Revisions</name>
+         <variable>
+            <name>0.1</name>
+            <variable>
+               <name>date</name>
+               <description/>
+               <type/>
+               <value></value>
+            </variable>
+            <variable>
+               <name>author</name>
+               <description/>
+               <type/>
+               <value></value>
+            </variable>
+            <variable>
+               <name>description</name>
+               <description/>
+               <type/>
+               <value></value>
+            </variable>
+         </variable>
+         <value/>
+      </variable>
+      <variable>
+         <name>Purpose</name>
+         <description/>
+			<type/>
+         <value xml:space="preserve"></value>
+      </variable>
+      <variable>
+         <name>Scope</name>
+         <description/>
+			<type/>
+         <value xml:space="preserve"></value>
+      </variable>
+      <variable>
+         <name>Overview</name>
+         <description/>
+			<type/>
+         <value xml:space="preserve"/>
+      </variable>
+   </variables>
+   <perspectives/>
+</template>

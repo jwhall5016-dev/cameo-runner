@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram version="8" type="Relation Map Diagram" baseType="Class Diagram" abbreviation="relationMap" category="Analysis Diagrams" metaType="RelationMap">
+    <stereotype id="_16_8beta_9020291_1260453936960_387965_1187"/>
+    <requiredPlugin>com.nomagic.magicdraw.visualization.relationshipmap#Relation Map;UML_Standard_Profile.mdzip</requiredPlugin>
+    <helpID>Relation+Map</helpID>
+    <icon type="small" size="16" filename="mdp://resource/com/nomagic/magicdraw/visualization/relationshipmap/icons/relation_map.png"></icon>
+    <icon type="diagraming" size="-1" filename="mdp://resource/com/nomagic/magicdraw/visualization/relationshipmap/icons/relation_map.svg"></icon>
+    <module name="UML_Standard_Profile.mdzip" location="C:\Program Files\MagicDraw\profiles\UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+</diagram>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram abbreviation="behaviour" baseType="Any Diagram" type="Behavior Diagram" version="8">
+    <toolbarConfiguration>
+        <category expandedByDefault="false" id="COMMON_ELEMENTS_DYNAMIC" name="Common">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.svg" size="16" type="large"/>
+            <actions>
+                <group>
+                    <standard action="ADD_NOTE" shortcut="pressed N "/>
+                    <standard action="ADD_HTML_NOTE" shortcut="shift pressed N "/>
+                    <standard action="ADD_COMMENT"/>
+                    <standard action="ADD_HTML_COMMENT"/>
+                </group>
+                <group>
+                    <standard action="ADD_TEXT_BOX" shortcut="pressed X "/>
+                    <standard action="ADD_HTML_TEXT_BOX" shortcut="shift pressed X "/>
+                </group>
+                <group>
+                    <standard action="ADD_NOTE_ANCHOR" shortcut="pressed H "/>
+                    </group>
+				<group>
+					<standard action="CONSTRAINT_ACTION"/>
+					<standard action="DURATION_CONSTRAINT_ACTION"/>
+					<standard action="TIME_CONSTRAINT_ACTION"/>
+					<standard action="ADD_CONSTRAINT_LINK" shortcut="shift pressed H "/>
+                </group>
+                <standard action="ADD_DEPENDENCY" shortcut="shift pressed D "/>
+                <group>
+                    <standard action="ADD_IMAGE_FROM_FILE" shortcut="pressed I "/>
+                    <standard action="ADD_IMAGE_FROM_ATTACHED_FILE"/>
+                </group>
+                <standard action="ADD_DIAGRAM_OVERVIEW"/>
+                                <standard action="ADD_DIAGRAM_LEGEND"/>
+                <group>
+                    <standard action="ADD_SEPARATOR" shortcut="pressed W "/>
+                    <standard action="ADD_SEPARATOR_VERTICAL"/>
+                    <standard action="ADD_RECTANGULAR_SHAPE" shortcut="shift pressed Q "/>
+                </group>
+            </actions>
+        </category>
+    </toolbarConfiguration>
+    <module location="/home/monte/work/sourcecode/md/core/UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+</diagram>
+

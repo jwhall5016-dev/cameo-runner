@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+		id="com.nomagic.magicdraw.merge"
+		licenseId="Merge"
+		internalVersion="202100000"
+		name="Project Merge"
+		version="2021x Refresh1"
+		provider-name="No Magic"
+		class="com.nomagic.magicdraw.merge.MergePlugin">
+
+	<requires>
+		<api version="1.2"/>
+		<required-plugin id="com.nomagic.magicdraw.htmldiff" name="Html Diff"/>
+	</requires>
+
+	<runtime>
+		<library name="merge.jar"/>
+		<library name="merge_api.jar"/>
+	</runtime>
+</plugin>

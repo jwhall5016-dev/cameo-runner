@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram abbreviation="stm" baseType="State Machine Diagram" type="Protocol State Machine Diagram" version="8">
+    <requiredPlugin>;UML_Standard_Profile.mdzip^UML_FEATURE</requiredPlugin>
+    <helpID>Protocol+State+Machine+Diagram</helpID>
+    <toolbarConfiguration>
+        <baseCategory expandedByDefault="false" id="COMMON_ELEMENTS_DYNAMIC" parentCategoryID="COMMON_ELEMENTS_DYNAMIC"/>
+        <category expandedByDefault="true" id="STATE_DIAGRAM_ELEMENTS" name="Protocol State Machine Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/protocolstatediagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/protocolstatediagram.svg" size="16" type="large"/>
+            <actions>
+                <standard action="ADD_STATE" shortcut="shift pressed S "/>
+                <group>
+                    <standard action="ADD_COMPOSITE_STATE" shortcut="shift pressed C "/>
+                    <standard action="ADD_ORTHOGONAL_STATE" shortcut="pressed C "/>
+                    <standard action="ADD_SUBMACHINE_STATE" shortcut="pressed M "/>
+                </group>
+                <standard action="ADD_INITIAL_PSEUDO_STATE" shortcut="pressed I "/>
+                <standard action="ADD_FINAL_STATE" shortcut="pressed F "/>
+                <standard action="ADD_TERMINATE_PSEUDO_STATE" shortcut="pressed R "/>
+                <standard action="ADD_ENTRY_PSEUDO_STATE" shortcut="pressed Y "/>
+                <standard action="ADD_EXIT_PSEUDO_STATE" shortcut="pressed U "/>
+                <standard action="ADD_CONNECTION_POINT_REFERENCE" shortcut="pressed Z "/>
+                <standard action="ADD_JUNCTION_POINT" shortcut="pressed J "/>
+                <standard action="ADD_CHOICE_PSEUDO_STATE" shortcut="pressed O "/>
+                <group>
+                    <standard action="ADD_JOIN_PSEUDO_STATE_HORIZONTAL" shortcut="pressed D "/>
+                    <standard action="ADD_JOIN_PSEUDO_STATE_VERTICAL" shortcut="pressed G "/>
+                </group>
+                <group>
+                    <standard action="ADD_FORK_PSEUDO_STATE_HORIZONTAL" shortcut="pressed D "/>
+                    <standard action="ADD_FORK_PSEUDO_STATE_VERTICAL" shortcut="pressed G "/>
+                </group>
+                <standard action="ADD_PROTOCOL_TRANSITION" description="Protocol Transition" shortcut="pressed T "/>
+                <standard action="ADD_PROTOCOL_TRANSITION_TO_SELF" description="Protocol Transition to Self" shortcut="pressed E "/>
+            </actions>
+        </category>
+    </toolbarConfiguration>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/protocolstatediagram.png" size="16" type="small"/>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/protocolstatediagram.svg" size="-1" type="diagraming"/>
+    <module location="/Users/admin/182/G:\home\monte\work\sourcecode\md\core\E:\INSTALL\MD_UML_150EAP_beta1_no_install\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.statemachines.mdbehaviorstatemachines.ConnectionPointReference</element>
+        <path action="ADD_PROTOCOL_TRANSITION">
+            <target>ADD_STATE</target>
+            <target>ADD_FINAL_STATE</target>
+            <target>ADD_JUNCTION_POINT</target>
+            <target>ADD_COMPOSITE_STATE</target>
+            <target>ADD_ORTHOGONAL_STATE</target>
+            <target>ADD_SUBMACHINE_STATE</target>
+            <target>ADD_CHOICE_PSEUDO_STATE</target>
+            <target>ADD_TERMINATE_PSEUDO_STATE</target>
+            <target>ADD_EXIT_PSEUDO_STATE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.statemachines.mdbehaviorstatemachines.FinalState</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.statemachines.mdbehaviorstatemachines.Pseudostate</element>
+        <path action="ADD_PROTOCOL_TRANSITION">
+            <target>ADD_STATE</target>
+            <target>ADD_FINAL_STATE</target>
+            <target>ADD_FORK_PSEUDO_STATE_HORIZONTAL</target>
+            <target>ADD_JOIN_PSEUDO_STATE_HORIZONTAL</target>
+            <target>ADD_JUNCTION_POINT</target>
+            <target>ADD_COMPOSITE_STATE</target>
+            <target>ADD_ORTHOGONAL_STATE</target>
+            <target>ADD_SUBMACHINE_STATE</target>
+            <target>ADD_CHOICE_PSEUDO_STATE</target>
+            <target>ADD_TERMINATE_PSEUDO_STATE</target>
+            <target>ADD_EXIT_PSEUDO_STATE</target>
+        </path>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.statemachines.mdbehaviorstatemachines.State</element>
+        <path action="ADD_PROTOCOL_TRANSITION">
+            <target>ADD_STATE</target>
+            <target>ADD_FINAL_STATE</target>
+            <target>ADD_FORK_PSEUDO_STATE_HORIZONTAL</target>
+            <target>ADD_JOIN_PSEUDO_STATE_HORIZONTAL</target>
+            <target>ADD_JUNCTION_POINT</target>
+            <target>ADD_COMPOSITE_STATE</target>
+            <target>ADD_ORTHOGONAL_STATE</target>
+            <target>ADD_SUBMACHINE_STATE</target>
+            <target>ADD_CHOICE_PSEUDO_STATE</target>
+            <target>ADD_TERMINATE_PSEUDO_STATE</target>
+            <target>ADD_EXIT_PSEUDO_STATE</target>
+        </path>
+        <path action="ADD_PROTOCOL_TRANSITION_TO_SELF"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <symbol>com.nomagic.magicdraw.uml.symbols.shapes.TransitionToSelfView</symbol>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.statemachines.mdbehaviorstatemachines.Transition</element>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+</diagram>
+

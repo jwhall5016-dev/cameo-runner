@@ -1,0 +1,1 @@
+#foreach ($ac in $sorter.sort($importer, 'name'))$file.silentCreate('reduceaction/reduceaction-content.html', $file.computeName('reduceaction', $ac.ID, 'html'), $ac)#end

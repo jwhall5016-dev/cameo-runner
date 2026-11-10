@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<!-- include required stylesheets -->
+	<xsl:include href="../root.xsl"/>
+	<xsl:variable name="MOF" select="'cmof'"/>
+</xsl:stylesheet>

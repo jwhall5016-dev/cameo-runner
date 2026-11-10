@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+#includeSection('web.html', web)
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel ="stylesheet" type="text/css" href="stylesheet.css" title="style">
+	<title>$Title</title>
+</head>
+<body>
+<div>
+	<div class="frameheading">Elements</div>
+	#if (!$report.isNull($AcceptCallAction))$file.silentCreate('acceptcallaction/acceptcallaction-frame.html', $AcceptCallAction)#end
+	#if (!$report.isNull($AcceptEventAction))$file.silentCreate('accepteventaction/accepteventaction-frame.html', $AcceptEventAction)#end
+	#if (!$report.isNull($Activity))#set($pahtName = $file.create('activity/activity-frame.html', $Activity))<div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor('Activity')" alt="activity" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">Activities</a></div>#end
+	#if (!$report.isNull($ActivityFinalNode))$file.silentCreate('activityfinalnode/activityfinalnode-frame.html', $ActivityFinalNode)#end
+	#if (!$report.isNull($ActivityPartition))$file.silentCreate('activitypartition/activitypartition-frame.html', $ActivityPartition)#end
+	#if (!$report.isNull($Actor))#set($pahtName = $file.create('actor/actor-frame.html', $Actor))<div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor('Actor')" alt="actor" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">Actors</a></div>#end
+	#if (!$report.isNull($Artifact))$file.silentCreate('artifact/artifact-frame.html', $Artifact)#end
+	#if (!$report.isNull($Constraint))$file.silentCreate('constraint/constraint-frame.html', $Constraint)#end
+	#if (!$report.isNull($CallBehaviorAction))$file.silentCreate('callbehavioraction/callbehavioraction-frame.html', $CallBehaviorAction)#end
+	#if (!$report.isNull($CallOperationAction))$file.silentCreate('calloperationaction/calloperationaction-frame.html', $CallOperationAction)#end
+	#if (!$report.isNull($CentralBufferNode))$file.silentCreate('centralbuffernode/centralbuffernode-frame.html', $CentralBufferNode)#end
+	#if (!$report.isNull($Class))#set($pahtName = $file.create('class/class-frame.html', $Class))<div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor('Class')" alt="class" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">Classes</a></div>#end
+   #if (!$report.isNull($Collaboration))#set($pahtName = $file.create('collaboration/collaboration-frame.html', $Collaboration))<div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor('Collaboration')" alt="collaboration" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">Collaborations</a></div>#end
+	#if (!$report.isNull($CollaborationUse))$file.silentCreate('collaborationuse/collaborationuse-frame.html', $CollaborationUse)#end
+	#if (!$report.isNull($CombinedFragment))$file.silentCreate('combinedfragment/combinedfragment-frame.html', $CombinedFragment)#end
+	#if (!$report.isNull($Component))#set($pahtName = $file.create('component/component-frame.html', $Component))<div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor('Component')" alt="component" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">Components</a></div>#end
+	#if (!$report.isNull($ConditionalNode))$file.silentCreate('conditionalnode/conditionalnode-frame.html', $ConditionalNode)#end
+	#if (!$report.isNull($ConnectionPointReference))$file.silentCreate('connectionpointreference/connectionpointreference-frame.html', $ConnectionPointReference)#end
+	#if (!$report.isNull($DataStoreNode))$file.silentCreate('datastorenode/datastorenode-frame.html', $DataStoreNode)#end
+	#if (!$report.isNull($DataType))$file.silentCreate('datatype/datatype-frame.html', $DataType)#end
+	#if (!$report.isNull($DecisionNode))$file.silentCreate('decisionnode/decisionnode-frame.html', $DecisionNode)#end
+	#if (!$report.isNull($DeploymentSpecification))$file.silentCreate('deploymentspecification/deploymentspecification-frame.html', $DeploymentSpecification)#end
+	#if (!$report.isNull($DurationConstraint))$file.silentCreate('durationconstraint/durationconstraint-frame.html', $DurationConstraint)#end
+	#if (!$report.isNull($Device))$file.silentCreate('device/device-frame.html', $Device)#end
+	#if (!$report.isNull($Diagram))#set($pahtName = $file.create('diagram/diagram-frame.html', $Diagram))<div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor('Use Case Diagram')" alt="diagram" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">Diagrams</a></div>#end
+	#if (!$report.isNull($Enumeration))$file.silentCreate('enumeration/enumeration-frame.html', $Enumeration)#end
+	#if (!$report.isNull($ExecutionEnvironment))$file.silentCreate('executionenvironment/executionenvironment-frame.html', $ExecutionEnvironment)#end
+	#if (!$report.isNull($ExpansionNode))$file.silentCreate('expansionnode/expansionnode-frame.html', $ExpansionNode)#end
+	#if (!$report.isNull($ExpansionRegion))$file.silentCreate('expansionregion/expansionregion-frame.html', $ExpansionRegion)#end
+	#if (!$report.isNull($FinalState))$file.silentCreate('finalstate/finalstate-frame.html', $FinalState)#end
+	#if (!$report.isNull($FlowFinalNode))$file.silentCreate('flowfinalnode/flowfinalnode-frame.html', $FlowFinalNode)#end
+	#if (!$report.isNull($ForkNode))$file.silentCreate('forknode/forknode-frame.html', $ForkNode)#end
+	#if (!$report.isNull($FunctionBehavior))$file.silentCreate('functionbehavior/functionbehavior-frame.html', $FunctionBehavior)#end
+	#if (!$report.isNull($InitialNode))$file.silentCreate('initialnode/initialnode-frame.html', $InitialNode)#end
+	#if (!$report.isNull($InputPin))$file.silentCreate('inputpin/inputpin-frame.html', $InputPin)#end
+	#if (!$report.isNull($InstanceSpecification))$file.silentCreate('instancespecification/instancespecification-frame.html', $InstanceSpecification)#end
+	#if (!$report.isNull($InteractionUse))$file.silentCreate('interactionuse/interactionuse-frame.html', $InteractionUse)#end
+	#if (!$report.isNull($Interaction))$file.silentCreate('interaction/interaction-frame.html', $Interaction)#end
+	#if (!$report.isNull($Interface))#set($pahtName = $file.create('interface/interface-frame.html', $Interface))<div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor('Interface')" alt="interface" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">Interfaces</a></div>#end
+	#if (!$report.isNull($InterruptibleActivityRegion))$file.silentCreate('interruptibleactivityregion/interruptibleactivityregion-frame.html', $InterruptibleActivityRegion)#end
+	#if (!$report.isNull($InteractionConstraint))$file.silentCreate('interactionconstraint/interactionconstraint-frame.html', $InteractionConstraint)#end
+	#if (!$report.isNull($Lifeline))$file.silentCreate('lifeline/lifeline-frame.html', $Lifeline)#end
+	#if (!$report.isNull($LoopNode))$file.silentCreate('loopnode/loopnode-frame.html', $LoopNode)#end
+	#if (!$report.isNull($Message))$file.silentCreate('message/message-frame.html', $Message)#end
+	#if (!$report.isNull($Model))#set($pahtName = $file.create('model/model-frame.html', $Model))<div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor('Model')" alt="model" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">Models</a></div>#end
+   #if (!$report.isNull($Node))#set($pahtName = $file.create('node/node-frame.html', $Node))<div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor('Node')" alt="node" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">Nodes</a></div>#end
+   #if (!$report.isNull($OpaqueAction))$file.silentCreate('opaqueaction/opaqueaction-frame.html', $OpaqueAction)#end
+   #if (!$report.isNull($OpaqueBehavior))$file.silentCreate('opaquebehavior/opaquebehavior-frame.html', $OpaqueBehavior)#end
+   #if (!$report.isNull($OutputPin))$file.silentCreate('outputpin/outputpin-frame.html', $OutputPin)#end
+   #if (!$report.isNull($Port))$file.silentCreate('port/port-frame.html', $Port)#end
+   #if (!$report.isNull($PrimitiveType))$file.silentCreate('primitivetype/primitivetype-frame.html', $PrimitiveType)#end
+   #if (!$report.isNull($Property))$file.silentCreate('property/property-frame.html', $Property)#end 
+   #if (!$report.isNull($ProtocolStateMachine))$file.silentCreate('protocolstatemachine/protocolstatemachine-frame.html', $ProtocolStateMachine)#end 
+   #if (!$report.isNull($Pseudostate))$file.silentCreate('pseudostate/pseudostate-frame.html', $Pseudostate)#end
+   #if (!$report.isNull($Region))$file.silentCreate('region/region-frame.html', $Region)#end
+   #if (!$report.isNull($SendSignalAction))$file.silentCreate('sendsignalaction/sendsignalaction-frame.html', $SendSignalAction)#end
+   #if (!$report.isNull($SequenceNode))$file.silentCreate('sequencenode/sequencenode-frame.html', $SequenceNode)#end
+   #if (!$report.isNull($Signal))$file.silentCreate('signal/signal-frame.html', $Signal)#end
+   #if (!$report.isNull($State))$file.silentCreate('state/state-frame.html', $State)#end
+   #if (!$report.isNull($StateMachine))$file.silentCreate('statemachine/statemachine-frame.html', $StateMachine)#end
+   #if (!$report.isNull($StructuredActivityNode))$file.silentCreate('structuredactivitynode/structuredactivitynode-frame.html', $StructuredActivityNode)#end
+   #if (!$report.isNull($SystemBoundary))#set($pahtName = $file.create('systemboundary/systemboundary-frame.html', $SystemBoundary))<div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor('Model')" alt="systemboundary" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">System Boundaries</a></div>#end
+	#if (!$report.isNull($TimeConstraint))$file.silentCreate('timeconstraint/timeconstraint-frame.html', $TimeConstraint)#end
+	#if (!$report.isNull($UseCase))#set($pahtName = $file.create('usecase/usecase-frame.html', $UseCase))<div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor('UseCase')" alt="usecase" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">Use Cases</a></div>#end
+	#if (!$report.isNull($ValuePin))$file.silentCreate('valuepin/valuepin-frame.html', $ValuePin)#end
+	#if (!$report.isNull($AnyReceiveEvent))$file.silentCreate('anyreceiveevent/anyreceiveevent-frame.html', $AnyReceiveEvent)#end
+	#if (!$report.isNull($CallEvent))$file.silentCreate('callevent/callevent-frame.html', $CallEvent)#end
+	#if (!$report.isNull($ChangeEvent))$file.silentCreate('changeevent/changeevent-frame.html', $ChangeEvent)#end
+	#if (!$report.isNull($CreationEvent))$file.silentCreate('creationevent/creationevent-frame.html', $CreationEvent)#end
+	#if (!$report.isNull($DestructionEvent))$file.silentCreate('destructionevent/destructionevent-frame.html', $DestructionEvent)#end
+	#if (!$report.isNull($ExecutionEvent))$file.silentCreate('executionevent/executionevent-frame.html', $ExecutionEvent)#end
+	#if (!$report.isNull($ReceiveOperationEvent))$file.silentCreate('receiveoperationevent/receiveoperationevent-frame.html', $ReceiveOperationEvent)#end
+	#if (!$report.isNull($SendOperationEvent))$file.silentCreate('sendoperationevent/sendoperationevent-frame.html', $SendOperationEvent)#end
+	#if (!$report.isNull($SendSignalEvent))$file.silentCreate('sendsignalevent/sendsignalevent-frame.html', $SendSignalEvent)#end
+	#if (!$report.isNull($SignalEvent))$file.silentCreate('signalevent/signalevent-frame.html', $SignalEvent)#end
+	#if (!$report.isNull($TimeEvent))$file.silentCreate('timeevent/timeevent-frame.html', $TimeEvent)#end
+	#if (!$report.isNull($Comment))$file.silentCreate('comment/comment-frame.html', $Comment)#end
+
+	#if (!$report.isNull($CreateLinkAction))$file.silentCreate('createlinkaction/createlinkaction-frame.html', $CreateLinkAction)#end
+	#if (!$report.isNull($CreateLinkObjectAction))$file.silentCreate('createlinkobjectaction/createlinkobjectaction-frame.html', $CreateLinkObjectAction)#end
+	#if (!$report.isNull($CreateObjectAction))$file.silentCreate('createobjectaction/createobjectaction-frame.html', $CreateObjectAction)#end
+	#if (!$report.isNull($LinkEndCreationData))$file.silentCreate('linkendcreationdata/linkendcreationdata-frame.html', $LinkEndCreationData)#end
+	#if (!$report.isNull($DestroyLinkAction))$file.silentCreate('destroylinkaction/destroylinkaction-frame.html', $DestroyLinkAction)#end
+	#if (!$report.isNull($DestroyObjectAction))$file.silentCreate('destroyobjectaction/destroyobjectaction-frame.html', $DestroyObjectAction)#end
+	
+	#if (!$report.isNull($ClearAssociationAction))$file.silentCreate('clearassociationaction/clearassociationaction-frame.html', $ClearAssociationAction)#end
+	#if (!$report.isNull($ClearStructuralFeatureAction))$file.silentCreate('clearstructuralfeatureaction/clearstructuralfeatureaction-frame.html', $ClearStructuralFeatureAction)#end
+	#if (!$report.isNull($ClearVariableAction))$file.silentCreate('clearvariableaction/clearvariableaction-frame.html', $ClearVariableAction)#end
+	#if (!$report.isNull($AddStructuralFeatureValueAction))$file.silentCreate('addstructuralfeaturevalueaction/addstructuralfeaturevalueaction-frame.html', $AddStructuralFeatureValueAction)#end
+	#if (!$report.isNull($BroadcastSignalAction))$file.silentCreate('broadcastsignalaction/broadcastsignalaction-frame.html', $BroadcastSignalAction)#end
+	#if (!$report.isNull($RaiseExceptionAction))$file.silentCreate('raiseexceptionaction/raiseexceptionaction-frame.html', $RaiseExceptionAction)#end
+	#if (!$report.isNull($ReadExtentAction))$file.silentCreate('readextentaction/readextentaction-frame.html', $ReadExtentAction)#end
+	#if (!$report.isNull($ReadIsClassifiedObjectAction))$file.silentCreate('readisclassifiedobjectaction/readisclassifiedobjectaction-frame.html', $ReadIsClassifiedObjectAction)#end
+	#if (!$report.isNull($ReadLinkAction))$file.silentCreate('readlinkaction/readlinkaction-frame.html', $ReadLinkAction)#end
+	#if (!$report.isNull($ReadLinkObjectEndAction))$file.silentCreate('readlinkobjectendaction/readlinkobjectendaction-frame.html', $ReadLinkObjectEndAction)#end
+	#if (!$report.isNull($ReadLinkObjectEndQualifierAction))$file.silentCreate('readlinkobjectendqualifieraction/readlinkobjectendqualifieraction-frame.html', $ReadLinkObjectEndQualifierAction)#end
+	#if (!$report.isNull($ReadSelfAction))$file.silentCreate('readselfaction/readselfaction-frame.html', $ReadSelfAction)#end
+	#if (!$report.isNull($ReadStructuralFeatureAction))$file.silentCreate('readstructuralfeatureaction/readstructuralfeatureaction-frame.html', $ReadStructuralFeatureAction)#end
+	#if (!$report.isNull($ReadVariableAction))$file.silentCreate('readvariableaction/readvariableaction-frame.html', $ReadVariableAction)#end
+	#if (!$report.isNull($ReclassifyObjectAction))$file.silentCreate('reclassifyobjectaction/reclassifyobjectaction-frame.html', $ReclassifyObjectAction)#end
+	#if (!$report.isNull($ReduceAction))$file.silentCreate('reduceaction/reduceaction-frame.html', $ReduceAction)#end
+	#if (!$report.isNull($RemoveStructuralFeatureValueAction))$file.silentCreate('removestructuralfeaturevalueaction/removestructuralfeaturevalueaction-frame.html', $RemoveStructuralFeatureValueAction)#end
+	#if (!$report.isNull($AddVariableValueAction))$file.silentCreate('addvariablevalueaction/addvariablevalueaction-frame.html', $AddVariableValueAction)#end
+	#if (!$report.isNull($DestroyObjectAction))$file.silentCreate('destroyobjectaction/destroyobjectaction-frame.html', $DestroyObjectAction)#end
+	#if (!$report.isNull($RemoveVariableValueAction))$file.silentCreate('removevariablevalueaction/removevariablevalueaction-frame.html', $RemoveVariableValueAction)#end
+	#if (!$report.isNull($ReplyAction))$file.silentCreate('replyaction/replyaction-frame.html', $ReplyAction)#end
+	#if (!$report.isNull($StartClassifierBehaviorAction))$file.silentCreate('startclassifierbehavioraction/startclassifierbehavioraction-frame.html', $StartClassifierBehaviorAction)#end
+	#if (!$report.isNull($SendObjectAction))$file.silentCreate('sendobjectaction/sendobjectaction-frame.html', $SendObjectAction)#end
+	#if (!$report.isNull($TestIdentityAction))$file.silentCreate('testidentityaction/testidentityaction-frame.html', $TestIdentityAction)#end
+	#if (!$report.isNull($UnmarshallAction))$file.silentCreate('unmarshallaction/unmarshallaction-frame.html', $UnmarshallAction)#end
+	#if (!$report.isNull($ValueSpecificationAction))$file.silentCreate('valuespecificationaction/valuespecificationaction-frame.html', $ValueSpecificationAction)#end
+	#if (!$report.isNull($ActionInputPin))$file.silentCreate('actioninputpin/actioninputpin-frame.html', $ActionInputPin)#end
+	#if (!$report.isNull($Trigger))$file.silentCreate('trigger/trigger-frame.html', $Trigger)#end
+	#if (!$report.isNull($ConsiderIgnoreFragment))$file.silentCreate('considerignorefragment/considerignorefragment-frame.html', $ConsiderIgnoreFragment)#end
+   #if (!$report.isNull($Variable))$file.silentCreate('variable/variable-frame.html', $Variable)#end
+   #if (!$report.isNull($ReceiveSignalEvent))$file.silentCreate('receivesignalevent/receivesignalevent-frame.html', $ReceiveSignalEvent)#end
+   #if (!$report.isNull($RedefinableTemplateSignature))$file.silentCreate('redefinabletemplatesignature/redefinabletemplatesignature-frame.html', $RedefinableTemplateSignature)#end
+   #if (!$report.isNull($Stereotype))$file.silentCreate('stereotype/stereotype-frame.html', $Stereotype)#end
+   #if (!$report.isNull($ActivityParameterNode))$file.silentCreate('activityparameternode/activityparameternode-frame.html', $ActivityParameterNode)#end
+   #if (!$report.isNull($Parameter))$file.silentCreate('parameter/parameter-frame.html', $Parameter)#end
+   #if (!$report.isNull($Clause))$file.silentCreate('clause/clause-frame.html', $Clause)#end
+   
+   #if (!$report.isNull($StringTaggedValue))$file.silentCreate('stringtaggedvalue/stringtaggedvalue-frame.html', $StringTaggedValue)#end
+   #if (!$report.isNull($BooleanTaggedValue))$file.silentCreate('booleantaggedvalue/booleantaggedvalue-frame.html', $BooleanTaggedValue)#end
+   #if (!$report.isNull($IntegerTaggedValue))$file.silentCreate('integertaggedvalue/integertaggedvalue-frame.html', $IntegerTaggedValue)#end
+   #if (!$report.isNull($RealTaggedValue))$file.silentCreate('realtaggedvalue/realtaggedvalue-frame.html', $RealTaggedValue)#end
+   #if (!$report.isNull($ElementTaggedValue))$file.silentCreate('elementtaggedvalue/elementtaggedvalue-frame.html', $ElementTaggedValue)#end
+</div>
+	<div>
+	 #if (!$report.isNull($Package))
+	<div class="frameheading">Packages/Models</div>
+	#set ($packAndModel = $array.createArray($Package))
+	#if($SmartPackage)
+	#set ($void = $packAndModel.addAll($SmartPackage))
+	#end
+	#if($SystemBoundary)
+	#set ($void = $packAndModel.addAll($SystemBoundary))
+	#end
+	#if($Profile)
+	#set ($void = $packAndModel.addAll($Profile))
+	#end
+	#if($Model)
+	#set ($void = $packAndModel.addAll($Model))
+	#end
+	#if($Subsystem)
+	#set ($void = $packAndModel.addAll($Subsystem))
+	#end
+	#foreach ($p in $sorter.sort($packAndModel, 'qualifiedName'))
+	#if($p.getHumanType() == 'System Boundary')
+    #set($pahtName =$file.create('systemboundary/systemboundary-frame-list.html', $file.computeName('systemboundary-frame-list', $p.ID, 'html'), $p))
+    <div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor($p)" alt="$p.elementType" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">#qualifiedName($p)</a>
+    #elseif($p.getHumanType() == 'Smart Package')
+    #set($pahtName =$file.create('smartpackage/smartpackage-frame.html', $file.computeName('smartpackage-frame', $p.ID, 'html'), $p))
+    <div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor($p)" alt="$p.elementType" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">#qualifiedName($p)</a>
+    #else
+    #set($pahtName =$file.create('package/package-frame.html', $file.computeName('package-frame', $p.ID, 'html'), $p))
+    <div class="frameitem">&nbsp;<a href="$pahtName" target="packageframe"><img src="$report.getIconFor($p)" alt="$p.elementType" align="middle" width="16" height="16"></a>&nbsp;<a href="$pahtName" target="packageframe">#qualifiedName($p)</a>#end
+    </div>
+    #end
+    #end
+</div>
+</body>
+</html>

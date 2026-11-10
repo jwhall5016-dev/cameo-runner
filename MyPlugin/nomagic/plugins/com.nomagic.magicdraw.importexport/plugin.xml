@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.importexport"
+	name="Import Export Plugin"
+	version="2021x Refresh1"
+    ownClassloader="true"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.importexport.ImportExportPlugin">
+
+    <requires>
+        <api version="1.0"/>
+        <required-plugin id="com.nomagic.magicdraw.diagramtable" name="Diagram Table"/>
+        <required-plugin id="com.nomagic.magicdraw.fileattachments" name="File Attachments"/>
+    </requires>
+
+    <runtime>
+        <library name="importexport.jar"/>
+        <library name="importexport_api.jar"/>
+    </runtime>
+</plugin>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram abbreviation="comm" baseType="Interaction Diagram" type="Communication Diagram" version="8">
+    <requiredPlugin>;UML_Standard_Profile.mdzip^UML_FEATURE</requiredPlugin>
+    <helpID>Communication+Diagram</helpID>
+    <toolbarConfiguration>
+        <baseCategory expandedByDefault="false" id="COMMON_ELEMENTS_DYNAMIC" parentCategoryID="COMMON_ELEMENTS_DYNAMIC"/>
+        <category expandedByDefault="true" id="COMMUNICATION_DIAGRAM_ELEMENTS" name="Communication Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/communicationdiagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/communicationdiagram.svg" size="16" type="large"/>
+            <actions>
+                <standard action="ADD_LIFELINE" shortcut="pressed O "/>
+                <standard action="ADD_CONNECTOR" shortcut="pressed C "/>
+                <standard action="ADD_CONNECTOR_TO_SELF" shortcut="pressed S "/>
+                <standard action="ADD_SEQUENCE_MESSAGE_RIGHT"/>
+                <standard action="ADD_SEQUENCE_MESSAGE_LEFT"/>
+                <group>
+                    <standard action="ADD_CALL_MESSAGE_RIGHT"/>
+                    <standard action="ADD_CALL_MESSAGE_LEFT"/>
+                </group>
+                <group>
+                    <standard action="ADD_SEND_MESSAGE_RIGHT"/>
+                    <standard action="ADD_SEND_MESSAGE_LEFT"/>
+                </group>
+                <group>
+                    <standard action="ADD_REPLY_MESSAGE_RIGHT"/>
+                    <standard action="ADD_REPLY_MESSAGE_LEFT"/>
+                </group>
+                <group>
+                    <standard action="ADD_CREATE_MESSAGE_RIGHT"/>
+                    <standard action="ADD_CREATE_MESSAGE_LEFT"/>
+                </group>
+                <group>
+                    <standard action="ADD_DESTROY_MESSAGE_RIGHT"/>
+                    <standard action="ADD_DESTROY_MESSAGE_LEFT"/>
+                </group>
+            </actions>
+        </category>
+        <baseCategory expandedByDefault="false" id="action_category_1239974101621_433764_0" parentCategoryID="action_category_1239974101621_433764_0"/>
+    </toolbarConfiguration>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/communicationdiagram.png" size="16" type="small"/>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/communicationdiagram.svg" size="-1" type="diagraming"/>
+    <module location="/Users/admin/182/E:\INSTALL\MD_UML_150EAP_beta1_no_install\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.compositestructures.mdinternalstructures.Connector</element>
+        <path action="ADD_SEQUENCE_MESSAGE_RIGHT"/>
+        <path action="ADD_SEQUENCE_MESSAGE_LEFT"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.interactions.mdbasicinteractions.Lifeline</element>
+        <path action="ADD_CONNECTOR">
+            <target>ADD_LIFELINE</target>
+        </path>
+        <path action="ADD_CONNECTOR_TO_SELF"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+</diagram>
+

@@ -1,0 +1,25 @@
+#sectionBegin(relations)
+<table border="1" width="100%" cellpadding="3" cellspacing="0">
+   <tr class="heading">
+      <th align="left" colspan="4"><b>Relations</b></th>
+   </tr>
+   <tr class="row">
+      <td><b>Name</b></td>
+      <td><b>Type</b></td>
+      <td><b>Begins</b></td>
+      <td><b>Ends</b></td>
+   </tr>
+#foreach ($rel in $sorter.sort($report.getRelationship($importer),'name'))
+#set($elementType = $rel.elementType)
+#set($linkName = "relation/" + $elementType + ".html")
+#set($pahtName = $file.create($linkName, $file.computeName('relation', $rel.ID, 'html'), $rel))
+   <tr class="row">
+      <td>&nbsp;<a href="../$pahtName"><img src="../$report.getIconFor($rel)" alt="relation" align="middle" width="16" height="16"></a>&nbsp;
+      <a href="../$pahtName" >$rel.name</a>&nbsp;</td>
+      <td>$rel.humanType&nbsp;</td>
+      <td>#link($report.getClientElement($rel))&nbsp;</td>
+      <td>#link($report.getSupplierElement($rel))&nbsp;</td>
+   </tr>
+#end
+</table>
+#sectionEnd

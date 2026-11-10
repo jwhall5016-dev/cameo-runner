@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.imagetoclipboard"
+	name="Copy diagram as image to system clipboard"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.imagetoclipboard.CopyImageToClipboardPlugin">
+
+	<requires>
+	   <api version="1.0"/>
+	</requires>
+
+	<runtime>
+	   <library name="imagetoclipboard.jar"/>
+	   <library name="imagetoclipboard_api.jar"/>
+	</runtime>
+</plugin>

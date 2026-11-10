@@ -1,0 +1,1 @@
+#foreach ($ac in $sorter.sort($importer, 'name'))$file.silentCreate('accepteventaction/accepteventaction-content.html', $file.computeName('accepteventaction', $ac.ID, 'html'), $ac)#end

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+        id="com.nomagic.magicdraw.diagramfilter.DiagramContentFilterPlugin"
+        name="Diagram Content Filter"
+        version="2021x Refresh1"
+        provider-name="No Magic"
+        class="com.nomagic.magicdraw.diagramfilter.DiagramContentFilterPlugin">
+
+    <requires>
+        <api version="1.0"/>
+        <required-plugin id="com.nomagic.magicdraw.legend.LegendPlugin" name="Legend"/>
+    </requires>
+
+    <runtime>
+        <library name="diagramcontentfilter.jar"/>
+        <library name="diagramcontentfilter_api.jar"/>
+    </runtime>
+</plugin>

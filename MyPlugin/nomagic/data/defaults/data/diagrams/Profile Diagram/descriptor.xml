@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram abbreviation="profile" baseType="Static Diagram" type="Profile Diagram" version="8">
+    <requiredPlugin>;UML_Standard_Profile.mdzip^UML_FEATURE</requiredPlugin>
+    <helpID>Profile+Diagram</helpID>
+    <toolbarConfiguration>
+        <category expandedByDefault="false" id="COMMON_ELEMENTS_STATIC" name="Common">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/packagenode.svg" size="16" type="large"/>
+            <actions>
+                <group>
+                    <standard action="ADD_NOTE" description="Note" shortcut="pressed N "/>
+                    <standard action="ADD_HTML_NOTE" description="Note(HTML Text)" shortcut="shift pressed N "/>
+                    <standard action="ADD_COMMENT"/>
+                    <standard action="ADD_HTML_COMMENT"/>
+                </group>
+                <group>
+                    <standard action="ADD_TEXT_BOX" shortcut="pressed X "/>
+                    <standard action="ADD_HTML_TEXT_BOX" shortcut="shift pressed X "/>
+                </group>
+                <group>
+                    <standard action="ADD_NOTE_ANCHOR" description="Anchor" shortcut="pressed H "/>
+                    </group>
+				<group>
+					<standard action="CONSTRAINT_ACTION"/>
+					<standard action="DURATION_CONSTRAINT_ACTION"/>
+					<standard action="TIME_CONSTRAINT_ACTION"/>
+					<standard action="ADD_CONSTRAINT_LINK" shortcut="shift pressed H "/>
+                </group>
+                <group>
+                    <standard action="ADD_CONTAINMENT_LINK" shortcut="shift pressed C "/>
+                    <standard action="ADD_CONTAINMENT_LINK_OPPOSITE" shortcut="shift pressed K "/>
+                </group>
+                <group>
+                    <standard action="ADD_ABSTRACTION" shortcut="pressed T "/>
+                    <custom description="Trace" id="IDaction_1297147200209_590759_0" listAsElement="true" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mddependencies.Abstraction">
+                        <stereotype id="magicdraw_1046861421246_733231_63"/>
+                    </custom>
+                </group>
+                <standard action="ADD_DEPENDENCY" shortcut="shift pressed D "/>
+                <group>
+                    <standard action="ADD_IMAGE_FROM_FILE" shortcut="pressed I "/>
+                    <standard action="ADD_IMAGE_FROM_ATTACHED_FILE"/>
+                </group>
+                <standard action="ADD_DIAGRAM_OVERVIEW"/>
+                                <standard action="ADD_DIAGRAM_LEGEND"/>
+                <group>
+                    <standard action="ADD_SEPARATOR" shortcut="pressed W "/>
+                    <standard action="ADD_SEPARATOR_VERTICAL"/>
+                    <standard action="ADD_RECTANGULAR_SHAPE" shortcut="shift pressed Q "/>
+                </group>
+            </actions>
+        </category>
+        <category expandedByDefault="true" id="action_category_1302604914291_813194_1" name="Profile Diagram">
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/profilediagram.png" size="16" type="small"/>
+            <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/profilediagram.svg" size="16" type="large"/>
+            <actions>
+                <standard action="ADD_STEREOTYPE" shortcut="shift pressed S "/>
+                <custom description="MetricSuite" id="IDaction_1394804451613_155302_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                    <stereotype id="_18_0beta_8ae027d_1386161621998_108497_15198"/>
+                </custom>
+                <standard action="ADD_METACLASS"/>
+                <group>
+                    <standard action="ADD_PROFILE"/>
+                    <standard action="ADD_PACKAGE" shortcut="pressed P "/>
+                    <standard action="ADD_MODEL" shortcut="pressed M "/>
+                </group>
+                <group>
+                    <standard action="ADD_CLASS" shortcut="pressed C "/>
+                    <standard action="ADD_DATA_TYPE"/>
+                    <standard action="ADD_PRIMITIVE_TYPE"/>
+                    <standard action="ADD_ENUMERATION" shortcut="pressed K "/>
+                </group>
+                <group>
+                    <custom description="Customization" id="IDaction_1306156506734_571786_0" listAsElement="false" opposite="false" type="com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class">
+                        <stereotype id="_11_5EAPbeta_be00301_1148632817486_155219_3"/>
+                    </custom>
+                </group>
+                <standard action="ADD_EXTENSION"/>
+                <group>
+                    <standard action="ADD_PROFILE_APPLICATION"/>
+                    <standard action="ADD_PACKAGE_MERGE_RELATIONSHIP"/>
+                    <standard action="ADD_PACKAGE_IMPORT_RELATIONSHIP"/>
+                </group>
+                <group>
+                    <standard action="ADD_ASSOCIATION" shortcut="pressed S "/>
+                    <standard action="ADD_DIRECTED_ASSOCIATION"/>
+                </group>
+                <group>
+                    <standard action="ADD_GENERALIZATION" shortcut="pressed G "/>
+                    <standard action="ADD_GENERALIZATION_OPPOSITE" shortcut="shift pressed Z "/>
+                </group>
+            </actions>
+        </category>
+        <baseCategory expandedByDefault="false" id="CLASS_DIAGRAM_ELEMENTS" parentCategoryID="CLASS_DIAGRAM_ELEMENTS"/>
+    </toolbarConfiguration>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/profilediagram.png" size="16" type="small"/>
+    <icon filename="mdp://resource/com/nomagic/magicdraw/icons/diagrams/profilediagram.svg" size="-1" type="diagraming"/>
+    <module location="/Users/admin/182/C:\Program Files\MagicDraw_18GA\profiles\UML_Standard_Profile.mdzip" name="UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+    <manipulators>
+        <element>com.nomagic.uml2.ext.magicdraw.mdprofiles.Stereotype</element>
+        <path action="ADD_EXTENSION">
+            <target>ADD_METACLASS</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>ADD_STEREOTYPE</target>
+        </path>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>ADD_STEREOTYPE</target>
+        </path>
+        <path action="ADD_ASSOCIATION"/>
+        <path action="ADD_NOTE_ANCHOR">
+            <target>ADD_NOTE</target>
+            <target>ADD_HTML_NOTE</target>
+            <target>ADD_COMMENT</target>
+            <target>ADD_HTML_COMMENT</target>
+        </path>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_9_0_be00301_1108044721245_236588_411" name="Invisible Stereotype"/>
+    </manipulators>
+    <manipulators>
+        <stereotype id="_11_5EAPbeta_be00301_1148632817486_155219_3" name="Customization"/>
+        <path action="ADD_GENERALIZATION_OPPOSITE">
+            <target>IDaction_1306156506734_571786_0</target>
+        </path>
+        <path action="ADD_GENERALIZATION">
+            <target>IDaction_1306156506734_571786_0</target>
+        </path>
+    </manipulators>
+</diagram>
+

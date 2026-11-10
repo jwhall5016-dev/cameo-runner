@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+   <name>Tutorial 22 - Image Tool</name>
+   <description>This sample template will perform image transformations inside the report.</description>
+   <templateFile>template.docx</templateFile>
+   <icon />
+   <enable>true</enable>
+   <readonly>true</readonly>
+   <pinned>false</pinned>
+   <category>Tutorial</category>
+   <variables>
+      <variable>
+         <name>Author</name>
+         <value xml:space="preserve">Roger Holenweger</value>
+      </variable>
+      <variable>
+         <name>Publisher</name>
+         <value xml:space="preserve">No Magic</value>
+      </variable>
+   </variables>
+   <perspectives />
+</template>

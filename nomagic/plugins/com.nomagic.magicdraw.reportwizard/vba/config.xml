@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<default>Model Element</default>
+	<showDescription>false</showDescription>
+	<dataFiles>
+		<location>data\openAPI.xml</location>
+		<location>data\built-inTool.xml</location>
+	</dataFiles>
+	<isExpert>false</isExpert>
+</configuration>

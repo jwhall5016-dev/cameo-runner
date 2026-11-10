@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="AutomatonPlugin"
+	name="Automaton"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.automaton.AutomatonPlugin">
+
+	<requires>
+	   <api version="1.0"/>
+	</requires>
+
+	<runtime>
+	   <library name="automaton_api.jar"/>
+	   <library name="automaton.jar"/>
+	   <library name="lib/asm-3.3.jar"/>
+
+       <library name="lib/engines/js-rhino/rhino-1.7R4-js.jar"/>
+       <library name="lib/engines/js-rhino/rhino-js-engine.jar"/>
+	   <library name="lib/engines/js-rhino/rhino-wrapper.jar"/>
+
+	   <library name="lib/engines/beanshell/bsh-2.1.7.jar"/>
+
+	   <library name="lib/engines/groovy-3.0.7/lib/groovy-jsr223-3.0.7.jar"/>
+	   <library name="lib/engines/groovy-3.0.7/lib/groovy-3.0.7.jar"/>
+
+	   <library name="lib/engines/jruby-9.2.14.0/lib/jruby.jar"/>
+
+	   <library name="lib/engines/jython/jython.jar"/>
+   </runtime>
+   
+</plugin>

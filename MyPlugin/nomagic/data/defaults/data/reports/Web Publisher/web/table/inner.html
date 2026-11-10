@@ -1,0 +1,17 @@
+#sectionBegin(inner)
+<table border="1" width="100%" cellpadding="3" cellspacing="0">
+   <tr class="heading">
+      <th align="left" colspan="2"><b>Inner Elements</b></th>
+   </tr>
+   <tr class="row">
+      <td><b>Name</b></td>
+      <td><b>Type</b></td>
+   </tr>
+   #foreach ($inner in $sorter.sort($report.getInnerElement($importer), 'name'))
+   <tr class="row">
+      <td>#link($inner)&nbsp;</td>
+      <td>#if($inner.humanType == 'Diagram')$report.getDiagramType($inner)#else$inner.humanType#end&nbsp;</td>
+   </tr>
+   #end
+</table>
+#sectionEnd

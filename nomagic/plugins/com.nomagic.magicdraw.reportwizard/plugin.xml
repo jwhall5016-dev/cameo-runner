@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.magicreport"
+	name="Report Wizard"
+	internalVersion="202100000"
+	version="2021x Refresh1"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.magicreport.MagicReportIntegration">
+	<requires>
+	   <api version="1.0"/>
+	</requires>
+	<runtime>
+	   <library name="reportwizard_api.jar"/>
+	   <library name="reportwizard.jar"/>
+	   <library name="lib/magicreport.jar"/>
+	   <library name="lib/avalon-logkit-2.1.jar"/>
+	   <library name="lib/commons-beanutils-1.9.4.jar"/>
+	   <library name="lib/commons-collections-3.2.2.jar"/>
+	   <library name="lib/commons-net-3.3.jar"/>
+	   <library name="lib/cssparser-1.4.jar"/>
+	   <library name="lib/ftp4j-1.7.2.jar"/>
+	   <library name="lib/jettison-1.3.3.jar"/>
+	   <library name="lib/jsch-0.1.50.jar"/>
+	   <library name="lib/oro-2.0.8.jar"/>
+	   <library name="lib/stax2-api-3.1.1.jar"/>
+	   <library name="lib/velocity-1.7.jar"/>
+	   <library name="lib/velocity-tools-generic-1.4.jar"/>
+	   <library name="lib/woodstox-core-asl-4.1.4.jar"/>
+	</runtime>
+	<help path="help/reportwizard_help.jar" name="reportwizard_help.hs"/>
+</plugin>

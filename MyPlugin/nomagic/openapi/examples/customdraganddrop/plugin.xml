@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+        id="com.nomagic.magicdraw.examples.customdraganddrop"
+        name="Custom Drag and Drop Example Plugin"
+        version="2021x Refresh1"
+        provider-name="No Magic"
+        class="com.nomagic.magicdraw.examples.customdraganddrop.CustomDragAndDropPlugin">
+
+    <runtime>
+        <library name="customdraganddrop.jar"/>
+    </runtime>
+
+</plugin>

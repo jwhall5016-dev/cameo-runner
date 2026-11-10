@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diagram version="8" type="Dependency Matrix" baseType="Class Diagram" abbreviation="matrix" category="Analysis Diagrams" metaType="DependencyMatrix">
+    <stereotype id="_17_0_3beta_8e10289_1348753189236_873942_2915"/>
+    <stereotype id="_17_0_3beta_8e10289_1348753189306_38038_3061"/>
+    <requiredPlugin>DependencyMatrixPlugin#Dependency Matrix;UML_Standard_Profile.mdzip</requiredPlugin>
+    <helpID>Dependency+Matrix</helpID>
+    <icon type="small" size="16" filename="mdp://resource/com/nomagic/magicdraw/dependencymatrix/icons/dependencymatrix.png"></icon>
+    <icon type="diagraming" size="-1" filename="mdp://resource/com/nomagic/magicdraw/dependencymatrix/icons/dependencymatrix.svg"></icon>
+    <module name="UML_Standard_Profile.mdzip" location="C:\Program Files\MagicDraw\profiles\UML_Standard_Profile.mdzip">
+        <root id="magicdraw_uml_standard_profile_v_0001"/>
+    </module>
+</diagram>

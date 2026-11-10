@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     2011.10.26 09:21:15                                                        
+
+     CopyIn    
+     Copy external plugin into MagicDraw md/core project
+                   
+     Mantas Balnys                                                              
+     ====================================================================== -->
+<project name="reportwizard CopyIn" default="copyOne">
+    <description>
+        Copy external plugin into MagicDraw md/core project
+    </description>
+
+    <import file="../../../md/core/copyPluginsIn.xml"/>
+
+    <target name="copyOne" depends="CopyIn.copyOne">
+        <copy todir="${md.core.dir}/data/defaults" overwrite="true">
+            <fileset dir="${plugin.dir}/src">
+                <include name="data/**"/>
+            </fileset>
+        </copy>
+    </target>
+</project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" type="xml"?>
+<article xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+<info>
+<title>$project.name</title>
+<author>
+<orgname>$CompanyName</orgname>
+<address>
+$CompanyAddress
+</address>
+</author>
+</info>
+  
+  #macro (createContent $e)
+    <sect1>
+        <title>$e.humanName</title>
+        <subtitle></subtitle>
+        <para>$e.documentation</para>
+    </sect1>
+    #set($ownedElementList = $report.getOwnedElementsIncludingAdditional($e, true))
+    #foreach($owned in $sorter.humanSort($ownedElementList, 'name'))
+    #createContent($owned)
+    #end   
+  #end 
+  
+  
+  #set ($rootList = $array.createArray())
+  #foreach ($e in $elements)
+  #if ($e != $project.model && ($e.owner == $project.model || !$elements.contains($e.owner)))
+  #set ($void = $rootList.add($e))
+  #end
+  #end
+  #foreach ($e in $sorter.humanSort($rootList, 'name'))
+  #createContent($e)
+  #end
+
+</article>

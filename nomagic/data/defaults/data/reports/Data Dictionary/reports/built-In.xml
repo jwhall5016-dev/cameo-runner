@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report>
+   <name>Built-in</name>
+   <description>A built-in data dictionary data</description>
+   <defaultReport>true</defaultReport>
+   <variables>
+      <variable>
+         <name>CompanyName</name>
+         <description>A company's name</description>
+			<type/>	
+         <value xml:space="preserve">No Magic</value>
+      </variable>
+      <variable>
+         <name>Author</name>
+         <description>Author of document</description>
+			<type/>	
+         <value xml:space="preserve"/>
+      </variable>
+      <variable>
+         <name>ReportTitle</name>
+         <description>A title of report that is shown on header of every page in document expect the first page.</description>
+			<type/>	
+         <value xml:space="preserve">Data Dictionary Report</value>
+      </variable>
+      <variable>
+         <name>Description</name>
+         <description>Description about this document</description>
+			<type/>
+         <value xml:space="preserve">Initial version created</value>
+      </variable>
+      <variable>
+         <name>Revisions</name>
+         <variable>
+            <name>0.1</name>
+            <variable>
+               <name>date</name>
+               <description>Date that document was edited in this revision</description>
+					<type/>
+               <value>&lt;date 1&gt;</value>
+            </variable>
+            <variable>
+               <name>author</name>
+               <description>Author who edited document in this revision</description>
+					<type/>
+               <value>&lt;Author name&gt;</value>
+            </variable>
+            <variable>
+               <name>description</name>
+               <description>Description about this revision</description>
+					<type/>
+               <value>&lt;draft&gt;</value>
+            </variable>
+         </variable>
+         <variable>
+            <name>0.2</name>
+            <variable>
+               <name>date</name>
+               <description>Date that document was edited in this revision</description>
+					<type/>
+               <value>&lt;date 2&gt;</value>
+            </variable>
+            <variable>
+               <name>author</name>
+               <description>Author who edited document in this revision</description>
+					<type/>
+               <value>&lt;Author name&gt;</value>
+            </variable>
+            <variable>
+               <name>description</name>
+               <description>Description about this revision</description>
+					<type/>
+               <value>&lt;release&gt;</value>
+            </variable>
+         </variable>
+         <value/>
+      </variable> 
+   </variables>
+   <selectedPackage>
+      <packageId></packageId>
+      <selectRecursive>true</selectRecursive>
+      <showAuxiliary>false</showAuxiliary>
+      <showOnlyPackageElement>true</showOnlyPackageElement>
+   </selectedPackage>
+   <outputProperty>
+      <outputFile></outputFile>
+      <outputImageFormat>jpg</outputImageFormat>
+      <outputFitImageSize>1</outputFitImageSize>
+      <outputOnBlankField></outputOnBlankField>
+      <displayInViewer>false</displayInViewer>
+      <outputFormat/>
+      <uploadProfile/>
+   </outputProperty>
+</report>

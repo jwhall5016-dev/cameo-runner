@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template><name>Diagram Presentation</name><description xml:space="preserve">The OpenDocument Presentation Report. 
+Generate a report for presentation like PowerPoint. This presentation demonstrates selected diagram and information.</description><templateFile>template.odp</templateFile><enable>true</enable><readonly>true</readonly><category>Other Documents</category><variables><variable><name>Author</name><value xml:space="preserve"></value></variable><variable><name>Title</name><value xml:space="preserve"></value></variable></variables></template>

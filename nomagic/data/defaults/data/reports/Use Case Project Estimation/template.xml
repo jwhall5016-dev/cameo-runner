@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<name>Use Case Project Estimation</name>
+	<description>Use Case Project Estimation Report is apply use case point technique to re-estimate the project size.</description>
+	<templateFile>template.docx</templateFile>
+	<icon></icon>
+	<enable>true</enable>
+	<readonly>true</readonly>
+	<pinned>false</pinned>
+	<category>Use Case Driven Template</category>
+	<variables>
+		<variable>
+			<name>CompanyName</name>
+			<value xml:space="preserve"></value>
+		</variable>	
+		<variable>
+			<name>Author</name>
+			<value xml:space="preserve"></value>
+		</variable>
+		<variable>
+			<name>ReportTitle</name>
+			<value xml:space="preserve"></value>
+		</variable>
+		<variable>
+			<name>DocumentTitle</name>
+			<value xml:space="preserve"></value>
+		</variable>	
+		<variable>
+			<name>Description</name>
+			<value xml:space="preserve"></value>
+		</variable>		
+		<variable>
+			<name>Revisions</name>
+			<variable>
+				<name>0.1</name>
+				<variable>
+					<name>date</name>
+					<value xml:space="preserve"></value>
+				</variable>
+				<variable>
+					<name>author</name>
+					<value xml:space="preserve"></value>
+				</variable>		
+				<variable>
+					<name>description</name>
+					<value xml:space="preserve"></value>
+				</variable>	
+			</variable>
+			<value/>
+		</variable>
+		<variable>
+			<name>Purpose</name>
+			<value xml:space="preserve"></value>
+		</variable>		
+		<variable>
+			<name>Scope</name>
+			<value xml:space="preserve"></value>
+		</variable>
+		<variable>
+			<name>Overview</name>
+			<value xml:space="preserve"></value>
+		</variable>		
+		<variable>
+			<name>StaffHoursPerUseCasePoint</name>
+			<value xml:space="preserve"></value>
+		</variable>	
+		<variable>
+			<name>HoursPerDay</name>
+			<value xml:space="preserve"></value>
+		</variable>	
+		<variable>
+			<name>WorkingDaysPerMonth</name>
+			<value xml:space="preserve"></value>
+		</variable>		
+		<variable>
+			<name>NumberOfDevelopersInProject</name>
+			<value xml:space="preserve"></value>
+		</variable>			
+	</variables>
+	<perspectives/>
+</template>
